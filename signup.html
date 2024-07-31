@@ -39,19 +39,24 @@ html, body {
 			<div class="login-options">
 			<a href="helper.html"><div class="helper-btn">Helper</div></a>
 				<a href="client.html"><div class="client-btn">Client</div></a></div>
+			<div class="login-info">
 			<form>
 
   <div class="container">
     <div class="acc-details">
 		<div class="reg-info">
-			<input type="text" placeholder="First Name" name="fname" required></div>
+			<input type="text" placeholder="Full Names" name="fname" required></div>
 		<div class="reg-info">
-			<input type="text" placeholder="Last Name" name="lname" required></div>
-	  <div class="email-db">
-		  <div class="email-db-1">
-			  <input type="text" placeholder="Email" name="email" required></div>
-		  <div class="emailn-db-2">
-			 <input type="date" id="dob" name="birthday" required></div></div>
+    <input type="text" placeholder="Email" name="psw" required>
+	  </div>
+	  <div class="dob-container">
+			<div class="sex-reg-info">
+			<input type="text" placeholder="Sex" name="fname" required>
+			</div>
+			<div class="dob-reg-info">
+        <input type="date" id="birthday">
+        </div>
+    </div>
 		<div class="reg-info">
 			<input type="password" placeholder="Password" name="psw" required></div>
 		<div class="reg-info">
@@ -65,14 +70,17 @@ html, body {
 				By proceeding, you accept our <b class="t-c">Terms of Use</b> and <b class="t-c">Privacy Policy</b>
 				</p>
 				</div>
-    <a href="index.html"><button type="submit">Login</button></a>
+   <div class="reg-btn">
+	   <a href="index.html">
+			<button type="submit" style="display: none;">Create Account</button></a>
+		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Create Account</button></div>
    
   </div>
 </form>
 			
 			
 		
-		
+			</div>	
 				
 			
 				</div>

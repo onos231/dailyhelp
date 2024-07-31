@@ -305,6 +305,7 @@ input[type=text], input[type=password] {
 }
 .t-c {
 	color: #3997BF;
+	font-weight: 300;
 }
 
 button {
@@ -456,7 +457,7 @@ span.psw {
 	float: right;
 }
 .dashboard-area {
-	background-color: rgba(210, 228, 249, 0.3);
+	background-color: #D2E4F9;
 	margin-top: 40px;
 	height: 100px;
 }
@@ -511,7 +512,7 @@ span.psw {
 /*----dashboard session---*/
 .dashboard {
 	width: 90%;
-	background-color: #EFF6FE;
+	background-color: #D2E4F9;
 	padding: 4px;
 	margin-left: auto;
 	margin-right: auto;
@@ -876,7 +877,7 @@ span.psw {
 }
 .back-arrow-pic h5 {
 	width: 160px;
-	margin-top: 53px;
+	margin-top: 54px;
 	margin-bottom: 0;
 	margin-left: 45px;
 	font-size: 17px;
@@ -1965,6 +1966,7 @@ textarea {
 	margin-bottom: 2px;
 	color: #39BF4E;
 	font-family: 'Roboto';
+	font-weight: 300;
 }
 
 
