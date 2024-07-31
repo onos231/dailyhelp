@@ -26,49 +26,43 @@
    <header>
 	   <div class="web-nav">
 		<div class="menu-area-logo">
+			<a href="index.html">
 					<div>
 	  <img src="img/logo/logo.png" alt="Project 2" /></div><div class="menu-title"></div>
-				</div>
+				</a></div>
 		<div class="nav-menu">
 				
 	
 				<div class="menu-area-1">
+					<a href="dashboard.html">
 					<div class="pic-area"><div class="pic-menu-area">
-	  <img src="img/index/dashboard.png" alt="Project 2" /></div><div><p>Dashboard </p></div></div>
+						
+	  <img src="img/index/dashboard.png" alt="Project 2" /></div><div><p>Dashboard </p></div></div></a>
 				</div>
 			<div class="menu-area-2">
-				<a href="find-more-helpers.html"><div class="pic-area"><div class="pic-menu-area">
-	  <img src="img/index/find-help-green.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div></a>
+				<a href="create-resume-1.html"><div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/find-help-green.png" alt="Project 2" /></div><div><p>Post Job </p></div></div></a>
 				</div>
 			
 			<div class="menu-area-3">
+				<a href="helpers-search-result.html">
 					<div class="pic-area"><div class="pic-menu-area">
-	  <img src="img/index/post-job-web.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div>
+						<img src="img/index/post-job-web.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div></a>
 				</div>
 				</div>
 		
 		<div class="menu-area-profile">
+			<a href="helper-profile.html">
 					<div>
 	  <img src="img/index/profile.png" alt="Project 2" /><div class="menu-title"></div></div>
-				</div>
+				</a></div>
 	</div>
-	   <div class="top-nav">
-		   <div class="grid-container">
-		   <div class="grid-item">
-		  <div class="profile-pic">
-	   <a href="intro-2.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-			   </div>
-	 <div class="grid-item">
-		  <div class="home-logo-pic">
-	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
-		 </div></div>
-	 <div class="grid-item">
-		 <div class="msg-pic">
-	   <a href="intro-2.html"><img src="img/index/messages.png" alt="Project 2" /></a>
-		 </div>
-			   </div>
-		   </div>
-		   </div>
+	    <div class="search-top-nav">
+	<div class="nav-content">
+		  <div class="back-arrow-pic">
+	   <a href="index.html"><img src="img/find-helper/back-arrow.png" alt="Project 2" /><h5>Home</h5></a></div>
+		</div>
+			 </div>
 	  </header>
 		
 		
@@ -155,24 +149,65 @@ You</div></div></div>
 		
 				
 					
-					<div class="reg-info">
-    <input type="text" placeholder="Level of Education" name="fname" required>
-	  </div>
-					<div class="reg-info">
-    <input type="text" placeholder="Qualification" name="fname" required>
-	  </div>
-		<div class="expire-n-security">
-			
+			 
 		
-			</div>
-					<div class="reg-info">
-    <input type="text" placeholder="Years of Experience" name="fname" required>
-	  </div>
+			
+			
+			
+			<div class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown('education')">Level of Education <span class="arrow">&#9662;</span></div>
+        <div id="education" class="dropdown-menu">
+            <a href="#">High School</a>
+            <a href="#">Associate Degree</a>
+            <a href="#">Bachelor's Degree</a>
+            <a href="#">Master's Degree</a>
+            <a href="#">Doctorate</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown('qualification')">Qualification <span class="arrow">&#9662;</span></div>
+        <div id="qualification" class="dropdown-menu">
+            <a href="#">Certification</a>
+            <a href="#">Diploma</a>
+            <a href="#">Professional License</a>
+            <a href="#">Vocational Training</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown('experience')">Years of Experience <span class="arrow">&#9662;</span></div>
+        <div id="experience" class="dropdown-menu">
+            <a href="#">0-1 Years</a>
+            <a href="#">2-5 Years</a>
+            <a href="#">6-10 Years</a>
+            <a href="#">10+ Years</a>
+        </div>
+    </div>
+			
+			
+			
+			
 			</div>
 			
-			<div class="reg-btn">
+			<div class="post-steps">
 				
-		<button type="submit">Next</button></div>
+			
+				<div class="grid-container">
+  <div class="grid-item"> 
+	  <div class="post-arrow-btn-left">
+			<a href="professional-info.html"><img src="img/into/back-arrow.png" alt="Project 2" /><div class="txt-arrow-left">Prev</div></a>
+			</div></div>
+  <div class="grid-item">
+	  <div class="middle-btn">
+			
+						</div></div>
+  <div class="grid-item">
+	 <div class="post-arrow-btn">
+			<a href="about-you.html"><div class="txt-arrow">Next</div><img src="img/into/forward-arrow.png" alt="Project 2" /></a>
+			</div></div>
+					</div>  
+</div>
 		</div>
 		</div>
 		
@@ -197,6 +232,7 @@ You</div></div></div>
 			</div>
 		</div>
 				</div>
+
 
 	
 </body>

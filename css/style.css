@@ -7,6 +7,10 @@
 	src: url(fonts/Kodchasan-SemiBold.ttf);
 }
 @font-face {
+	font-family: 'Kodch';
+	src: url(fonts/Kodchasan-Regular.ttf);
+}
+@font-face {
 	font-family: 'Londrina';
 	src: url(fonts-two/LondrinaSolid-Regular.ttf);
 	
@@ -1131,6 +1135,9 @@ span.psw {
 	width: 100%;
 	color: rgba(0, 0, 0, 0.7);
 }
+.helper-prof-2 a{
+	color: rgba(0, 0, 0, 0.7);
+}
 /*----bank transfer session---*/
 .banking {
 	background-color: #EFF6FE;
@@ -1745,7 +1752,7 @@ span.psw {
 }
 .reg-heading h5 {
 	margin: 0;
-	font-family: 'Kod';
+	font-family: 'Kodch';
 	font-size: 20px;
 	color: #534B3F;
 }
@@ -2209,6 +2216,7 @@ textarea {
 	margin-top: 6px;
 	font-size: 15px;
 	float: left;
+	color: rgba(0, 0, 0, 0.9);
 }
 
 .home-panel {
@@ -2459,7 +2467,8 @@ textarea {
 	/*----paystack session---*/
 	.edu-exp {
 	width: 30%;
-	bottom: 80px;
+	bottom: 20px;
+	
 }
 	.edu-exp-body {
 	width: 95%;
@@ -2467,6 +2476,7 @@ textarea {
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: 40px;
+		
 }
 	.resume-steps {
 	width: 100%;
@@ -2488,8 +2498,8 @@ textarea {
 }
 	.about-you,
 .edu-exp {
-	bottom: 140px;
-	margin-bottom: 80px;
+	bottom: 40px;
+
 }
 textarea {
   width: 100%;
@@ -2501,7 +2511,17 @@ textarea {
   resize: none;
   color: rgba(83, 75, 63, 0.7);
 }
+.resume-title-1,
+.resume-title {
+	width: 100%;
+	text-align: center;
+	font-size: 11px;
+	color: rgba(83, 75, 63, 0.9);
+	font-family: 'Poppins';
+	font-weight: 300;
+	line-height: 14px;
 
+}
 	/*----find helpers session---*/
 	.search-result-txt {
 	margin-left: 20px;
