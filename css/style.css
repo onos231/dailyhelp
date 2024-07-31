@@ -1269,14 +1269,14 @@ span.psw {
 }
 
 .card-pic {
-	width: 30%;
+	width: 20%;
 	height: auto;
 }
 .card-pic img {
 	width: 100%;
 }
 .card-title h5 {
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-left: 4px;
 	color: #534B3F;
 	font-size: 17px;
@@ -2621,6 +2621,9 @@ textarea {
 	.payment-card-pic {
 	width: 22%;
 	height: auto;
+}
+	.card-title h5 {
+	margin-top: 4px;
 }
 	.bank-transfer-title h3{
 		margin-top: 0;
