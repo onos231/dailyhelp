@@ -424,10 +424,10 @@ span.psw {
 .top-nav{
 	background-color: #E45959;
 	display: flex;
-	height: 90px;
+	height: 70px;
 }
 .top-nav img{
-	margin-top: 49px;
+	margin-top: 29px;
 }
 
 .profile-pic {
@@ -445,7 +445,7 @@ span.psw {
 }
 .home-logo-pic img {
 	width: 100%;
-	margin-top: 45px;
+	margin-top: 25px;
 }
 .msg-pic {
 	width: 23%;
@@ -829,24 +829,27 @@ span.psw {
 .helper-tab-title {
 	width: 55%;
 	font-size: 28px;
-	line-height: 1px;
 	color: rgba(0, 0, 0, 0.7);
 	font-family: "Roboto";
 	letter-spacing: 2px;
+}
+.helper-tab-title h5 {
+	margin-top: 25px;
+	font-weight: 300;
 }
 /*----Helpers session---*/
 .search-top-nav {
 	background-color: #E45959;
 	display: flex;
 	margin-bottom: 30px;
+	height: 70px;
 }
 .nav-content {
 	display: flex;
 	width: 100%;
-	margin-bottom: 10px;
 }
 .nav-content img {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .back-arrow-pic {
 	width: 30%;
@@ -864,7 +867,7 @@ span.psw {
 	width: 10%;
 	float: right;
 	margin-right: 20px;
-	margin-top: 55px;
+	margin-top: 35px;
 }
 .close-pic {
 	width: 10%;
@@ -877,7 +880,7 @@ span.psw {
 }
 .back-arrow-pic h5 {
 	width: 160px;
-	margin-top: 54px;
+	margin-top: 34px;
 	margin-bottom: 0;
 	margin-left: 45px;
 	font-size: 17px;
@@ -1445,7 +1448,8 @@ span.psw {
 
 .sub-plan-txt {
 	float: right;
-	margin-right: 20px;
+	margin: 10px 20px;
+	font-size: 15px;
 }
 /*----Subscription plans session---*/
 .subcription-area {
@@ -1556,8 +1560,9 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 13px;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.5);
 	text-align: center;
+		margin-bottom: 10px;
 }
 .cd-info {
 	width: 95%;
@@ -1578,16 +1583,19 @@ span.psw {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.5);
+	margin: 4px 20px;
 }
 .add-helper-tab-title {
 	width: 55%;
 	font-size: 22px;
-	line-height: 1px;
 	color: rgba(0, 0, 0, 0.7);
-	margin-top: 10px;
 }
 .add-helper-tab-title h5{
+	font-size: 22px;
+	line-height: 60px;
+	color: rgba(0, 0, 0, 0.7);
+	margin-top: 10px;
 	font-weight: 400;
 }
 /*----dropdown session---*/
@@ -1876,8 +1884,8 @@ textarea {
 }
 
 .skill {
-	padding: 2px 12px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
+	padding: 4px 12px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	margin-right: 10px;
 	border-radius: 4px;
 	color: rgba(0, 0, 0, 0.5);
@@ -2112,10 +2120,9 @@ textarea {
 		display: none;
 	}
 .web-nav {
-	
 	display: flex;
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	background-color: #E45959;
 	position: relative;
 	display: flex;
@@ -2128,7 +2135,7 @@ textarea {
 }
 .menu-area-logo img{
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .nav-menu {
 	display: flex;
@@ -2147,7 +2154,7 @@ textarea {
 	width: 30%;
 	float: right;
 	margin-right: 6px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .body-pattern {
 	display: flex;
@@ -2269,7 +2276,7 @@ textarea {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 35px;
+	margin-top: 30px;
 }
 .pic-area:hover {
 	border: 2px solid rgba(244, 194, 17, 0.3);
@@ -2277,7 +2284,6 @@ textarea {
 }
 .pic-menu-area {
 	width: 20%;
-	margin-top: 10px;
 	margin-left: 20px;
 
 }
@@ -2288,6 +2294,7 @@ textarea {
 	width: 100%;
 	color: #fff;
 	margin-left: 6px;
+	margin-top: 7px;
 }
 
 
