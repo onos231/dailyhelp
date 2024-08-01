@@ -57,13 +57,92 @@
 	   <a href="index.html"><img src="img/find-helper/back-arrow.png" alt="Project 2" /><h5>Home</h5></a></div>
 	 
 
-		 <div class="filter-pic">
-	   <a href="intro-2.html"><img src="img/find-helper/filter.png" alt="Project 2" /></a>
-		 </div>
+		 
+		<div class="f-btn">
+			 <img src="img/find-helper/filter.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
+		
+		
 		</div>
 			 </div>
 	  </header>
  
+		<!-----Filter session---->
+		<div class="mobile-filter">
+		<div id="dropdown-content" class="dropdown-content">
+			
+			<p>Reset All</p>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Position</div>
+				 <div id="sub1" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Cleaner</label>
+                    <label><input type="checkbox"> Driver</label>
+                    <label><input type="checkbox"> Plumber</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Gardener</label>
+					<label><input type="checkbox"> Caregiver</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
+				 <div id="sub2" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Hourly</label>
+                    <label><input type="checkbox"> Part Time</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> All Day</label>
+					<label><input type="checkbox"> Full Time</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
+				 <div id="sub3" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> English</label>
+                    <label><input type="checkbox"> Hausa</label>
+					<label><input type="checkbox"> Others</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Igbo</label>
+					<label><input type="checkbox"> Yoruba</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			<!-- Add more sub-filters as needed -->
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
+            </div>
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
+            </div>
+			
+            <div class="filter-area">
+        
+			<div class="apply-btn" style="display: none;">
+			<a href="helpers-search-result.html">Apply</a>
+			</div>
+				
+				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">
+			<a href="helpers-search-result.html">Apply</a>
+			</div>
+			</div>
+			</div>
+			</div>
+		
+		
+		<!-----Search result session---->
+		
 		<div class="back-to-prev">
 		<a href="find-more-helpers.html"><img src="img/into/back-arrow.png" alt="Project 2" /><h5>Helpers</h5></a>
 		</div>
@@ -78,16 +157,90 @@
 		</div>
 			
 		<div class="result-option-body">
-		   
+		   <div class="blue-f-btn">
+			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
 			 <div class="search-result-txt"> 
 				 
 	   
 		 <p>Search results for cleaners
 			   </p>
+				 
 				  </div>
+			<!-----web Filter session---->
+		<div class="web-filter">
+		<div id="dropdown-content" class="dropdown-content">
 			
+			<p>Reset All</p>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Position</div>
+				 <div id="sub1" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Cleaner</label>
+                    <label><input type="checkbox"> Driver</label>
+                    <label><input type="checkbox"> Plumber</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Gardener</label>
+					<label><input type="checkbox"> Caregiver</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
+				 <div id="sub2" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Hourly</label>
+                    <label><input type="checkbox"> Part Time</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> All Day</label>
+					<label><input type="checkbox"> Full Time</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
+				 <div id="sub3" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> English</label>
+                    <label><input type="checkbox"> Hausa</label>
+					<label><input type="checkbox"> Others</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Igbo</label>
+					<label><input type="checkbox"> Yoruba</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			<!-- Add more sub-filters as needed -->
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
+            </div>
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
+            </div>
+			
+            <div class="filter-area">
+        
+			<div class="apply-btn" style="display: none;">
+			<a href="helpers-search-result.html">Apply</a>
+			</div>
+				
+				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">
+			<a href="helpers-search-result.html">Apply</a>
+			</div>
+			</div>
+			</div>
+			</div>
 		<div class="result-tabs">
-		  <a href="helper-profile.html">
+		  
 			  <div class="search-result-pics">
 			 <img src="img/helpers-pics/cleaner-pic4.jpeg" alt="Project 2" /> 
 				  </div>
@@ -134,7 +287,6 @@
 				</div>
 		</div>
 			</div>
-			  </a>
 		</div>
 			
 			<div class="result-tabs">

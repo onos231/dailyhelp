@@ -119,7 +119,6 @@ html, body {
 	background-color: #D9D9D9;
 }
 .small-circle-3 {
-
 	background-color: #D9D9D9;
 }
 .empty-btn {
@@ -128,6 +127,7 @@ html, body {
 	background-color: #fff;
 	border-radius: 20px;
 }
+
 .b-arrow-btn img,
 .f-arrow-btn img {
 	width: 19px;
@@ -778,6 +778,9 @@ span.psw {
 	margin-top: 0;
 	font-weight: 600
 }
+.blue-f-btn {
+		display: none;
+	}
 .search-result-txt img {
 		display: none;
 	}
@@ -837,6 +840,7 @@ span.psw {
 	margin-top: 25px;
 	font-weight: 300;
 }
+
 /*----Helpers session---*/
 .search-top-nav {
 	background-color: #E45959;
@@ -860,11 +864,13 @@ span.psw {
 	margin-left: 20px;
 	margin-bottom: 10px;
 }
+
 .filter-pic {
 	width: 70%;
 }
 .filter-pic img {
-	width: 10%;
+	width: 8%;
+	padding: 4px;
 	float: right;
 	margin-right: 20px;
 	margin-top: 35px;
@@ -984,6 +990,101 @@ span.psw {
 	width: 10px;
 	margin-right: 4px;
 	margin-top: 10px;
+}
+/*----Filter session---*/
+	
+	.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.f-btn{
+	margin-left: auto;
+}
+.filterbtn {
+	width: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width:95%;
+	height: auto;
+	padding-bottom: 20px;
+    z-index: 1;
+}
+.dropdown-content p {
+	float: right;
+	margin-bottom: 6px;
+}
+
+.dropdown-content.show {
+    display: block;
+	margin: 0;
+}
+
+.sub-filter {
+    margin-bottom: 2px;
+	padding: 0px 12px;
+	background-color: #fff;
+	width: 95%;
+	height: auto;
+}
+
+.sub-filter-title {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 10px;
+	display: flex;
+	width: 98%;
+	font-family: 'Poppins';
+	font-weight: 400;
+	background-color: #F4C211;
+
+}
+
+.sub-options {
+    display: none;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	padding: 4px 12px;
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+.sub-options-left {
+float: left;
+	width: 50%;
+}
+.sub-options-right {
+	width: 50%;
+	float: right;
+}
+.sub-options label {
+    display: block;
+	margin-bottom: 10px;
+}
+.filter-area {
+	margin-top: 40px;
+
+}
+.apply-btn {
+	width: 50px;
+	padding: 10px 20px;
+	background-color: #F4C211;
+	border-radius: 20px;
+	float: right;
+	
+}
+.apply-btn a {
+	color: #000;
 }
 /*----Helpers profile details session---*/
 .profile-result-tabs {
@@ -2561,12 +2662,27 @@ textarea {
 
 }
 	/*----find helpers session---*/
+	.blue-f-btn {
+		display: block;
+		margin-right: 20px;
+	}
+	.dropdown-content {
+    width:35%;
+}
+	.mobile-filter {
+		display: none;
+	}
+	.web-filter {
+		display: block;
+	}
 	.search-result-txt {
-	margin-left: 20px;
+	margin-left: 10px;
+		margin-bottom: 10px;
 }
 	.search-result-txt p{
 	margin-left: 20px;
 		font-family: 'Roboto';
+		margin-top: 10px;
 }
 	.result-tabs {
 		display: flex;
@@ -2667,6 +2783,8 @@ textarea {
 		margin-top: 0;
 		margin-left: px;
 	}
+	
+	
 	/*----Add card session---*/
 
 .encrypt-txt {

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--Head Section-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>DailyHelp</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/scriptaaaaa.js"></script>
+</head>
+	
+<body>
+	
+	<style>
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.f-btn{
+	margin-left: auto;
+}
+.filterbtn {
+	width: 20px;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+	float: right;
+	margin-top: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width:95%;
+    z-index: 1;
+}
+.dropdown-content p {
+	float: right;
+	margin-bottom: 6px;
+}
+
+.dropdown-content.show {
+    display: block;
+	margin: 0;
+}
+
+.sub-filter {
+    margin-bottom: 2px;
+	padding: 0px 12px;
+	background-color: #fff;
+	width: 95%;
+	height: auto;
+}
+
+.sub-filter-title {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 10px;
+	display: flex;
+	width: 98%;
+	font-family: 'Poppins';
+	font-weight: 400;
+	background-color: #F4C211;
+
+}
+
+.sub-options {
+    display: none;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	padding: 4px 12px;
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+.sub-options-left {
+float: left;
+	width: 50%;
+}
+.sub-options-right {
+	width: 50%;
+	float: right;
+}
+.sub-options label {
+    display: block;
+	margin-bottom: 10px;
+}
+.filter-area {
+	margin-top: 40px;
+
+}
+.apply-btn {
+	width: 50px;
+	padding: 10px 20px;
+	background-color: #F4C211;
+	border-radius: 20px;
+	float: right;
+	
+}
+.apply-btn a {
+	color: #000;
+}
+
+		
+	</style>
+	
+	
+    <!--login Section-->
+	
+	<div class="index-project">
+		
+
+   <header>
+	   <div class="web-nav">
+		<div class="menu-area-logo">
+					<div>
+	  <img src="img/logo/logo.png" alt="Project 2" /></div><div class="menu-title"></div>
+				</div>
+		<div class="nav-menu">
+				
+	
+				<div class="menu-area-1">
+					<div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/dashboard.png" alt="Project 2" /></div><div><p>Dashboard </p></div></div>
+				</div>
+			<div class="menu-area-2">
+				<a href="find-more-helpers.html"><div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/find-help-green.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div></a>
+				</div>
+			
+			<div class="menu-area-3">
+					<div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/post-job-web.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div>
+				</div>
+				</div>
+		
+		<div class="menu-area-profile">
+					<div>
+	  <img src="img/index/profile.png" alt="Project 2" /><div class="menu-title"></div></div>
+				</div>
+	</div>
+	   <div class="search-top-nav">
+
+		
+	 
+		
+	   <div class="f-btn">
+			 <img src="img/find-helper/filter.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
+		 </div>
+		
+	  </header>
+		
+		
+		
+		 
+      
+		
+        <div id="dropdown-content" class="dropdown-content">
+			
+			<p>Reset All</p>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Position</div>
+				 <div id="sub1" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Cleaner</label>
+                    <label><input type="checkbox"> Driver</label>
+                    <label><input type="checkbox"> Plumber</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Gardener</label>
+					<label><input type="checkbox"> Caregiver</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
+				 <div id="sub2" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Hourly</label>
+                    <label><input type="checkbox"> Part Time</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> All Day</label>
+					<label><input type="checkbox"> Full Time</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
+				 <div id="sub3" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> English</label>
+                    <label><input type="checkbox"> Hausa</label>
+					<label><input type="checkbox"> Others</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Igbo</label>
+					<label><input type="checkbox"> Yoruba</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			<!-- Add more sub-filters as needed -->
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
+            </div>
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
+            </div>
+			
+            <div class="filter-area">
+        
+			<div class="apply-btn">
+			<a href="helpers-search-result.html">Apply</a>
+			</div>
+			</div>
+			</div>
+    </div>
+		
+		<script>
+		
+		function toggleDropdown() {
+    document.getElementById("dropdown-content").classList.toggle("show");
+}
+
+function toggleSubFilter(subFilterId) {
+    var subFilter = document.getElementById(subFilterId);
+    subFilter.style.display = subFilter.style.display === "block" ? "none" : "block";
+}
+function toggleSubFilterTwo (subFilterId) {
+    var subFilter = document.getElementById(subFilterId);
+    subFilter.style.display = subFilter.style.display === "block" ? "none" : "block";
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.filterbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+		</script>
+		
+		
+		
+	</div>
