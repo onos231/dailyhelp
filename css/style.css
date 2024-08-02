@@ -251,7 +251,6 @@ a:link {
 }
 /*---web login page--*/
 .log-space {
-	display: flex;
 	width: 100%;
 	height: 100%;
 }
@@ -270,6 +269,13 @@ a:link {
 	margin-left: auto;
 	margin-right: auto;
 }
+.web-log p a{
+	float: right;
+	margin-right: 20px;
+	color: #000;
+	font-size: 15px;
+	font-family: 'Roboto';
+	}
 .bottom-text-area {
 	text-align: center;
 }
@@ -704,6 +710,17 @@ span.psw {
 	color: #000;
 	font-family: Ubuntu sans;
 }
+.ads-dash-body-2 {
+	width: 80%;
+	margin-right: auto;
+}
+.ads-dash-body-2 img {
+	width: 80%;
+	height: 60px;
+	padding: 5px;
+	float: left;
+	object-fit: contain;
+}
 .dash-body-2 {
 	width: 80%;
 	margin-left: auto;
@@ -733,6 +750,17 @@ span.psw {
 }
 .dash-body-2 a {
 	color: #000;
+}
+.ads-dash-body-2 p{
+	display: block;
+	width: 80%;
+	margin-top: 0;
+	margin-left: 4px;
+	margin-right: auto;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 300;
+	font-family: 'Roboto';
 }
 .more-and-less p{
 		text-align: right;
@@ -956,9 +984,10 @@ span.psw {
 }
 
 .prof-title {
-	margin-top: 6px;
+	margin-top: 8px;
 	float: left;
 	width: 100%;
+	font-family: 'Roboto';
 }
 .profile-image {
 	width: 25%;
@@ -974,6 +1003,7 @@ span.psw {
 	width: 20px;
 	margin-right: 10px;
 	margin-left: 10px;
+	margin-top: 4PX;
 }
 
 .helper-status{
@@ -1168,10 +1198,17 @@ float: left;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 40px;
 }
 .num-n-edit-pic {
 	display: flex;
 	width: 100%;
+}
+.num-n-edit-pic a{
+	color: #000;
+}
+.edit-pic {
+	opacity: 0.2; 
 }
 .num {
 	margin-right: auto;
@@ -1214,6 +1251,25 @@ float: left;
 	object-fit: contain;
 	margin-right: 10px;
 	}
+.change-pic {
+	width: 40%;
+	display: flex;
+	height: auto;
+	padding: 4px 6px;
+	font-size: 15px;
+	border: 1px solid rgba(239, 246, 254, 1);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 14px;
+	border-radius: 8px;
+}
+.change-pic p{
+	width: 100px;
+	color: rgba(0, 0, 0, 0.3)
+}
+.change-pic img{
+	width: 100%;
+}
 .verified-prof,
 .verify-prof {
 	display: flex;
@@ -1234,7 +1290,6 @@ float: left;
 }
 .verify-prof-tab {
 	width: 90%;
-
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1261,8 +1316,9 @@ float: left;
 	margin-left: auto;
 }
 .helper-status-2 img{
-	width: 30%;
+	width: 15%;
 	margin-left: auto;
+	padding: 8px;
 }
 .helper-prof-2 {
 	display: flex;
@@ -1569,9 +1625,21 @@ float: left;
 .sub-txt-title h5 {
 		text-align: center;
 		color: #534B3F;
-	font-size: 15px;
+	font-size: 17px;
 		font-family: "Kodchasan";
 	}
+.sub-txt-title p {
+	font-size: 13px;
+	font-family: 'poppins';
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	color: #000;
+}
+.bottom-btn {
+	margin-top: 80px;
+}
 .sub-txt p{
 	width: 95%;
 	margin-left: auto;
@@ -1755,23 +1823,26 @@ float: left;
 .sex-reg-info {
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	width: 50%;
 }
-.dob-reg-info {
-	border-radius: 4px;
-	padding: 2px 12px;
-	margin-left: auto;
+#sex {
+	padding: 20px 10px;
+	border: none;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	text-align: center;
-	width: 40%;
-
+	margin: 0;
+	width: 150px;
+	border-radius: 4px;
+	margin-right: 20px;
 }
 #birthday {
-	padding: 10px 2px;
-	margin-top: 14px;
+	padding: 18px 32px;
 	border: none;
-		font-size: 15px;
+	font-size: 15px;
 	color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	width: 70px;
+	border-radius: 4px;
 }
 
 
@@ -1779,6 +1850,9 @@ float: left;
 
 
 /*----settings session---*/
+.settings-area {
+	margin-top: 40px;
+}
 .settings-tabs {
 	background-color: #EFF6FE;
 	border-radius: 4px;
@@ -1786,20 +1860,30 @@ float: left;
 	margin-right: auto;
 	padding: 10px;
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .settings-tabs p {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	color: rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-family: 'Roboto';
+	word-spacing: 1px;
 }
 .settings-status{
-	width: 15%;
-	margin-top: 0px;
+	width: 10%;
+	margin-top: 4px;
+	margin-left: auto;
+	margin-right: 20px;
+	
 
 }
 .settings-status img{
 	width: 100%;
+
 }
 /*----write report session---*/
 
@@ -2210,13 +2294,810 @@ textarea {
 	display: none;
 	margin-left: 20px;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.top-nav {
+		display: none;
+	}
+.web-nav {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	background-color: #E45959;
+	position: relative;
+	display: flex;
+}
+	.top-nav {
+		display: none;
+	}
+.menu-area-logo {
+	width:10%;
+	margin-top: 10px;
+	float: left;
+	margin-left: 30px;
+}
+.menu-area-logo img{
+	width: 100%;
+	margin-top: 10px;
+}
+.nav-menu {
+	display: flex;
+	width: 50%;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu-area-profile {
+	width: 8%;
+	margin-top: 20px;
+	float: right;
+	margin-right: 30px;
+}
+.menu-area-profile img {
+	width: 30%;
+	float: right;
+	margin-right: 6px;
+	margin-top: 10px;
+}
+.body-pattern {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	/*background-color: #D2E4F9;*/
+	position: absolute;
+	margin-top: 40px;
+}
+.mobile-contents {
+	width: 640px;
+	height: 540px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dashboard-area {
+	display: none;
+		
+}
+.menu-left {
+	display: block;
+	width: 20%;
+	height: 420px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.msg-others {
+	display: block;
+	width: 20%;
+	height: 320px;
+	margin-right: 40px;
+	margin-top: 40px;
+	border-left: 4px solid rgba(210, 228, 249, 0.3);
+	background-color: rgba(210, 228, 249, 0.3);
+}
+.msg-pic {
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.msg-pic img{
+	width: 100%;
+}
+.helper-prof-2-current {
+	display: flex;
+	padding: 4px;
+	border-radius: 8px;
+	color: rgba(0, 0, 0, 0.9);
+	background-color:  rgba(210, 228, 249, 0.3);
+	margin-bottom: 10px;
+}
+.helper-msg-prof-2 {
+		display: flex;
+	}
+	.prof-msg-pic {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.helper-prof-2 {
+	display: flex;
+	padding: 4px;
+	border-radius: 4px;
+	color: rgba(0, 0, 0, 0.9);
+	margin-bottom: 10px;
+
+}
+.prof-msg-pic img {
+	width: 20px;
+	height: 20px;
+	margin-top: 6px;
+	margin-right: 6px;
+	object-fit: contain;
+	}
+.prof-msg-pic img,
+.prof-pic img {
+	width: 20px;
+	height: 20px;
+	margin-top: 6px;
+	object-fit: contain;
+	}
+	
+.prof-pic-q img{
+	width: 15px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+	
+.prof-title {
+	width: 100%;
+	font-size: 15px;
+	float: left;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.home-panel {
+	display: flex;
+	width: 40%;
+}
+.menu-area-1,
+.menu-area-2,
+.menu-area-3 {
+	width: 100%;
+	height: auto;
+}
+.pic-area {
+	width: 80%;
+	height: auto;
+	padding: 1px 3px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.pic-area:hover {
+	border: 2px solid rgba(244, 194, 17, 0.3);
+	border-radius: 8px;
+}
+.pic-menu-area {
+	width: 20%;
+	margin-left: 20px;
+
+}
+.pic-menu-area img {
+		width: 100%;
+}
+.pic-area p{
+	width: 100%;
+	color: #fff;
+	margin-left: 6px;
+	margin-top: 7px;
+}
+
+
+
+.menu-area-logo img {
+	width: 30%;
+}
+.menu-title {
+	margin-top: 20px;
+	width: 160px;
+	float: left;
+	font-size: 15px;
+}
+/*----index body session---*/
+.web-home-page {
+		width: 40%;
+		height: 35%;
+		margin-right: auto;
+		background-image: url(/img/find-helper/care-giver.png);
+		background-position: center; 
+  		background-repeat: no-repeat; 
+  		background-size: contain; 
+	position: relative;
+}
+	.other-home-pages {
+		width: 40%;
+		margin-right: auto;
+		margin-top: 40px;
+}
+.web-home-page p{
+	display: block;
+	position: absolute;
+	margin-top: 40px;
+	width: 220px;
+	font-size: 22px;
+	text-align: center;
+	font-family: Ubuntu sans;
+	font-weight: 300;
+}
+	.home-ads-caption {
+		display: block;
+	}
+	.home-ads {
+		height: 40%;
+	}
+	.home-ads img{
+		height: 40%;
+	}
+	.dashboard-body {
+	display: none;
+}
+	.other-dashboard-body {
+		width: 100%;
+		display: block;
+	}
+	.more-and-less p{
+		text-align: right;
+	}
+	.more-and-less a{
+		color: #000;
+	}
+
+	.search-top-nav {
+		display: none;
+	}
+/*----web intro session---*/
+.msg-otherss,
+.menu-leftt {
+		width: 20%;
+	}
+.empty-btn {
+	background-color: #D2E4F9;
+}
+	.web-intro-page {
+		width: 60%;
+	}
+	intro-pics {
+		position: relative;
+	}
+	.bottom-text-area p{
+		position: absolute;
+		text-align: center;
+		bottom: 0;
+	}
+	.bottom-area {
+	width: 40%;
+	position: absolute;
+	display: inline-block;
+	bottom: 73px;
+}
+	.intro-pattern {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+	.intro-bottom-area {
+		width: 100%;
+		bottom: 0;
+	}
+	.about-steps {
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+	}
+	.about-steps p {
+		text-align: center;
+		font-size: 15px;
+		font-family: 'Poppins';
+	}
+	.small-circle-1 {
+
+	background-color: #636060;
+}
+.small-circle-2 {
+
+	background-color: #fff;
+}
+.small-circle-3 {
+
+	background-color: #fff;
+}
+	/*----web login session---*/
+	
+.log-space {
+	background-color: #D2E4F9;
+	height: 100%;
+	height: 100%;
+	}
+.dailyhelp-pic {
+	display: block;
+	width: 20%;
+	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+.dailyhelp-pic img{
+	width: 100%;
+		margin-top: 40px;
+}
+	.login-project {
+		width: 100%;
+
+	}
+	.web-log {
+		width: 50%;
+	}
+	
+	.social-icon-area {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	.helper-btn {
+	border: 1px solid #fff;
+}
+	.client-btn {
+	background-color: #fff;
+}
+.continue-text {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+
+}
+	.continue-text p{
+	margin-left: auto;
+	margin-right: auto;
+}
+.social-group {
+	display: flex;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.social-btn {
+		width: 80%;
+	}
+.social-btn img {
+	width: 100%;
+}
+
+	
+.helper-msg {
+	display: none;
+}
+	/*----payment option session---*/
+	.payment-option-body {
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.result-option-body {
+		width: 45%;
+		margin-top: 0;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.sub-txt {
+		display: none;
+	}
+	.sub-txt-title h3 {
+		text-align: center;
+		color: #534B3F;
+	}
+	.cd-diff-option {
+	}
+	.card-info-details {
+		margin-top: 20px;
+}
+	/*----paystack session---*/
+	.edu-exp {
+	width: 95%;
+	bottom: 20px;
+	position: sticky;
+	
+}
+	.edu-exp-body {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 40px;
+		
+}
+	.resume-steps {
+	width: 100%;
+	padding: 4px;
+}
+.resume-steps img {
+	display: block;
+	width: 30%;
+	height: 20px;
+	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.about-you {
+		width: 30%;
+	}
+	.about-you-body {
+	margin-bottom: 40px;
+}
+	.about-you,
+.edu-exp {
+	bottom: 40px;
+
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 17px;
+  resize: none;
+  color: rgba(83, 75, 63, 0.7);
+}
+.resume-title-1,
+.resume-title {
+	width: 100%;
+	text-align: center;
+	font-size: 11px;
+	color: rgba(83, 75, 63, 0.9);
+	font-family: 'Roboto';
+	font-weight: 300;
+	line-height: 14px;
+
+}
+	/*----find helpers session---*/
+	.blue-f-btn {
+		display: block;
+		margin-right: 20px;
+	}
+	.dropdown-content {
+    width:35%;
+}
+	.mobile-filter {
+		display: none;
+	}
+	.web-filter {
+		display: block;
+	}
+	.search-result-txt {
+	margin-left: 10px;
+		margin-bottom: 10px;
+}
+	.search-result-txt p{
+	margin-left: 20px;
+		font-family: 'Roboto';
+		margin-top: 10px;
+}
+	.result-tabs {
+	height: auto;
+	background-color: #D2E4F9;
+		border-radius: 8px 0 0 8px;
+}
+	.result-tabs-details {
+		width: 85%;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	height: auto;
+	background-color: #EFF6FE;
+		border-radius: 8px 0 0 8px;
+		margin-bottom: 20px;
+}
+	.about-helper-tab {
+		width: 90%;
+		height: 140px;;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #D2E4F9;
+		margin-bottom: 20px;
+}
+.about-helper-tab h5 {
+	margin-bottom: 0;
+	font-size: 17px;
+	color: #534B3F;
+}
+.about-helper-tab p {
+	width: 80%;
+	height: auto;
+	margin-left: 20px;
+	background-color: #fff;
+}
+	.search-result-pics {
+	width: 100%;
+}
+.search-result-pics img{
+	width: 100%;
+	height: 100%;
+	border-radius: 8px 0 0 8px;
+	object-fit: contain;
+}
+	.result-tabs-list {
+		padding: 20px;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	.helper-status {
+		margin-right: 15px;
+	}
+	
+	.helper-cartoon-pic{
+		width: 100%;
+		height: 100%;
+		background-image: url(/img/find-helper/cleaner.png);
+		background-position: center; 
+  		background-repeat: no-repeat; 
+  		background-size: contain; 
+}
+	
+	.back-arrow-pic {
+	width: 30%;
+}
+.back-arrow-pic img {
+	width: 15%;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 12px;
+}
+	.back-to-prev {
+		width: 20%;
+		display: block;
+	}
+	.back-to-prev h5{
+		color: #000;
+		margin-bottom: 0;
+		font-weight: 300;
+}
+	.back-to-prev img {
+		display: block;
+		width: 20px;
+		margin-left: 20px;
+		float: left;
+		margin: 2px 10px 2px 30px;
+}
+	.payment-card-pic {
+	width: 22%;
+	height: auto;
+}
+	.card-title h5 {
+	margin-top: 4px;
+}
+	.bank-transfer-title h3{
+		margin-top: 0;
+		margin-left: px;
+	}
+	#sex {
+	padding: 14px 10px;
+	border: none;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin: 0;
+	width: 120px;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+#birthday {
+	padding: 12px 32px;
+	border: none;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	width: 85px;
+	border-radius: 4px;
+}
+	
+	/*----Add card session---*/
+
+.encrypt-txt {
+	margin-top: 80px;
+}
+.add-cd-info {
+	margin-top: 0;
+}
+	/*----chat room session---*/
+
+.chat-n-title {
+	display: flex;
+}
+.chat-option-body {
+		width: 30%;
+	margin-top: 40px;
+	}
+.chat-pic-info-web {
+	width: 60%;
+	display: flex;
+}
+.chat-pic-info-1 {
+	width: 5%;
+	margin-left: 20px;
+}
+.chat-pic-info-1 img {
+	width: 100%;
+}
+.chat-pic-info-2  {
+	width: 20%;
+}
+.chat-pic-info-2 img {
+	width: 100%;
+	margin-top: 45px;
+	margin-left: 6px;
+	object-fit: contain;
+	border-radius: 4px;
+}
+.chat-pic-info-3 {
+	margin-top: 45px;
+	margin-left: 10px;
+	color: #000;
+}
+.chat-pic-info-3 h5 {
+	width: 140px;
+	font-weight: 100;
+}
+.chat-pic-info-web h5{
+	margin: 0;
+	color: green;
+	font-weight: 300;
+}
+.chat-pic-info-seen h5 {
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 0;
+	font-size: 11px;
+}
+	.sub-plan-web {
+		display: flex;
+		margin-right: 20px;
+	}
+	.subcription-area {
+		width: 100%;
+
+	}
+	.sub-plans {
+		width: 25%;
+		padding: 20px;
+	}
+
+	.sub-plans ul {
+		width: 80%;
+		margin-right: auto;
+		padding: 10px;
+		font-size: 15px;
+	}
+	.sub-recommend {
+		width: 100px;
+	}
+	
+	/*----profile session---*/
+
+	.profile-tabs {
+	display: flex;
+	background-color: rgba(239, 246, 254, 1);
+	border-radius: 8px;
+	padding: 2px;
+	margin-top: 40px;
+}
+.profile-tabs-list {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	}
+	.helper-prof {
+		width: 100%;
+	}
+	.prof-pic{
+		width: 100%;
+	}
+
+	.helper-status {
+		margin-left: auto;
+	}
+	.avatar {
+		border-radius: 80px;
+	}
+
+	.helper-status-2{
+	width: 10%;
+	margin-top: 2px;
+	margin-left: auto;
+}
+.helper-status-2 img{
+	width: 20%;
+	float: right;
+	margin-right: 20px;
+}
+	.verify-prof {
+		margin-top: 40px;
+		width: 12%;
+	}
+	.verified-prof {
+		margin-top: 40px;
+		width: 14%;
+	}
+	.change-pic {
+	width: 25%;
+
+}
+	/*----dashboard session---*/
+	.dashboard {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	background-color: #EFF6FE;
+	padding: 4px;
+		border-radius: 8px;
+}
+	.dash-tabs-list {
+		margin-left: 60px;
+	}
+	.delete-pic img{
+		width: 70%;
+	}
+	.dash-result-tabs {
+	display: flex;
+	width: 90%;
+	padding: 10px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	border-radius: 8px;
+
+}
+.dash-result-pics {
+	height: 20%;
+}
+.dash-result-pics img{
+	width: 130px;
+	height: 110px;
+	border-radius: 8px;
+	object-fit: fill;
+}
+	.dash-pic {
+		width: 10%;
+	}
+.dash-calls-chats-msg {
+	display: flex;
+	width: 100%;
+	margin-top: 10px;
+}
+.dash-communication {
+	display: flex;
+	height: 30%;
+}
+.dash-communication img{
+	width: 25%;
+	float: right;
+}
+.report-msg {
+	width: 100%;
+	float: right;
+	font-weight: 600;
+}
+.report-msg h5 {
+	width: 50%;
+	color: #E45959;
+
+}
+	.card-title {
+	width: 50%;
+}
+	.contact-body {
+		width: 70%;
+	}
+	.sub-txt-title p {
+	font-size: 13px;
+	font-family: 'poppins';
+	width: 65%;
+}
+}
 @media only screen and (min-width: 992px) {
 
 
 /*---web index page--*/
-.home {
-	
-}
+
 	.top-nav {
 		display: none;
 	}
@@ -2352,7 +3233,6 @@ textarea {
 	
 .prof-title {
 	width: 100%;
-	margin-top: 6px;
 	font-size: 15px;
 	float: left;
 	color: rgba(0, 0, 0, 0.9);
@@ -2541,6 +3421,7 @@ textarea {
 	.web-log {
 		width: 50%;
 	}
+	
 	.social-icon-area {
 		width: 80%;
 		margin-left: auto;
@@ -2783,7 +3664,26 @@ textarea {
 		margin-top: 0;
 		margin-left: px;
 	}
-	
+	#sex {
+	padding: 14px 10px;
+	border: none;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin: 0;
+	width: 120px;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+#birthday {
+	padding: 12px 32px;
+	border: none;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	width: 85px;
+	border-radius: 4px;
+}
 	
 	/*----Add card session---*/
 
@@ -2896,7 +3796,7 @@ textarea {
 
 	.helper-status-2{
 	width: 10%;
-	margin-top: 6px;
+	margin-top: 2px;
 	margin-left: auto;
 }
 .helper-status-2 img{
@@ -2912,6 +3812,10 @@ textarea {
 		margin-top: 40px;
 		width: 14%;
 	}
+	.change-pic {
+	width: 25%;
+
+}
 	/*----dashboard session---*/
 	.dashboard {
 		width: 80%;
