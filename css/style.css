@@ -600,6 +600,11 @@ span.psw {
 	margin-right: 10px;
 	margin-left: 10px;
 }
+.result-tabs-list {
+		padding: 10px;
+	font-family: 'Roboto';
+	font-size: 15px;
+	}
 .dash-prof-title {
 	width: 70%;
 	font-size: 15px;
@@ -668,7 +673,7 @@ span.psw {
   display: grid;
   grid-template-columns: auto auto auto;
   /**background-color: #2196F3;**/
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 }
 .grid-item {
@@ -934,6 +939,16 @@ span.psw {
 	border-radius: 40px 40px 0 0;
 	margin-bottom: 20px;
 }
+.ads-result-tabs {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 40px 40px 0 0;
+
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin-bottom: 20px;
+}
 .dash-result-tabs {
 	display: flex;
 	width: 90%;
@@ -975,19 +990,29 @@ span.psw {
 .helper-gender {
 	float: right;
 	margin-top: 2px;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.3);
 }
 .helper-prof {
 	display: flex;
 	width: 100%;
 	color: rgba(0, 0, 0, 0.7);
 }
-
+.open-prof-title {
+	margin-top: 8px;
+	font-family: 'Roboto';
+	color: rgba(0, 0, 0, 0.9);
+}
+.ads-prof-title {
+	margin-top: 8px;
+	width: 100%;
+	font-family: 'Roboto';
+}
 .prof-title {
 	margin-top: 8px;
 	float: left;
 	width: 100%;
 	font-family: 'Roboto';
+	color: rgba(0, 0, 0, 0.3);
 }
 .profile-image {
 	width: 25%;
@@ -1005,7 +1030,12 @@ span.psw {
 	margin-left: 10px;
 	margin-top: 4PX;
 }
-
+.ads-helper-status {
+	width: 120px;
+	text-align: right;
+	margin-top: 6px;
+	color: rgba(0, 0, 0, 0.9);
+}
 .helper-status{
 	width: 10%;
 	margin-top: 6px;
@@ -1207,11 +1237,16 @@ float: left;
 .num-n-edit-pic a{
 	color: #000;
 }
-.edit-pic {
+.cancel-edit-pic {
 	opacity: 0.2; 
+}
+.cancel-num {
+	margin-right: auto;
+
 }
 .num {
 	margin-right: auto;
+	margin-top: 6px;
 }
 .edit-pic {
 	margin-left: auto;
