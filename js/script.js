@@ -59,3 +59,25 @@ window.onclick = function(event) {
         }
     }
 }
+
+// Upload picture
+
+document.addEventListener("DOMContentLoaded", function() {
+    const avatar = document.getElementById("avatar");
+    const fileInput = document.getElementById("fileInput");
+
+    avatar.addEventListener("click", function() {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener("change", function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                avatar.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});

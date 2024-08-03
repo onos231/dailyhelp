@@ -1,136 +1,70 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--Head Section-->
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <title>DailyHelp</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Picture</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-	
 <body>
-	
-	
-    <!--login Section-->
-		
-		<!--general messages-->
-		<div class="general-msg" >
-		<div class="msg-notification">
-	
-			  <div class="sub-filter">
-		<div class="reply-medium">
-		  
-		  Job Position</div>
-		  <div class="dropdown-arrow">
-     <i class="fa fa-chevron-up"></i>	 
-    </div>
-		  </div>
-	  <div class="all-more-content">
-		  <div class="">
-  			<div class="title-prop">PROPERTY</div>
-				<div class="cate-day">10-02-2023</div>
-			  <div class="cate-time">2d ago</div>	
-					 </div>
-      
-    </div>
-	
-		   </div>
-
-			
-			
-			
-			
-			
-			
-		<div class="msg-notification">
-			 <div class="all-msg-title">
-				 <div class="popup-chat-info">
-  			<div class="cate-title">ASK</div>
-				<div class="cate-no">3</div>	 
-					 </div>
-				 <textarea id="freeform" class="user-msg" name="freeform" rows="" cols="">Your questions has been answered in the ask request
-				 </textarea>
-		</div>
-	  <div class="all-more-content">
-		  <div class="grid-container">
-  			<div class="title-prop">PROPERTY</div>
-				<div class="cate-day">10-02-2023</div>
-			  <div class="cate-time">2d ago</div>	
-					 </div>
-      <p>I need to be at the airport before 10am, how fast can you make it to my location...</p>
-    </div>
-	  <div class="bottom-grid-container">
-		<div class="reply-medium"><a><img class="chat-reply" src="img/icons/chat.png" alt="phone"></a></div>
-		  <div class="reply-medium"><a><img class="phone-reply" src="img/icons/phone.png" alt="phone"></a></div>
-		  <div class="reply-medium"><a><img class="phone-reply" src="img/icons/delete-icon.png" alt="phone"></a></div>
-		    <div class="reply-medium"></div>
-		  <div class="reply-medium"></div>
-		  <div class="dropdown-arrow">
-     <i class="fa fa-chevron-up"></i>	 
-    </div>
-		  </div>
-		   </div>
-		</div>
-	
-
-
-	
-
-	<!--search Section-->
-	
-	<script>
-	
-const filterButton = document.querySelector('.filter-button');
-const emergFilterButton = document.querySelector('.emerg-filter-button');
-const emergDropdown = document.querySelector('.emerg-filter-dropdown');
-const dropdown = document.querySelector('.filter-dropdown');
-
-emergFilterButton.addEventListener('click', function() {
-  emergDropdown.style.display = (emergDropdown.style.display === 'block') ? 'none' : 'block';
-});
-		
-		filterButton.addEventListener('click', function() {
-  dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
-});
-
-const dropdownOptions = document.querySelectorAll('.dropdown-option');
-
-dropdownOptions.forEach(function(option) {
-  option.addEventListener('click', function() {
-    // Update the selected option here
-    // For example, you could update a variable with the selected value
-    const selectedOption = option.textContent;
     
-    // Close the dropdown menu
-	  emergDropdown.style.display = 'none';
-    dropdown.style.display = 'none';
-  });
-});	
-	</script>
-
-	<script>
-	/* general messages */
-const dropdownArrow = document.querySelector('.dropdown-arrow');
-const moreContent = document.querySelector('.all-more-content');
-
-dropdownArrow.addEventListener('click', () => {
-  if (moreContent.style.display === 'none') {
-    moreContent.style.display = 'block';
-    dropdownArrow.innerHTML = '<i class="fa fa-chevron-down"></i>';
-  } else {
-    moreContent.style.display = 'none';
-    dropdownArrow.innerHTML = '<i class="fa fa-chevron-up"></i>';
-  }
-});	
-	</script>
-
-
+    <script src="script.js"></script>
 	
+	<style>
+	body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.avatar-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+	padding: 2px;
+	border-radius: 50%;
+    cursor: pointer;
+	background-color: #fff;
+}
+
+#avatar {
+    width: 100%;
+	height: 100%;
+    object-fit: fill;
+	border-radius: 60%;
+}
+
+	</style>
+	
+	<div class="avatar-container">
+		<img src="img/profile/avatar-pic.png" alt="Project 2" id="avatar"/>
+    </div>
+    <input type="file" id="fileInput" accept="image/*" capture="camera" style="display:none;">
+	
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+    const avatar = document.getElementById("avatar");
+    const fileInput = document.getElementById("fileInput");
+
+    avatar.addEventListener("click", function() {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener("change", function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                avatar.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});
+
+	</script>
 </body>
+</html>
