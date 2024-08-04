@@ -81,3 +81,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+// sex and dob session
+document.addEventListener("DOMContentLoaded", function() {
+    const dobInput = document.getElementById("dob");
+    const hiddenDateInput = document.getElementById("hiddenDateInput");
+    const calendarIcon = document.querySelector(".calendar-icon");
+
+    dobInput.addEventListener("click", function() {
+        hiddenDateInput.click();
+    });
+
+    calendarIcon.addEventListener("click", function() {
+        hiddenDateInput.click();
+    });
+
+    hiddenDateInput.addEventListener("change", function() {
+        const date = new Date(this.value);
+        const formattedDate = date.toLocaleDateString();
+        dobInput.value = formattedDate;
+    });
+});

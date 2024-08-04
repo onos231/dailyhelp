@@ -24,6 +24,7 @@ html, body {
 	
     <!--login Section-->
 	<div class="log-space">
+		
 		<div class="login-log-space">
 		<div class="dailyhelp-pic">
 		<img src="img/login/cleaner-home-pic.png" alt="Project 2" />
@@ -35,31 +36,32 @@ html, body {
 		<div class="logo-pics">
 			<img src="img/logo/logo.png" alt="Project 2" />
 			</div>
-		<div>
+		<div class="signup-space">
 			<div>
 			<h4>Login As</h4>
 			</div>
+			<form>
+				  <div class="container">
 			<div class="login-options">
 			<a href="helper.html"><div class="helper-btn">Helper</div></a>
 				<a href="client.html"><div class="client-btn">Client</div></a></div>
+			
 			<div class="login-info">
-			<form>
+			
 
-  <div class="container">
+
     <div class="acc-details">
 		<div class="reg-info">
 			<input type="text" placeholder="Full Names" name="fname" required></div>
 		<div class="reg-info">
     <input type="text" placeholder="Email" name="psw" required>
 	  </div>
-	  <div class="dob-container">
-			<div>
-			<input type="text" placeholder="Sex" name="fname" id="sex" required>
-			</div>
-			<div>
-        <input type="date" id="birthday">
-        </div>
-    </div>
+	 <select id="sex" name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <input type="date" id="dob" name="dob">
 		<div class="reg-info">
 			<input type="password" placeholder="Password" name="psw" required></div>
 		<div class="reg-info">
@@ -79,18 +81,17 @@ html, body {
 		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Create Account</button></div>
    
   </div>
-</form>
+
 			
 			
 		
-			</div>	
-				
 			
+				</form>
 				</div>
 				
 				</div>
 	</div>
 	</div>
 	</div>
-	
+	</div>	
 </body>

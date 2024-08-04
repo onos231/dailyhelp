@@ -293,6 +293,7 @@ input[type=text], input[type=password] {
   border-radius: 8px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.3);
+outline: none;
 }
 .terms-condition {
     text-align: center;
@@ -388,6 +389,14 @@ span.psw {
 	width: 100%;
 }
 /*----create account session---*/
+.Login {
+	float: right;
+	margin-right: 20px;
+}
+.Login a {
+	float: right;
+	color: #3997BF;
+}
 .acc-details {
 	margin-bottom: 40px;
 }
@@ -406,18 +415,29 @@ span.psw {
 	margin-right: 5px;
 	
 }
-/*
 #dob {
-	width: 100px;
-	padding: 14px 15px;
-	border-radius: 8px;
-	margin-top:10px;
-	border: none;
-	float: right;
-	color: rgba(0, 0, 0, 0.7);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-}*/
-
+	padding: 12px 20px;
+	font-size: 17px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	outline: none;
+	float: right;
+}
+#sex {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	padding: 12px 30px;
+	font-size: 17px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	outline: none;
+		}
 .states {
 	position: relative;
 }
@@ -775,6 +795,54 @@ span.psw {
 	font-family: 'poppins';
 	}
 	
+/*----Phone caller session---*/
+.caller-details {
+	width: 40%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+}
+.caller-details p {
+	width: 80%;
+	color: #fff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px;
+	font-size: 15px;
+}
+.call-options {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 40px;
+	width: 100%;
+
+}
+
+.mute-pic,
+.video-pic,
+.speaker-pic {
+	height: 50px;
+	padding: 20px;
+	width: 25%;
+	object-fit: fill;
+	background-color: #D9D9D9;
+	border: 1px solid #000;
+}
+.ans-pic {
+	width: 25%;
+	padding: 20px;
+	height: 50px;
+	object-fit: contain;
+	background-color: #E45959;
+}
+.ans-pic img{
+
+}
+
 /*----find helper session---*/
 .care-dash-body-3 {
 	margin-right: 20px;
@@ -836,7 +904,7 @@ span.psw {
 	padding-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #D2E4F9;
+	/*background-color: #D2E4F9;*/
 
 }
 .result-tabs-details p{
@@ -919,6 +987,7 @@ span.psw {
 }
 .close-pic img {
 	width: 100%;
+	margin-top: 20px;
 }
 .back-arrow-pic h5 {
 	width: 160px;
@@ -1229,9 +1298,10 @@ float: left;
 .language-tab p {
 	margin: 6px 0 4px;
 	font-size: 15px;
+	padding: 0;
 }
 .language {
-	padding: 2px 18px;
+	padding: 4px 18px;
 	background-color: #39BF4E;
 	margin-right: 10px;
 	border-radius: 4px;
@@ -1268,6 +1338,77 @@ float: left;
 	margin-top: 40px;
 }
 
+/* =message for chat session===== */
+.prof-names {
+	color: #39BF4E;
+}
+.prof-occupation {
+		padding-top: 6px;
+		float: right;
+		margin-right: 8px;
+	}
+.no-of-msg,
+.response-msg {
+	margin-top: 4px;
+}
+.response-msg {
+	margin-left: 0;
+	width: 160px;
+
+}
+.activity-dist {
+	float: right;
+	margin-right: 10px;
+
+}
+
+.activity-details {
+	display: block;
+}
+.chat-info-content {
+	width: 97%;
+}
+.chat-activity-list {
+	display: flex;
+	margin-top: 20px;
+	padding: 10px 4px;
+	width: 95%;
+	height: 50px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.chat-info-content {
+	width: 100%;
+}
+.chat-activity-pic img {
+	display: block;
+	max-width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 8px solid #D2E4F9;
+	object-fit: cover;
+	float: left;
+}
+.activity-details {
+	margin-left: 10px;
+	float: left;
+}
+.chat-red-activity {
+	width: 70px;
+	padding: 2px 10px;
+	background-color: #D2E4F9;
+	border-radius: 4px;
+	color: #000;
+	font-size: 13px;
+	font-weight: 300;
+	text-align: center;
+
+}
+.no-of-msg {
+	text-align-last: center;
+}
 /*----profile session---*/
 .profile-area {
 	width: 90%;
@@ -1369,6 +1510,9 @@ float: left;
 .verify-prof {
 	width: 20%;
 }
+.verify-prof p{
+	color: rgba(0, 0, 0, 0.3)
+}
 .verify-prof-tab {
 	width: 90%;
 	margin-left: auto;
@@ -1406,26 +1550,27 @@ float: left;
 	color: rgba(0, 0, 0, 0.7);
 }
 /*----Picture upload---*/
-.avatar-container {
-    position: relative;
-    width: 20%;
-    height: 20%;
-	padding: 2px;
-	border-radius: 50%;
-	border: 8px solid #D2E4F9;
-    cursor: pointer;
-	background-color: #fff;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 .create-acc-pic {
 	margin-top: 40px;
 }
+.avatar-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+	padding: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	border: 4px solid #D2E4F9;
+    cursor: pointer;
+	background-color: #fff;
+}
+
 #avatar {
     width: 100%;
 	height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 	border-radius: 60%;
 }
 
@@ -1574,7 +1719,8 @@ float: left;
 	font-family: 'Kodchasan';
 }
 .card-msg {
-	padding: 4px;
+	width: 95%;
+	padding: 8px 12px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #EFF6FE;
@@ -1916,35 +2062,31 @@ float: left;
     transform: rotate(180deg);
 }
 /*----dob session---*/
-.dob-container {
-    display: flex;
-	width: 100%;
-	
-}
-.sex-reg-info {
+#dob {
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	padding: 12px 20px;
+	font-size: 17px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	outline: none;
+	float: right;
 }
 #sex {
-	padding: 20px 10px;
-	border: none;
-	font-size: 15px;
-	color: rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	margin: 0;
-	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 4px;
-	margin-right: 20px;
-}
-#birthday {
-	padding: 18px 32px;
-	border: none;
-	font-size: 15px;
-	color: rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	width: 70px;
-	border-radius: 4px;
-}
+	padding: 12px 30px;
+	font-size: 17px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	outline: none;
+		}
+
+
 
 /*----settings session---*/
 .settings-area {
@@ -2008,6 +2150,13 @@ float: left;
 }
 
 /*----Create resume session---*/
+.about-you-exp p{
+	font-family: 'Poppins';
+	font-size: 13px;
+	padding: 6px 4px;
+	color: rgba(0, 0, 0, 0.3);
+
+}
 .create-resume-steps {
 	display: flex;
 	background-color: #EFF6FE;
@@ -2083,6 +2232,24 @@ float: left;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	margin-top: 15px;
+	outline: none;
+}
+.sex-reg-info {
+	width: 45%;
+	margin-right: auto;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin-top: 15px;
+	outline: none;
+}
+.dob-reg-info {
+	width: 45%;
+	margin-left: auto;
+
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin-top: 15px;
+	outline: none;
 }
 
 input[type=text], input[type=password] {
@@ -2705,7 +2872,6 @@ textarea {
 .dailyhelp-pic {
 	display: block;
 	width: 20%;
-	object-fit: contain;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -2966,26 +3132,7 @@ textarea {
 		margin-top: 0;
 		margin-left: px;
 	}
-	#sex {
-	padding: 14px 10px;
-	border: none;
-	font-size: 15px;
-	color: rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	margin: 0;
-	width: 120px;
-	border-radius: 4px;
-	margin-right: 20px;
-}
-#birthday {
-	padding: 12px 32px;
-	border: none;
-	font-size: 15px;
-	color: rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	width: 85px;
-	border-radius: 4px;
-}
+
 	
 	/*----Add card session---*/
 
@@ -3110,6 +3257,7 @@ textarea {
 		margin-top: 40px;
 		width: 12%;
 	}
+
 	.verified-prof {
 		margin-top: 40px;
 		width: 14%;
@@ -3489,37 +3637,54 @@ textarea {
 	background-color: #636060;
 }
 .small-circle-2 {
-
 	background-color: #fff;
 }
 .small-circle-3 {
-
 	background-color: #fff;
 }
 	/*----web login session---*/
-	
-.log-space {
+	.log-space {
 	background-color: #D2E4F9;
-	height: 100%;
 	}
+	.login-log-space {
+		display: flex;
+		height: 100%;
+	}
+
 .dailyhelp-pic {
 	display: block;
-	width: 100%;
-	object-fit: contain;
+	width: 40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 	
 }
 .dailyhelp-pic img{
 	width: 100%;
-	height: 100%;
 }
 	.login-project {
-		width: 100%;
-		height: 100%;
-	}
-	.web-log {
 		width: 50%;
 	}
-	
+	.logo-pics {
+		width: 8%;
+		margin-left: auto;
+		margin-top: 30px;
+	}
+	.logo-pics img{
+		width: 100%;
+		margin-left: auto;
+	}
+	.web-log {
+		width: 100%;
+		height: 80%;
+	}
+	.signup-space {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.social-icon-area {
 		width: 80%;
 		margin-left: auto;
@@ -3762,27 +3927,6 @@ textarea {
 		margin-top: 0;
 		margin-left: px;
 	}
-	#sex {
-	padding: 14px 10px;
-	border: none;
-	font-size: 15px;
-	color: rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	margin: 0;
-	width: 120px;
-	border-radius: 4px;
-	margin-right: 20px;
-}
-#birthday {
-	padding: 12px 32px;
-	border: none;
-	font-size: 15px;
-	color: rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	width: 85px;
-	border-radius: 4px;
-}
-
 .ads-online-status img {
 	width: 20px;
 	margin-left: 40px;
@@ -3982,4 +4126,41 @@ textarea {
 }
 	.card-title {
 	width: 50%;
+}
+	
+.login-info {
+	width: 100%;	
+}
+	
+
+	#dob {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	padding: 12px 12px;
+	font-size: 17px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	outline: none;
+	float: right;
+}
+#sex {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	padding: 12px 30px;
+	font-size: 17px;
+	border: none;
+	color: rgba(0, 0, 0, 0.3);
+	outline: none;
+		}
+.call-options {
+	display: flex;
+	position: sticky;
+	bottom: 0;
+	margin-bottom: 40px;
+	width: 100%;
+
 }
