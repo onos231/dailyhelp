@@ -17,7 +17,35 @@
 	
 <body>
 
-	
+	<style>
+	.content {
+    padding: 20px;
+}
+
+#addButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#addButton img {
+    height: 70px;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+}
+	</style>
 	
     <!--login Section-->
 	
@@ -68,27 +96,15 @@
 	
 	
 	
-	<div class="chat-activity-list">
-			 <div class="chat-info-content">
-  <div class="chat-activity-pic">
-	<img src="img/profile/cleaner-pic4.jpeg" alt="profile picture">
-			</div>	
-    <div class="activity-details">
-
-			<div class="prof-names">Maro Amadaku</div>
-		<div class="response-msg">My pleasure, so how...</div>
-		</div>
-		  
-	   <div class="activity-dist">
-		   
-			<div class="chat-red-activity">Caregiver</div>
-		<div class="no-of-msg">3</div>
-			   </div>
-		</div>
-			
-			 
-		   </div>
 	
+    <button id="addButton" onclick="openNewPage()">
+        <img src="img/ads/delete%20icon.png" alt="Add">
+    </button>
 	
+	<script>
+	function openNewPage() {
+    window.location.href = 'newpage.html'; // Replace with the URL of the page you want to open
+}
+	</script>
 	
 </body>

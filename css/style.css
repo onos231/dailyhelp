@@ -272,7 +272,7 @@ a:link {
 .web-log p a{
 	float: right;
 	margin-right: 20px;
-	color: #000;
+	color: #3997BF;;
 	font-size: 15px;
 	font-family: 'Roboto';
 	}
@@ -391,11 +391,9 @@ span.psw {
 /*----create account session---*/
 .Login {
 	float: right;
-	margin-right: 20px;
 }
 .Login a {
 	float: right;
-	color: #3997BF;
 }
 .acc-details {
 	margin-bottom: 40px;
@@ -794,7 +792,32 @@ span.psw {
 	font-size: 13px;
 	font-family: 'poppins';
 	}
-	
+/*----add advert session---*/
+#addButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#addButton img {
+    height: 70px;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+}
+
+
 /*----Phone caller session---*/
 .caller-details {
 	width: 40%;
@@ -1058,8 +1081,15 @@ span.psw {
 	float: left;
 	color: rgba(0, 0, 0, 0.7);
 }
+.ads-helper-gender {
+	text-align: right;
+	margin-top: 2px;
+	/*color: rgba(0, 0, 0, 0.3);*/
+	color: #fff;
+}
 .helper-gender {
 	text-align: right;
+	margin-right: 20px;
 	margin-top: 2px;
 	color: rgba(0, 0, 0, 0.3);
 }
@@ -1081,7 +1111,8 @@ span.psw {
 	width: 360px;
 }
 .days {
-	color: rgba(0, 0, 0, 0.3);
+	/*color: rgba(0, 0, 0, 0.3);*/
+	color: #fff;
 }
 .ads-prof-title {
 	margin-top: 8px;
@@ -1096,12 +1127,20 @@ span.psw {
 	font-family: 'Roboto';
 	color: rgba(0, 0, 0, 0.9);
 }
-.prof-title {
+.result-prof-title {
 	margin-top: 8px;
 	float: left;
 	width: 100%;
 	font-family: 'Roboto';
 	color: rgba(0, 0, 0, 0.3);
+}
+.prof-title {
+	margin-top: 8px;
+	float: left;
+	width: 100%;
+	font-family: 'Roboto';
+	/*color: rgba(0, 0, 0, 0.3);*/
+	color: #fff;
 }
 .sech-prof-title {
 	margin-top: 8px;
@@ -1138,7 +1177,8 @@ span.psw {
 	width: 120px;
 	text-align: right;
 	margin-top: 6px;
-	color: rgba(0, 0, 0, 0.9);
+	/*color: rgba(0, 0, 0, 0.9);*/
+	color: #fff;
 }
 .helper-status{
 	width: 10%;
