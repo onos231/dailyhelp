@@ -795,9 +795,10 @@ span.psw {
 /*----add advert session---*/
 #addButton {
     position: fixed;
+	position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #D2E4F9;
     border: none;
     border-radius: 50%;
     width: 60px;
@@ -807,14 +808,15 @@ span.psw {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+	z-index: 1;
 }
 
 #addButton img {
-    height: 70px;
+    height: 20px;
 }
 
 #addButton:hover {
-    background-color: #0056b3;
+    background-color: #3997BF;
 }
 
 
@@ -1034,6 +1036,9 @@ span.psw {
 	border-radius: 40px 40px 0 0;
 	margin-bottom: 20px;
 }
+.ads-project {
+	position: relative;
+}
 .ads-result-tabs {
 	width: 90%;
 	height: auto;
@@ -1227,15 +1232,18 @@ span.psw {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: #000;
     width:95%;
 	height: auto;
 	padding-bottom: 20px;
     z-index: 1;
+	color: #fff;
 }
 .dropdown-content p {
 	float: right;
 	margin-bottom: 6px;
+	margin-right: 10px;
+	color: #fff;
 }
 
 .dropdown-content.show {
@@ -1245,10 +1253,11 @@ span.psw {
 
 .sub-filter {
     margin-bottom: 2px;
-	padding: 0px 12px;
-	background-color: #fff;
-	width: 95%;
+	padding: 0px 4px;
+	background-color: #000;
+	width: 90%;
 	height: auto;
+	margin-left: 10px;
 }
 
 .sub-filter-title {
