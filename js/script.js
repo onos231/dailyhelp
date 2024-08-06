@@ -103,3 +103,38 @@ document.addEventListener("DOMContentLoaded", function() {
         dobInput.value = formattedDate;
     });
 });
+
+// Bitcoin session
+const amountInUSD = 1000;
+        const amountInBTC = 0.025;
+        let displayInUSD = true;
+
+        function toggleAmount() {
+            displayInUSD = !displayInUSD;
+            document.getElementById('amount').innerText = displayInUSD ? `${amountInUSD} USD` : `${amountInBTC} BTC`;
+            document.querySelector('.toggle-button').innerText = displayInUSD ? 'Switch to BTC' : 'Switch to USD';
+        }
+
+        function copyBitcoinAddress() {
+            const bitcoinAddress = document.getElementById('bitcoinAddress').innerText;
+            navigator.clipboard.writeText(bitcoinAddress).then(() => {
+                alert('Bitcoin address copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+
+// Bitcoin session
+document.addEventListener('DOMContentLoaded', () => {
+    const ccInput = document.getElementById('ccnum');
+
+    ccInput.addEventListener('input', () => {
+        let value = ccInput.value.replace(/\s+/g, '');
+        if (value.length > 16) {
+            value = value.slice(0, 16);
+        }
+        let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
+        ccInput.value = formattedValue;
+    });
+});

@@ -211,7 +211,7 @@ h4 {
 	margin-top: 40px;
 	margin-bottom: 20px;
 	text-align: center;
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.3);
 	font-family: 'Kodchasan';
 }
 .login-options {
@@ -259,6 +259,22 @@ a:link {
 	margin-left: auto;
 	margin-right: auto;
 }
+.helper-login-info {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.helper-login-info p {
+	width: 60%;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto';
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.3);
+}
 .login-info {
 	width: 90%;
 	margin-left: auto;
@@ -290,9 +306,9 @@ input[type=text], input[type=password] {
   border: none;
   display: block;
   box-sizing: border-box;
+	font-family: 'Poppins';
   border-radius: 8px;
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
 outline: none;
 }
 .terms-condition {
@@ -305,6 +321,7 @@ outline: none;
 	color: rgba(0, 0, 0, 0.7);
 }
 .terms-condition p{
+	width: 80%;
 	margin-top: 10px;
 	margin-bottom: 0px;
 	font-size: 15px;
@@ -1166,7 +1183,7 @@ span.psw {
 	width: 20px;
 	margin-right: 10px;
 	margin-left: 10px;
-	margin-top: 4px;
+	margin-top: 6px;
 }
 .ads-prof-pic {
 	display: flex;
@@ -1232,18 +1249,19 @@ span.psw {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
-    width:95%;
+    background-color: #fff;
+    width:100%;
 	height: auto;
 	padding-bottom: 20px;
     z-index: 1;
-	color: #fff;
+	color: #000;
 }
 .dropdown-content p {
 	float: right;
+	margin-top: 10px;
 	margin-bottom: 6px;
-	margin-right: 10px;
-	color: #fff;
+	margin-right: 15px;
+	color: #000;
 }
 
 .dropdown-content.show {
@@ -1254,7 +1272,7 @@ span.psw {
 .sub-filter {
     margin-bottom: 2px;
 	padding: 0px 4px;
-	background-color: #000;
+	background-color: #fff;
 	width: 90%;
 	height: auto;
 	margin-left: 10px;
@@ -1299,11 +1317,12 @@ float: left;
 
 }
 .apply-btn {
-	width: 50px;
+	width: 40px;
 	padding: 10px 20px;
 	background-color: #F4C211;
 	border-radius: 20px;
 	float: right;
+	margin-right: 10px;
 	
 }
 .apply-btn a {
@@ -1459,6 +1478,54 @@ float: left;
 .no-of-msg {
 	text-align-last: center;
 }
+/*----Bitcoin session---*/
+.payment-container {
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+        }
+.btc-send-request {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 40px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+        .amount {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .toggle-button {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 15px;
+            cursor: pointer;
+			border-right: 4px;
+			background-color: #3997BF;
+			color: #fff;
+        }
+        .bitcoin-address-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+			border-radius: 8px;
+			padding: 10px;
+			box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+        }
+        .bitcoin-address {
+            font-size: 13px;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        .copy-icon {
+			width: 5%;
+            cursor: pointer;
+        }
+
 /*----profile session---*/
 .profile-area {
 	width: 90%;
@@ -1698,10 +1765,26 @@ float: left;
 	float: right;
 	margin-left: auto;
 }
+.paystack-transfer-title {
+	display: flex;
+	width: 25%;
+	height: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+.paystack-title {
+	display: flex;
+	width: 38%;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
 .bank-transfer-title {
 	display: flex;
-	width: 40%;
-	height: 22px;;
+	width: 38%;
+	height: 22px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
@@ -1714,7 +1797,13 @@ float: left;
 	margin-right: auto;
 	margin-bottom: 30px;
 }
-
+.paystack-transfer-title h5 {
+	margin-left: 6px;
+	color: #534B3F;
+	line-height: 0;
+	margin-top: 10px;
+	font-family: 'Kodchasan';
+}
 .bank-transfer-title h5,
 .payment-option-title h5 {
 	margin-left: 6px;
@@ -1722,9 +1811,6 @@ float: left;
 	line-height: 0;
 	margin-top: 10px;
 	font-family: 'Kodchasan';
-	
-
-
 }
 .bank-transfer-title h5 {
 	margin-top: 10px;
@@ -1737,6 +1823,30 @@ float: left;
 	width: 100%;
 	height: auto;
 }
+.bitcoin-title {
+	display: flex;
+	width: 20%;
+	height: 22px;;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+.bitcoin-pic {
+	width: 40%;
+	height: auto;
+	margin-top: 2px;
+}
+.bitcoin-pic img{
+	width: 100%;
+	height: auto;
+}
+.bitcoin-title h5 {
+	margin-left: 6px;
+	color: #534B3F;
+	line-height: 0;
+	margin-top: 10px;
+	font-family: 'Kodchasan';
+}
 .card-title {
 	display: flex;
 	width: 40%;
@@ -1746,7 +1856,7 @@ float: left;
 	margin-bottom: 30px;
 }
 .payment-card-pic {
-	width: 20%;
+	width: 15%;
 	height: auto;
 	
 }
@@ -2295,6 +2405,26 @@ float: left;
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.5);
 }
+.center-input {
+    width: 90%;
+	height: 50px;
+    font-size: 17px;
+    text-align: center;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-family: 'Roboto';
+	border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+.center-input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.helper-reg-info {
+	text-align: center;
+}
 .reg-info {
 	margin-left: auto;
 	margin-right: auto;
@@ -2302,6 +2432,7 @@ float: left;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	margin-top: 15px;
 	outline: none;
+	color: #000;
 }
 .sex-reg-info {
 	width: 45%;
@@ -3190,16 +3321,11 @@ textarea {
 		float: left;
 		margin: 2px 10px 2px 30px;
 }
-	.payment-card-pic {
-	width: 22%;
-	height: auto;
-}
 	.card-title h5 {
 	margin-top: 4px;
 }
 	.bank-transfer-title h3{
 		margin-top: 0;
-		margin-left: px;
 	}
 
 	
@@ -3985,10 +4111,7 @@ textarea {
 		float: left;
 		margin: 2px 10px 2px 30px;
 }
-	.payment-card-pic {
-	width: 22%;
-	height: auto;
-}
+
 	.card-title h5 {
 	margin-top: 4px;
 }

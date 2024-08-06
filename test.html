@@ -1,110 +1,65 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--Head Section-->
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <title>DailyHelp</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Tab</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-	
 <body>
-
 	<style>
-	.content {
-    padding: 20px;
-}
+	body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
 
-#addButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#addButton img {
-    height: 70px;
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
 }
 
-#addButton:hover {
-    background-color: #0056b3;
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
 	</style>
-	
-    <!--login Section-->
-	
-<header>
-	   <div class="web-nav">
-		<div class="menu-area-logo">
-			<a href="index.html">
-					<div>
-	  <img src="img/logo/logo.png" alt="Project 2" /></div><div class="menu-title"></div>
-				</a></div>
-		<div class="nav-menu">
-				
-	
-				<div class="menu-area-1">
-					<a href="dashboard.html">
-					<div class="pic-area"><div class="pic-menu-area">
-						
-	  <img src="img/index/dashboard.png" alt="Project 2" /></div><div><p>Dashboard </p></div></div></a>
-				</div>
-			<div class="menu-area-2">
-				<a href="create-resume-1.html"><div class="pic-area"><div class="pic-menu-area">
-	  <img src="img/index/find-help-green.png" alt="Project 2" /></div><div><p>Post Job </p></div></div></a>
-				</div>
-			
-			<div class="menu-area-3">
-				<a href="helpers-search-result.html">
-					<div class="pic-area"><div class="pic-menu-area">
-						<img src="img/index/post-job-web.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div></a>
-				</div>
-				</div>
-		
-		<div class="menu-area-profile">
-			<a href="helper-profile.html">
-					<div>
-	  <img src="img/index/profile.png" alt="Project 2" /><div class="menu-title"></div></div>
-				</a></div>
-	</div>
-	   <div class="search-top-nav">
-	<div class="nav-content">
-		
-	 
-		 <div class="close-pic">
-	   <a href="index.html"><img src="img/find-helper/close.png" alt="Project 2" /></a>
-		 </div>
-		</div>
-			 </div>
-	  </header>
+     <div class="container">
+        <label for="cc-input">Credit Card Number:</label>
+        <input type="text" id="cc-input" maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+    </div>
 	
 	
-	
-	
-    <button id="addButton" onclick="openNewPage()">
-        <img src="img/ads/delete%20icon.png" alt="Add">
-    </button>
-	
-	<script>
-	function openNewPage() {
-    window.location.href = 'newpage.html'; // Replace with the URL of the page you want to open
-}
+    <script>
+	document.addEventListener('DOMContentLoaded', () => {
+    const ccInput = document.getElementById('cc-input');
+
+    ccInput.addEventListener('input', () => {
+        let value = ccInput.value.replace(/\s+/g, '');
+        if (value.length > 16) {
+            value = value.slice(0, 16);
+        }
+        let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
+        ccInput.value = formattedValue;
+    });
+});
+
 	</script>
-	
+		
 </body>
+</html>
