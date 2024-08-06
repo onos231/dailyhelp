@@ -216,10 +216,39 @@ h4 {
 }
 .login-options {
 	display: flex;
-	width: 47%;
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+}
+.login-helper-options {
+	display: flex;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.helper-log-btn {
+	padding: 8px 12px;
+	width: 60%;
+	color: rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	text-align: center;
+	font-family: 'Roboto';
+	background-color: #D2E4F9;
+	
+}
+.client-log-btn {
+	padding: 8px 12px;
+	width: 50%;
+	color: rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	text-align: center;
+	font-family: 'Roboto';
+	margin-left: auto;
+	border: 1px solid #D2E4F9;
+	margin-left: 20px;
+	
 }
 .helper-btn {
 	padding: 8px 12px;
