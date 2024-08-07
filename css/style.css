@@ -499,7 +499,18 @@ span.psw {
 .top-nav img{
 	margin-top: 29px;
 }
-
+.text {
+    color: #000;
+    width: 220px;
+    text-align: center;
+	font-family: 'Kodch';
+	font-size: 17px;
+}
+.slideshow-container {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .profile-pic {
 	float: left;
 	width: 17%;
@@ -1095,12 +1106,24 @@ span.psw {
 	margin-bottom: 20px;
 }
 .add-advert-tabs {
+	position: relative;
 	width: 90%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 40px 40px 0 0;
 	margin-bottom: 20px;
+}
+.add-advert-tabs p{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	margin: 4px 12px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 4px;
+	font-size: 15px;
+	
 }
 .dash-result-tabs {
 	display: flex;
@@ -1137,7 +1160,7 @@ span.psw {
 }
 .add-advert-pics img {
 	width: 100%;
-	
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	border-radius: 40px 40px 0 0;
 	object-fit: cover;
 }
@@ -1238,7 +1261,7 @@ span.psw {
 	width: 80%;
 }
 .ads-prof-pic img{
-	width: 25px;
+	width: 20px;
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-top: 4px;
@@ -1760,7 +1783,7 @@ float: left;
     height: 200px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid rgba(250, 250, 250, 0.24);;
+	border: 1px solid rgba(250, 250, 250, 0.24);
     cursor: pointer;
 	border-radius: 40px 40px 0 0;
 }
@@ -1780,16 +1803,18 @@ float: left;
 	outline: none;
 	color: #fff;
 }
-#addAvatar {
-	height: 200px;
-	object-fit: fill;
-
+.avatar {
+	border-radius: 60%;
+	object-fit: cover;
+}
+.add-avatar {
+	object-fit: contain;
+	box-shadow: 0px 4px 8px 2px rgba(255, 255, 255, 1);
 }
 #avatar {
     width: 100%;
 	height: 100%;
-    object-fit: cover;
-	border-radius: 60%;
+	box-shadow: 0px 4px 8px 2px rgba(255, 255, 255, 0.4);
 }
 
 /*----bank transfer session---*/
@@ -2126,7 +2151,6 @@ float: left;
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #EFF6FE;
 	padding: 10px;
 }
 .sub-txt-title h5 {
@@ -2135,7 +2159,8 @@ float: left;
 	font-size: 17px;
 		font-family: "Kodchasan";
 	}
-.sub-txt-title p {
+.sub-txt-ti
+tle p {
 	font-size: 13px;
 	font-family: 'poppins';
 	width: 95%;
@@ -2148,10 +2173,12 @@ float: left;
 	margin-top: 80px;
 }
 .sub-txt p{
-	width: 95%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #EFF6FE;
+	margin-top: 20px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.3);
 }
 .sub-plans {
 	width: 95%;
@@ -2159,6 +2186,7 @@ float: left;
 	margin-right: auto;
 	background-color: #EFF6FE;
 	padding: 10px;
+	padding-bottom: 20px;
 	margin-top: 20px;
 	border-radius: 8px;
 }
@@ -2174,6 +2202,8 @@ float: left;
 }
 .sub-plans li {
 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 
 	margin-bottom: 10px;
 }
@@ -2183,6 +2213,9 @@ float: left;
 	background-color: #39BF4E;
 	color: #fff;
 	border-radius: 4px;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .sub-recommend {
 	width: 80%;
@@ -2191,6 +2224,8 @@ float: left;
 	background-color: #3997BF;
 	color: #fff;
 	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .app-name {
 	color: #39BF4E;
@@ -3562,7 +3597,6 @@ textarea {
 	font-size: 11px;
 }
 	.sub-plan-web {
-		display: flex;
 		margin-right: 20px;
 	}
 	.subcription-area {
@@ -3570,7 +3604,7 @@ textarea {
 
 	}
 	.sub-plans {
-		width: 25%;
+		width: 65%;
 		padding: 20px;
 	}
 
@@ -3909,11 +3943,12 @@ textarea {
 		width: 40%;
 		height: 80%;
 		margin-right: auto;
-		background-image: url(/img/find-helper/care-giver.png);
+		/*background-image: url(/img/find-helper/care-giver.png);*/
 		background-position: center; 
   		background-repeat: no-repeat; 
   		background-size: contain; 
 	position: relative;
+	background-color: #0BA4DB;
 }
 	.other-home-pages {
 		width: 40%;
@@ -4357,7 +4392,6 @@ textarea {
 	font-size: 11px;
 }
 	.sub-plan-web {
-		display: flex;
 		margin-right: 20px;
 	}
 	.subcription-area {
@@ -4365,7 +4399,7 @@ textarea {
 
 	}
 	.sub-plans {
-		width: 25%;
+		width: 65%;
 		padding: 20px;
 	}
 
@@ -4428,6 +4462,44 @@ textarea {
 	.change-pic {
 	width: 25%;
 
+}
+	
+	/*---Desktop Slides-----*/
+	.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+.slideshow-container img {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 28px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+	top: 220px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 	/*----dashboard session---*/
 	.dashboard {
