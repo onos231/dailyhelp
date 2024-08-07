@@ -1,32 +1,48 @@
-function toggleDropdown(id) {
-    var dropdown = document.getElementById(id);
-    var arrow = dropdown.previousElementSibling.querySelector('.arrow');
+function toggleDropdownMenu() {
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    var arrow = document.querySelector('.dropdown-toggle .arrow');
     
-    if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
-        arrow.classList.remove('up');
+    if (dropdownMenu.style.display === 'block') {
+        dropdownMenu.style.display = 'none';
+        arrow.innerHTML = '&#9662;';
     } else {
-        // Close any open dropdowns
-        var dropdowns = document.querySelectorAll('.dropdown-menu');
-        dropdowns.forEach(function(menu) {
-            menu.style.display = 'none';
-            menu.previousElementSibling.querySelector('.arrow').classList.remove('up');
-        });
-        
-        // Open the selected dropdown
-        dropdown.style.display = "block";
-        arrow.classList.add('up');
+        dropdownMenu.style.display = 'block';
+        arrow.innerHTML = '&#9652;';
     }
 }
 
-// Close dropdown if clicked outside
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-toggle')) {
-        var dropdowns = document.querySelectorAll('.dropdown-menu');
-        dropdowns.forEach(function(menu) {
-            menu.style.display = 'none';
-            menu.previousElementSibling.querySelector('.arrow').classList.remove('up');
-        });
+function selectState(state) {
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    var button = document.querySelector('.dropdown-toggle');
+    var arrow = document.querySelector('.dropdown-toggle .arrow');
+    
+    button.innerHTML = '' + state + ' <span class="arrow">&#9662;</span>';
+    dropdownMenu.style.display = 'none';
+    arrow.innerHTML = '&#9662;';
+}
+
+function selectExperience(Years) {
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    var button = document.querySelector('.dropdown-toggle');
+    var arrow = document.querySelector('.dropdown-toggle .arrow');
+    
+    button.innerHTML = '' + Years + ' <span class="arrow">&#9662;</span>';
+    dropdownMenu.style.display = 'none';
+    arrow.innerHTML = '&#9662;';
+	
+}
+
+// Opening hours
+function toggleTab() {
+    var tabContent = document.querySelector('.tab-content');
+    var arrow = document.querySelector('.tab-toggle .arrow');
+    
+    if (tabContent.style.display === 'block') {
+        tabContent.style.display = 'none';
+        arrow.innerHTML = '&#9662;';
+    } else {
+        tabContent.style.display = 'block';
+        arrow.innerHTML = '&#9652;';
     }
 }
 
@@ -60,6 +76,7 @@ window.onclick = function(event) {
     }
 }
 
+
 // Upload picture
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -81,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
 
 // sex and dob session
 document.addEventListener("DOMContentLoaded", function() {
@@ -125,16 +141,4 @@ const amountInUSD = 1000;
         }
 
 
-// Bitcoin session
-document.addEventListener('DOMContentLoaded', () => {
-    const ccInput = document.getElementById('ccnum');
 
-    ccInput.addEventListener('input', () => {
-        let value = ccInput.value.replace(/\s+/g, '');
-        if (value.length > 16) {
-            value = value.slice(0, 16);
-        }
-        let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
-        ccInput.value = formattedValue;
-    });
-});

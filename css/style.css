@@ -364,14 +364,14 @@ outline: none;
 button {
   background-color: #F4C211;
   color: white;
-  padding: 18px 10px;
+  padding: 20px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.7);
   width: 100%;
   border-radius: 30px;
-  font-size: 28px;
+  font-size: 17px;
   font-family: 'Roboto';
 }
 
@@ -1094,6 +1094,14 @@ span.psw {
 	box-shadow: 0px 4px 8px 2px rgba(250, 250, 250, 0.24);
 	margin-bottom: 20px;
 }
+.add-advert-tabs {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 40px 40px 0 0;
+	margin-bottom: 20px;
+}
 .dash-result-tabs {
 	display: flex;
 	width: 90%;
@@ -1115,10 +1123,21 @@ span.psw {
 }
 .search-result-pics {
 	width: 100%;
+	
 }
 .search-result-pics img{
 	width: 100%;
 	height: 200px;
+	border-radius: 40px 40px 0 0;
+	object-fit: cover;
+}
+.add-advert-pics {
+	width: 100%;
+	height: 200px;
+}
+.add-advert-pics img {
+	width: 100%;
+	
 	border-radius: 40px 40px 0 0;
 	object-fit: cover;
 }
@@ -1509,10 +1528,24 @@ float: left;
 }
 /*----Bitcoin session---*/
 .payment-container {
-            background-color: #fff;
-            border-radius: 10px;
-            text-align: center;
+     background-color: #fff;
+     border-radius: 10px;
+     text-align: center;
+	 font-family: 'Roboto';
         }
+.payment-container p {
+	width: 60%;margin-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.3)
+}
+.payment-container h5 {
+	text-align: right;
+	color: #3997BF;
+	font-size: 15px;
+	font-weight: 100;
+}
 .btc-send-request {
 	position: absolute;
 	bottom: 0;
@@ -1520,6 +1553,15 @@ float: left;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.btc-pament-warning {
+	width: 60%;
+	color: rgba(228, 89, 89, 0.7);
+	font-size: 13px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
         .amount {
             font-size: 22px;
@@ -1712,7 +1754,37 @@ float: left;
     cursor: pointer;
 	background-color: #fff;
 }
+.add-avatar-container {
+	position: relative;
+    width: 100%;
+    height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid rgba(250, 250, 250, 0.24);;
+    cursor: pointer;
+	border-radius: 40px 40px 0 0;
+}
+.add-advert-reg-info {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	margin-top: 15px;
+	outline: none;
+	color: #fff;
+}
+.add-dropdown-reg-info {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	margin-top: 15px;
+	outline: none;
+	color: #fff;
+}
+#addAvatar {
+	height: 200px;
+	object-fit: fill;
 
+}
 #avatar {
     width: 100%;
 	height: 100%;
@@ -2018,7 +2090,6 @@ float: left;
 	color: rgba(228, 89, 89, 0.7);
 	font-size: 13px;
 	margin-bottom: 10px;
-
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -2205,7 +2276,6 @@ float: left;
 }
 /*----dropdown session---*/
 .dropdown {
-    margin: 10px 0;
     position: relative;
     display: inline-block;
     width: 100%;
@@ -2219,37 +2289,109 @@ float: left;
     align-items: center;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
 	font-size: 17px;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.3);
 }
-
+.dropdown-toggle .arrow {
+    margin-left: 10px;
+}
+.dropdown-Qualification {
+	display: none;
+    position: absolute;
+    background-color: #EFF6FE;
+	color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+	height: 200px; /* Set the desired height */
+    overflow-y: auto; /* Make it scrollable */
+}
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #EFF6FE;
+	color: #000;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     width: 100%;
+	height: 200px; /* Set the desired height */
+    overflow-y: auto; /* Make it scrollable */
+}
+.dropdown-menu li {
+    padding: 12px 16px;
+    cursor: pointer;
+	border: 1px solid #fff;
 }
 
-.dropdown-menu a {
-    color: black;
-    padding: 10px;
-    text-decoration: none;
+.dropdown-menu li:hover {
+    background-color: #EFF6FE;
+}
+/*----Opening hours----*/
+-----------------
+.opening-time {
+	display: flex;
+	background-color: #fff;
+}
+.dropdown-time {
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-item {
+	width: 150px;
+    border-bottom: 1px solid #ddd;	
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item span {
+    display: block;
+    font-weight: bold;
+	color: #fff;
+}
+
+.dropdown-time-content select {
+    width: 100%;
+    border-radius: 4px;
+	border: none;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	padding: 14px 8px;
+	font-size: 15px;
+}
+
+.dropdown:hover .dropdown-time-content {
     display: block;
 }
 
-.dropdown-menu a:hover {
-    background-color: #ddd;
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
-.arrow {
+.toggle-arrow {
+    display: inline-block;
+    margin-left: 10px;
     transition: transform 0.3s;
 }
 
-.arrow.up {
+.dropdown-time-content.show .toggle-arrow {
     transform: rotate(180deg);
 }
+		.time-title {
+			margin-bottom: 4px;
+			color: #000;
+			font-size: 15px;
+			font-family: 'Roboto';
+		}
+
 /*----dob session---*/
 #dob {
 	margin-left: auto;
@@ -2433,6 +2575,9 @@ float: left;
 	font-family: 'Poppins';
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.5);
+}
+.num-verify-text p{
+	width: 60%;
 }
 .center-input {
     width: 90%;

@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--Head Section-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>DailyHelp</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</head>
+	
+<body>
+	<style>
+		body{
+			background-color: #3997BF;
+		}
+	</style>
+	
+    <!--login Section-->
+	
+	<div class="ads-project">
+		
+<header>
+	   <div class="web-nav">
+		<div class="menu-area-logo">
+					<div>
+	  <img src="img/logo/logo.png" alt="Project 2" /></div><div class="menu-title"></div>
+				</div>
+		<div class="nav-menu">
+				
+	
+				<div class="menu-area-1">
+					<div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/dashboard.png" alt="Project 2" /></div><div><p>Dashboard </p></div></div>
+				</div>
+			<div class="menu-area-2">
+				<a href="find-more-helpers.html"><div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/find-help-green.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div></a>
+				</div>
+			
+			<div class="menu-area-3">
+					<div class="pic-area"><div class="pic-menu-area">
+	  <img src="img/index/post-job-web.png" alt="Project 2" /></div><div><p>Find Helper </p></div></div>
+				</div>
+				</div>
+		
+		<div class="menu-area-profile">
+					<div>
+	  <img src="img/index/profile.png" alt="Project 2" /><div class="menu-title"></div></div>
+				</div>
+	</div>
+	   <div class="ads-top-nav">
+	<div class="nav-content">
+		
+	 
+		 <div class="close-pic">
+	   <a href="ads.html"><img src="img/find-helper/close.png" alt="Project 2" /></a>
+		 </div>
+		</div>
+			 </div>
+
+	  </header>
+ 
+		<!-----Filter session---->
+		
+		
+		
+		<!-----Search result session---->
+		
+		<div class="back-to-prev">
+		<a href="find-more-helpers.html"><img src="img/into/back-arrow.png" alt="Project 2" /><h5>Helpers</h5></a>
+		</div>
+   	
+		
+		<div class="body-pattern">
+			
+	<div class="menu-left">
+			<div class="helper-cartoon-pic">
+
+		</div>
+		</div>
+			
+		<div class="result-option-body">
+		  
+			 
+			<!-----web Filter session---->
+		
+		<div class="add-advert-tabs">
+		   <div class="add-advert-pics">
+			 <div class="add-avatar-container">
+		<img src="img/add-advert/upload-pic.png" alt="Project 2" id="avatar"/>
+    </div>
+		<input type="file" id="fileInput" accept="image/*" capture="camera" style="display:none;"></div>
+			
+			  
+			<div class="add-advert-reg-info">
+				<label>Business Name</label>
+    <input type="text" placeholder="Business name" name="Account name" required>
+	  </div>
+		<div class="add-dropdown-reg-info">
+				<label>State</label>
+    <div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Select State <span class="arrow">&#9662;</span></button>
+        <ul class="dropdown-menu">
+            <li onclick="selectState('Abia')">Abia</li>
+            <li onclick="selectState('Adamawa')">Adamawa</li>
+            <li onclick="selectState('Akwa Ibom')">Akwa Ibom</li>
+            <li onclick="selectState('Anambra')">Anambra</li>
+            <li onclick="selectState('Bauchi')">Bauchi</li>
+            <li onclick="selectState('Bayelsa')">Bayelsa</li>
+            <li onclick="selectState('Benue')">Benue</li>
+            <li onclick="selectState('Borno')">Borno</li>
+            <li onclick="selectState('Cross River')">Cross River</li>
+            <li onclick="selectState('Delta')">Delta</li>
+            <li onclick="selectState('Ebonyi')">Ebonyi</li>
+            <li onclick="selectState('Edo')">Edo</li>
+            <li onclick="selectState('Ekiti')">Ekiti</li>
+            <li onclick="selectState('Enugu')">Enugu</li>
+            <li onclick="selectState('Gombe')">Gombe</li>
+            <li onclick="selectState('Imo')">Imo</li>
+            <li onclick="selectState('Jigawa')">Jigawa</li>
+            <li onclick="selectState('Kaduna')">Kaduna</li>
+            <li onclick="selectState('Kano')">Kano</li>
+            <li onclick="selectState('Katsina')">Katsina</li>
+            <li onclick="selectState('Kebbi')">Kebbi</li>
+            <li onclick="selectState('Kogi')">Kogi</li>
+            <li onclick="selectState('Kwara')">Kwara</li>
+            <li onclick="selectState('Lagos')">Lagos</li>
+            <li onclick="selectState('Nasarawa')">Nasarawa</li>
+            <li onclick="selectState('Niger')">Niger</li>
+            <li onclick="selectState('Ogun')">Ogun</li>
+            <li onclick="selectState('Ondo')">Ondo</li>
+            <li onclick="selectState('Osun')">Osun</li>
+            <li onclick="selectState('Oyo')">Oyo</li>
+            <li onclick="selectState('Plateau')">Plateau</li>
+            <li onclick="selectState('Rivers')">Rivers</li>
+            <li onclick="selectState('Sokoto')">Sokoto</li>
+            <li onclick="selectState('Taraba')">Taraba</li>
+            <li onclick="selectState('Yobe')">Yobe</li>
+            <li onclick="selectState('Zamfara')">Zamfara</li>
+            <li onclick="selectState('FCT')">FCT</li>
+        </ul>
+    </div>
+			</div>
+			<div class="add-advert-reg-info">
+				<label>Phone Number</label>
+    <input type="text" placeholder="+234" name="Account name" required>
+	  </div>
+			<div class="add-advert-reg-info">
+				<label>Business Address</label>
+    <input type="text" placeholder="Enter address" name="Account name" required>
+	  </div>
+			
+			
+			<div class="opening-time">
+	 <div class="dropdown-time">
+     
+        <div class="dropdown-time-content">
+            <div class="dropdown-item">
+                <span class="time-title">Opening Hour</span>
+                <select id="opening-hour">
+					<option value="00:00">From</option>
+                    <option value="00:00">06:00AM</option>
+                    <option value="01:00">07:00AM</option>
+                    <option value="02:00">08:00AM</option>
+                    <!-- Add more options as needed -->
+                    <option value="23:00">09:00AM</option>
+                </select>
+            </div>
+			 </div>
+        </div>
+	<div class="dropdown-time">
+     
+        <div class="dropdown-time-content">
+            <div class="dropdown-item">
+                <span class="time-title">Closing Hour</span>
+                <select id="closing-hour">
+					<option value="00:00">To</option>
+                    <option value="00:00">05:00PM</option>
+                    <option value="01:00">06:00PM</option>
+                    <option value="02:00">07:00PM</option>
+                    <!-- Add more options as needed -->
+                    <option value="23:00">08:00PM</option>
+                </select>
+            </div>
+        </div>
+    </div>
+			</div>
+			
+			
+			<div class="filter-area">
+        
+			<div class="apply-btn" style="display: none;">
+			<a href="helpers-search-result.html">Save</a>
+			</div>
+				
+				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1);">
+			<a href="helpers-search-result.html" style="color: rgba(0, 0, 0, 0.3)">Save</a>
+			</div>
+			</div>
+			
+				
+			</div>	
+			
+		   </div>
+			
+			
+			<div class="msg-others">
+			 <div class="helper-msg-prof-2">
+				<div class="prof-msg-pic">
+					<div>
+	  <img src="img/index/messages-red.png" alt="Project 2" /></div><div class="prof-title">Messages</div>
+				</div>
+				
+		</div>
+			</div>
+		</div>
+		 
+				</div>
+
+	
+
+</body>

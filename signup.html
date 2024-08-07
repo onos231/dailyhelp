@@ -62,12 +62,54 @@ html, body {
         </select>
 
         <input type="date" id="dob" name="dob">
-		<div class="reg-info">
+		<div class="reg-info" required>
 			<input type="password" placeholder="Password" name="psw" required></div>
 		<div class="reg-info">
 			<input type="text" placeholder="+234 8123 4567 90 " name="psw" required></div>
-		<div class="reg-info">
-			<input type="text" placeholder="Select state" name="psw" required></div>
+		<div class="create-reg-info">
+    <div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Select State <span class="arrow">&#9662;</span></button>
+        <ul class="dropdown-menu">
+            <li onclick="selectState('Abia')">Abia</li>
+            <li onclick="selectState('Adamawa')">Adamawa</li>
+            <li onclick="selectState('Akwa Ibom')">Akwa Ibom</li>
+            <li onclick="selectState('Anambra')">Anambra</li>
+            <li onclick="selectState('Bauchi')">Bauchi</li>
+            <li onclick="selectState('Bayelsa')">Bayelsa</li>
+            <li onclick="selectState('Benue')">Benue</li>
+            <li onclick="selectState('Borno')">Borno</li>
+            <li onclick="selectState('Cross River')">Cross River</li>
+            <li onclick="selectState('Delta')">Delta</li>
+            <li onclick="selectState('Ebonyi')">Ebonyi</li>
+            <li onclick="selectState('Edo')">Edo</li>
+            <li onclick="selectState('Ekiti')">Ekiti</li>
+            <li onclick="selectState('Enugu')">Enugu</li>
+            <li onclick="selectState('Gombe')">Gombe</li>
+            <li onclick="selectState('Imo')">Imo</li>
+            <li onclick="selectState('Jigawa')">Jigawa</li>
+            <li onclick="selectState('Kaduna')">Kaduna</li>
+            <li onclick="selectState('Kano')">Kano</li>
+            <li onclick="selectState('Katsina')">Katsina</li>
+            <li onclick="selectState('Kebbi')">Kebbi</li>
+            <li onclick="selectState('Kogi')">Kogi</li>
+            <li onclick="selectState('Kwara')">Kwara</li>
+            <li onclick="selectState('Lagos')">Lagos</li>
+            <li onclick="selectState('Nasarawa')">Nasarawa</li>
+            <li onclick="selectState('Niger')">Niger</li>
+            <li onclick="selectState('Ogun')">Ogun</li>
+            <li onclick="selectState('Ondo')">Ondo</li>
+            <li onclick="selectState('Osun')">Osun</li>
+            <li onclick="selectState('Oyo')">Oyo</li>
+            <li onclick="selectState('Plateau')">Plateau</li>
+            <li onclick="selectState('Rivers')">Rivers</li>
+            <li onclick="selectState('Sokoto')">Sokoto</li>
+            <li onclick="selectState('Taraba')">Taraba</li>
+            <li onclick="selectState('Yobe')">Yobe</li>
+            <li onclick="selectState('Zamfara')">Zamfara</li>
+            <li onclick="selectState('FCT')">FCT</li>
+        </ul>
+    </div>
+			</div>
 	  
 	  </div>
         <div class="terms-condition">
