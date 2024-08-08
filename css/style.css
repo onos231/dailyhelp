@@ -7,12 +7,12 @@
 	src: url(fonts/Kodchasan-SemiBold.ttf);
 }
 @font-face {
-	font-family: 'Kodch';
-	src: url(fonts/Kodchasan-Regular.ttf);
+	font-family: 'Kodchas';
+	src: url(fonts/Kodchasan-ExtraLight.ttf);
 }
 @font-face {
 	font-family: 'Londrina';
-	src: url(fonts-two/LondrinaSolid-Regular.ttf);
+	src: url(fonts-two/LondrinaSolid-Light.ttf);
 	
 }
 @font-face {
@@ -23,6 +23,10 @@
 @font-face {
 	font-family: 'Roboto';
 	src: url(Roboto/static/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+	font-family: 'Rob';
+	src: url(Roboto/static/RobotoCondensed-Light.ttf);
 	
 }
 * {
@@ -465,23 +469,12 @@ span.psw {
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	padding: 12px 20px;
-	font-size: 17px;
+	font-size: 15px;
 	border: none;
 	color: rgba(0, 0, 0, 0.3);
 	outline: none;
 	float: right;
 }
-#sex {
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 4px;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 12px 30px;
-	font-size: 17px;
-	border: none;
-	color: rgba(0, 0, 0, 0.3);
-	outline: none;
-		}
 .states {
 	position: relative;
 }
@@ -490,6 +483,57 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 }
+/*----FAQ session----*/
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+	font-family: 'Kodch';
+	font-weight: 300;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+	font-family: 'Poppins';
+	font-size: 13px;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /*----index session---*/
 .top-nav{
 	background-color: #E45959;
@@ -1026,6 +1070,91 @@ span.psw {
 	margin-top: 25px;
 	font-weight: 300;
 }
+/*---About us session----*/
+.about-top-nav {
+	background-color: #E45959;
+	display: flex;
+	height: 70px;
+}
+.about-content {
+	position: relative;
+
+}
+.top-content {
+	margin-bottom: 40px;
+}
+.about-cover {
+	width: 100%;
+	background-color: #3997BF;
+	}
+.about-cover img{
+	width: 100%;
+	}
+.pic-content {
+	display: none;
+	width: 50%;
+	position: absolute;
+	top: 110px;
+	margin-left: 35%;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Poppins';
+}
+.about-content p{
+	width: 50%;
+	position: absolute;
+	top: 110px;
+	margin-left: 35%;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Poppins';
+}
+.pic-content p{
+	font-size: 15px;
+}
+.about-head {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	font-family: 'Rob';
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 4px;
+	font-weight: 100;
+	color: rgba(0, 0, 0, 0.9);
+}
+.about-text p{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Poppins';
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.about-text ul {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Poppins';
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.about-text ul li{
+	margin-bottom: 10px;
+}
+.pic-content-mob h2{
+	width: 60%;
+	position: absolute;
+	top: 110px;
+	margin-left: 25%;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Poppins';
+}
 
 /*----Helpers session---*/
 .search-top-nav {
@@ -1226,6 +1355,14 @@ span.psw {
 	width: 100%;
 	font-family: 'Roboto';
 	color: rgba(0, 0, 0, 0.3);
+}
+.edit-prof-title {
+	margin-top: 8px;
+	float: left;
+	width: 100%;
+	font-family: 'Roboto';
+	/*color: rgba(0, 0, 0, 0.3);*/
+	color: #000;
 }
 .prof-title {
 	margin-top: 8px;
@@ -1630,6 +1767,7 @@ float: left;
 .num-n-edit-pic {
 	display: flex;
 	width: 100%;
+	margin-bottom: 40px;
 }
 .num-n-edit-pic a{
 	color: #000;
@@ -2140,6 +2278,16 @@ float: left;
 	margin: 10px 20px;
 	font-size: 15px;
 }
+.top-area {
+	position: relative;
+	
+}
+.bottom-btn {
+	position: absolute;
+	width: 90%;
+	bottom: 0;
+	margin-bottom: 80px;
+}
 /*----Subscription plans session---*/
 .subcription-area {
 	width: 90%;
@@ -2157,8 +2305,17 @@ float: left;
 		text-align: center;
 		color: #534B3F;
 	font-size: 17px;
-		font-family: "Kodchasan";
+	font-family: "Kodchasan";
+	margin-bottom: 40px;
 	}
+.sub-txt-title p {
+	font-size: 13px;
+	font-family: 'poppins';
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
 .sub-txt-ti
 tle p {
 	font-size: 13px;
@@ -2169,9 +2326,7 @@ tle p {
 	margin-top: 20px;
 	color: #000;
 }
-.bottom-btn {
-	margin-top: 80px;
-}
+
 .sub-txt p{
 	width: 100%;
 	margin-left: auto;
@@ -2317,7 +2472,7 @@ tle p {
 }
 
 .dropdown-toggle {
-    padding: 15px;
+    padding: 11px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -2327,6 +2482,7 @@ tle p {
 	background-color: #fff;
 	font-size: 17px;
 	color: rgba(0, 0, 0, 0.3);
+	margin-top: 13px;
 }
 .dropdown-toggle .arrow {
     margin-left: 10px;
@@ -2433,7 +2589,7 @@ tle p {
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 12px 20px;
+	padding: 8px 20px;
 	font-size: 17px;
 	border: none;
 	color: rgba(0, 0, 0, 0.3);
@@ -2445,7 +2601,7 @@ tle p {
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 12px 30px;
+	padding: 8px 20px;
 	font-size: 17px;
 	border: none;
 	color: rgba(0, 0, 0, 0.3);
@@ -2597,6 +2753,21 @@ tle p {
 	margin-left: 0;
 	margin-top: 20px;
 }
+.change-reg-no-info {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px 10px;;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin-top: 15px;
+	outline: none;
+	
+}
+input[type="number" i] {
+	border: none;
+	font-size: 15px;
+	outline: none;
+}
 .change-reg-info {
 	margin-left: auto;
 	margin-right: auto;
@@ -2610,6 +2781,7 @@ tle p {
 	font-family: 'Poppins';
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
 }
 .num-verify-text p{
 	width: 60%;
@@ -2662,8 +2834,8 @@ tle p {
 }
 
 input[type=text], input[type=password] {
-	padding: 13px;
-	font-size: 17px;
+	padding: 6px;
+	font-size: 15px;
 }
 ::placeholder {
 	color: rgba(83, 75, 63, 0.3);
@@ -3350,6 +3522,7 @@ textarea {
 		margin-right: auto;
 		margin-left: auto;
 	}
+	
 	.sub-txt {
 		display: none;
 	}
@@ -4129,11 +4302,25 @@ textarea {
 .helper-msg {
 	display: none;
 }
+	.bottom-btn {
+	position: sticky;
+	width: 100%;
+	bottom: 0;
+	margin-top: 80px;
+}
 	/*----payment option session---*/
 	.payment-option-body {
 		width: 60%;
 		margin-top: 40px;
 		margin-bottom: 40px;
+	}
+	.settings-option-body {
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.settings-body {
+		width: 100%;
 	}
 	.result-option-body {
 		width: 50%;
@@ -4602,3 +4789,53 @@ textarea {
 	width: 100%;
 
 }
+	/*----About us session----*/
+	.about-top-nav {
+		display: none;
+	}
+	.about-cover {
+		width: 100%;
+	}
+	.about-cover img{
+		width: 100%;
+		height: 350px;
+	}
+	.top-content {
+	display: flex;
+		margin-bottom: 40px;
+}
+	.about-parts {
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-content {
+	position: relative;
+}
+	.about-content img{
+		width: 50%;
+	object-fit: contain;
+
+}
+	.pic-content {
+		display: block;
+		top: 60px;
+	}
+	.pic-content h2{
+	width: 50%;
+	margin-left: 40%;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+	.pic-content p{
+	width: 60%;
+	color: #fff;
+	text-align: center;
+	top: 50px;
+	font-size: 13px;
+		margin-top: 10px;
+}
+	.pic-content-mob h2 {
+		display: none;
+	}

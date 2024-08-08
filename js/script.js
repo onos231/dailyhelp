@@ -140,5 +140,19 @@ const amountInUSD = 1000;
             });
         }
 
+// FAQ session
+
+function toggleFAQ(button) {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('.toggle-icon');
+
+    if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        icon.textContent = '+';
+    } else {
+        answer.style.display = 'block';
+        icon.textContent = '-';
+    }
+}
 
 
