@@ -632,14 +632,14 @@ span.psw {
 }
 /*----dashboard session---*/
 .dashboard {
-	width: 90%;
+	width: 85%;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 4px;
+	padding: 14px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 8px;
 	font-family: 'Roboto';
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .column {
@@ -1060,6 +1060,11 @@ span.psw {
 	margin-right: 10px;
 }
 /*---About us session----*/
+.about-parts {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 .about-top-nav {
 	background-color: #E45959;
 	display: flex;
@@ -1124,7 +1129,7 @@ span.psw {
 	color: rgba(0, 0, 0, 0.7);
 }
 .about-text ul {
-	width: 95%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Poppins';
@@ -3157,6 +3162,48 @@ textarea {
 	.settings-top-nav {
 		display: none;
 	}
+	.top-content {
+	display: flex;
+		margin-bottom: 40px;
+}
+	.about-parts {
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pic-content-mob h2 {
+		display: none;
+	}
+	.pic-content {
+		display: block;
+		top: 250px;
+	}
+	.pic-content h2{
+	width: 50%;
+	margin-left: 25%;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+	.pic-content p{
+	width: 85%;
+	color: #fff;
+	text-align: center;
+	top: 50px;
+	font-size: 13px;
+		margin-top: 10px;
+		margin-left: 5%;
+}
+	.pic-content-mob h2 {
+		display: none;
+	}
+	pic-content
+	.about-text {
+		width: margin;
+	}
+	.about-text ul {
+		list-style: none;
+	}
 	.bottom-btn {
 		position: sticky;
 	}
@@ -3355,8 +3402,10 @@ textarea {
 	margin-top: 7px;
 }
 
-
-
+	.about-top-nav {
+		display: none;
+	}
+	
 .menu-area-logo img {
 	width: 30%;
 }
