@@ -342,7 +342,7 @@ outline: none;
 }
 .terms-condition {
     text-align: center;
-	width: 250px;
+	width: 80%;
 	margin-top: 40px;
 	margin-bottom: 2px;
 	margin-left: auto;
@@ -350,7 +350,7 @@ outline: none;
 	color: rgba(0, 0, 0, 0.7);
 }
 .terms-condition p{
-	width: 80%;
+	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 0px;
 	font-size: 15px;
@@ -458,18 +458,6 @@ span.psw {
 .email-db-2 {
 	margin-right: 5px;
 	
-}
-#dob {
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 4px;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 12px 20px;
-	font-size: 15px;
-	border: none;
-	color: rgba(0, 0, 0, 0.3);
-	outline: none;
-	float: right;
 }
 .states {
 	position: relative;
@@ -893,6 +881,7 @@ span.psw {
 #addButton {
     position: fixed;
 	position: absolute;
+	position: -webkit-sticky;
     bottom: 20px;
     right: 20px;
     background-color: #D2E4F9;
@@ -1135,6 +1124,7 @@ span.psw {
 	font-family: 'Poppins';
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.7);
+	list-style: none;
 }
 .about-text ul li{
 	margin-bottom: 10px;
@@ -1261,7 +1251,7 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 40px 40px 0 0;
-	margin-bottom: 20px;
+	margin-bottom: 180px;
 }
 .add-advert-tabs p{
 	position: absolute;
@@ -1330,6 +1320,12 @@ span.psw {
 	/*color: rgba(0, 0, 0, 0.3);*/
 	color: #fff;
 }
+.user-helper-gender {
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 2px;
+	color: #000;
+}
 .helper-gender {
 	text-align: right;
 	margin-right: 20px;
@@ -1387,6 +1383,14 @@ span.psw {
 	/*color: rgba(0, 0, 0, 0.3);*/
 	color: #000;
 }
+.user-prof-title {
+	margin-top: 8px;
+	float: left;
+	width: 100%;
+	font-family: 'Roboto';
+	color: rgba(0, 0, 0, 0.9);
+	color: #000;
+}
 .prof-title {
 	margin-top: 8px;
 	float: left;
@@ -1433,6 +1437,14 @@ span.psw {
 	/*color: rgba(0, 0, 0, 0.9);*/
 	color: #fff;
 }
+.prof-helper-status {
+	width: 20%;
+	float: left;
+	margin-top: 6px;
+	color: #000;
+	margin-right: 10px;
+	text-align: right;
+}
 .helper-status{
 	width: 10%;
 	margin-top: 6px;
@@ -1448,6 +1460,14 @@ span.psw {
 	margin-right: 1px;
 	margin-top: 6px;
 	float: left;
+}
+.prof-online-status {
+	display: flex;
+}
+.prof-online-status img {
+	width: 10px;
+	margin-right: 4px;
+	margin-top: 15px;
 }
 .online-status {
 	display: flex;
@@ -1671,15 +1691,15 @@ float: left;
 .chat-activity-list {
 	display: flex;
 	margin-top: 20px;
-	padding: 12px 4px;
-	width: 95%;
-	height: 50px;
+	width: 100%;
+	height: 80px;
 	border-radius: 4px;
 	margin-bottom: 10px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 .chat-info-content {
 	width: 100%;
+	padding: 12px;
 }
 .chat-activity-pic img {
 	display: block;
@@ -1812,7 +1832,14 @@ float: left;
 .edit-pic img {
 	width: 24px;
 }
+.user-profile-tabs {
+	display: flex;
+	background-color: rgba(239, 246, 254, 1);
+	border-radius: 8px;
+	padding: 2px;
+	margin-top: 40px;
 
+}
 .profile-tabs {
 	display: flex;
 	/*background-color: rgba(239, 246, 254, 1);*/
@@ -1825,6 +1852,7 @@ float: left;
 	width: 100%;
 	height: auto;
 	padding: 10px;
+	font-family: 'Roboto';
 	}
 .profile-settings-tabs {
 	border-radius: 4px;
@@ -1955,6 +1983,8 @@ float: left;
 	margin-top: 15px;
 	outline: none;
 	color: #fff;
+	font-family: 'Roboto';
+	font-weight: 300;
 }
 .add-dropdown-reg-info {
 	margin-left: auto;
@@ -2606,10 +2636,10 @@ tle p {
 
 .dropdown-time-content select {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
 	border: none;
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 14px 8px;
+	padding: 16px 8px;
 	font-size: 15px;
 }
 
@@ -2635,6 +2665,7 @@ tle p {
 			color: #000;
 			font-size: 15px;
 			font-family: 'Roboto';
+			font-weight: 100;
 		}
 
 /*----dob session---*/
@@ -2643,6 +2674,7 @@ tle p {
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
 	padding: 16px 10px;
 	font-size: 17px;
 	border: none;
@@ -2655,6 +2687,7 @@ tle p {
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
 	width: 40%;
 	padding: 16px 10px;
 	font-size: 17px;
@@ -2953,6 +2986,7 @@ textarea {
 }
 .post-steps {
 	width: 100%;
+	margin-top: 40px;
 }
 .post-empty-btn {
 	width: 10%;
@@ -4164,6 +4198,11 @@ textarea {
 .pic-menu-area img {
 		width: 100%;
 }
+
+.pic-area {
+		display: flex;
+	margin-top: 25px;
+}
 .pic-area p{
 	width: 100%;
 	color: #fff;
@@ -4743,13 +4782,14 @@ textarea {
 	/*---Desktop Slides-----*/
 	.slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 600px;
 	margin-top: 40px;
+		float: left;
 }
 .slideshow-container img {
     position: relative;
-    max-width: 1000px;
-    margin: auto;
+    max-width: 600px;
+	
 }
 
 .mySlides {
@@ -4759,13 +4799,12 @@ textarea {
 
 .text {
     color: #f2f2f2;
-    font-size: 28px;
+    font-size: 40px;
     padding: 8px 12px;
-    position: absolute;
     bottom: 8px;
-    width: 100%;
-    text-align: center;
-	top: 220px;
+    width: 60%;
+	position: absolute;
+	bottom: 0px;
 }
 
 .fade {
@@ -4855,18 +4894,6 @@ textarea {
 	.left {
 		margin-left: 8px;
 	}
-	#dob {
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 4px;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-	padding: 12px 12px;
-	font-size: 17px;
-	border: none;
-	color: rgba(0, 0, 0, 0.3);
-	outline: none;
-	float: right;
-}
 
 .call-options {
 	display: flex;
@@ -4949,6 +4976,7 @@ outline: none;
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
 	width: 50%;
 	padding: 8px 10px;
 	font-size: 15px;
@@ -4962,6 +4990,7 @@ outline: none;
 	margin-right: auto;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
 	width: 40%;
 	padding: 9px 10px;
 	font-size: 15px;
