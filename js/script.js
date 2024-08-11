@@ -1,3 +1,44 @@
+// Hamburger menu
+document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    if (menu.style.right === '0px') {
+        menu.style.right = '-250px';
+    } else {
+        menu.style.right = '0px';
+    }
+});
+		document.getElementById('close-btn').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    menu.style.right = '-250px';
+});
+		document.addEventListener('click', function(event) {
+    var menu = document.getElementById('menu');
+    var hamburger = document.getElementById('hamburger');
+    
+    // Check if the click happened outside the menu and hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.style.right = '-250px';
+    }
+});
+
+// slide container
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 12000); // Change image every 4 seconds
+}
+
+// dropdown
+
 function toggleDropdownMenu() {
     var dropdownMenu = document.querySelector('.dropdown-menu');
     var arrow = document.querySelector('.dropdown-toggle .arrow');

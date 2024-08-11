@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  
 </head>
 	
 <body>
@@ -21,59 +21,80 @@
 		body {
 			background-color: #0BA4DB;
 		}
-		.web-home {
-		}
+
+		@media only screen and (min-width: 992px) {
 		.main-web-nav {
+			width: 100%;
 			display: flex;
 			display: inline-block;
-			padding: 20px;
 			background-color: azure;
 		}
+			.nav-mob {
+				display: none;
+			}
 		.main {
 			display: flex;
-			margin-top: 10px;
+			margin-top: 15px;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 		.main-heading {
 			display: flex;
-			width: 70%;
+			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
+			height: 20px;
+			
 		}
-
+		.logo-part {
+			display: flex;
+			width: 100%;
+		}
+		.app-logo {
+			width: 50%;
+		}
+		.app-logo img{
+			width: 35px;
+			float: left;
+			margin-left: 40px;
+		}
+		.login-signup {
+			width: 50%;
+			text-align: right;
+			float: right;
+			margin-right: 40px;
+		}
 		.sub {
 			width: 50%;
-			margin-top: 0px;
-			padding: 20px;
+			padding: 14px;
 			border-radius: 20px;
 			background-color: #E45959;
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: 10px;
 		}
 		.sub-heads {
-			width: 100%;
+			width: 90%;
   			overflow: auto;
 			display: inline-block;
-			height: 20px;
-			display: block;
-
-		}.sub-heads a {
+			margin-left: auto;
+		}
+		.sub-heads a {
+			display: inline-block;
   			color: #000;
   			text-decoration: none;
-  			font-size: 17px;
-			width: 20%; /* Four links of equal widths */
+  			font-size: 15px;
+			width: 15%; /* Four links of equal widths */
+			
+			float: left;
   		}
 		.sub-heads img{
-			width: 14%;
+			width: 20px;
 			float: left;
 			margin-right: 4px;
 		}
 		
-		.app-logo {
-			width: 40px;
-		}
-		.app-logo img{
-			width: 100%;
-		}
+		
 		.app-profile {
 			width: 40px;
 		}
@@ -97,14 +118,49 @@
 			object-fit: contain;
 		}
 
+			/*---Desktop Slides-----*/
+	.slideshow-container {
+    position: relative;
+    max-width: 100%;
+	margin-top: 40px;
+		float: left;
+}
+.slideshow-container img {
+    position: relative;
+    max-width: 100%;
+	margin-left: 20px;
+	margin-top: 40px;
+	
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+	width: 500px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
 		.home-content {
+			width: 95%;
 			position: relative;
 			margin-left: auto;
-			object-fit: contain;
+			margin-right: auto;
 		}
-		
+		.home-caption-n-txt {
+			width: 50%;
+			margin-left: auto;
+
+		}
 		.home-content p {
-			width: 55%;
+			width: 75%;
 			font-size: 15px;
 			margin-top: 20px;
 			color: #fff;
@@ -112,18 +168,18 @@
 			margin-right: auto;
 			text-align: center;
 		}
-		.home-caption-n-txt {
+		.headline {
 			width: 60%;
 			margin-left: auto;
-
+			margin-right: auto;
 		}
 		.home-caption-n-txt h1 {
-			width: 70%;
+			width: 100%;
 			text-align: center;
 			color: #fff;
 			display: inline-block;
 			margin-top: 160px;
-			font-size: 34px;
+			font-size: 30px;
 		}
 		.home-login {
 			width: 60px;
@@ -137,7 +193,66 @@
 			border-radius: 8px;
 			margin-left: 10px;
 		}
+			}
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			.sub {
+			width: 50%;
+			padding: 14px;
+			border-radius: 20px;
+			background-color: #E45959;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+			.dashboard-space {
+				width: 80%;
+			}
+			.sub-heads {
+			width: 100%;
+  			overflow: auto;
+			display: inline-block;
+			margin-left: 20px;
+		}
+
+			.main-heading {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			.app-logo img{
+			width: 30px;
+			float: left;
+			margin-top: 8px;
+			margin-left: 20px;
+		}
+			.login-signup {
+				margin-right: 20px;
+			}
+			.login-signup {
+				margin-right: 20px;
+			}
+			.mySlides {
+			width: 400px;
+			}
+			.home-content {
+			width: 95%;
+		}
+		.home-caption-n-txt {
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+
+		}
+			.home-caption-n-txt h1 {
+				margin-top: 40px;
+			}
+			.slideshow-container {
+			margin-left: 20%;
+}
+		}
 		
+		
+		
+	
 	</style>
 	
     <!--login Section-->
@@ -148,50 +263,48 @@
    <header>
 	   <div class="main-web-nav">
 		   <div class="main">
-		<div class="app-logo">
-			<a href="test.html">	
-	  <img src="img/logo/logo.png" alt="Project 2" />
-				</a></div>
-		   
 		   <div class="main-heading">
 			 <div class="sub-heads">
 				 <a href="dashboard.html">
 		
-	  <img src="img/index/dailyhelp-services.png" alt="Project 2" /><h5>DailyHelp</h5>
+	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DHS
 				
 				 </a>
-		</div>
-			 <div class="sub-heads">
+		
 				 <a href="dashboard.html">
 			
-	  <img src="img/index/about.png" alt="Project 2" /><h5>About Us</h5>
+	  <img src="img/index/about.png" alt="Project 2" />About Us
 			
 				 </a>
-		</div>
-			  <div class="sub-heads">
+		
 				 <a href="dashboard.html">
 				
-	  <img src="img/index/settings.png" alt="Project 2" /><h5>Settings</h5>
+	  <img src="img/index/settings.png" alt="Project 2" />Settings
 			
 				 </a>
-		</div>
-			 <div class="sub-heads">
+	
 				 <a href="dashboard.html">
 			
-	  <img src="img/index/payments.png" alt="Project 2" /><h5>Payments</h5>
+	  <img src="img/index/payments.png" alt="Project 2" />Payments
 				 </a>
-		</div>
-			 <div class="sub-heads">
+		
 				 <a href="dashboard.html">
-	  <img src="img/index/FAQ.png" alt="Project 2" /><h5>FAQ</h5>
+	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
 				 </a>
-		</div>
-			  <div class="sub-heads">
+	
 				 <a href="dashboard.html">
-	  <img src="img/index/contact.png" alt="Project 2" /><h5>Contact Us</h5>
+	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
 				 </a>
 		</div>
 		</div>
+	
+		   </div>
+		    <div class="logo-part">
+		<div class="app-logo">
+			<a href="test.html">	
+	  <img src="img/logo/logo.png" alt="Project 2" />
+				</a></div>
+			   		   <div class="login-signup">
 		<button class="home-login">
 			Login
 				</button>
@@ -199,8 +312,8 @@
 		<button class="home-signup">			
 			Signup
 				</button>
-		   </div>
-		   
+				   </div>
+				   </div>
 		 <div class="sub">
 		   <div class="web-dashboard">
 				
@@ -221,7 +334,7 @@
 			<div class="dashboard-space">
 				<a href="helpers-search-result.html">
 					<div class="dashboard-pic">
-	  <img src="img/index/find-help.png" alt="Project 2" /><h5>Dashboard </h5>
+	  <img src="img/index/find-help-black.png.png" alt="Project 2" /><h5>Dashboard </h5>
 						</div></a>
 				</div>
 		   </div>  
@@ -232,6 +345,50 @@
 	   
 		   </div></div>
 	   
+	   <div class="nav-mob">
+		 <div class="profile-pic">
+	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
+            <div class="home-logo-pic">
+	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
+		 </div>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </div>
+
+    <nav id="menu" class="menu">
+		<div class="close-btn" id="close-btn">&times;</div>
+		<div class="home-logo-pic">
+	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
+		</div>
+        <ul>
+            <li><div class="sub-heads">
+				 <a href="dashboard.html">
+	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DH Services
+				
+				</a></div></li>
+			<li><div class="sub-heads">
+				 <a href="dashboard.html">
+	  <img src="img/index/about.png" alt="Project 2" />About Us
+				
+				</a></div></li>
+			<li><div class="sub-heads">
+				 <a href="dashboard.html">
+	  <img src="img/index/settings.png" alt="Project 2" />Settings
+				
+				</a></div></li>
+			<li><div class="sub-heads">
+				 <a href="dashboard.html">
+	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
+				
+				</a></div></li>
+			<li><div class="sub-heads">
+				 <a href="dashboard.html">
+	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
+				
+				</a></div></li>
+        </ul>
+    </nav>
 	  </header>
 		
 		<div class="home-content">
@@ -250,11 +407,14 @@
         </div>
     </div>
 			<div class="home-caption-n-txt">
-			<h1>TAKE CARE OF KIDS, ELDERLY OR SICK PEOPLE</h1>
+				<div class="headline">
+			<h1>TAKE CARE OF KIDS, ELDERLY OR SICK PEOPLE</h1></div>
+				<div>
 			<p>Welcome to Dailyhelp, where we bridge the gap between skilled professionals and those who need their expertise. Whether you’re a homeowner looking for a reliable electrician.
 			</p>
 			<p>Whether you’re a homeowner looking for a reliable electrician, a business in need of expert carpenters, or a contractor seeking experienced labor, we are here to make the connection effortless and reliable.
 			</p>
+					</div>
 			</div>
 			</div>
 	
@@ -269,21 +429,6 @@
 			
 		</div>
 			
-<script>
-	let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 12000); // Change image every 4 seconds
-}
-	</script>
+<script src="js/script.js"></script>
 	
 </body>

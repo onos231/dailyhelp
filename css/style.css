@@ -500,7 +500,7 @@ span.psw {
 }
 
 .faq-question:hover {
-    background: #0056b3;
+    background: #CDA002;
 }
 
 .faq-answer {
@@ -519,7 +519,283 @@ span.psw {
 }
 
 /*----index session---*/
-.top-nav{
+.nav-mob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #E45959;
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+	z-index: 1
+}
+.profile-pic {
+	float: left;
+	width: 8%;
+	margin-top: 10px;
+
+}
+.profile-pic img{
+	width: 100%;
+}
+.home-logo-pic {
+	width: 8%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.home-logo-pic img {
+	width: 100%;
+	margin-top: 10px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+  	margin-left: 40px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    background-color: #575757;
+}
+		.sub-heads {
+  			overflow: auto;
+			display: inline-block;
+			margin-left: auto;
+		}
+		.sub-heads a {
+			display: inline-block;
+  			color: #000;
+  			text-decoration: none;
+  			font-size: 15px;
+			width: 15%; /* Four links of equal widths */
+  		}
+		.sub-heads img{
+			width: 20px;
+			margin-right: 4px;
+		}
+		.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+		.main-web-nav {
+			display: none;
+		}
+		.main {
+			display: flex;
+			margin-top: 15px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.main-heading {
+			display: flex;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 20px;
+			
+		}
+		.logo-part {
+			display: flex;
+			width: 100%;
+		}
+		.app-logo {
+			width: 50%;
+		}
+		.app-logo img{
+			width: 35px;
+			float: left;
+			margin-left: 40px;
+		}
+		.login-signup {
+			width: 50%;
+			text-align: right;
+			float: right;
+			margin-right: 40px;
+		}
+		.sub {
+			width: 50%;
+			padding: 14px;
+			border-radius: 20px;
+			background-color: #E45959;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+		.sub-heads {
+			width: 90%;
+  			overflow: auto;
+			display: inline-block;
+			margin-left: auto;
+		}
+		.sub-heads a {
+			display: inline-block;
+  			color: #000;
+  			text-decoration: none;
+  			font-size: 15px;
+			width: 15%; /* Four links of equal widths */
+			
+			float: left;
+  		}
+		.sub-heads img{
+			width: 20px;
+			float: left;
+			margin-right: 4px;
+		}
+		
+		
+		.app-profile {
+			width: 40px;
+		}
+		.app-profile img{
+			width: 100%;
+		}
+		.dashboard-pic {
+			display: flex;
+			color: #fff;
+		}
+		.dashboard-pic img{
+			width: 10%;
+			margin-right: 4px;
+			object-fit: contain;
+		}
+		.dashboard-space {
+			display: flex;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			object-fit: contain;
+		}
+
+			/*---Desktop Slides-----*/
+	.slideshow-container {
+    position: relative;
+    max-width: 100%;
+	margin-top: 40px;
+		float: left;
+}
+.slideshow-container img {
+    position: relative;
+    max-width: 100%;
+	margin-left: 20px;
+	margin-top: 40px;
+	
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+	width: 300px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+		.home-content {
+			width: 95%;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.home-caption-n-txt {
+			width: 100%;
+			margin-left: auto;
+
+		}
+		.home-content p {
+			width: 75%;
+			font-size: 15px;
+			margin-top: 20px;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		.headline {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.home-caption-n-txt h1 {
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			display: inline-block;
+			margin-top: 20px;
+			font-size: 24px;
+		}
+		.home-login {
+			width: 60px;
+			padding: 2px 2px;
+			border-radius: 8px;
+			background-color: transparent;
+		}
+		.home-signup {
+			width: 80px;
+			padding: 2px 2px;
+			border-radius: 8px;
+			margin-left: 10px;
+		}
+			}
+		.helper-msg-text {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+		padding: 8px;
+
+}
+.helper-msg-text p{
+	width: 70%;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'poppins';
+
+
+}
+/*.top-nav{
 	background-color: #E45959;
 	display: flex;
 	height: 70px;
@@ -534,27 +810,23 @@ span.psw {
 	font-family: 'Kodch';
 	font-size: 17px;
 }
-.slideshow-container {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-}
 .profile-pic {
 	float: left;
-	width: 17%;
-	margin-left: 20px;
+	width: 8%;
+	margin-top: 10px;
+
 }
 .profile-pic img{
 	width: 100%;
 }
 .home-logo-pic {
-	width: 25%;
+	width: 8%;
 	margin-left: auto;
 	margin-right: auto;
 }
 .home-logo-pic img {
 	width: 100%;
-	margin-top: 25px;
+	margin-top: 10px;
 }
 .msg-pic {
 	width: 23%;
@@ -574,21 +846,7 @@ span.psw {
 	background-color: rgba(210, 228, 249, 0.3);
 
 }
-.helper-msg-text {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-		padding: 8px;
 
-}
-.helper-msg-text p{
-	width: 100%;
-	font-size: 17px;
-	font-family: 'poppins';
-
-
-}
 .dash-area-1 {
 	max-width: 80%;
 	margin-top: 20px;
@@ -617,7 +875,7 @@ span.psw {
 	margin: 0;
 	font-weight: 400;
 	font-weight: 'Roboto';
-}
+}*/
 /*----dashboard session---*/
 .dashboard {
 	width: 85%;
@@ -627,7 +885,11 @@ span.psw {
 	margin-right: auto;
 	border-radius: 8px;
 	font-family: 'Roboto';
-	margin-bottom: 40px;
+	margin-bottom: 80px;
+}
+.result-option-body {
+	width: 100%;
+	
 }
 
 .column {
@@ -1167,8 +1429,13 @@ span.psw {
 	font-weight: 100;
 	
 }
-.search-top-nav {
+.search-helper-nav {
+	display: flex;
+	margin-bottom: 30px;
+	height: 70px;
 	background-color: #E45959;
+}
+.search-top-nav {
 	display: flex;
 	margin-bottom: 30px;
 	height: 70px;
@@ -3193,18 +3460,165 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.settings-top-nav {
+	.search-helper-nav {
 		display: none;
 	}
-	.top-content {
-	display: flex;
-		margin-bottom: 40px;
-}
-	.about-parts {
-		width: 25%;
-		margin-left: auto;
-		margin-right: auto;
+	.nav-mob {
+		display: none;
 	}
+	.main-web-nav {
+			width: 100%;
+			display: flex;
+			display: inline-block;
+			background-color: azure;
+		}
+
+	.nav-mob {
+				display: none;
+			}
+		.main {
+			display: flex;
+			margin-top: 15px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.main-heading {
+			display: flex;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 20px;
+			
+		}
+		.logo-part {
+			display: flex;
+			width: 100%;
+		}
+		.app-logo {
+			width: 50%;
+		}
+		.app-logo img{
+			width: 35px;
+			float: left;
+			margin-left: 40px;
+		}
+		.login-signup {
+			width: 50%;
+			text-align: right;
+			float: right;
+			margin-right: 40px;
+		}
+		.sub {
+			width: 50%;
+			padding: 14px;
+			border-radius: 20px;
+			background-color: #E45959;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+		.sub-heads {
+			width: 90%;
+  			overflow: auto;
+			display: inline-block;
+			margin-left: auto;
+		}
+		.sub-heads a {
+			display: inline-block;
+  			color: #000;
+  			text-decoration: none;
+  			font-size: 15px;
+			width: 15%; /* Four links of equal widths */
+			
+			float: left;
+  		}
+		.sub-heads img{
+			width: 20px;
+			float: left;
+			margin-right: 4px;
+		}
+		
+		
+		.app-profile {
+			width: 40px;
+		}
+		.app-profile img{
+			width: 100%;
+		}
+		.dashboard-pic {
+			display: flex;
+			color: #fff;
+		}
+		.dashboard-pic img{
+			width: 10%;
+			margin-right: 4px;
+			object-fit: contain;
+		}
+		.dashboard-space {
+			display: flex;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			object-fit: contain;
+		}
+
+			/*---Desktop Slides-----*/
+	
+		.sub {
+			width: 50%;
+			padding: 14px;
+			border-radius: 20px;
+			background-color: #E45959;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+			.dashboard-space {
+				width: 80%;
+			}
+			.sub-heads {
+			width: 100%;
+  			overflow: auto;
+			display: inline-block;
+			margin-left: 20px;
+		}
+
+			.main-heading {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			.app-logo img{
+			width: 30px;
+			float: left;
+			margin-top: 8px;
+			margin-left: 20px;
+		}
+			.login-signup {
+				margin-right: 20px;
+			}
+			.login-signup {
+				margin-right: 20px;
+			}
+			.mySlides {
+			width: 400px;
+			}
+			.home-content {
+			width: 95%;
+		}
+		.home-caption-n-txt {
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+
+		}
+			.home-caption-n-txt h1 {
+				margin-top: 40px;
+			}
+			.slideshow-container {
+			margin-left: 20%;
+}
+/*----End------------*/
+	
 	.pic-content-mob h2 {
 		display: none;
 	}
@@ -3550,7 +3964,7 @@ textarea {
 	height: 100%;
 	}
 .dailyhelp-pic {
-	display: block;
+	display: none;
 	width: 20%;
 	margin-left: auto;
 	margin-right: auto;
@@ -3563,10 +3977,25 @@ textarea {
 }
 	.login-project {
 		width: 100%;
+		background-color: #fff;
 
 	}
 	.web-log {
 		width: 50%;
+
+	}
+	.intro-pics {
+		width: 100%;
+		
+	}
+	.intro-pics img {
+		width: 100%;
+		
+	}
+	.about-steps {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.social-icon-area {
@@ -4029,11 +4458,183 @@ textarea {
 	}
 }
 @media only screen and (min-width: 992px) {
+	.search-helper-nav {
+		display: none;
+	}
+			.main-web-nav {
+			width: 100%;
+			display: flex;
+			display: inline-block;
+			background-color: azure;
+		}
+			.nav-mob {
+				display: none;
+			}
+		.main {
+			display: flex;
+			margin-top: 15px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.main-heading {
+			display: flex;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 20px;
+			
+		}
+		.logo-part {
+			display: flex;
+			width: 100%;
+		}
+		.app-logo {
+			width: 50%;
+		}
+		.app-logo img{
+			width: 35px;
+			float: left;
+			margin-left: 40px;
+		}
+		.login-signup {
+			width: 50%;
+			text-align: right;
+			float: right;
+			margin-right: 40px;
+		}
+		.sub {
+			width: 50%;
+			padding: 14px;
+			border-radius: 20px;
+			background-color: #E45959;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+		.sub-heads {
+			width: 90%;
+  			overflow: auto;
+			display: inline-block;
+			margin-left: auto;
+		}
+		.sub-heads a {
+			display: inline-block;
+  			color: #000;
+  			text-decoration: none;
+  			font-size: 15px;
+			width: 15%; /* Four links of equal widths */
+			
+			float: left;
+  		}
+		.sub-heads img{
+			width: 20px;
+			float: left;
+			margin-right: 4px;
+		}
+		
+		
+		.app-profile {
+			width: 40px;
+		}
+		.app-profile img{
+			width: 100%;
+		}
+		.dashboard-pic {
+			display: flex;
+			color: #fff;
+		}
+		.dashboard-pic img{
+			width: 10%;
+			margin-right: 4px;
+			object-fit: contain;
+		}
+		.dashboard-space {
+			display: flex;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			object-fit: contain;
+		}
 
+			/*---Desktop Slides-----*/
+	.slideshow-container {
+    position: relative;
+    max-width: 100%;
+	margin-top: 40px;
+		float: left;
+}
+.slideshow-container img {
+    position: relative;
+    max-width: 100%;
+	margin-left: 20px;
+	margin-top: 40px;
+	
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+	width: 500px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+		.home-content {
+			width: 95%;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.home-caption-n-txt {
+			width: 50%;
+			margin-left: auto;
+
+		}
+		.home-content p {
+			width: 75%;
+			font-size: 15px;
+			margin-top: 20px;
+			color: #fff;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		.headline {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.home-caption-n-txt h1 {
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			display: inline-block;
+			margin-top: 160px;
+			font-size: 30px;
+		}
+		.home-login {
+			width: 60px;
+			padding: 2px 2px;
+			border-radius: 8px;
+			background-color: transparent;
+		}
+		.home-signup {
+			width: 80px;
+			padding: 2px 2px;
+			border-radius: 8px;
+			margin-left: 10px;
+		}
 
 /*---web index page--*/
 
-	.top-nav {
+	/*.top-nav {
 		display: none;
 	}
 .web-nav {
@@ -4078,7 +4679,7 @@ textarea {
 	width: 100%;
 	height: 100%;
 	/*background-color: #D2E4F9;*/
-	position: absolute;
+	/*position: absolute;
 	margin-top: 40px;
 }
 .mobile-contents {
@@ -4359,6 +4960,7 @@ textarea {
 }
 	.login-project {
 		width: 50%;
+		height: auto;
 	}
 	.login-options {
 	width: 55%;
@@ -4368,7 +4970,7 @@ textarea {
 	.logo-pics {
 		width: 8%;
 		margin-left: auto;
-		margin-top: 30px;
+
 	}
 	.logo-pics img{
 		width: 100%;
@@ -4779,43 +5381,7 @@ textarea {
 
 }
 	
-	/*---Desktop Slides-----*/
-	.slideshow-container {
-    position: relative;
-    max-width: 600px;
-	margin-top: 40px;
-		float: left;
-}
-.slideshow-container img {
-    position: relative;
-    max-width: 600px;
 	
-}
-
-.mySlides {
-    display: none;
-    position: relative;
-}
-
-.text {
-    color: #f2f2f2;
-    font-size: 40px;
-    padding: 8px 12px;
-    bottom: 8px;
-    width: 60%;
-	position: absolute;
-	bottom: 0px;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
 	/*----dashboard session---*/
 	.dashboard {
 		width: 80%;
