@@ -9,7 +9,7 @@
   <title>DailyHelp</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stylen.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   
@@ -18,241 +18,55 @@
 <body>
 	
 	<style>
-		body {
-			background-color: #0BA4DB;
-		}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
 
-		@media only screen and (min-width: 992px) {
-		.main-web-nav {
-			width: 100%;
-			display: flex;
-			display: inline-block;
-			background-color: azure;
-		}
-			.nav-mob {
-				display: none;
-			}
-		.main {
-			display: flex;
-			margin-top: 15px;
-			margin-left: 10px;
-			margin-right: 10px;
-		}
-		.main-heading {
-			display: flex;
-			width: 80%;
-			margin-left: auto;
-			margin-right: auto;
-			height: 20px;
-			
-		}
-		.logo-part {
-			display: flex;
-			width: 100%;
-		}
-		.app-logo {
-			width: 50%;
-		}
-		.app-logo img{
-			width: 35px;
-			float: left;
-			margin-left: 40px;
-		}
-		.login-signup {
-			width: 50%;
-			text-align: right;
-			float: right;
-			margin-right: 40px;
-		}
-		.sub {
-			width: 50%;
-			padding: 14px;
-			border-radius: 20px;
-			background-color: #E45959;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 10px;
-		}
-		.sub-heads {
-			width: 90%;
-  			overflow: auto;
-			display: inline-block;
-			margin-left: auto;
-		}
-		.sub-heads a {
-			display: inline-block;
-  			color: #000;
-  			text-decoration: none;
-  			font-size: 15px;
-			width: 15%; /* Four links of equal widths */
-			
-			float: left;
-  		}
-		.sub-heads img{
-			width: 20px;
-			float: left;
-			margin-right: 4px;
-		}
-		
-		
-		.app-profile {
-			width: 40px;
-		}
-		.app-profile img{
-			width: 100%;
-		}
-		.dashboard-pic {
-			display: flex;
-			color: #fff;
-		}
-		.dashboard-pic img{
-			width: 10%;
-			margin-right: 4px;
-			object-fit: contain;
-		}
-		.dashboard-space {
-			display: flex;
-			width: 60%;
-			margin-left: auto;
-			margin-right: auto;
-			object-fit: contain;
-		}
-
-			/*---Desktop Slides-----*/
-	.slideshow-container {
+.close-container {
     position: relative;
-    max-width: 100%;
-	margin-top: 40px;
-		float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.slideshow-container img {
-    position: relative;
-    max-width: 100%;
-	margin-left: 20px;
-	margin-top: 40px;
-	
-}
-
-.mySlides {
-    display: none;
-    position: relative;
-	width: 500px;
+		.caption-area {
+			margin-top: 45px;
+		}
+.caption h1 {
+    text-align: center;
+    font-size: 17px;
+    margin: 0;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.close-btn {
+    position: fixed;
+    right: 20px;
+    font-size: 40px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+.close-btn:hover {
+    background-color: #555;
 }
-		.home-content {
-			width: 95%;
-			position: relative;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.home-caption-n-txt {
-			width: 50%;
-			margin-left: auto;
 
-		}
-		.home-content p {
-			width: 75%;
-			font-size: 15px;
-			margin-top: 20px;
-			color: #fff;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
-		.headline {
-			width: 60%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.home-caption-n-txt h1 {
-			width: 100%;
-			text-align: center;
-			color: #fff;
-			display: inline-block;
-			margin-top: 160px;
-			font-size: 30px;
-		}
-		.home-login {
-			width: 60px;
-			padding: 2px 2px;
-			border-radius: 8px;
-			background-color: transparent;
-		}
-		.home-signup {
-			width: 80px;
-			padding: 2px 2px;
-			border-radius: 8px;
-			margin-left: 10px;
-		}
-			}
-		@media only screen and (min-width: 768px) and (max-width: 991px) {
-			.sub {
-			width: 50%;
-			padding: 14px;
-			border-radius: 20px;
-			background-color: #E45959;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 10px;
-		}
-			.dashboard-space {
-				width: 80%;
-			}
-			.sub-heads {
-			width: 100%;
-  			overflow: auto;
-			display: inline-block;
-			margin-left: 20px;
-		}
 
-			.main-heading {
-				width: 100%;
-				margin-bottom: 10px;
-			}
-			.app-logo img{
-			width: 30px;
-			float: left;
-			margin-top: 8px;
-			margin-left: 20px;
-		}
-			.login-signup {
-				margin-right: 20px;
-			}
-			.login-signup {
-				margin-right: 20px;
-			}
-			.mySlides {
-			width: 400px;
-			}
-			.home-content {
-			width: 95%;
-		}
-		.home-caption-n-txt {
-			width: 80%;
-			margin-right: auto;
-			margin-left: auto;
 
-		}
-			.home-caption-n-txt h1 {
-				margin-top: 40px;
-			}
-			.slideshow-container {
-			margin-left: 20%;
-}
-		}
+
 		
 		
-		
-	
+
 	</style>
 	
     <!--login Section-->
@@ -260,163 +74,21 @@
 	<div class="web-home">
 		
 
-   <header>
-	   <div class="main-web-nav">
-		   <div class="main">
-		   <div class="main-heading">
-			 <div class="sub-heads">
-				 <a href="dashboard.html">
+   
 		
-	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DHS
-				
-				 </a>
 		
-				 <a href="dashboard.html">
+		<div class="caption-area">
+		<div class="close-container">
 			
-	  <img src="img/index/about.png" alt="Project 2" />About Us
-			
-				 </a>
-		
-				 <a href="dashboard.html">
-				
-	  <img src="img/index/settings.png" alt="Project 2" />Settings
-			
-				 </a>
-	
-				 <a href="dashboard.html">
-			
-	  <img src="img/index/payments.png" alt="Project 2" />Payments
-				 </a>
-		
-				 <a href="dashboard.html">
-	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
-				 </a>
-	
-				 <a href="dashboard.html">
-	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
-				 </a>
-		</div>
-		</div>
-	
-		   </div>
-		    <div class="logo-part">
-		<div class="app-logo">
-			<a href="test.html">	
-	  <img src="img/logo/logo.png" alt="Project 2" />
-				</a></div>
-			   		   <div class="login-signup">
-		<button class="home-login">
-			Login
-				</button>
-		
-		<button class="home-signup">			
-			Signup
-				</button>
-				   </div>
-				   </div>
-		 <div class="sub">
-		   <div class="web-dashboard">
-				
-	
-				<div class="dashboard-space">
-					<a href="dashboard.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/dashboard.png" alt="Project 2" /><h5>Dashboard </h5>
-						</div></a>
-					
-			<div class="dashboard-space">
-				<a href="create-resume-1.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/post.png" alt="Project 2" /><h5>Post Job</h5>
-						</div></a>
-				</div>
-			
-			<div class="dashboard-space">
-				<a href="helpers-search-result.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/find-help-black.png.png" alt="Project 2" /><h5>Dashboard </h5>
-						</div></a>
-				</div>
-		   </div>  
-		   
-		   
-		   
-	</div>
-	   
-		   </div></div>
-	   
-	   <div class="nav-mob">
-		 <div class="profile-pic">
-	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-            <div class="home-logo-pic">
-	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
+        <div class="caption">
+            <h1>Bank Transfer</h1>
+        </div>
+        <div class="close-btn" id="close-btn">&times;</div>
+   
 		 </div>
-        <div class="hamburger" id="hamburger">
-            &#9776;
-        </div>
-    </div>
-
-    <nav id="menu" class="menu">
-		<div class="close-btn" id="close-btn">&times;</div>
-		<div class="home-logo-pic">
-	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		</div>
-        <ul>
-            <li><div class="sub-heads">
-				 <a href="dashboard.html">
-	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DH Services
-				
-				</a></div></li>
-			<li><div class="sub-heads">
-				 <a href="dashboard.html">
-	  <img src="img/index/about.png" alt="Project 2" />About Us
-				
-				</a></div></li>
-			<li><div class="sub-heads">
-				 <a href="dashboard.html">
-	  <img src="img/index/settings.png" alt="Project 2" />Settings
-				
-				</a></div></li>
-			<li><div class="sub-heads">
-				 <a href="dashboard.html">
-	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
-				
-				</a></div></li>
-			<li><div class="sub-heads">
-				 <a href="dashboard.html">
-	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
-				
-				</a></div></li>
-        </ul>
-    </nav>
-	  </header>
 		
-		<div class="home-content">
-			<div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="img/find-helper/gardener.png" style="width:100%">
-            <div class="text" style="display: none;">Work and get paid hourly at your own timing</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="img/find-helper/driver.png" style="width:100%">
-            <div class="text" style="display: none;">Signup for available jobs and get paid hourly</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="img/find-helper/electrician.png" style="width:100%">
-            <div class="text" style="display: none;">Take care of kids, elderly or  sick people</div>
-        </div>
-    </div>
-			<div class="home-caption-n-txt">
-				<div class="headline">
-			<h1>TAKE CARE OF KIDS, ELDERLY OR SICK PEOPLE</h1></div>
-				<div>
-			<p>Welcome to Dailyhelp, where we bridge the gap between skilled professionals and those who need their expertise. Whether you’re a homeowner looking for a reliable electrician.
-			</p>
-			<p>Whether you’re a homeowner looking for a reliable electrician, a business in need of expert carpenters, or a contractor seeking experienced labor, we are here to make the connection effortless and reliable.
-			</p>
-					</div>
-			</div>
-			</div>
+		
 	
 		
    	

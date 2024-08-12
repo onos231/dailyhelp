@@ -1401,6 +1401,43 @@ span.psw {
 	text-align: center;
 	font-family: 'Poppins';
 }
+/*------close button----------*/
+.close-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+		.caption-area {
+			margin-top: 45px;
+			margin-bottom: 80px;
+		}
+.caption h1 {
+    text-align: center;
+    font-size: 17px;
+    margin: 0;
+}
+
+.closed-btn {
+    position: fixed;
+    right: 20px;
+    font-size: 30px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.closed-btn:hover {
+    background-color: #555;
+}
 
 /*----Helpers session---*/
 .settings-top-nav {
@@ -1439,6 +1476,50 @@ span.psw {
 	display: flex;
 	margin-bottom: 30px;
 	height: 70px;
+}
+.captions {
+	margin-top: 40px;
+}
+.sub-captions {
+	display: flex;
+  			overflow: auto;
+		}
+		.sub-captions a {
+  			color: #000;
+  			text-decoration: none;
+  			font-size: 15px;
+			width: 50%; /* Four links of equal widths */
+			
+			float: left;
+  		}
+		.sub-captions img{
+			width: 18px;
+			float: left;
+			margin-right: 4px;
+			margin-left: 20px;
+		}
+.edit {
+	width: 40%;
+	margin-top: 6px;
+	font-family: 'Kod';
+	font-size: 15px;
+}
+.arrow-tittle {
+	margin-top: 6px;
+	color: rgba(0, 0, 0, 0.0);
+}
+.bank-tf {
+	width: 30%;
+	display: flex;
+	background-color: red;
+}
+.bank-pic {
+	width: 10%;
+}
+.bank-pic img {
+	width: 100%;
+	margin-top: 0;
+	float: left;
 }
 .nav-content {
 	display: flex;
@@ -2349,14 +2430,7 @@ float: left;
 	float: right;
 	margin-left: auto;
 }
-.paystack-transfer-title {
-	display: flex;
-	width: 25%;
-	height: 22px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-}
+
 .paypal-title {
 	display: flex;
 	height: 20px;
@@ -2364,21 +2438,14 @@ float: left;
 	margin-right: 4px;
 	margin-bottom: 30px;
 }
-.paystack-title {
-	display: flex;
-	width: 38%;
-	height: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-}
+
 .bank-transfer-title {
 	display: flex;
-	width: 38%;
-	height: 22px;
+	width: 65%;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	display: block;
 }
 .payment-option-title {
 	display: flex;
@@ -2394,7 +2461,6 @@ float: left;
 	margin-top: 10px;
 	font-family: 'Kodchasan';
 }
-.bank-transfer-title h5,
 .payment-option-title h5 {
 	margin-left: 4px;
 	color: #534B3F;
@@ -2404,6 +2470,9 @@ float: left;
 }
 .bank-transfer-title h5 {
 	margin-top: 10px;
+	color: #534B3F;
+	margin-top: 10px;
+	font-family: 'Kodchasan';
 }
 .bank-card-pic {
 	width: 30%;
@@ -2448,10 +2517,13 @@ float: left;
 .payment-card-pic {
 	width: 15%;
 	height: auto;
+
 	
 }
 .payment-card-pic img {
 	width: 100%;
+	float: left;
+	margin-right: 4px;
 }
 
 .card-pic {

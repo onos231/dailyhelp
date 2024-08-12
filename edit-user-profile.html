@@ -145,12 +145,8 @@
     </nav>
 	  </header>
 		
-		<div class="settings-top-nav">
-	<div class="nav-content">
-		  <div class="settings-arrow-pic">
-	   <a href="index.html"><img src="img/find-helper/back-arrow-black.png" alt="Project 2" /><h5>Home</h5></a></div>
-		</div>
-			 </div>
+		
+
 		
    	
 		
@@ -159,10 +155,10 @@
 			
 			<div class="result-option-body">
 		<div class="sub-payment-option-body">
-			   <div class="sub-txt-title"> 
-		 <h5>Edit Profile
-			   </h5>
-				  </div>
+			 <div class="captions">
+		<div class="sub-captions">
+			<a href="index.html"><img src="img/find-helper/back-arrow-black.png" alt="Project 2" /><div class="arrow-tittle">Home</div></a><div class="edit">Edit Profile</div><div class="edit"></div></div>
+			</div>  
 			<div class="profile-area">
 		
 			<div class="num-n-edit-pic">
@@ -181,59 +177,46 @@
 					<div class="verify-pic"><img src="img/profile/camera.png" alt="Project 2" /></div>
 				</div>
 			
-				<div class="profile-settings-tabs"><a href="change-names.html">
-					<div class="helper-prof-2">
-				<div class="prof-pic-log-out">
-					<div>
-	  <img src="img/edit-profile/change-name.png" alt="Project 2" /></div><div class="edit-prof-title">Name</div>
-				</div>
-				
+				<div class="reg-info">
+    <input type="text" placeholder="Maro Amadaku" name="fname" required>
+	  </div>
+					<div class="reg-info">
+    <input type="text" placeholder="maro@gmail.com" name="email" required>
+	  </div>
 			
-				<div class="helper-status-2">
-			<img src="img/profile/f-arrow.png" alt="Project 2" />
-				</div>
-		</div></a>
-				</div>
-				<div class="profile-settings-tabs"><a href="marital-status.html">
-					<div class="helper-prof-2">
-				<div class="prof-pic-log-out">
-					<div>
-	  <img src="img/edit-profile/status.png" alt="Project 2" /></div><div class="edit-prof-title">Marital Status</div>
-				</div>
-				
-			
-				<div class="helper-status-2">
-			<img src="img/profile/f-arrow.png" alt="Project 2" />
-				</div>
-					</div></a>
-				</div>
-				
-				<div class="profile-settings-tabs"><a href="profession.html">
-		<div class="helper-prof-2">
-				<div class="prof-pic-log-out">
-					<div>
-	  <img src="img/helpers-pics/profession.png" alt="Project 2" /></div><div class="edit-prof-title">Helper profession</div>
-				</div>
-				
-			
-				<div class="helper-status-2">
-			<img src="img/profile/f-arrow.png" alt="Project 2" />
-				</div>
-					</div></a>
-				</div>
-				<div class="profile-settings-tabs"><a href="experience.html">
-					<div class="helper-prof-2">
-				<div class="prof-pic-log-out">
-					<div>
-	  <img src="img/helpers-pics/experience.png" alt="Project 2" /></div><div class="edit-prof-title">Years of Experience</div>
-				</div>
-				
-			
-				<div class="helper-status-2">
-			<img src="img/profile/f-arrow.png" alt="Project 2" />
-				</div>
-					</div></a>
-				</div>
+		<div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Single <span class="arrow">&#9662;</span></button>
+        <ul class="dropdown-menu">
+            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
+            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
+            <li onclick="selectLevelOfEdu('University')">University</li>
+            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
+        </ul>
+    </div>	
+				<div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Profession <span class="arrow">&#9662;</span></button>
+        <ul class="dropdown-menu">
+            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
+            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
+            <li onclick="selectLevelOfEdu('University')">University</li>
+            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
+        </ul>
+    </div>	
+				<div class="dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Years of Experience <span class="arrow">&#9662;</span></button>
+        <ul class="dropdown-menu">
+            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
+            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
+            <li onclick="selectLevelOfEdu('University')">University</li>
+            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
+        </ul>
+    </div>	
+
+        
+		
+			<div class="change-reg-no-info">
+    <input type="number" placeholder="+234 701234 5678" name="fname" required>
+	  </div>
 						
 		
 		</div>
