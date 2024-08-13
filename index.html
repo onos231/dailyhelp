@@ -112,15 +112,20 @@
 	   
 		   </div></div>
 	   
-	   <div class="nav-mob">
-		 <div class="profile-pic">
-	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-            <div class="home-logo-pic">
+	   <div class="nav-mob-signin">
+		 
+            <div class="index-logo-pic">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		 </div>
-        <div class="hamburger" id="hamburger">
-            &#9776;
-        </div>
+        <div class="signin-signup">
+		<button class="home-login">
+			<a href="login.html">Login</a>
+				</button>
+		
+		<button class="home-signup">			
+			<a href="create-resume-1.html">Signup</a>
+				</button>
+				   </div>
     </div>
 
      <nav id="menu" class="menu">
@@ -184,17 +189,26 @@
 					</div>
 			</div>
 			</div>
-	
-		
-   	
-		
-		<!----------here------->
-		
-	
-			
-		
-			
 		</div>
-<script src="js/script.js"></script>
+
 	
+	
+
+	<script>
+	let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 12000); // Change image every 4 seconds
+}
+	</script>
+<script src="js/script.js"></script>
 </body>

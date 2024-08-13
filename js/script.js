@@ -22,10 +22,12 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 // slide container
+
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
+	'use strict'
     let i;
     let slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
