@@ -16,11 +16,15 @@
 </head>
 	
 <body>
-	
+	<style>
+		body {
+			background-color: #0BA4DB;
+		}
+	</style>
 	
     <!--login Section-->
 	
-	<div class="index-project">
+	<div class="web-home">
 		
 
    <header>
@@ -79,7 +83,7 @@
 				   </div>
 		 <div class="sub">
 		   <div class="web-dashboard">
-				 
+				
 	
 				<div class="dashboard-space">
 					<a href="dashboard.html">
@@ -108,18 +112,23 @@
 	   
 		   </div></div>
 	   
-	   <div class="nav-mob">
-		 <div class="profile-pic">
-	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-            <div class="home-logo-pic">
-	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
+	   <div class="nav-mob-signin">
+		 
+            <div class="index-logo-pic">
+	   <a href="user-profile.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		 </div>
-        <div class="hamburger" id="hamburger">
-            &#9776;
-        </div>
+        <div class="signin-signup">
+		<button class="home-login">
+			<a href="login.html">Login</a>
+				</button>
+		
+		<button class="home-signup">			
+			<a href="create-resume-1.html">Signup</a>
+				</button>
+				   </div>
     </div>
 
-    <nav id="menu" class="menu">
+     <nav id="menu" class="menu">
 		<div class="close-btn" id="close-btn">&times;</div>
 		<div class="home-logo-pic">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
@@ -153,80 +162,53 @@
         </ul>
     </nav>
 	  </header>
-
-   <div class="sub-txt-title"> 
-		 <h5>Settings
-			   </h5>
-				  </div>
 		
-		
-		
-   	
-		
-		<div class="body-pattern">
-	
-			
-			<div class="result-option-body">
-		<div class="payment-option-body">
-			
-			<div class="settings-area">
-			<div class="container">
-		<div class="settings-tabs">
-   	
-		<p>You can choose not to be discovered by clients if you are busy or have other jobs</p>
-		
-		<div class="helper-prof-2">
-				<div class="prof-pic">
-					<div>
-	  <img src="img/setting/find-me.png" alt="Project 2" /></div><div class="log-prof-title">Find me on <span class="app-name">DailyHelp</span></div>
-				</div>
-				
-			
-				<div class="settings-status">
-			<img src="img/setting/switch-off.png" alt="Project 2" />
-					<img src="img/setting/switch%20notification-on.png" alt="Project 2" / style="display: none;">
-				</div>
-		</div>
-		
-		</div>
-			<div class="settings-tabs">
-		<a href="change-psw.html"><div class="helper-prof-2">
-				<div class="prof-pic">
-					<div>
-	  <img src="img/setting/change-psw.png" alt="Project 2" /></div><div class="log-prof-title">Change Password</div>
-				</div>
-				
-			
-				<div class="helper-status-2">
-			<img src="img/profile/f-arrow.png" alt="Project 2" />
-				</div>
-		</div></a>
-		
-		</div>
-			<div class="settings-tabs">
-		
-	<a href="change-number.html"><div class="helper-prof-2">
-				<div class="prof-pic">
-					<div>
-	  <img src="img/setting/change-no.png" alt="Project 2" /></div><div class="log-prof-title">Change Number</div>
-				</div>
-				
-			
-				<div class="helper-status-2">
-			<img src="img/profile/f-arrow.png" alt="Project 2" />
-				</div>
-		</div></a>
-		
-		</div>
-	</div>
+		<div class="home-content">
+			<div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/find-helper/gardener.png" style="width:100%">
+            <div class="text" style="display: none;">Work and get paid hourly at your own timing</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/find-helper/driver.png" style="width:100%">
+            <div class="text" style="display: none;">Signup for available jobs and get paid hourly</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/find-helper/electrician.png" style="width:100%">
+            <div class="text" style="display: none;">Take care of kids, elderly or  sick people</div>
+        </div>
+    </div>
+			<div class="home-caption-n-txt">
+				<div class="headline">
+			<h1>TAKE CARE OF KIDS, ELDERLY OR SICK PEOPLE</h1></div>
+				<div>
+			<p>Welcome to Dailyhelp, where we bridge the gap between skilled professionals and those who need their expertise. Whether you’re a homeowner looking for a reliable electrician.
+			</p>
+			<p>Whether you’re a homeowner looking for a reliable electrician, a business in need of expert carpenters, or a contractor seeking experienced labor, we are here to make the connection effortless and reliable.
+			</p>
+					</div>
+			</div>
 			</div>
 		</div>
-		</div>
-		
-			
-			
-		</div>
-				</div>
 
-	<script src="js/script.js"></script>
+	
+	
+
+	<script>
+	let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 12000); // Change image every 4 seconds
+}
+	</script>
+<script src="js/script.js"></script>
 </body>

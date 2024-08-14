@@ -17,9 +17,7 @@
 	
 <body>
 	<style>
-		body {
-			background-color: #0BA4DB;
-		}
+		
 	</style>
 	
     <!--login Section-->
@@ -112,28 +110,33 @@
 	   
 		   </div></div>
 	   
-	   <div class="nav-mob-signin">
-		 
-            <div class="index-logo-pic">
-	   <a href="user-profile.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
+	   <div class="nav-index-mob">
+		 <div class="profile-pic">
+	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
+            <div class="home-logo-pic">
+	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		 </div>
-        <div class="signin-signup">
-		<button class="home-login">
-			<a href="login.html">Login</a>
-				</button>
-		
-		<button class="home-signup">			
-			<a href="create-resume-1.html">Signup</a>
-				</button>
-				   </div>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
     </div>
 
-     <nav id="menu" class="menu">
+    <nav id="menu" class="menu">
 		<div class="close-btn" id="close-btn">&times;</div>
 		<div class="home-logo-pic">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		</div>
         <ul>
+			<li><div class="mob-sub-heads">
+				 <a href="index.html">
+	  <img src="img/index/contact.png" alt="Project 2" />Home
+				
+				</a></div></li>
+			<li><div class="mob-sub-heads">
+				 <a href="ads.html">
+	  <img src="img/index/contact.png" alt="Project 2" />Adverts
+				
+				</a></div></li>
             <li><div class="sub-heads">
 				 <a href="dashboard.html">
 	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DH Services
@@ -161,9 +164,49 @@
 				</a></div></li>
         </ul>
     </nav>
+	   
 	  </header>
 		
-		<div class="home-content">
+		
+		
+		
+		<div class="sub-mobile">
+		<div class="web-dashboard">
+				
+	
+				<div class="dashboard-space">
+					<a href="dashboard.html">
+					<div class="dashboard-pic">
+	  <img src="img/index/dashboard.png" alt="Project 2" /><h5>Dashboard </h5>
+						</div></a>
+					
+			<div class="dashboard-space">
+				<a href="personal-info.html">
+					<div class="dashboard-pic">
+	  <img src="img/index/post.png" alt="Project 2" /><h5>Post Job</h5>
+						</div></a>
+				</div>
+			
+			<div class="dashboard-space">
+				<a href="helpers-search-result.html">
+					<div class="dashboard-pic">
+	  <img src="img/index/find-help-black.png.png" alt="Project 2" /><h5>Find Helper </h5>
+						</div></a>
+				</div>
+		   </div>  
+		   
+		   
+		   
+	</div>
+			</div>
+		
+		
+		<div class="ads-text">
+			<p>Would you like to showcase your <span class="skill-text">handwork</span> or <span class="skill-text">skills</span><span>?</span></p>
+			<button class="ads-btn"><h3>Place your ads here</h3><img src="img/find-helper/f-arrow.png"></button>
+		</div>
+		
+		<div class="home-slide-content">
 			<div class="slideshow-container">
         <div class="mySlides fade">
             <img src="img/find-helper/gardener.png" style="width:100%">
@@ -195,20 +238,7 @@
 	
 
 	<script>
-	let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 12000); // Change image every 4 seconds
-}
+	
 	</script>
 <script src="js/script.js"></script>
 </body>
