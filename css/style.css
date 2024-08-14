@@ -1240,12 +1240,13 @@ span.psw {
 	}
 /*----add advert session---*/
 .ads-text p {
-	width: 60%;
-	font-size: 22px;
-	font-family: 'Pop';
-	color: #2859A7;
+	width: 80%;
+	font-size: 32px;
+	font-family: 'Poppins';
+	color: #294F89;
 	margin-left: 20px;
 	margin-top: 20px;
+	font-weight: 600;
 }
 .skill-text {
 	color: green;
@@ -1266,7 +1267,6 @@ span.psw {
 	float: left;
 	margin-left: 14px;
 	font-family: 'Poppins';
-	font-weight: 100;
 }
 #addButton {
     position: fixed;
