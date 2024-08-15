@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works</title>
+    <title>Search Bar Example</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	
 	<style>
 	body, html {
     margin: 0;
@@ -15,51 +14,77 @@
     font-family: Arial, sans-serif;
 }
 
-.how-it-works {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header {
     padding: 20px;
     background-color: #f8f8f8;
+    position: relative;
 }
 
-.step {
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.step h3 {
-    font-size: 13px;
-    margin-bottom: 10px;
+.search-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.step img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 10px;
-	display: inline-block;
+.search-bar {
+    display: none;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
 }
+
+.search-bar input {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.bar-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
 
 	</style>
-    <section class="how-it-works">
-        <div class="step">
-            <h3>Step 1: Choose a Product</h3>
-            <img src="https://via.placeholder.com/150" alt="Choose a Product">
+    <header>
+        <div class="search-container">
+            <span class="search-icon" id="search-icon">&#128269;</span>
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="bar-icon">&#128269;</span>
+            </div>
         </div>
-        <div class="step">
-            <h3>Step 2: Add to Cart</h3>
-            <img src="https://via.placeholder.com/150" alt="Add to Cart">
-        </div>
-        <div class="step">
-            <h3>Step 3: Checkout</h3>
-            <img src="https://via.placeholder.com/150" alt="Checkout">
-        </div>
-        <div class="step">
-            <h3>Step 4: Enjoy Your Purchase</h3>
-            <img src="https://via.placeholder.com/150" alt="Enjoy Your Purchase">
-        </div>
-    </section>
+    </header>
+
+    <main>
+        <h1>Page Content</h1>
+        <p>This is some content on the page that will shift down when the search bar is displayed.</p>
+    </main>
+
+    <script>
+	document.getElementById('search-icon').addEventListener('click', function() {
+    var searchBar = document.getElementById('search-bar');
+    var searchIcon = document.getElementById('search-icon');
+    
+    // Hide the initial search icon
+    searchIcon.style.display = 'none';
+    
+    // Display the search bar
+    searchBar.style.display = 'flex';
+});
+
+	</script>
 </body>
 </html>

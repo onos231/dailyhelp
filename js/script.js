@@ -198,4 +198,16 @@ function toggleFAQ(button) {
     }
 }
 
+// Search bar session
+
+document.getElementById('search-icon').addEventListener('click', function() {
+    var searchBar = document.getElementById('search-bar');
+    var searchIcon = document.getElementById('search-icon');
+    
+    // Hide the initial search icon
+    searchIcon.style.display = 'none';
+    
+    // Display the search bar
+    searchBar.style.display = 'flex';
+});
 

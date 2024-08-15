@@ -159,6 +159,7 @@
 		
 		</div>
 			 </div>
+		
  
 		<!-----Filter session---->
 		<div class="mobile-filter">
@@ -255,9 +256,17 @@
 			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
 			 <div class="search-result-txt"> 
 				 
-	   
-		 <p>Search results for cleaners
+	   <div class="search-container">
+		   
+            <span class="search-icon" id="search-icon">&#128269;</span>
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="bar-icon">&#128269;</span>
+            </div>
+		   <p>Search results for cleaners
 			   </p>
+        </div>
+		 
 				 
 				  </div>
 			<!-----web Filter session---->
@@ -448,5 +457,17 @@
 		</div>
 				</div>
 <script src="js/script.js"></script>
+	<script>
+	document.getElementById('search-icon').addEventListener('click', function() {
+    var searchBar = document.getElementById('search-bar');
+    var searchIcon = document.getElementById('search-icon');
+    
+    // Hide the initial search icon
+    searchIcon.style.display = 'none';
+    
+    // Display the search bar
+    searchBar.style.display = 'flex';
+});
+	</script>
 	
 </body>
