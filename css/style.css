@@ -535,9 +535,34 @@ span.psw {
 			margin-bottom: 10px;
 			margin-top: 20px;
 		}
-		
+.workers-container {
+	width: 90%;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 40px;
+		margin-top: 20px;
+}
+.workers-container h3 {
 
-
+	font-family: 'Poppins';
+	color: #294F89;
+}
+.workers-caption {
+	width:60%;
+	font-size: 17px;
+	margin-left: 20px;
+	font-family: 'Poppins';
+	float: left;
+	color: #294F89;
+}
+.workers-pic {
+	width: 20%;
+	float: right;
+}
+.workers-pic img{
+	width: 100%;
+	
+}
 /*----Welcome session---*/
 .nav-mob {
     display: flex;
@@ -571,7 +596,7 @@ span.psw {
 .hamburger {
     font-size: 25px;
     cursor: pointer;
-	margin-top: 8px;
+	margin-top: 10px;
 	color: #000;
 }
 .index-menu {
@@ -1252,14 +1277,19 @@ span.psw {
 	color: green;
 }
 .ads-btn {
-	width: 70%;
-	border-radius: 4px;
-	padding: 6px 14px;
+	width: 90%;
+	border-radius: 12px;
+	padding: 30px 14px;
 	text-align: left;
 	margin-left: 20px;
+	font-size: 22px;
+	background-color: #fff;
+	border: 1px solid #F4C211;
+	text-align: center;
+	color: #000;
 }
 .ads-btn img {
-	width: 10px;
+	width: 20px;
 	margin-left: 14px;
 	margin-top: 6px;
 }
@@ -3268,12 +3298,35 @@ tle p {
 	color: rgba(0, 0, 0, 0.3);
 
 }
+.create-work-steps {
+	display: flex;
+	width: 90%;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
 .create-resume-steps {
 	display: flex;
 	background-color: #EFF6FE;
 	border-radius: 8px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.work-steps {
+		width: 100%;
+	padding: 4px;
+	}
+	.work-steps img {
+	display: block;
+	width: 60%;
+	height: 40px;
+	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: azure;
+	padding: 10px;
+	border-radius: 10px;
 }
 .resume-steps {
 	width: 100%;
@@ -3287,6 +3340,14 @@ tle p {
 	margin-left: auto;
 	margin-right: auto;
 }
+.work-resume-title {
+	width: 100%;
+	text-align: center;
+	font-size: 11px;
+	color: rgba(83, 75, 63, 0.9);
+	font-family: 'Roboto';
+	color: #294F89
+}
 .resume-title-1,
 .resume-title {
 	width: 100%;
@@ -3296,7 +3357,12 @@ tle p {
 	font-family: 'Roboto';
 
 }
-
+.work-resume-line img{
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
 .resume-line img{
 	width: 80%;
 	text-align: center;
@@ -3409,7 +3475,15 @@ input[type="number" i] {
 	outline: none;
 	color: #000;
 }
-
+.work-steps-tab {
+	position: relative;
+}
+.work-steps-tab h1 {
+	color: #294F89;
+	margin-left: 20px;
+	font-family: 'poppins';
+	font-weight: 100;
+}
 .steps-tab {
 	position: relative;
 }
@@ -4322,6 +4396,7 @@ textarea {
 	margin-bottom: 40px;
 		
 }
+	
 	.resume-steps {
 	width: 100%;
 	padding: 4px;
