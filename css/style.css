@@ -504,10 +504,12 @@ span.psw {
     justify-content: space-between;
     align-items: center;
     transition: background 0.3s ease;
+	background-color: #fff;
+	border: 1px solid #F4C211;
 }
 
 .faq-question:hover {
-    background: #CDA002;
+    background-color: #F4C211;
 }
 
 .faq-answer {
@@ -523,6 +525,12 @@ span.psw {
 .toggle-icon {
     font-size: 20px;
     font-weight: bold;
+	color: #000;
+}
+.toggle-icon:hover {
+    font-size: 20px;
+    font-weight: bold;
+	color: #fff;
 }
 /*-----index session----*/
 .sub-mobile {
@@ -1940,7 +1948,7 @@ span.psw {
 	float: left;
 	width: 100%;
 	font-family: 'Roboto';
-	color: rgba(0, 0, 0, 0.9);
+	color: #E45959;
 }
 .result-prof-title {
 	margin-top: 8px;
@@ -2454,7 +2462,8 @@ float: left;
 }
 .prof-pic-log-out {
 	display: flex;
-	margin-left: 14px;
+	margin-top: 40px;
+
 	
 }
 .prof-pic-log-out img {
@@ -2785,7 +2794,7 @@ float: left;
 }
 .card-msg {
 	width: 95%;
-	padding: 8px 12px;
+	padding: 12px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #EFF6FE;
@@ -3077,7 +3086,7 @@ tle p {
 	color: rgba(0, 0, 0, 0.7);
 }
 .current-cd {
-	width: 90%;
+	width: 95%;
 	color: rgba(0, 0, 0, 0.7);
 	margin-bottom: 20px;
 
@@ -3094,7 +3103,7 @@ tle p {
 		margin-bottom: 10px;
 }
 .cd-info {
-	width: 95%;
+	width: 100%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -3370,7 +3379,7 @@ tle p {
 }
 .work-steps {
 		width: 100%;
-	padding: 4px;
+	padding: 2px;
 	}
 	.work-steps img {
 	display: block;
@@ -3398,7 +3407,7 @@ tle p {
 .work-resume-title {
 	width: 100%;
 	text-align: center;
-	font-size: 11px;
+	font-size: 13px;
 	color: rgba(83, 75, 63, 0.9);
 	font-family: 'Roboto';
 	color: #294F89
