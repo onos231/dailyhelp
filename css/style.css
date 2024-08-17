@@ -584,7 +584,7 @@ span.psw {
 	display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 20px;
+    padding: 5px 20px;
     background-color: azure;
     color: white;
 }
@@ -592,7 +592,7 @@ span.psw {
 	display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 5px 20px;
     background-color: azure;
     color: white;
 }
@@ -600,7 +600,7 @@ span.psw {
 .logo h1 {
     margin: 0;
 }
-
+/*----hamburger menu-----*/
 .hamburger {
     font-size: 25px;
     cursor: pointer;
@@ -622,6 +622,7 @@ span.psw {
 }
 .menu {
     position: fixed;
+	scroll-behavior: auto;
     top: 10;
     right: -250px;
     width: 250px;
@@ -644,7 +645,9 @@ span.psw {
 	margin-bottom: 10px;
 	font-family: 'Kod';
 }
-
+.hamburger-caption-list {
+	margin-top: 60px;
+}
 .profile-pic {
 	float: left;
 	width: 7%;
@@ -733,7 +736,7 @@ span.psw {
     right: 20px;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: #000;
 }
 
 		.main-web-nav {
@@ -1071,7 +1074,7 @@ span.psw {
 }
 .left p {
 	margin-top: 0;
-		color: green;
+	color: #F4C211;
 	font-family: 'Roboto';
 }
 .right {
@@ -1645,29 +1648,36 @@ span.psw {
     font-size: 17px;
     margin: 0;
 }
+.caption h5 {
+	font-family: "Kod";
+    font-size: 20px;
+}
 
 .closed-btn {
     position: fixed;
-   	right: 20px;
+   	right: 10px;
     font-size: 30px;
-    color: #000;
     background-color: #fff;
     padding: 10px;
     border-radius: 8%;
     cursor: pointer;
     text-align: center;
-    line-height: 30px;
+    line-height: 25px;
     width: 30px;
     height: 30px;
 	float: left;
 	
 }
+.closed-btn a {
+   color: #F4C211;
+	
+}
 .left-closed-btn img{
-    width: 20px;
+    width: 25px;
 }
 .left-closed-btn {
 	position: fixed;
-   	left: 20px;
+   	left: 10px;
     font-size: 30px;
     color: #000;
     background-color: #fff;
@@ -2003,23 +2013,15 @@ span.psw {
 .profile-image img{
 	width: 100%;
 }
-.profile-details {
-	width: 80%;
-	text-align: center;
-	font-size: 22px;
-	margin-left: auto;
-	margin-right: auto;
-	}
-
 .prof-pic {
 	display: flex;
 	width: 80%;
 }
 .prof-pic img {
-	width: 20px;
-	margin-right: 10px;
+	width: 15px;
+	margin-right: 6px;
 	margin-left: 10px;
-	margin-top: 6px;
+	margin-top: 10px;
 }
 .ads-prof-pic {
 	display: flex;
@@ -2403,10 +2405,9 @@ float: left;
 
 /*----profile session---*/
 .profile-area {
-	width: 95%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
 }
 .top-box {
 	width: 85%;
@@ -2417,19 +2418,25 @@ float: left;
 	border-radius: 8px;
 	/*--background-color: #EFF6FE;---*/
 }
-
+.profile-details {
+	width: 70%;
+	text-align: center;
+	font-size: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	}
 .profile-names {
 	color: #39BF4E;
 }
 .profile-top {
-	width: 90%;
+	width: 100%;
 	margin: auto;
+	font-size: 15px;
 }
 
 .icons-n-txt {
-	font-size: 13px;
 	text-align: left;
-	font-family: 'poppins';
+	margin-bottom: 6px;
 	color: rgba(0, 0, 0, 0.7);
 }
 .icons-n-txt img {
@@ -2440,7 +2447,6 @@ float: left;
 	}
 .other-icons-n-txt {
 	width: 80%;
-	font-size: 15px;
 	text-align: left;
 	margin-bottom: 10px;
 	color: #000;
@@ -2451,6 +2457,7 @@ float: left;
 	font-size: 15px;
 	text-align: left;
 	margin-bottom: 10px;
+	margin-bottom: 6px;
 	color: rgba(0, 0, 0, 0.7);
 }
 .icons-n-txt-location img{
@@ -2468,11 +2475,11 @@ float: left;
 .profile-bottom {
 	width: 100%;
 	display: flex;
-	font-family: 'poppins';
+	font-size: 15px;
 }
 .status {
-	font-size: 15px;
 	margin-left: auto;
+	margin-top: 2px;
 }
 .status-arrow img{
 	width: 10px;
@@ -2630,6 +2637,7 @@ float: left;
 .helper-prof-2 a{
 	color: rgba(0, 0, 0, 0.7);
 }
+
 /*----Picture upload---*/
 
 .create-acc-pic {
@@ -2772,14 +2780,7 @@ float: left;
 	margin-bottom: 30px;
 }
 
-.bank-transfer-title {
-	display: flex;
-	width: 150px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
+
 .payment-option-title {
 	display: flex;
 	width: 45%;
@@ -2794,85 +2795,12 @@ float: left;
 	margin-top: 10px;
 	font-family: 'Kodchasan';
 }
-.payment-option-title h5 {
-	margin-left: 4px;
-	color: #534B3F;
-	line-height: 0;
-	margin-top: 10px;
-	font-family: 'Kodchasan';
-}
-.bank-transfer-title h5 {
-	margin-top: 10px;
-	color: #534B3F;
-	margin-top: 10px;
-	font-family: 'Kodchasan';
-}
-.bank-card-pic {
-	width: 30%;
-	height: auto;
-}
-.bank-card-pic img {
-	width: 100%;
-	height: auto;
-}
-.bitcoin-title {
-	display: flex;
-	width: 20%;
-	height: 22px;;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-}
-.bitcoin-pic {
-	width: 40%;
-	height: auto;
 
-}
-.bitcoin-pic img{
-	width: 100%;
-	height: auto;
-}
-.bitcoin-title h5 {
-	margin-left: 4px;
-	color: #534B3F;
-	line-height: 0;
-	margin-top: 10px;
-	font-family: 'Kodchasan';
-}
-.card-title {
-	display: flex;
-	width: 40%;
-	height: 22px;;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-}
-.payment-card-pic {
-	width: 15%;
-	height: auto;
 
-	
-}
-.payment-card-pic img {
-	width: 100%;
-	float: left;
-	margin-right: 4px;
-}
 
-.card-pic {
-	width: 20%;
-	height: auto;
-}
-.card-pic img {
-	width: 100%;
-}
-.card-title h5 {
-	margin-top: 0px;
-	margin-left: 4px;
-	color: #534B3F;
-	font-size: 17px;
-	font-family: 'Kodchasan';
-}
+
+
+
 .card-msg {
 	width: 95%;
 	padding: 12px;
@@ -3048,9 +2976,10 @@ float: left;
 	padding: 10px;
 }
 .sub-txt-title h5 {
+	font-size: 20px;
 	text-align: center;
 	color: #534B3F;
-	font-family: "Kodchasan";
+	font-family: "Kod";
 	margin-bottom: 40px;
 	margin-top: 40px;
 	}
@@ -4698,9 +4627,6 @@ textarea {
 	.card-title h5 {
 	margin-top: 4px;
 }
-	.bank-transfer-title h3{
-		margin-top: 0;
-	}
 
 	
 	/*----Add card session---*/
@@ -5722,10 +5648,7 @@ textarea {
 	.card-title h5 {
 	margin-top: 4px;
 }
-	.bank-transfer-title h3{
-		margin-top: 0;
-		margin-left: px;
-	}
+
 .ads-online-status img {
 	width: 20px;
 	margin-left: 40px;
