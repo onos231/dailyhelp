@@ -622,13 +622,13 @@ span.psw {
 }
 .menu {
     position: fixed;
-    top: 20;
+    top: 10;
     right: -250px;
     width: 250px;
     height: 80%;
 	border-radius: 0px 0px 20px 20px;
     background-color: #fff;
-    padding-top: 60px;
+    padding-top: 20px;
     transition: right 0.3s ease;
 	z-index: 1;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
@@ -642,7 +642,7 @@ span.psw {
 	font-weight: 600;
 	margin-top: 20px;
 	margin-bottom: 10px;
-	font-family: 'Poppins';
+	font-family: 'Kod';
 }
 
 .profile-pic {
@@ -659,6 +659,17 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 16px;
+}
+.hamburger-logo-pic {
+	width: 12%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+.hamburger-logo-pic img {
+	width: 100%;
+
 }
 .index-logo-pic {
 	width: 10%;
@@ -679,9 +690,8 @@ span.psw {
 }
 
 .menu ul li {
-    padding: 10px 12px;
+    padding: 6px 12px;
   	margin-left: 40px;
-	font-size: 17px;
 }
 
 .menu ul li a {
@@ -691,7 +701,7 @@ span.psw {
     width: 100%;
     height: 100%;
     font-size: 15px;
-	font-family: 'Kod';
+	font-family: 'Kodchas';
 }
 
 .menu ul li a:hover {
@@ -712,8 +722,8 @@ span.psw {
 			width: 15%; /* Four links of equal widths */
   		}
 .mob-sub-heads img,
-		.sub-heads img{
-			width: 15px;
+.sub-heads img{
+			width: 10px;
 			margin-right: 4px;
 			margin-top: 4px;
 		}
@@ -781,6 +791,7 @@ span.psw {
   			overflow: auto;
 			display: inline-block;
 			margin-left: auto;
+			font-family: 'kodchas';
 		}
 		.sub-heads a {
 			display: inline-block;
@@ -1704,7 +1715,6 @@ span.psw {
 	display: flex;
 	margin-bottom: 30px;
 	height: 70px;
-	background-color: #E45959;
 }
 .search-top-nav {
 	display: flex;
@@ -1797,9 +1807,10 @@ span.psw {
 	margin-top: 34px;
 	margin-bottom: 0;
 	margin-left: 45px;
-	font-size: 17px;
-	color: #fff;
+	font-size: 15px;
+	color: #000;
 	font-family: 'Roboto';
+	font-weight: 100;
 }
 .search-result-txt {
 	margin-left: 20px;
@@ -1948,7 +1959,6 @@ span.psw {
 	float: left;
 	width: 100%;
 	font-family: 'Roboto';
-	color: #E45959;
 }
 .result-prof-title {
 	margin-top: 8px;
@@ -1989,9 +1999,18 @@ span.psw {
 .profile-image {
 	width: 25%;
 }
+
 .profile-image img{
 	width: 100%;
 }
+.profile-details {
+	width: 80%;
+	text-align: center;
+	font-size: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
 .prof-pic {
 	display: flex;
 	width: 80%;
@@ -2390,13 +2409,75 @@ float: left;
 	margin-top: 40px;
 }
 .top-box {
-	width: 80%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	padding: 20px;
 	border-radius: 8px;
 	/*--background-color: #EFF6FE;---*/
+}
+
+.profile-names {
+	color: #39BF4E;
+}
+.profile-top {
+	width: 90%;
+	margin: auto;
+}
+
+.icons-n-txt {
+	font-size: 13px;
+	text-align: left;
+	font-family: 'poppins';
+	color: rgba(0, 0, 0, 0.7);
+}
+.icons-n-txt img {
+	width: 10px;
+	margin-right: 4px;
+	margin-left: 10px;
+	margin-top: 6px;
+	}
+.other-icons-n-txt {
+	width: 80%;
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 10px;
+	color: #000;
+	float: left;
+}
+
+.icons-n-txt-location{
+	font-size: 15px;
+	text-align: left;
+	margin-bottom: 10px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.icons-n-txt-location img{
+	width: 9px;
+	margin-right: 4px;
+	margin-left: 10px;
+	margin-top: 6px;
+}
+.other-icons-n-txt img {
+	width: 10px;
+	margin-right: 4px;
+	margin-left: 10px;
+	margin-top: 6px;
+	}
+.profile-bottom {
+	width: 100%;
+	display: flex;
+	font-family: 'poppins';
+}
+.status {
+	font-size: 15px;
+	margin-left: auto;
+}
+.status-arrow img{
+	width: 10px;
+	float: right;
+	margin-right: 20px;
 }
 .num-n-edit-pic {
 	display: flex;
@@ -3305,6 +3386,13 @@ tle p {
 	padding: 10px;
 	margin-bottom: 10px;
 	margin-top: 10px;
+}
+.settings-tabs-2 {
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+
 }
 .settings-tabs p {
 	width: 95%;
