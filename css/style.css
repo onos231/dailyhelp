@@ -1029,6 +1029,7 @@ input[type="date"] {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'poppins';
+	margin-bottom: 40px;
 
 
 }
@@ -1073,7 +1074,7 @@ input[type="date"] {
 }
 .left p {
 	margin-top: 0;
-	color: #F4C211;
+	color: #39BF4E;
 	font-family: 'Roboto';
 }
 .right {
@@ -1182,6 +1183,7 @@ input[type="date"] {
 	float: right;
 	font-weight: 300;
 	color: #E45959;
+	margin-top: 20px;
 }
 .calls-chats {
 	display: flex;
@@ -1447,10 +1449,13 @@ input[type="date"] {
 }
 /*----find helper session---*/
 .other-dashboard-body {
-		width: 95%;
+		width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	}
+.helper-diff-option p {
+	margin-left: 20px;
+}
 .care-dash-body-3 {
 	margin-right: 20px;
 	margin-top: 4px;
@@ -3326,6 +3331,7 @@ tle p {
 
 
 /*----settings session---*/
+
 .settings-area {
 	margin-top: 40px;
 }
@@ -3991,7 +3997,12 @@ textarea {
 			margin-right: auto;
 			object-fit: contain;
 		}
-
+/*----settings session---*/
+.settings-pattern {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
 			/*---Desktop Slides-----*/
 	
 		.sub {
@@ -4337,7 +4348,7 @@ textarea {
 	}
 	.more-and-less p{
 		text-align: right;
-		margin-right: 120px;
+		margin-right: 20px;
 	}
 	.more-and-less a{
 		color: #000;
@@ -4464,10 +4475,6 @@ textarea {
 	width: 100%;
 }
 
-	
-.helper-msg {
-	display: none;
-}
 	
 	/*----find helpers session---*/
 	.blue-f-btn {
@@ -4634,6 +4641,7 @@ textarea {
 	margin-bottom: 0;
 	font-size: 11px;
 }
+	
 	.sub-plan-web {
 		margin-right: 20px;
 	}
@@ -4784,6 +4792,7 @@ textarea {
 	.contact-body {
 		width: 80%;
 	}
+
 	.sub-txt-title p {
 	font-size: 13px;
 	font-family: 'poppins';
@@ -4904,8 +4913,14 @@ textarea {
 			margin-right: auto;
 			object-fit: contain;
 		}
+	/*----settings session---*/
+.settings-pattern {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-			/*---Desktop Slides-----*/
+	/*---Desktop Slides-----*/
 	.slideshow-container {
     position: relative;
     max-width: 100%;
@@ -5186,6 +5201,7 @@ textarea {
 	.other-home-pages {
 		width: 40%;
 		margin-right: auto;
+		margin-left: auto;
 		margin-top: 40px;
 }
 .web-home-page p{
@@ -5213,6 +5229,13 @@ textarea {
 	.other-dashboard-body {
 		width: 100%;
 		display: block;
+	}
+	.helper-msg {
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-top: 40px;
 	}
 	.more-and-less p{
 		text-align: right;
@@ -5375,9 +5398,7 @@ textarea {
 }
 
 	
-.helper-msg {
-	display: none;
-}
+
 	.bottom-btn {
 	position: sticky;
 	width: 100%;
@@ -5645,20 +5666,24 @@ textarea {
 	margin-bottom: 0;
 	font-size: 11px;
 }
+	.sub-txt p{
+	width: 40%;
+}
 	.sub-plan-web {
+		display: flex;
 		margin-right: 20px;
 	}
 	.subcription-area {
-		width: 100%;
+		width: 80%;
 
 	}
 	.sub-plans {
-		width: 65%;
-		padding: 20px;
+		width: 30%;
+		padding: 10px;
 	}
 
 	.sub-plans ul {
-		width: 80%;
+		width: 100%;
 		margin-right: auto;
 		padding: 10px;
 		font-size: 15px;

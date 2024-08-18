@@ -7,15 +7,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>DailyHelp</title>
- 
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
- 
+  
 </head>
 	
 <body>
-	
+
 	
     <!--login Section-->
 	
@@ -196,24 +197,24 @@
 	 
 	  </header>
 		
-		
-		
-   	
-		
-		<div class="body-pattern">
+		<div class="caption-area">
+		<div class="close-container">
+			<div class="left-closed-btn" id="close-btn"><a href="subscription-plan.html"><img src="img/into/b-arrow-gold.png" alt="Project 2" /></a></div>
+        <div class="caption">
+
+		<h5>
+			Manage Payments
+		</h5>
 	
-			
-			<div class="result-option-body">
-		<div class="payment-option-body">
-		   <div class="sub-txt-title"> 
-		 <h5>Manage Payments
-			   </h5>
-				  </div>
-			
+        </div>
+
+		 </div>
+		</div>
 		
+   	<div class="mobile-body">
 				<div class="current-cd">
 					<p>You can add other cards to your account just incase you encounter problem with your selected option </p>
-					<div class="cd-info"><div class="card-info-details"><a href="">
+					<div class="cd-info"><div class="card-info-details"><a href="credit-card.html">
 			<div class="grid-container">
 				<div class="grid-item"><div>
 				<input type="checkbox" id="myCheck" onclick="myFunction()"></div></div>
@@ -228,10 +229,7 @@
 				</div></a></div>
 						</div>
 			</div>
-				
-			<div class="cd-diff-option">
-				<p>Add more account</p>
-			   <a href="add-bank-info.html"> <div class="helper-tab">
+		<a href="add-bank-info.html"> <div class="helper-tab">
 		 <div class="help-pic">
 	   <img src="img/payment-option/bank-logos/transfer.png" alt="Project 2" /></div>
 			  
@@ -242,7 +240,7 @@
 		 <div class="forward-pic">
 	 <img src="img/find-helper/forward-arrow.png" alt="Project 2" />
 		 </div>
-			   </div></a>
+			</div></a>
 				
 			   <a href="add-card.html"> <div class="helper-tab">
 		  <div class="help-pic">
@@ -258,7 +256,7 @@
 				   </div></a>
 				
 			  
-			   <a href="add-bank-info.html"> <div class="helper-tab">
+			    <a href="add-paystack-transfer.html"> <div class="helper-tab">
 		  <div class="help-pic">
 			  <img src="img/payment-option/bank-logos/paystack.png" alt="Project 2" /></div>
 			  
@@ -271,14 +269,202 @@
 		 </div>
 			   
 				  
-				</div></a>
+					</div></a>
+			   
+			   
+				
+			   
 		   </div>
+		
+		<div class="desktop-body">
+	
+			
+
+
+		<div class="desktop-double-sides">
+		
+		   <div class="cd-diff-option">
+				<p>Add more account</p>
+			   <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content1')">
+		 <div class="help-pic">
+	   <img src="img/payment-option/bank-logos/transfer.png" alt="Project 2" /></div>
+			  
+		  <div class="add-helper-tab-title">
+	  <h5>Bank Account</h5>
+		 </div>
+
+		 <div class="forward-pic">
+	 <img src="img/find-helper/forward-arrow.png" alt="Project 2" />
+		 </div>
+			   </div>
+				
+			   <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content2')">
+		  <div class="help-pic">
+	   <img src="img/payment-option/bank-logos/credit.png" alt="Project 2" /></div>
+			  
+		  <div class="add-helper-tab-title">
+	  <h5>Credit Card</h5>
+		 </div>
+
+		 <div class="forward-pic">
+	  <img src="img/find-helper/forward-arrow.png" alt="Project 2" />
+		 </div>
+				   </div>
+				
+			  
+			   <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content3')">
+		  <div class="help-pic">
+			  <img src="img/payment-option/bank-logos/paystack.png" alt="Project 2" /></div>
+			  
+		  <div class="add-helper-tab-title">
+	  <h5>Paystack Account</h5>
+		 </div>
+
+		 <div class="forward-pic">
+	   <img src="img/find-helper/forward-arrow.png" alt="Project 2" />
+		 </div>
+			   
+				  
+				</div>
+		   </div>
+			
+			
+			 <div class="payment-content">
+            <div id="content1" class="tab-content">
+                <div class="body-pattern">
+	
+			<div class="result-option-body">
+		<div class="payment-option-body">
+
+		 <div class="current-cd">
+					<p>Use existing credit card</p>
+					
+					<div class="add-acc-details">
+						 <div class="reg-info">
+							 <input type="text" placeholder="Name on account" name="fname" required></div>
+						 <div class="reg-info">
+							 <input type="text" placeholder="Bank swift code" name="lname" required></div>
+	  <div class="reg-info">
+		  <input type="text" placeholder="Account number" name="psw" required></div>
+						 <div class="reg-info">
+							 <input type="text" placeholder="Re-enter account number" name="psw" required></div>
+	  
+	  </div>
+					
+		
+		</div>
+			<div class="">
+			<div class="encrypt-txt">
+				<p>By adding this bank account, you agree to the Terms and Conditions</p>
+		<div class="reg-btn">
+			<button type="submit" style="display: none;">Add Bank Account</button>
+		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add Bank Account</button></div>
+		</div>
 			</div>
+			</div>
+				
 			</div>
 			
 			
 		</div>
-				</div>
+            </div>
+				 
+            <div id="content2" class="tab-content">
+                <div class="body-pattern">
+	
+			
+			<div class="result-option-body">
+		<div class="payment-option-body">
+			<div class="add-cd-´card">
+				
+   	<div class="add-cd-info">
+		<div class="container">
+		
+		<div class="reg-info">
+    <input type="text" placeholder="Name on a count" name="Account name" required>
+	  </div>
+					<div class="reg-info">
+    <input type="text" id="ccnum" placeholder="1234 5678 9023 2244" name="Credit card number" required>
+	  </div>
+		<div class="expire-n-security">
+			<div>
+			<input type="text" placeholder="dd/mm/yy" name="Expiry date" class="sex-reg-info" required>
+			</div>
+			<div>
+				<input type="text" placeholder="cvc" name="Security no." class="dob-reg-info" required>
+			</div>
+			</div>
+			
+		</div>
+		
+		
+		</div>
+				<div class="">
+			<div class="encrypt-txt">
+				<p>
+				By continuing, you agree to Dailyhelp<b class="t-c">Terms of Use</b> and <b class="t-c">Privacy Policy</b>
+				</p>
+		<div class="reg-btn">
+			<button type="submit" style="display: none;">Save Credit Card</button>
+		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Save Credit Card</button></div></div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+			
+			
+		</div>
+            </div>
+            <div id="content3" class="tab-content">
+                <div class="body-pattern">
+	
+			<div class="result-option-body">
+		<div class="payment-option-body">
+			
+		 <div class="current-cd">
+					<p>Use existing credit card</p>
+					
+					<div class="add-acc-details">
+						 <div class="reg-info">
+							 <input type="text" placeholder="Name on account" name="fname" required></div>
+						 <div class="reg-info">
+							 <input type="text" placeholder="Bank swift code" name="lname" required></div>
+	  <div class="reg-info">
+		  <input type="text" placeholder="Account number" name="psw" required></div>
+						 <div class="reg-info">
+							 <input type="text" placeholder="Re-enter account number" name="psw" required></div>
+	  
+	  </div>
+					
+		
+		</div>
+			<div class="">
+			<div class="encrypt-txt">
+				<p>By adding this bank account, you agree to the Terms and Conditions</p>
+		<div class="reg-btn">
+			<button type="submit" style="display: none;">Add Bank Account</button>
+		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add Paystack Account</button></div>
+		</div>
+			</div>
+			</div>
+				
+			</div>
+			
+			
+		</div>
+            </div>
+            
+            <div class="background-image"></div>
+        </div>
+			</div>   
+					
+		</div>
+		</div>
+		
+			
+	
 
-	 <script src="js/script.js"></script>
+	<script src="js/script.js"></script>
+	
 </body>
