@@ -117,6 +117,8 @@ window.onclick = function(event) {
             }
         }
     }
+	
+  
 }
 
 
@@ -211,3 +213,27 @@ document.getElementById('search-icon').addEventListener('click', function() {
     searchBar.style.display = 'flex';
 });
 
+// payment options
+
+	function openContent(event, contentId) {
+    // Hide all tab content by default
+    var tabContents = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+    }
+
+    // Remove active class from all tab links
+    var tabLinks = document.getElementsByClassName('tab-link');
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove('active');
+    }
+
+    // Show the current tab content and add an active class to the clicked tab
+    document.getElementById(contentId).style.display = 'block';
+    event.currentTarget.classList.add('active');
+}
+
+// By default, open the first tab
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.tab-link').click();
+});

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar Example</title>
+    <title>Tabs with Content Example</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,77 +12,119 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
 }
 
-header {
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.tabs {
+    width: 20%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    background-color: #f8f8f8;
-    position: relative;
 }
 
-.search-container {
+.tab-link {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #555;
+}
+
+.content {
+    width: 80%;
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
 }
 
-.search-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.search-bar {
+.tab-content {
     display: none;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 400px;
-    position: relative;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 18px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.bar-icon {
     position: absolute;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #555;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/800');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
 
 	</style>
-    <header>
-        <div class="search-container">
-            <span class="search-icon" id="search-icon">&#128269;</span>
-            <div class="search-bar" id="search-bar">
-                <input type="text" placeholder="Search...">
-                <span class="bar-icon">&#128269;</span>
-            </div>
+	
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-link" onclick="openContent(event, 'content1')">Tab 1</button>
+            <button class="tab-link" onclick="openContent(event, 'content2')">Tab 2</button>
+            <button class="tab-link" onclick="openContent(event, 'content3')">Tab 3</button>
+            <button class="tab-link" onclick="openContent(event, 'content4')">Tab 4</button>
         </div>
-    </header>
+        <div class="content">
+            <div id="content1" class="tab-content">
+                <h2>Content 1</h2>
+                <p>This is the content for Tab 1.</p>
+            </div>
+            <div id="content2" class="tab-content">
+                <h2>Content 2</h2>
+                <p>This is the content for Tab 2.</p>
+            </div>
+            <div id="content3" class="tab-content">
+                <h2>Content 3</h2>
+                <p>This is the content for Tab 3.</p>
+            </div>
+            <div id="content4" class="tab-content">
+                <h2>Content 4</h2>
+                <p>This is the content for Tab 4.</p>
+            </div>
+            <div class="background-image"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+	<script>
+	function openContent(event, contentId) {
+    // Hide all tab content by default
+    var tabContents = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+    }
 
-    <main>
-        <h1>Page Content</h1>
-        <p>This is some content on the page that will shift down when the search bar is displayed.</p>
-    </main>
+    // Remove active class from all tab links
+    var tabLinks = document.getElementsByClassName('tab-link');
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove('active');
+    }
 
-    <script>
-	document.getElementById('search-icon').addEventListener('click', function() {
-    var searchBar = document.getElementById('search-bar');
-    var searchIcon = document.getElementById('search-icon');
-    
-    // Hide the initial search icon
-    searchIcon.style.display = 'none';
-    
-    // Display the search bar
-    searchBar.style.display = 'flex';
+    // Show the current tab content and add an active class to the clicked tab
+    document.getElementById(contentId).style.display = 'block';
+    event.currentTarget.classList.add('active');
+}
+
+// By default, open the first tab
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.tab-link').click();
 });
 
 	</script>
