@@ -727,15 +727,16 @@ input[type="date"] {
 
 .place-advert p {
 	width: auto;
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 100;
 	font-family: 'kod';
 	letter-spacing: 1px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .place-advert h5 {
 	font-size: 15px;
 	font-weight: 300;
+	padding-bottom: 6px;
 	
 }
 /*----hamburger menu-----*/
