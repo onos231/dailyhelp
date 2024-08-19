@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Search Results Tab</title>
+    <title>Text with Toggle Switch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,115 +12,74 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 100%;
 }
 
-.floating-tab-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.floating-tab-container {
-    display: none;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 300px;
-    max-width: 90%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+.switch-container {
+    display: flex;
+    align-items: center;
     padding: 20px;
 }
 
-.floating-tab-container h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    text-align: center;
+#status-text {
+    margin-right: 10px;
+    font-size: 16px;
 }
 
-.floating-tab-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    max-height: 200px;
-    overflow-y: auto;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
 }
 
-.floating-tab-container ul li {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.floating-tab-container ul li:last-child {
-    border-bottom: none;
-}
-
-.floating-tab-container ul li:hover {
-    background-color: #f1f1f1;
+.slider {
+    position: absolute;
     cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
 }
 
 	</style>
-    <button class="floating-tab-button" onclick="toggleResults()">Last 10 Searches</button>
-    
-    <div class="floating-tab-container" id="floating-tab-container">
-        <h3>Last 10 Search Results</h3>
-        <ul id="search-results">
-            <!-- Results will be populated here -->
-        </ul>
+    <div class="switch-container">
+        <span id="status-text">Off</span>
+        <label class="switch">
+            <input type="checkbox" id="toggle-switch">
+            <span class="slider"></span>
+        </label>
     </div>
 
     <script src="script.js"></script>
-	<script>
-	// Sample data for the last 10 search results
-const searchResults = [
-    "Plumber - John Doe",
-    "Electrician - Jane Smith",
-    "Carpenter - Bob Brown",
-    "Painter - Alice White",
-    "Mechanic - Mike Green",
-    "Welder - Chris Black",
-    "Mason - Linda Blue",
-    "Roofer - Jim Yellow",
-    "Tiler - Emma Orange",
-    "Plasterer - Oliver Pink"
-];
-
-// Function to toggle the visibility of the floating tab container
-function toggleResults() {
-    const container = document.getElementById('floating-tab-container');
-    if (container.style.display === 'none' || container.style.display === '') {
-        container.style.display = 'block';
-        populateResults();
-    } else {
-        container.style.display = 'none';
-    }
-}
-
-// Function to populate the search results in the container
-function populateResults() {
-    const resultsContainer = document.getElementById('search-results');
-    resultsContainer.innerHTML = ''; // Clear existing results
-    searchResults.forEach(result => {
-        const li = document.createElement('li');
-        li.textContent = result;
-        resultsContainer.appendChild(li);
-    });
-}
-
-	</script>
 </body>
 </html>
+

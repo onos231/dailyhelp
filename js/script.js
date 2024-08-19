@@ -237,3 +237,14 @@ document.getElementById('search-icon').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.tab-link').click();
 });
+
+// Toggle switch
+
+document.getElementById('toggle-switch').addEventListener('change', function() {
+    const statusText = document.getElementById('status-text');
+    if (this.checked) {
+        statusText.textContent = 'On';
+    } else {
+        statusText.textContent = 'Off';
+    }
+});
