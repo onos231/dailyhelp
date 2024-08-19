@@ -631,7 +631,7 @@ input[type="date"] {
 }
 .workers-container h3 {
 	font-family: 'Poppins';
-	color: #294F89;
+
 	font-weight: 600;
 }
 .workers-caption {
@@ -640,7 +640,7 @@ input[type="date"] {
 	margin-left: 20px;
 	font-family: 'Poppins';
 	float: left;
-	color: #294F89;
+
 }
 .workers-pic {
 	width: 20%;
@@ -678,6 +678,65 @@ input[type="date"] {
 
 .logo h1 {
     margin: 0;
+}
+.dailyhelp-guide {
+	width: 100%;
+	padding: 10px;
+	display: inline-block;
+	margin-top: 20px;
+
+}
+
+.guide-content {
+	border: 1px solid #E45959;
+}
+.guide-content-2 {
+	background-color: #EFF6FE;
+}
+.guide-content-3 {
+	background-color: #EFF6FE;
+}
+.guide-content-3,
+.guide-content-2,
+.guide-content {
+	display: flex;
+	width: 95%;
+	border-radius: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+.guide-content-3 p,
+.guide-content-2 p,
+.guide-content p{
+	width: 220px;
+	font-size: 15px;
+}
+.guide-content-3 img,
+.guide-content-2 img,
+.dailyhelp-guide img{
+	width: 20%;
+	margin-right: 10px;
+	padding: 6px;
+}
+.dailyhelp-guide h3{
+	margin-top: 16px;
+	margin-bottom: 4px;
+	font-family: 'kod';
+}
+
+.place-advert p {
+	width: auto;
+	font-size: 17px;
+	font-weight: 100;
+	font-family: 'kod';
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+.place-advert h5 {
+	font-size: 15px;
+	font-weight: 300;
+	
 }
 /*----hamburger menu-----*/
 .hamburger {
@@ -913,8 +972,39 @@ input[type="date"] {
 			margin-right: auto;
 			object-fit: contain;
 		}
+.recent-search p {
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.recent-search {
+	width: 95%;
+	margin-left: 20px;
+	margin-right: auto;
+	margin-bottom: 100px;
 
-			/*---Desktop Slides-----*/
+}
+.recent-result {
+	border: 1px solid #F4C211;
+	padding: 6px 10px;
+	border-radius: 16px;
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 6px;
+	font-size: 15px;
+
+}
+
+.recent-result a {
+	color: rgba(0, 0, 0, 0.7);
+
+}
+/*---Desktop Slides-----*/
+.home-content {
+	width: 100%;
+	display: flex;
+	/*background-color: #0BA4DB;*/
+	margin-bottom: 4px;
+}
 	.slideshow-container {
     position: relative;
     max-width: 100%;
@@ -931,8 +1021,9 @@ input[type="date"] {
 .mySlides {
     display: none;
     position: relative;
-	width: 300px;
-	margin-left: auto;
+	width: 150px;
+
+	padding: 20px;
 	margin-right: auto;
 }
 
@@ -951,7 +1042,6 @@ input[type="date"] {
 			position: relative;
 			margin-left: auto;
 			margin-right: auto;
-			background-color: #0BA4DB;
 		}
 		.home-slide-content p {
 			width: 90%;
@@ -963,7 +1053,7 @@ input[type="date"] {
 			text-align: center;
 		}
 		.home-caption-n-txt {
-			width: 90%;
+			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 
@@ -979,17 +1069,29 @@ input[type="date"] {
 			text-align: center;
 		}
 		.headline {
-			width: 60%;
+			width: 90%;
 			margin-left: auto;
 			margin-right: auto;
+			text-align: center;
+			margin-top: 20px;
 		}
 		.home-caption-n-txt h1 {
 			width: 100%;
 			text-align: center;
-			color: #fff;
+			color: #294F89;
 			display: inline-block;
 			margin-top: 20px;
-			font-size: 22px;
+			font-size: 17px;
+		}
+.home-caption-n-txt h5 {
+	width: 85%;
+			
+			color: #294F89;
+			display: inline-block;
+			margin-top: 4px;
+			font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
 		}
 		.home-login {
 			width: 60px;
@@ -1665,8 +1767,9 @@ input[type="date"] {
     margin: 0;
 }
 .caption h5 {
+	margin-top: 4px;
 	font-family: "Kod";
-    font-size: 20px;
+    font-size: 17px;
 }
 .ads-caption {
 	width: 100%;
@@ -3029,7 +3132,7 @@ float: left;
 	padding: 10px;
 }
 .sub-txt-title h5 {
-	font-size: 20px;
+	font-size: 17px;
 	text-align: center;
 	color: #534B3F;
 	font-family: "Kod";
@@ -3334,6 +3437,7 @@ tle p {
 
 .settings-area {
 	margin-top: 40px;
+	margin-bottom: 80px;
 }
 .settings-tabs {
 	background-color: #EFF6FE;
@@ -3585,13 +3689,17 @@ input[type="number" i] {
 	color: #000;
 }
 .work-steps-tab {
+	width: 100%;
 	position: relative;
+	display: inline-block;
 }
 .work-steps-tab h1 {
+	
 	color: #294F89;
 	margin-left: 20px;
 	font-family: 'poppins';
 	font-weight: 100;
+	
 }
 .steps-tab {
 	position: relative;

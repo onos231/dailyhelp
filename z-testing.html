@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs with Content Example</title>
+    <title>Floating Search Results Tab</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<style>
+<style>
 	body, html {
     margin: 0;
     padding: 0;
@@ -15,117 +15,111 @@
     height: 100%;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.tabs {
-    width: 20%;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.tab-link {
-    background-color: #444;
+.floating-tab-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px;
-    margin-bottom: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    text-align: left;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-.tab-link:hover {
-    background-color: #555;
-}
-
-.content {
-    width: 80%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tab-content {
+.floating-tab-container {
     display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-width: 90%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-.background-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://via.placeholder.com/800');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+.floating-tab-container h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.floating-tab-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.floating-tab-container ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.floating-tab-container ul li:last-child {
+    border-bottom: none;
+}
+
+.floating-tab-container ul li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
 
 	</style>
-	
-    <div class="container">
-        <div class="tabs">
-            <button class="tab-link" onclick="openContent(event, 'content1')">Tab 1</button>
-            <button class="tab-link" onclick="openContent(event, 'content2')">Tab 2</button>
-            <button class="tab-link" onclick="openContent(event, 'content3')">Tab 3</button>
-            <button class="tab-link" onclick="openContent(event, 'content4')">Tab 4</button>
-        </div>
-        <div class="content">
-            <div id="content1" class="tab-content">
-                <h2>Content 1</h2>
-                <p>This is the content for Tab 1.</p>
-            </div>
-            <div id="content2" class="tab-content">
-                <h2>Content 2</h2>
-                <p>This is the content for Tab 2.</p>
-            </div>
-            <div id="content3" class="tab-content">
-                <h2>Content 3</h2>
-                <p>This is the content for Tab 3.</p>
-            </div>
-            <div id="content4" class="tab-content">
-                <h2>Content 4</h2>
-                <p>This is the content for Tab 4.</p>
-            </div>
-            <div class="background-image"></div>
-        </div>
+    <button class="floating-tab-button" onclick="toggleResults()">Last 10 Searches</button>
+    
+    <div class="floating-tab-container" id="floating-tab-container">
+        <h3>Last 10 Search Results</h3>
+        <ul id="search-results">
+            <!-- Results will be populated here -->
+        </ul>
     </div>
+
     <script src="script.js"></script>
 	<script>
-	function openContent(event, contentId) {
-    // Hide all tab content by default
-    var tabContents = document.getElementsByClassName('tab-content');
-    for (var i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = 'none';
-    }
+	// Sample data for the last 10 search results
+const searchResults = [
+    "Plumber - John Doe",
+    "Electrician - Jane Smith",
+    "Carpenter - Bob Brown",
+    "Painter - Alice White",
+    "Mechanic - Mike Green",
+    "Welder - Chris Black",
+    "Mason - Linda Blue",
+    "Roofer - Jim Yellow",
+    "Tiler - Emma Orange",
+    "Plasterer - Oliver Pink"
+];
 
-    // Remove active class from all tab links
-    var tabLinks = document.getElementsByClassName('tab-link');
-    for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove('active');
+// Function to toggle the visibility of the floating tab container
+function toggleResults() {
+    const container = document.getElementById('floating-tab-container');
+    if (container.style.display === 'none' || container.style.display === '') {
+        container.style.display = 'block';
+        populateResults();
+    } else {
+        container.style.display = 'none';
     }
-
-    // Show the current tab content and add an active class to the clicked tab
-    document.getElementById(contentId).style.display = 'block';
-    event.currentTarget.classList.add('active');
 }
 
-// By default, open the first tab
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.tab-link').click();
-});
+// Function to populate the search results in the container
+function populateResults() {
+    const resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = ''; // Clear existing results
+    searchResults.forEach(result => {
+        const li = document.createElement('li');
+        li.textContent = result;
+        resultsContainer.appendChild(li);
+    });
+}
 
 	</script>
 </body>
