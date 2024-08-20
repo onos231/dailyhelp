@@ -3441,13 +3441,15 @@ tle p {
 	margin-bottom: 80px;
 }
 .settings-tabs {
-	background-color: #EFF6FE;
+	/*background-color: #EFF6FE;*/
+	background-color: #F7FBFF;
+	
 	border-radius: 4px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 20px;
+
 }
 .settings-tabs-2 {
 	border-radius: 4px;
@@ -3667,7 +3669,7 @@ input:checked + .slider:before {
 .reg-heading {
 	margin-top: 20px;
 	padding: 8px 10px;
-	background-color: #EFF6FE;
+	background-color: background-color: #F7FBFF;;
 	color: #534B3F;
 	border-radius: 4px;
 	
