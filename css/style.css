@@ -772,9 +772,8 @@ input[type="date"] {
 	font-size: 15px;
 	font-family: 'Poppins';
 	line-height: 18px;
-	font-weight: 100;
+	font-weight: 300;
 	margin-bottom: 6px;
-	color: #000;
 }
 .guide-content-3 img,
 .guide-content-2 img,
