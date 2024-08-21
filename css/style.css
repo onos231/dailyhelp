@@ -217,7 +217,11 @@ html, body {
 .logo-pics img {
 	width: 100%;
 }
-
+.signup-space {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+}
 h4 {
 	width: 60%;
 	margin-left: auto;
@@ -303,7 +307,7 @@ a:link {
 	margin-right: auto;
 }
 .helper-login-info {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -319,7 +323,7 @@ a:link {
 	color: rgba(0, 0, 0, 0.3);
 }
 .login-info {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -440,6 +444,18 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
+}
+.footer-icons  {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+.footer-social-btn {
+	width: 60%;
+}
+.footer-social-btn img {
+	width: 100%;
 }
 	.social-btn {
 		width: 100%;
@@ -645,12 +661,11 @@ input[type="date"] {
 	font-size: 13px;
 }
 .notification-container {
-	
+	width: 15%;
     position: relative;
     cursor: pointer;
     font-size: 24px;
 	margin-top: 8px;
-	margin-left: auto;
 
 }
 
@@ -666,14 +681,19 @@ input[type="date"] {
 }
 .notify-box  {
 	width: 50%;
+	background-color: red;
 
 }
 .notify-msg {
+	position: absolute;
 	width: 10px;
 	display: flex;
 	padding: 2px 10px;
 	background-color: #F7FBFF;
 	border-radius: 4px;
+	margin-top: 2px;
+	float: right;
+	margin-left: auto;
 
 	
 }
@@ -688,8 +708,7 @@ input[type="date"] {
     font-size: 14px;
 }
 .notify-msg img{
-	width: 25px;
-	margin-right: 4px;
+	width: 20px;
 }
 .workers-caption {
 	width:60%;
@@ -805,17 +824,22 @@ input[type="date"] {
 	
 }
 /*----hamburger menu-----*/
-.hambuger-n-msg-alert {
-	width: 100%;
+.msg-alert {
+	width: 10%;
 	display: flex;
 	margin-top: 20px;
 }
+.msg-alert:hover {
+	color: #ddd;
+}
 .hamburger {
-	width: 15%;
-    font-size: 25px;
+	width: 10%;
+	font-size: 24px;
+	padding: 1px 6px;
+
     cursor: pointer;
 	color: #000;
-	margin-left: auto;
+	float: right;
 }
 .index-menu {
 	position: fixed;
@@ -860,22 +884,23 @@ input[type="date"] {
 }
 .profile-pic {
 	float: left;
-	width: 100%;
-	margin-top: 20px;
+	width: 25%;
+	margin-top: 32px;
 
 }
 .profile-pic img{
-	width: 20%;
+	width: 25%;
 }
 .home-logo-pic {
 	width: 20%;
-	margin-top: 16px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .home-logo-pic img {
 	width: 100%;
-
-	
 }
+
 .hamburger-logo-pic {
 	width: 12%;
 	margin-left: auto;
@@ -3175,7 +3200,7 @@ float: left;
 
 /*----Subscription session---*/
 .payment-option-body {
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -3515,18 +3540,43 @@ tle p {
 /*----settings session---*/
 
 .settings-area {
+	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 80px;
 	font-family: 'kodch';
+	margin-right: auto;
+	margin-right: auto;
+
 }
 .settings-tabs {
+		width: 90%;
 	/*background-color: #EFF6FE;*/
 	background-color: #F7FBFF;
 	border-radius: 4px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 10px;
+	padding: 20px;
 	margin-bottom: 20px;
+}
+.profession-settings-tabs {
+	width: 90%;
+	/*background-color: #EFF6FE;*/
+	
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.find-me p {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 6px;
+	font-size: 15px;
+}
+.find-me {
+	margin-bottom: 10px;
 
 }
 .settings-tabs-2 {
@@ -3558,10 +3608,13 @@ tle p {
 }
 .settings-tabs h5 {
 	font-size: 20px;
+	font-family: 'kod';
 }
 .notify-area {
 	width: 100%;
 	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .notify-area h5 {
 	padding: 10px;
@@ -3666,7 +3719,7 @@ input:checked + .slider:before {
 	font-family: 'Poppins';
 	font-size: 13px;
 	padding: 6px 4px;
-	color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.7);
 
 }
 .create-work-steps {
@@ -3787,17 +3840,23 @@ input:checked + .slider:before {
 .change-reg-no-info {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 18px 10px;;
+	border-radius: 4px;
+	outline: none;
+}
+input[type="number" i] {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px 8px;
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	margin-top: 15px;
 	outline: none;
-	
-}
-input[type="number" i] {
 	border: none;
+	/*border: none;
 	font-size: 15px;
 	outline: none;
+	width: 100%;*/
 }
 .change-reg-info {
 	margin-left: auto;
@@ -3816,12 +3875,12 @@ input[type="number" i] {
 }
 .num-verify-text p{
 	width: 60%;
+	font-size: 15px;
 }
 .center-input {
     width: 95%;
 	height: 50px;
     font-size: 17px;
-    text-align: center;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -3940,8 +3999,10 @@ textarea {
 	margin-top: 80px;
 }
 .post-steps {
-	width: 100%;
+	width: 90%;
 	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .post-empty-btn {
 	width: 10%;
@@ -4147,6 +4208,70 @@ textarea {
 	margin-left: 20px;
 }
 
+/*----footer session---*/
+.footer {
+    padding: 2px 0;
+	color: #000;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+	border-top: 1px solid #F1F1F1;
+	margin-top: 80px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 350px;
+	text-align: center;
+	margin-top: 40px
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+	margin-top: 0;
+	
+}
+
+.footer-section p,
+.footer-section a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+	text-align: center;
+	color: #294F89;
+}
+
+.footer-section a:hover {
+    color: #ddd;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.sub-mobile {
 		display: none;
@@ -4737,7 +4862,7 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 }
-	.social-btn {
+.social-btn {
 		width: 80%;
 	}
 .social-btn img {

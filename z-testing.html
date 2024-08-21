@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Notification</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Footer Menu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <style>
@@ -12,86 +12,142 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+}
+
+.footer {
+    padding: 2px 0;
+	color: green;
+}
+
+.footer-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.notification-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 24px;
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 350px;
+	text-align: center;
 }
 
-.notification-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 50%;
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
     font-size: 14px;
+    line-height: 1.5;
+	color: #000;
 }
 
-.message-tab {
-    display: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
     text-align: center;
-    position: absolute;
-    top: 70px;
-}
-
-#mark-read {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 14px;
+    color: #bbb;
+    border-top: 1px solid #444;
+    padding-top: 10px;
 }
 
-#mark-read:hover {
-    background-color: #0056b3;
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        
+        margin: 20px 0;
+    }
+
 }
 
 	</style>
-    <div class="notification-container" id="notification-container">
-        <span class="notification-icon">📩</span>
-        <span class="notification-count" id="notification-count">3</span>
-    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Icons -->
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
 
-    <div class="message-tab" id="message-tab">
-        <p>You have 3 new messages!</p>
-        <button id="mark-read">Mark as Read</button>
-    </div>
+            <!-- Give Us Feedback -->
+            <div class="footer-section">
+                <a href="#">Give Us Feedback</a>
+            </div>
 
-    <script src="script.js"></script>
-	<script>
-	document.getElementById('notification-container').addEventListener('click', function() {
-    const messageTab = document.getElementById('message-tab');
-    messageTab.style.display = 'block';
-});
+            <!-- Contact Details -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+               <p>Email: support@dailyhelp.com</p>
+                <p>Phone: +23470 1234 5678</p>
+                <p>Address: 4 ali Street, Benin City, Nigeria</p>
+            </div>
 
-document.getElementById('mark-read').addEventListener('click', function() {
-    const notificationContainer = document.getElementById('notification-container');
-    const messageTab = document.getElementById('message-tab');
+			<!-- Social links -->
+			<div class="all-social-btn">
+				<div class="grid-container">
+					
+  <div class="grid-item"> 
+	  <div class="social-btn">
+			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
+			</div></div>
+ <div class="grid-item"> 
+	  <div class="social-btn">
+			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
+			</div></div>
+					<div class="grid-item"> 
+	  <div class="social-btn">
+			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
+			</div></div>
+	
+  
+					</div>  
+					</div>
+            <!-- Privacy Policy -->
+            <div class="footer-section">
+                <h4>Privacy Policy</h4>
+                <a href="#">Read our Privacy Policy</a>
+            </div>
+        </div>
 
-    // Hide the notification container
-    notificationContainer.style.display = 'none';
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourSiteName<sup>&reg;</sup>. All rights reserved.</p>
+        </div>
+    </footer>
 
-    // Hide the message tab
-    messageTab.style.display = 'none';
-});
-
-	</script>
+    <!-- Font Awesome Icons -->
 </body>
 </html>
