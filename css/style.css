@@ -381,13 +381,13 @@ outline: none;
 button {
   background-color: #F4C211;
   color: white;
-  padding: 20px 10px;
+  padding: 15px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  border-radius: 30px;
+  border-radius: 10px;
   font-size: 17px;
   font-family: 'Roboto';
 }
@@ -423,7 +423,7 @@ span.psw {
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 60px;
+	margin-top: 20px;
 
 }
 	.continue-text p{
@@ -458,7 +458,7 @@ span.psw {
 	width: 100%;
 }
 	.social-btn {
-		width: 100%;
+		width: 60%;
 	}
 .social-btn img {
 	width: 100%;
@@ -681,7 +681,7 @@ input[type="date"] {
 }
 .notify-box  {
 	width: 50%;
-	background-color: red;
+	margin-top: 6px;
 
 }
 .notify-msg {
@@ -691,7 +691,6 @@ input[type="date"] {
 	padding: 2px 10px;
 	background-color: #F7FBFF;
 	border-radius: 4px;
-	margin-top: 2px;
 	float: right;
 	margin-left: auto;
 
@@ -699,9 +698,9 @@ input[type="date"] {
 }
 .notify-num {
 	position: absolute;
-    top: -10px;
+    top: -14px;
     right: -10px;
-    background-color: #39BF4E;
+    background-color: #E45959;
     color: white;
     padding: 4px 8px;
     border-radius: 50%;
@@ -834,12 +833,12 @@ input[type="date"] {
 }
 .hamburger {
 	width: 10%;
-	font-size: 24px;
-	padding: 1px 6px;
-
+	font-size: 20px;
+	padding: 1px 16px;
     cursor: pointer;
 	color: #000;
 	float: right;
+	margin-top: 8px;
 }
 .index-menu {
 	position: fixed;
@@ -939,12 +938,12 @@ input[type="date"] {
 .menu ul li a {
     color: #000;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     width: 150px;
-    height: 100%;
 	padding: 10px;
     font-size: 15px;
 	font-family: 'Kodchas';
+	
 }
 
 .menu ul li a:hover {
@@ -963,12 +962,13 @@ input[type="date"] {
   			text-decoration: none;
   			font-size: 15px;
 			width: 15%; /* Four links of equal widths */
+			
+			
   		}
 .mob-sub-heads img,
 .sub-heads img{
 			width: 10px;
 			margin-right: 4px;
-			margin-top: 4px;
 		}
 		.close-btn {
     position: absolute;
@@ -1247,10 +1247,11 @@ input[type="date"] {
 	margin-right: auto;
 	border-radius: 8px;
 	font-family: 'Roboto';
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 .result-option-body {
 	width: 100%;
+	margin-bottom: 40px;
 	
 }
 
@@ -1369,6 +1370,7 @@ input[type="date"] {
 .dash-communication {
 	display: flex;
 	height: 30%;
+	width: 70%;
 }
 .dash-communication img{
 	width: 20%;
@@ -1377,8 +1379,9 @@ input[type="date"] {
 	margin-top: 4px;
 }
 .report-msg {
-	width: 100%;
+	width: 40%;
 	float: right;
+	margin-right: 10px;
 	font-weight: 600;
 
 }
@@ -1497,7 +1500,7 @@ input[type="date"] {
 }
 .more-and-less p{
 		text-align: right;
-		margin-right: 30px;
+		margin-right: 20px;
 		color: #000;
 		font-size: 13px;
 		font-family: 'poppins';
@@ -1660,7 +1663,8 @@ input[type="date"] {
 	margin-right: auto;
 	}
 .helper-diff-option p {
-	margin-left: 20px;
+	margin-left: 15px;
+	margin-bottom: 10px;
 }
 .care-dash-body-3 {
 	margin-right: 20px;
@@ -1708,7 +1712,7 @@ input[type="date"] {
 	}
 .helper-tab {
 	display: flex;
-	width: 90%;
+
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid #F4C211;
@@ -2522,39 +2526,37 @@ float: left;
 		float: right;
 		margin-right: 8px;
 	}
-.no-of-msg,
-.response-msg {
-	margin-top: 4px;
-}
-.response-msg {
-	margin-left: 0;
-	width: 160px;
 
+.response-msg {
+	width: 100%;
+	margin-top: 4px;
+	margin-left: 0;
 }
 .activity-dist {
-	float: right;
-	margin-right: 10px;
+	display: flex;
 
 }
 
 .activity-details {
 	display: block;
 }
-.chat-info-content {
-	width: 97%;
+.msg-panel {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .chat-activity-list {
 	display: flex;
 	margin-top: 20px;
 	width: 100%;
-	height: 80px;
-	border-radius: 4px;
+	height: auto;
+	border-radius: 8px;
 	margin-bottom: 10px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 .chat-info-content {
 	width: 100%;
-	padding: 12px;
+	padding: 10px;
 }
 .chat-activity-pic img {
 	display: block;
@@ -2567,29 +2569,40 @@ float: left;
 	float: left;
 }
 .activity-details {
+	width: 70%;
 	margin-left: 10px;
 	float: left;
 }
 .chat-red-activity {
-	width: 70px;
-	padding: 2px 10px;
+	padding: 4px 12px;
 	background-color: #D2E4F9;
 	border-radius: 4px;
 	color: #000;
 	font-size: 13px;
 	font-weight: 300;
-	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
 
 }
 .no-of-msg {
-	text-align-last: center;
+	color: #000;
+	margin-left: auto;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	color: #fff;
+	background-color: #DF665E;
+	padding: 4px 8px;
+	border-radius: 50%;
 }
 /*----Bitcoin session---*/
 .payment-container {
+	width: 90%;
      background-color: #fff;
      border-radius: 10px;
      text-align: center;
 	 font-family: 'Roboto';
+	margin-left: auto;
+	margin-right: auto;
         }
 .payment-container p {
 	width: 60%;margin-bottom: 8px;
@@ -2603,6 +2616,14 @@ float: left;
 	color: #3997BF;
 	font-size: 15px;
 	font-weight: 100;
+}
+.contact-send-request {
+
+	bottom: 0;
+	margin-bottom: 40px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .btc-send-request {
 	position: absolute;
@@ -2660,6 +2681,7 @@ float: left;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 40px;
 }
 .top-box {
 	width: 85%;
@@ -2669,6 +2691,10 @@ float: left;
 	padding: 20px;
 	border-radius: 8px;
 	/*--background-color: #EFF6FE;---*/
+}
+.profile-box {
+	padding: 10px;
+	background-color: #fff;
 }
 .profile-details {
 	width: 70%;
@@ -2769,7 +2795,6 @@ float: left;
 .user-profile-tabs {
 	display: flex;
 	width: 95%;
-	background-color: rgba(239, 246, 254, 1);
 	border-radius: 8px;
 	padding: 2px;
 	margin-top: 40px;
@@ -2952,7 +2977,7 @@ float: left;
 /*----bank transfer session---*/
 .banking {
 	background-color: #EFF6FE;
-	width: 95%;
+
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -3004,7 +3029,7 @@ float: left;
 }
 /*----Payment option session---*/
 .mobile-body {
-		width: 95%;
+
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -3057,9 +3082,17 @@ float: left;
 }
 
 
+.sub-dashboard {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-
-
+.sub-transfers {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .card-msg {
 	width: 95%;
@@ -3067,7 +3100,7 @@ float: left;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #EFF6FE;
-	border-radius: 10px;
+	border-radius: 4px;
 	margin-bottom: 10px;
 
 }
@@ -3207,9 +3240,10 @@ float: left;
 }
 
 .sub-plan-txt {
-	float: right;
-	margin: 10px 20px;
+	margin-bottom: 10px;
 	font-size: 15px;
+	width: 95%;
+	display: inline-block;;
 }
 .top-area {
 	position: relative;
@@ -3219,8 +3253,7 @@ float: left;
 	position: absolute;
 	width: 90%;
 	bottom: 0;
-	margin-top: 40px;
-	margin-bottom: 80px;
+
 }
 /*----Subscription plans session---*/
 .subcription-area {
@@ -3328,7 +3361,7 @@ tle p {
 }
 /*----Add card session---*/
 .add-cd-info {
-	width: 95%;
+
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
@@ -3356,7 +3389,7 @@ tle p {
 	color: rgba(0, 0, 0, 0.7);
 }
 .current-cd {
-	width: 95%;
+
 	color: rgba(0, 0, 0, 0.7);
 	margin-bottom: 20px;
 
@@ -3391,11 +3424,10 @@ tle p {
 	margin-top: 40px;
 }
 .cd-diff-option p {
-	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	color: rgba(0, 0, 0, 0.5);
-	margin: 4px 20px;
+	margin-bottom: 6px;
 }
 .add-helper-tab-title {
 	width: 100%;
@@ -3558,9 +3590,17 @@ tle p {
 	padding: 20px;
 	margin-bottom: 20px;
 }
-.profession-settings-tabs {
+.send-settings-tabs {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.profession-settings-tabs h5 {
 	width: 90%;
 	/*background-color: #EFF6FE;*/
+	font-family: 'kod';
+	font-size: 20px;
 	
 	border-radius: 4px;
 	margin-left: auto;
@@ -3690,7 +3730,6 @@ input:checked + .slider:before {
     transform: translateX(24px);
 }
 /*----write report session---*/
-
 .write-report-tab {
 	width: 330px;
 	margin-left: 10px;
@@ -4021,6 +4060,7 @@ textarea {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 40px;
 }
 .subject-body  p{
 	width: 90%;
@@ -4063,7 +4103,7 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 	font-family: 'Roboto';
 }
 .contact-address h3 {
@@ -4231,8 +4271,17 @@ textarea {
 	text-align: center;
 	margin-top: 40px;
 }
+.footer-policy {
+	margin-bottom: 10px;
+}
+.footer-policy a {
+	padding: 4px;
+	margin-bottom: 20px;
+}
 .feedback-section {
-	width: 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .feedback-section a {
 	text-align: center;
@@ -4246,7 +4295,29 @@ textarea {
     margin-bottom: 10px;
 	margin-top: 0;
 	color: #E45959;
-	
+}
+.footer-ads-btn {
+	width: 100%;
+	border-radius: 8px;
+	padding: 10px 14px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 22px;
+	background-color: #fff;
+	border: 1px solid #F4C211;
+	text-align: center;
+	color: #000;
+}
+.footer-ads-btn img {
+	width: 20px;
+	margin-left: 14px;
+	margin-top: 6px;
+}
+.footer-ads-btn h3 {
+	float: left;
+	margin-left: 14px;
+	font-family: 'Poppins';
 }
 .footer-section p {
     text-decoration: none;
@@ -4504,9 +4575,7 @@ textarea {
 	.about-text ul {
 		list-style: none;
 	}
-	.bottom-btn {
-		position: sticky;
-	}
+
 .pic-area {
 	width: 80%;
 	height: auto;
@@ -4866,7 +4935,7 @@ textarea {
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 60px;
+	margin-top: 20px;
 
 }
 	.continue-text p{
@@ -5182,18 +5251,18 @@ textarea {
 .dash-communication {
 	display: flex;
 	height: 30%;
+	width: 60%;
 }
 .dash-communication img{
 	width: 25%;
 	float: right;
 }
 .report-msg {
-	width: 100%;
+	width: 40%;
 	float: right;
 	font-weight: 600;
 }
 .report-msg h5 {
-	width: 50%;
 	color: #E45959;
 
 }
@@ -5221,6 +5290,15 @@ textarea {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	 .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+        margin: 20px 0;
+    }
 }
 @media only screen and (min-width: 992px) {
 	.search-helper-nav {
@@ -6288,9 +6366,7 @@ textarea {
 	.pic-content-mob h2 {
 		display: none;
 	}
-	.btc-send-request {
-	position: sticky;
-}
+
 	.settings-top-nav {
 		display: none;
 	}
