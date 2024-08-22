@@ -8,19 +8,21 @@
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>DailyHelp</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   
 </head>
 	
 <body>
-	
+	<style>
+		
+	</style>
 	
     <!--login Section-->
 	
-	<div class="index-project">
+	<div class="web-home">
 		
 
    <header>
@@ -111,12 +113,21 @@
 	   <div class="nav-index-mob">
 		 <div class="profile-pic">
 	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
+		   <div class="logo">
             <div class="home-logo-pic">
-	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
-		 </div>
+	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" class="logo" /></a>
+		 </div></div>
+		     <div class="notification-container" id="notification-container">
+			<a href="chat-messages.html"><div class="notify-box">
+		<div class="notify-msg">
+			<img src="img/index/msg.png">
+			<div class="notify-num">4</div>
+			</div></div></a></div>
+		  <div class="msg-alert">
+			
         <div class="hamburger" id="hamburger">
             &#9776;
-        </div>
+        </div></div>
     </div>
 
     <nav id="menu" class="menu">
@@ -124,6 +135,7 @@
 		<div class="hamburger-logo-pic" style="display: none;">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		</div>
+		
 		<div class="hamburger-caption-list">
         <ul>
 			<li><div class="mob-sub-heads">
@@ -174,6 +186,7 @@
 			</div></a></li>
         </ul>
 		
+		
 		<ul><li>
 				<div class="logout-tabs">
 					<a href="welcome.html">
@@ -195,6 +208,8 @@
 		   
 	 
 	  </header>
+		
+		
 
    <div class="sub-txt-title"> 
 		 <h5>Settings
@@ -204,11 +219,11 @@
 		
 		
    	
-		
+
 		
 			<div class="create-resume">
 			
-			<div class="settings-area">
+			<div class="">
 		   
 			<div class="container">
 				<div class="find-me">
@@ -248,9 +263,12 @@
 				
 				<button>Change Email</button>
 			</div>
-				<div class="notify-area">
+				<div class="settings-tabs">
+				
 				<h5>Notifications</h5>
 		
+			</div>
+				<div class="notify-area">
 				<div class="notify-txt">
 	  Notify me of new messages </div>
 				
@@ -260,6 +278,7 @@
             <span class="slider"></span>
         </label>
 		</div>
+			
 				<div class="notify-area">
 		
 				<div class="notify-txt">
@@ -271,12 +290,66 @@
             <span class="slider"></span>
         </label>
 		</div>
-			</div>
 	</div>
 			</div>
-		</div>
+	
+
 	</div>
+	
+	<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Icons -->
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+				</div>
+			<!-- Give Us Feedback -->
+            <div class="feedback-section">
+               <a href="ads.html"><button class="footer-ads-btn">Give us feedback<img src="img/into/f-arrow-gold.png"></button></a>
+            </div>
+                <div class="footer-icons">
+				<div class="grid-container">
+					
+  <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
+			</div></div>
+ <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
+			</div></div>
+					<div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
+			</div></div>
+	
+  
+					</div>  
+					</div>
+            </div>
 
+            
 
+           
+
+			
+			
+            <!-- Privacy Policy -->
+            <div class="footer-section">
+                <h4>Privacy Policy</h4>
+				<div class="footer-policy">
+                <a href="#">Privacy Policy</a>&#32;<a href="#">Terms &#38; Condition</a>&#32;<a href="contact-us.html">Contact</a>
+            </div>
+				<div class="footer-policy">
+                <a href="about-us.html">About Dailyhelp</a>&#32;<a href="report.html">Report</a>&#32;<a href="FAQ.html">FAQs</a>
+            </div>
+            </div>
+   
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dailyhelp<sup>&reg;</sup>. All rights reserved.</p>
+        </div>
+    </footer>
 	<script src="js/script.js"></script>
 </body>

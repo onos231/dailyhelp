@@ -305,6 +305,7 @@ a:link {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 40px;
 }
 .helper-login-info {
 	width: 100%;
@@ -2724,9 +2725,10 @@ float: left;
 	margin-top: 6px;
 	}
 .other-icons-n-txt {
-	width: 80%;
+	width: 75%;
 	text-align: left;
 	margin-bottom: 10px;
+	margin-left: 20px;
 	color: #000;
 	float: left;
 }
@@ -2747,7 +2749,6 @@ float: left;
 .other-icons-n-txt img {
 	width: 10px;
 	margin-right: 4px;
-	margin-left: 10px;
 	margin-top: 6px;
 	}
 .profile-bottom {
@@ -3612,11 +3613,12 @@ tle p {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 6px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 	font-size: 15px;
 }
 .find-me {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 
 }
 .settings-tabs-2 {
@@ -3651,15 +3653,16 @@ tle p {
 	font-family: 'kod';
 }
 .notify-area {
-	width: 100%;
+	width: 95%;
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 40px;
 }
 .notify-area h5 {
 	padding: 10px;
 	font-size: 20px;
-	font-family: 'kodch';
+	font-family: 'kod';
 	background-color: #F7FBFF;
 	margin-bottom: 10px;
 
