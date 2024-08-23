@@ -184,7 +184,14 @@ const amountInUSD = 1000;
                 console.error('Failed to copy: ', err);
             });
         }
-
+function copyBankAddress() {
+            const bankAddress = document.getElementById('bankAddress').innerText;
+            navigator.clipboard.writeText(bankAddress).then(() => {
+                alert('Bank address copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
 // FAQ session
 
 function toggleFAQ(button) {

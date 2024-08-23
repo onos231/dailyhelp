@@ -144,8 +144,8 @@ html, body {
 .f-arrow-btn img {
 	width: 19px;
 	padding: 15px;
-	background-color: #F4C211;
 	border-radius: 20px;
+	margin-top: 4px;
 }
 .b-arrow-btn {
 	float: left;
@@ -169,14 +169,20 @@ html, body {
 	padding: 5px;
 	border-radius: 20px;
 }
-.post-arrow-btn a{
+.post-arrow-btn {
 	float: right;
 	margin-top: 40px;
+	width: 70%;
+}
+.post-arrow-btn a{
+	color: #F4C211;
 }
 .post-arrow-btn img{
-	width: 15px;
-	padding: 5px;
+	width: 25px;
 	border-radius: 20px;
+	margin-top: 4px;
+	margin-left: 4px;
+
 }
 .txt-arrow {
 	float: left;
@@ -187,22 +193,26 @@ html, body {
 	margin-top: 2px;
 }
 .post-arrow-btn-left {
+	width: 60%;
 	margin-top: 40px;
+}
+.post-arrow-btn-left a{
+	color: #F4C211;
 }
 .post-arrow-btn-left img{
 	float: left;
-	width: 15px;
-	padding: 5px;
+	width: 25px;
+	margin-top: 4px;
 	border-radius: 20px;
+	margin-right: 4px;
 }
 .txt-arrow-left {
 	float: left;
-	margin-right: 4px;
 	font-size: 15px;
 	color: #000;
 	opacity: 0.9;
 	color: #F4C211;
-		margin-top: 2px;
+	
 }
 /*-------Login session ----*/
 .dailyhelp-pic {
@@ -859,7 +869,8 @@ input[type="date"] {
     top: 10;
     right: -250px;
     width: 250px;
-    height: 80%;
+    height: auto;
+	padding-bottom: 40px;
 	border-radius: 0px 0px 20px 20px;
     background-color: #fff;
     padding-top: 20px;
@@ -1860,6 +1871,11 @@ input[type="date"] {
     justify-content: center;
     align-items: center;
 }
+.msg-caption-area {
+		background-color: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 		.caption-area {
 			margin-top: 25px;
 			margin-bottom: 40px;
@@ -1905,7 +1921,7 @@ input[type="date"] {
 	position: absolute;
    	right: 10px;
     font-size: 30px;
-    background-color: #fff;
+    background-color: transparent;;
     padding: 10px;
     border-radius: 8%;
     cursor: pointer;
@@ -1932,8 +1948,8 @@ input[type="date"] {
     padding: 10px;
     border-radius: 8%;
     cursor: pointer;
-    text-align: center
-    line-height: 30px;
+    text-align: center;
+    line-height: 28px;
     width: 30px;
     height: 30px;
 }
@@ -2528,7 +2544,7 @@ float: left;
 
 .response-msg {
 	width: 100%;
-	margin-top: 4px;
+
 	margin-left: 0;
 }
 .activity-dist {
@@ -2540,53 +2556,72 @@ float: left;
 	display: block;
 }
 .msg-panel {
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 }
 .chat-activity-list {
 	display: flex;
-	margin-top: 20px;
+
 	width: 100%;
 	height: auto;
 	border-radius: 8px;
-	margin-bottom: 10px;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin-bottom: 40px;
+	/*box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);*/
 }
 .chat-info-content {
 	width: 100%;
-	padding: 10px;
+}
+.read-msg-pic {
+	margin-right: 20px;
+
+}
+.read-msg-pic img{
+	display: block;
+	max-width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	object-fit: cover;
 }
 .chat-activity-pic img {
 	display: block;
-	max-width: 40px;
-	height: 40px;
+	max-width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	vertical-align: middle;
-	border: 8px solid #D2E4F9;
 	object-fit: cover;
 	float: left;
+	border: 1px solid #ddd;
 }
 .activity-details {
-	width: 70%;
+	width: 80%;
 	margin-left: 10px;
 	float: left;
 }
 .chat-red-activity {
-	padding: 4px 12px;
-	background-color: #D2E4F9;
+	/*padding: 10px 12px;*/
+	/*background-color: #D2E4F9;*/
 	border-radius: 4px;
 	color: #000;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 300;
 	margin-top: 6px;
-	margin-bottom: 6px;
 
+}
+.date-of-msg {
+	color: #000;
+	margin-left: auto;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.5);
+	font-family: 'Roboto';
+	float: right;
 }
 .no-of-msg {
 	color: #000;
 	margin-left: auto;
-	margin-top: 6px;
+
 	margin-bottom: 6px;
 	color: #fff;
 	background-color: #DF665E;
@@ -2826,7 +2861,8 @@ float: left;
 }
 .prof-pic-log-out {
 	display: flex;
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 
 	
 }
@@ -3104,7 +3140,6 @@ float: left;
 
 }
 .card-msg p{
-	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 13px;
@@ -3114,10 +3149,11 @@ float: left;
 }
 .payment-details {
 	display: flex;
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
+	font-family: 'poppins';
 }
 .payment-details-2 {
 	display: flex;
@@ -4118,7 +4154,36 @@ textarea {
 
 
 /*----chat room session---*/
-
+.read-messages {
+	display: flex;
+}
+.read-messages h3 {
+	line-height: 25px;
+	color: green;
+	font-family: 'kod';
+}
+.wrap-message {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.sent-messages {
+	width: 85%;
+	padding: 10px;
+	background-color: #fff;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+.sent-messages p {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	color: #000;
+	font-family: 'poppins';
+	font-size: 15px;
+}
 .chat-n-title {
 	display: flex;
 }
@@ -4164,8 +4229,52 @@ textarea {
 	margin-bottom: 0;
 	font-size: 11px;
 }
+/*-----Reply message tab----*/
+.reply-container {
+    width: 85%;
+	height: 40px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
 
+.reply-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.send-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button i {
+    font-size: 18px;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
 /*----chat message session---*/
+
 .chat-option-body {
 	position: absolute;
 	width: 95%;
@@ -4214,7 +4323,7 @@ textarea {
 	display: flex;
 }
 .chat-reg-info {
-	width: 72%;
+	width: 82%;
 	margin-left: 10px;
 	margin-right: 10px;
 	border-radius: 8px;
@@ -4227,7 +4336,7 @@ textarea {
 }
 .send-pic img {
 	width: 100%;
-	margin-top: 30px;
+
 }
 .chat-area {
 	position: relative;
@@ -4250,6 +4359,9 @@ textarea {
 }
 
 /*----footer session---*/
+.footer-area {
+	background-color: #fff;
+}
 .footer {
     padding: 2px 0;
 	color: #000;
@@ -4794,7 +4906,7 @@ textarea {
 		background-position: center; 
   		background-repeat: no-repeat; 
   		background-size: contain; 
-	position: relative;
+		position: relative;
 }
 	.other-home-pages {
 		width: 40%;

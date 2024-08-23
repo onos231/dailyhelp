@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Footer Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="cssn/style.css">
 </head>
 <body>
 <style>
@@ -86,8 +86,77 @@
     }
 
 }
+	
+
+
 
 	</style>
+	
+	<style>
+	.reply-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.reply-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.send-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button i {
+    font-size: 18px;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+	</style>
+	
+
+
+    <!-- Reply Message Container -->
+    <div class="reply-container">
+        <input type="text" placeholder="Type your message..." class="reply-input">
+        <button class="send-button">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    
+
+
+	
+	
+	
+	
+	
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
