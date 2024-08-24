@@ -250,24 +250,42 @@ You</div></div></div>
 			
 		
 				
-					
-					<div class="reg-info">
-    <input type="text" placeholder="Full Names" name="fname" required>
-	  </div>
-					<div class="reg-info">
-    <input type="text" placeholder="Email" name="fname" required>
-	  </div>
-		<div class="expire-n-security">
-			<div class="sex-reg-info">
-			<input type="text" placeholder="Sex" name="sex" required>
-			</div>
-			<div class="dob-reg-info">
-				<input type="text" placeholder="dob" name="dob" required>
-			</div>
-			</div>
-					<div class="reg-info">
-    <input type="text" placeholder="Phone no." name="fNo" required>
-	  </div>
+				<!-- Form Container -->
+    <div class="form-container">
+        <form action="#" method="POST">
+
+            <!-- Full Name -->
+            <div class="form-group">
+               
+                <input type="text" id="fullName" name="fullName" placeholder="Full Names" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+           <!-- Sex -->
+            <div class="form-group">
+            
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              
+                <input type="tel" id="phone" name="phone" placeholder="Phone No. +234" required>
+            </div>
+
+        </form>
+    </div>
 			</div>
 			
 			
@@ -287,7 +305,9 @@ You</div></div></div>
 						</div></div>
   <div class="grid-item">
 	 <div class="post-arrow-btn">
-			<a href="professional-info.html"><div class="txt-arrow">Next</div><img src="img/into/f-arrow-gold.png" alt="Project 2" /></a>
+			<a href="professional-info.html"><div class="post-arrow-btn">
+			Next<img src="img/into/f-arrow-gold.png" alt="Project 2" />
+			</div></a>
 			</div></div>
 					</div>  
 </div>

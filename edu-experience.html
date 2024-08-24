@@ -247,47 +247,53 @@ You</div></div></div>
 				<h5>Education &#38; Experience &#42;</h5>
 			</div>
 	
-			
-		
-				
-					
-			 
-	<div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Select Education <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-menu">
-            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
-            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
-            <li onclick="selectLevelOfEdu('University')">University</li>
-            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
-        </ul>
-    </div>	
-			
-			
-	<div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Select Qualification <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-Qualification">
-            <li onclick="selectLevelOfQualification('0 &#45; 1 years')">0 &#45; 1 year</li>
-            <li onclick="selectLevelOfQualification('2 &#45; 5 years')">2 &#45; 5 years</li>
-            <li onclick="selectLevelOfQualification('6 &#45; 10 years')">6 &#45; 10 years</li>
-            <li onclick="selectLevelOfQualification('10&#43; years')">10&#43; years</li>
-        </ul>
-    </div>		
-			
-    
 
-    <div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Select Experience <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-menu">
-            <li onclick="selectExperience('0 &#45; 1 years')">0 &#45; 1 year</li>
-            <li onclick="selectExperience('2 &#45; 5 years')">2 &#45; 5 years</li>
-            <li onclick="selectExperience('6 &#45; 10 years')">6 &#45; 10 years</li>
-            <li onclick="selectExperience('10&#43; years')">10&#43; years</li>
-        </ul>
+		<div class="form-container">
+        <form action="#" method="POST">
+
+			<!-- Education -->
+            <div class="form-group">
+                <select id="edu" name="education" required>
+					<option value="" disabled selected>Level of Education</option>
+					<option value="cleaner">None</option>                    
+                    <option value="driver">Primary School</option>
+                    <option value="caregiver">Secondary School</option>
+                    <option value="gardener">Bachelor Degree</option>
+                    <option value="elect">Certification</option>
+                    <option value="plumber">Handwork</option>
+                    
+                </select>
+            </div>
+			
+<!-- Profession -->
+            <div class="form-group">
+                <select id="profession" name="profession" required>
+					<option value="" disabled selected>Select Profession</option>
+					<option value="cleaner">Cleaner</option>                    
+                    <option value="driver">Driver</option>
+                    <option value="caregiver">Caregiver</option>
+                    <option value="gardener">Gardener</option>
+                    <option value="elect">Electrician</option>
+                    <option value="plumber">Plumber</option>
+                    
+                </select>
+            </div>
+			
+			<!-- Experience -->
+            <div class="form-group">
+                <select id="exp" name="exp" required>
+					<option value="" disabled selected>Select Experience</option>
+                    <option value="twoToFive">2 - 5 Years</option>
+					<option value="noExp">No Experience</option>
+                    <option value="zeroToOne">0 - 1 Year</option>
+                    <option value="fiveToTen">5 - 10 Years</option>
+                    <option value="tenAbove">10 Years and above</option>
+                    
+                </select>
+            </div>
+
+        </form>
     </div>
-			
-			
-			
-			
 			</div>
 			
 			<div class="post-steps">
@@ -295,17 +301,19 @@ You</div></div></div>
 			
 				<div class="grid-container">
   <div class="grid-item"> 
-	  <div class="post-arrow-btn-left">
-			<a href="professional-info.html"><img src="img/into/b-arrow-gold.png" alt="Project 2" /><div class="txt-arrow-left">Prev</div></a>
-			</div></div>
+	  <a href="professional-info.html"><div class="post-arrow-btn-left">
+			<img src="img/into/b-arrow-gold.png" alt="Project 2" />Prev
+			</div></a></div>
   <div class="grid-item">
 	  <div class="middle-btn">
 			
 						</div></div>
   <div class="grid-item">
-	 <div class="post-arrow-btn">
-			<a href="about-you.html"><div class="txt-arrow">Next</div><img src="img/into/f-arrow-gold.png" alt="Project 2" /></a>
-			</div></div>
+
+			<a href="about-you.html"><div class="post-arrow-btn">
+			Next<img src="img/into/f-arrow-gold.png" alt="Project 2" />
+			</div></a>
+			</div>
 					</div>  
 </div>
 		</div>

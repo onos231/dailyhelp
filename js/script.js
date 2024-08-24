@@ -146,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // sex and dob session
-
 function toggleCalendar() {
     var calendarPopup = document.getElementById('calendarPopup');
     if (calendarPopup.style.display === 'block') {
@@ -156,30 +155,15 @@ function toggleCalendar() {
     }
 }
 
-function updateDOB() {
-    var dob = document.getElementById('dob').value;
-    var date = new Date(dob);
-    var month = date.toLocaleString('default', { month: 'long' });
-    var day = date.getDate();
-    var year = date.getFullYear();
-
-    document.getElementById('month').value = month;
-    document.getElementById('day').value = day;
-    document.getElementById('year').value = year;
-
-    // Hide the calendar popup after selection
-    toggleCalendar();
-}
-
 // Close the calendar popup when clicking outside
 window.onclick = function(event) {
     var calendarPopup = document.getElementById('calendarPopup');
-    var dobTab = document.querySelector('.dob-tab');
-
-    if (event.target !== calendarPopup && !calendarPopup.contains(event.target) && !dobTab.contains(event.target)) {
+    if (event.target !== calendarPopup && !calendarPopup.contains(event.target)) {
         calendarPopup.style.display = 'none';
     }
 }
+
+
 
 // Bitcoin session
 const amountInUSD = 1000;

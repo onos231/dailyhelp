@@ -260,46 +260,61 @@
 				<div class="settings-area">
 	<div class="settings-tabs">
 				
-				<div class="reg-info">
-    <input type="text" placeholder="Maro Amadaku" name="fname" required>
-	  </div>
-					<div class="reg-info">
-    <input type="text" placeholder="maro@gmail.com" name="email" required>
-	  </div>
-			
-		<div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Single <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-menu">
-            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
-            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
-            <li onclick="selectLevelOfEdu('University')">University</li>
-            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
-        </ul>
-    </div>	
-				<div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Profession <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-menu">
-            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
-            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
-            <li onclick="selectLevelOfEdu('University')">University</li>
-            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
-        </ul>
-    </div>	
-				<div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Years of Experience <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-menu">
-            <li onclick="selectLevelOfEdu('WAEC')">WAEC</li>
-            <li onclick="selectLevelOfEdu('Diploma')">Diploma </li>
-            <li onclick="selectLevelOfEdu('University')">University</li>
-            <li onclick="selectLevelOfEdu('Certification')">Certification</li>
-        </ul>
-    </div>	
+		<div class="form-container">
+        <form action="#" method="POST">
 
-        
-		
-			<input type="number" class="center-input" placeholder="Phone No. +234 " name="psw" required>
-						
-		
+            <!-- Full Name -->
+            <div class="form-group">
+               
+                <input type="text" id="fullName" name="fullName" placeholder="Maor Amadaku" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              
+                <input type="email" id="email" name="email" placeholder="maro.amadaku@gmail.com" required>
+            </div>
+				<!-- Sex -->
+            <div class="form-group">
+            
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group">
+              
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number +234" required>
+            </div>
+<!-- Profession -->
+            <div class="form-group">
+                <select id="state" name="profession" required>
+					<option value="cleaner">Cleaner</option>                    
+                    <option value="driver">Driver</option>
+                    <option value="caregiver">Caregiver</option>
+                    <option value="gardener">Gardener</option>
+                    <option value="elect">Electrician</option>
+                    <option value="plumber">Plumber</option>
+                    
+                </select>
+            </div>
+			
+			<!-- Experience -->
+            <div class="form-group">
+                <select id="experience" name="experience" required>
+                    <option value="twoToFive">2 - 5 Years</option>
+					<option value="noExp">No Experience</option>
+                    <option value="zeroToOne">0 - 1 Year</option>
+                    <option value="fiveToTen">5 - 10 Years</option>
+                    <option value="tenAbove">10 Years and above</option>
+                    
+                </select>
+            </div>
+
+        </form>
+    </div>
+
 		</div>
 				</div>
 			</div>

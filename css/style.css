@@ -112,7 +112,9 @@ html, body {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 18%;
+	margin-top: 47%;
+
+	
 	
 }
 .small-circle-1,
@@ -546,10 +548,11 @@ form {
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
-/*.dob-container {
+.dob-container {
     position: relative;
     display: flex;
     align-items: center;
+	outline: none;
 }
 .dob-container img {
 	width: 20px;
@@ -567,7 +570,7 @@ form {
     font-size: 20px;
     color: #555;
 }
-*/
+
 .submit-group {
     flex: 1 100%;
     display: flex;
@@ -587,56 +590,6 @@ form {
     background-color: #0056b3;
 }
 /*----dob session---*/
-.dob-tab {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
-    padding: 10px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.dob-tab input[type="text"] {
-    width: 70px;
-    padding: 5px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.dob-icon img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.calendar-popup {
-    display: none;
-    position: absolute;
-    top: 45px;
-    right: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    z-index: 10;
-}
-
-.calendar-popup input[type="date"] {
-    width: 100%;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 /*.gender-dob {
 	display: flex;
 	width: 100%;
@@ -3344,13 +3297,13 @@ float: left;
 	margin-right: auto;
 }
 
-/*.dob-reg-info {
+.dob-reg-info {
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	outline: none;
 	margin-left: auto;
 	float: right;
-}*/
+}
 	
 .expire-num {
 	width: 60%;
@@ -6028,6 +5981,7 @@ textarea {
 		font-size: 15px;
 		font-family: 'Poppins';
 	}
+	
 	.small-circle-1 {
 
 	background-color: #636060;
