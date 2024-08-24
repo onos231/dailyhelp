@@ -282,15 +282,17 @@ h4 {
 	
 }
 .helper-btn {
-	padding: 8px 12px;
+	padding: 8px 16px;
 	width: 50%;
 	color: rgba(0, 0, 0, 0.7);
 	border-radius: 15px;
 	text-align: center;
 	font-family: 'Roboto';
+	margin-left: auto;
+	border: 1px solid #D2E4F9;
 }
 .client-btn {
-	padding: 8px 12px;
+	padding: 8px 16px;
 	width: 60%;
 	color: rgba(0, 0, 0, 0.7);
 	border-radius: 15px;
@@ -301,10 +303,7 @@ h4 {
 a:link {
   text-decoration: none;
 }
-.helper-btn {
-	margin-right: 20px;
-	border: 1px solid #D2E4F9;
-}
+
 .client-btn {
 	margin-left: 20px;
 	background-color: #D2E4F9;
@@ -316,6 +315,7 @@ a:link {
 }
 .login-project{
 	width: 100%;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
@@ -471,6 +471,8 @@ span.psw {
 }
 	.social-btn {
 		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 .social-btn img {
 	width: 100%;
@@ -3478,7 +3480,7 @@ tle p {
 }
 /*----Add card session---*/
 .add-cd-info {
-
+	font-family: 'kod';
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
@@ -4031,7 +4033,7 @@ input[type="number" i] {
 	text-align: center;
 }
 .num-verify-text p{
-	width: 60%;
+	width: 50%;
 	font-size: 15px;
 }
 .center-input {
@@ -4157,7 +4159,6 @@ textarea {
 }
 .post-steps {
 	width: 90%;
-	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -5072,12 +5073,13 @@ textarea {
 	background-color: #fff;
 }
 	/*----web login session---*/
-	
+.
 .log-space {
 	background-color: #D2E4F9;
 	height: 100%;
 	height: 100%;
 	}
+	
 .dailyhelp-pic {
 	display: none;
 	width: 20%;
@@ -5999,9 +6001,12 @@ textarea {
 	}
 	.login-log-space {
 		display: flex;
+		width: 100%;
 		height: 100%;
 	}
-
+.create-resume {
+	display: flex;
+}
 .dailyhelp-pic {
 	display: block;
 	width: 50%;
