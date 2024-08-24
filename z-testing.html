@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Footer Menu</title>
-    <link rel="stylesheet" href="cssn/style.css">
+    <title>Sticky Hamburger Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <style>
@@ -14,209 +14,164 @@
     font-family: Arial, sans-serif;
 }
 
-.footer {
-    padding: 2px 0;
-	color: green;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 350px;
-	text-align: center;
-}
-
-.footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-	margin-top: 0;
-}
-
-.footer-section p,
-.footer-section a {
-    color: #ddd;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.5;
-	color: #000;
-}
-
-.footer-section a:hover {
-    color: #fff;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 20px;
-    color: #ddd;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #007bff;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #bbb;
-    border-top: 1px solid #444;
-    padding-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-section {
-        
-        margin: 20px 0;
-    }
-
-}
-	
-
-
-
-	</style>
-	
-	<style>
-	.reply-container {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-}
-
-.reply-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 25px;
-}
-
-.send-button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    font-size: 18px;
-    border-radius: 50%;
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
     cursor: pointer;
-    margin-left: 10px;
+    width: 30px;
+    height: 25px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    height: 4px;
+    background-color: #333;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    border-bottom: 1px solid #555;
+}
+
+.menu-header .logo {
+    width: 150px;
+    height: auto;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 20px;
 }
 
-.send-button i {
-    font-size: 18px;
+.menu-items a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 
-.send-button:hover {
-    background-color: #0056b3;
+.menu-items a:hover {
+    background-color: #555;
 }
+
+.content {
+    padding: 100px 20px;
+}
+
+.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.show-sidebar {
+    right: 0;
+}
+
 	</style>
-	
-
-
-    <!-- Reply Message Container -->
-    <div class="reply-container">
-        <input type="text" placeholder="Type your message..." class="reply-input">
-        <button class="send-button">
-            <i class="fas fa-paper-plane"></i>
-        </button>
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
 
-    <!-- Font Awesome Icons -->
-    
-
-
-	
-	
-	
-	
-	
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Social Icons -->
-            <div class="footer-section">
-                <h4>Connect with Us</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-
-            <!-- Give Us Feedback -->
-            <div class="footer-section">
-                <a href="#">Give Us Feedback</a>
-            </div>
-
-            <!-- Contact Details -->
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-               <p>Email: support@dailyhelp.com</p>
-                <p>Phone: +23470 1234 5678</p>
-                <p>Address: 4 ali Street, Benin City, Nigeria</p>
-            </div>
-
-			<!-- Social links -->
-			<div class="all-social-btn">
-				<div class="grid-container">
-					
-  <div class="grid-item"> 
-	  <div class="social-btn">
-			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
-			</div></div>
- <div class="grid-item"> 
-	  <div class="social-btn">
-			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
-			</div></div>
-					<div class="grid-item"> 
-	  <div class="social-btn">
-			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
-			</div></div>
-	
-  
-					</div>  
-					</div>
-            <!-- Privacy Policy -->
-            <div class="footer-section">
-                <h4>Privacy Policy</h4>
-                <a href="#">Read our Privacy Policy</a>
-            </div>
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="menu-header">
+            <img src="logo.png" alt="Site Logo" class="logo">
         </div>
+        <nav class="menu-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 YourSiteName<sup>&reg;</sup>. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>More content...</p>
+        <p>Keep scrolling to test the sticky menu...</p>
+        <p>And more content here...</p>
+    </div>
 
-    <!-- Font Awesome Icons -->
+    <script src="script.js"></script>
+	<script>
+	document.getElementById('hamburger-menu').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('sidebar').classList.toggle('show-sidebar');
+});
+	</script>
 </body>
 </html>
