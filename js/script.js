@@ -144,26 +144,42 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 // sex and dob session
-document.addEventListener("DOMContentLoaded", function() {
-    const dobInput = document.getElementById("dob");
-    const hiddenDateInput = document.getElementById("hiddenDateInput");
-    const calendarIcon = document.querySelector(".calendar-icon");
 
-    dobInput.addEventListener("click", function() {
-        hiddenDateInput.click();
-    });
+function toggleCalendar() {
+    var calendarPopup = document.getElementById('calendarPopup');
+    if (calendarPopup.style.display === 'block') {
+        calendarPopup.style.display = 'none';
+    } else {
+        calendarPopup.style.display = 'block';
+    }
+}
 
-    calendarIcon.addEventListener("click", function() {
-        hiddenDateInput.click();
-    });
+function updateDOB() {
+    var dob = document.getElementById('dob').value;
+    var date = new Date(dob);
+    var month = date.toLocaleString('default', { month: 'long' });
+    var day = date.getDate();
+    var year = date.getFullYear();
 
-    hiddenDateInput.addEventListener("change", function() {
-        const date = new Date(this.value);
-        const formattedDate = date.toLocaleDateString();
-        dobInput.value = formattedDate;
-    });
-});
+    document.getElementById('month').value = month;
+    document.getElementById('day').value = day;
+    document.getElementById('year').value = year;
+
+    // Hide the calendar popup after selection
+    toggleCalendar();
+}
+
+// Close the calendar popup when clicking outside
+window.onclick = function(event) {
+    var calendarPopup = document.getElementById('calendarPopup');
+    var dobTab = document.querySelector('.dob-tab');
+
+    if (event.target !== calendarPopup && !calendarPopup.contains(event.target) && !dobTab.contains(event.target)) {
+        calendarPopup.style.display = 'none';
+    }
+}
 
 // Bitcoin session
 const amountInUSD = 1000;

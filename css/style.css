@@ -173,10 +173,10 @@ html, body {
 	float: right;
 	margin-top: 40px;
 	width: 70%;
-}
-.post-arrow-btn a{
 	color: #F4C211;
+	text-align: right;
 }
+
 .post-arrow-btn img{
 	width: 25px;
 	border-radius: 20px;
@@ -195,6 +195,7 @@ html, body {
 .post-arrow-btn-left {
 	width: 60%;
 	margin-top: 40px;
+	color: #F4C211;
 }
 .post-arrow-btn-left a{
 	color: #F4C211;
@@ -355,7 +356,7 @@ a:link {
 }
 
 /*---login form--*/
-input[type=text], input[type=password] {
+/*input[type=text], input[type=password] {
   width: 100%;
   padding: 18px 10px;
   margin: 10px 0;
@@ -367,12 +368,10 @@ input[type=text], input[type=password] {
   border-radius: 8px;
   font-weight: 300;
 outline: none;
-}
+}*/
 .terms-condition {
     text-align: center;
 	width: 80%;
-	margin-top: 40px;
-	margin-bottom: 2px;
 	margin-left: auto;
 	margin-right: auto;
 	color: rgba(0, 0, 0, 0.7);
@@ -507,8 +506,138 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 }
+/*----General forms session---*/
+
+.form-container {
+	width: 100%;
+
+}
+
+form {
+	margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin-right: auto;
+	
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 100%;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*.dob-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.dob-container img {
+	width: 20px;
+	position: absolute;
+	right: 10px;
+}
+.dob-container input {
+    padding-right: 10px;
+    width: 100%;
+}
+
+.dob-container i {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #555;
+}
+*/
+.submit-group {
+    flex: 1 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-group button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-group button:hover {
+    background-color: #0056b3;
+}
 /*----dob session---*/
-.gender-dob {
+.dob-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.dob-tab input[type="text"] {
+    width: 70px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dob-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.calendar-popup {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.calendar-popup input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*.gender-dob {
 	display: flex;
 	width: 100%;
 	margin-top: 20px;
@@ -525,9 +654,9 @@ span.psw {
     align-items: center;
 	width: 100%;
 	outline: none;
-}
+}*/
 
-select, input[type="date"] {
+/*select, input[type="date"] {
     padding: 12px;
     font-size: 16px;
     border: 1px solid transparent;
@@ -556,7 +685,7 @@ select, input[type="date"] {
 input[type="date"] {
     padding-right: 30px;
     width: 100%;
-}
+} */
 /*#dob {
 	margin-left: auto;
 	margin-right: auto;
@@ -3215,13 +3344,13 @@ float: left;
 	margin-right: auto;
 }
 
-.dob-reg-info {
+/*.dob-reg-info {
 	border-radius: 4px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 	outline: none;
 	margin-left: auto;
 	float: right;
-}
+}*/
 	
 .expire-num {
 	width: 60%;
@@ -3666,8 +3795,7 @@ tle p {
 	margin-left: auto;
 	margin-right: auto;
 	color: rgba(0, 0, 0, 0.5);
-	margin-top: 10px;
-	margin-bottom: 10px;
+
 	font-size: 13px;
 	font-family: 'Roboto';
 	word-spacing: 1px;

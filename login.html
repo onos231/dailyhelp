@@ -30,7 +30,7 @@ html, body {
 		</div>
 	<div class="login-project">
 		<div class="web-log">
-			<p class="Login"><a href="create-resume-1.html">Signup</a></p>
+			<p class="Login"><a href="create-account-1.html">Signup</a></p>
 		<div class="logo-pics">
 			<img src="img/logo/logo.png" alt="Project 2" />
 			</div>
@@ -47,27 +47,51 @@ html, body {
 			<div class="login-options">
 			<a href="helper-login.html"><div class="helper-btn">Helper</div></a>
 				<a href=""><div class="client-btn">Client</div></a></div>
-			<div class="login-info">
+	  
+	  <!-- Form Container -->
+    <div class="form-container">
+        <form action="#" method="POST">
 
-    <div class="reg-info">
-    <input type="text" placeholder="Username" name="uname" required></div>
-	  <div class="reg-info">
-    <input type="password" placeholder="Password" name="psw" required></div>
-        <div class="terms-condition">
+
+            <!-- Email -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            
+<div class="terms-condition">
 				<p>
 				By proceeding, you accept our <b class="t-c">Terms of Use</b> and <b class="t-c">Privacy Policy</b>
 				</p>
 				</div>
-    <a href="index.html"><button type="submit">Login</button></a>
-    <label>
+          
+
+            <!-- Submit Button -->
+            <div class="login-form-group submit-group">
+                <button type="submit">Submit</button>
+            </div>
+			<label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
 	   <span class="psw">Forgot <a href="#">password?</a></span>
+        </form>
+    </div>
+		  
+		  
+		  
+        
   </div>
-	  </div>
+	  
+			
 
-				</form>
-				</div>
+			
+				
 				
 				<div class="social-icon-area">
 					<div class="continue-text">
@@ -106,7 +130,7 @@ html, body {
 
 			
 			
-		
+		</form>
 		
 				
 			
@@ -115,6 +139,8 @@ html, body {
 				</div>
 	</div>
 	</div>
+	</div>
+		</div>
 	</div>
 	
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Hamburger Menu</title>
+    <title>Date of Birth Tab</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,166 +12,115 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-.hamburger-menu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
+.dob-tab {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.bar {
-    height: 4px;
-    background-color: #333;
-    width: 100%;
-    transition: all 0.3s ease;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
-    z-index: 999;
-    overflow-y: auto;
-}
-
-.menu-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #444;
-    border-bottom: 1px solid #555;
-}
-
-.menu-header .logo {
-    width: 150px;
-    height: auto;
-}
-
-.menu-items {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.menu-items a {
-    color: white;
-    padding: 15px;
-    text-decoration: none;
+.dob-tab input[type="text"] {
+    width: 70px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     text-align: center;
-    width: 100%;
-    display: block;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-.menu-items a:hover {
-    background-color: #555;
+.dob-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
-.content {
-    padding: 100px 20px;
-}
-
-.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-.show-sidebar {
+.calendar-popup {
+    display: none;
+    position: absolute;
+    top: 45px;
     right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.calendar-popup input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 	</style>
-    <!-- Hamburger Menu Icon -->
-    <div class="hamburger-menu" id="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-
-    <!-- Sidebar Menu -->
-    <div class="sidebar" id="sidebar">
-        <div class="menu-header">
-            <img src="logo.png" alt="Site Logo" class="logo">
+    <!-- Date of Birth Tab -->
+    <div class="dob-tab">
+        <input type="text" id="month" name="month" placeholder="Month" readonly>
+        <input type="text" id="day" name="day" placeholder="Day" readonly>
+        <input type="text" id="year" name="year" placeholder="Year" readonly>
+        <div class="dob-icon" onclick="toggleCalendar()">
+            <img src="img/edit-profile/calendar.png" alt="Project 2" />
         </div>
-        <nav class="menu-items">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
     </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
-		<h1>Scroll Down to See the Sticky Hamburger Menu</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p>More content...</p>
-        <p>Keep scrolling to test the sticky menu...</p>
-        <p>And more content here...</p>
+    <!-- Calendar Popup -->
+    <div id="calendarPopup" class="calendar-popup">
+        <input type="date" id="dob" name="dob" onchange="updateDOB()">
     </div>
 
     <script src="script.js"></script>
+	
+	
 	<script>
-	document.getElementById('hamburger-menu').addEventListener('click', function() {
-    this.classList.toggle('open');
-    document.getElementById('sidebar').classList.toggle('show-sidebar');
-});
+		
+	function toggleCalendar() {
+    var calendarPopup = document.getElementById('calendarPopup');
+    if (calendarPopup.style.display === 'block') {
+        calendarPopup.style.display = 'none';
+    } else {
+        calendarPopup.style.display = 'block';
+    }
+}
+
+function updateDOB() {
+    var dob = document.getElementById('dob').value;
+    var date = new Date(dob);
+    var month = date.toLocaleString('default', { month: 'long' });
+    var day = date.getDate();
+    var year = date.getFullYear();
+
+    document.getElementById('month').value = month;
+    document.getElementById('day').value = day;
+    document.getElementById('year').value = year;
+
+    // Hide the calendar popup after selection
+    toggleCalendar();
+}
+
+// Close the calendar popup when clicking outside
+window.onclick = function(event) {
+    var calendarPopup = document.getElementById('calendarPopup');
+    var dobTab = document.querySelector('.dob-tab');
+
+    if (event.target !== calendarPopup && !calendarPopup.contains(event.target) && !dobTab.contains(event.target)) {
+        calendarPopup.style.display = 'none';
+    }
+}
+
 	</script>
 </body>
 </html>
