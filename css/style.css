@@ -967,6 +967,7 @@ input[type="date"] {
 .mini-menu {
 	background-color: azure;
 }
+
 .menu p {
 	text-align: center;
 	font-weight: 600;
@@ -1027,7 +1028,7 @@ input[type="date"] {
 
 .menu ul li {
     padding: 1px 1px;
-  	margin-left: 40px;
+  	margin-left: 20px;
 	width: 100%;
 }
 
@@ -1035,7 +1036,7 @@ input[type="date"] {
     color: #000;
     text-decoration: none;
     display: inline-block;
-    width: 150px;
+    width: 180px;
 	padding: 10px;
     font-size: 15px;
 	font-family: 'Kodchas';
@@ -2004,13 +2005,13 @@ input[type="date"] {
 .closed-btn {
 	position: absolute;
    	right: 10px;
-    font-size: 30px;
+    font-size: 25px;
     background-color: transparent;;
     padding: 10px;
     border-radius: 8%;
     cursor: pointer;
     text-align: center;
-    line-height: 25px;
+    line-height: 30px;
     width: 30px;
     height: 30px;
 	float: left;
@@ -3768,6 +3769,7 @@ tle p {
 .settings-tabs h5 {
 	font-size: 20px;
 	font-family: 'kod';
+	margin-bottom: 10px;
 }
 .notify-area {
 	width: 95%;
