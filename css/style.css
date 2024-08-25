@@ -588,9 +588,7 @@ form {
     font-size: 16px;
 }
 
-.submit-group button:hover {
-    background-color: #0056b3;
-}
+
 /*----dob session---*/
 /*.gender-dob {
 	display: flex;
@@ -1395,6 +1393,8 @@ input[type="date"] {
 .response-msg {
 	margin-left: 20px;
 	color: rgba(0, 0, 0, 0.3);
+	font-family: 'poppins';
+	font-size: 15px;
 }
 .column p {
 	width: 300px;
@@ -1730,6 +1730,7 @@ input[type="date"] {
     max-width: 400px;
     position: relative;
 	float: right;
+	margin-top: 20px;
 }
 .return-pic {
 	display: inline-block;
@@ -2637,6 +2638,7 @@ float: left;
 }
 .activity-dist {
 	display: flex;
+	margin-top: 4px;
 
 }
 
@@ -2696,22 +2698,21 @@ float: left;
 	font-size: 15px;
 	font-weight: 300;
 	margin-top:2px;
-	font-family: 'poppins'
+	font-family: 'pop'
 
 }
 .date-of-msg {
 	color: #000;
 	margin-left: auto;
 	font-size: 13px;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.9);
 	font-family: 'Roboto';
 	float: right;
+	margin-top: 4px;
 }
 .no-of-msg {
 	color: #000;
 	margin-left: auto;
-
-	margin-bottom: 6px;
 	color: #DF665E;
 	background-color: #EFF6FE;
 	padding: 4px 8px;
@@ -2853,6 +2854,7 @@ float: left;
 	margin-left: 20px;
 	color: #000;
 	float: left;
+	font-family: 'poppins';
 }
 
 .icons-n-txt-location{
@@ -2880,7 +2882,7 @@ float: left;
 }
 .status {
 	margin-left: auto;
-	margin-top: 2px;
+	font-family: 'poppins'
 }
 .status-arrow img{
 	width: 10px;
@@ -4487,7 +4489,6 @@ textarea {
 }
 
 .send-button {
-    background-color: #007bff;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -4505,7 +4506,7 @@ textarea {
 }
 
 .send-button:hover {
-    background-color: #0056b3;
+    background-color: rgba(244, 194, 17, 0.71);
 }
 /*----chat message session---*/
 
