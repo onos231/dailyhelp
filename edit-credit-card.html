@@ -210,14 +210,16 @@
 	  </header>
  
 	   
-	   <div class="caption-area">
+	   
+		
+		<div class="caption-area">
 		<div class="close-container">
 			
         <div class="caption">
          
 		
 		<h5>
-			Bank Account
+			Credit Card
 		</h5>
 	
         </div>
@@ -226,60 +228,72 @@
 		 </div>
 		</div>
 		
-		
-		
    	
 		
 		<div class="body-pattern">
 	
+			
 			<div class="result-option-body">
 		<div class="payment-option-body">
-<div class="settings-area">
-	<div class="settings-tabs">
-		 <div class="current-cd">
-					<h5>Enter your new bank details</h5>
-					
-					<div class="add-acc-details">
-						 <div class="form-group">
-               
-                <input type="text" id="name" name="name" placeholder="Name on account" required>
-            </div>
-						<div class="form-group">
-               
-                <input type="text" id="swift" name="swift" placeholder="Bank swift code" required>
-            </div>
-						<div class="form-group">
-               
-                <input type="text" id="accNumber" name="Account" placeholder="Account number" required>
-            </div>
-						<div class="form-group">
-               
-                <input type="text" id="acc" name="accNumber" placeholder="Re-enter account number" required>
-            </div>
-						 
-	  
-	  </div>
-					
-		
-		</div>
-	</div>
-			</div>
 			
-	<div class="send-settings-tabs">
-			<div class="encrypt-txt">
-				<p>By adding this bank account, you agree to the Terms and Conditions</p>
-		<div class="reg-btn">
-			<button type="submit" style="display: none;">Add Bank Account</button>
-		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add Bank Account</button></div>
-		</div>
-			</div>
-			</div>
-				
-			</div>
-			
-			
-		</div>
+
+	<div class="paypal-tabs">
+			<div class="paypal-session">
+						
+					<h5>Use Paypal</h5>
+						<p>You will be redirected to paypal to make payment</p>
+							<button class="paypal-pic"><img src="img/paypal/PayPal-tab.png" alt="Project 2" /></button>
+						
+						</div>
 				</div>
+
+			
+			<form>
+		<div class="add-card-area">
+	<div class="settings-tabs">
+		
+			<h5>Card or Debit card</h5>
+            <div class="form-group">
+               
+                <input type="text" id="cardholder" name="cardholder" placeholder="Cardholder Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiry">Expiration Date</label>
+                <input type="month" id="expiry" name="expiry" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+
+            <div class="">
+			<div class="encrypt-txt">
+				<p>
+				By continuing, you agree to Dailyhelp<b class="t-c">Terms of Use</b> and <b class="t-c">Privacy Policy</b>
+				</p>
+		<div class="reg-btn">
+			<button type="submit" style="display: none;">Add your Card</button>
+		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add your Card</button></div></div>
+			</div>
+      
+		
+		
+		
+		
+				</div>
+		</div>
+				  </form>
+			
+		</div>
+				
+		</div>
+		</div>
 
 	<!-- Footer Section -->
     <footer class="footer">
@@ -336,5 +350,6 @@
             <p>&copy; 2024 Dailyhelp<sup>&reg;</sup>. All rights reserved.</p>
         </div>
     </footer>
+	</div>
 	<script src="js/script.js"></script>
 </body>

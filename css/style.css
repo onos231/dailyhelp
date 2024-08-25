@@ -3251,6 +3251,7 @@ float: left;
 	display: flex;
 	margin-left: 10px;
 	margin-bottom: 10px;
+	font-family: 'Roboto';
 
 }
 .amt-txt {
@@ -3277,6 +3278,7 @@ float: left;
 	background-color: #39BF4E;
 	color: #fff;
 	border-radius: 4px;
+
 }
 .acc-holder {
 	height: 60px;
@@ -3550,19 +3552,69 @@ tle p {
 	width: 95%;
 }
 /*----Manage payments session---*/
+.bank-area {
+	width: 95%;
+	display: block;
+	float: right;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.bank-name {
+	width: 95%;
+	display: block;
+	float: right;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+}
 
+.bank-title h5 {
+	float: left;
+	line-height:20px;
+	font-size: 17px;
+	font-family: 'kod';
+	
+}
+
+.bank-edit {
+	width: 24px;
+	margin-left: auto;
+	margin-top: 0px;
+}
+.bank-edit img {
+	width: 100%;
+}
+.my-bank-info h5 {
+	margin-bottom: 6px;
+}
+.Account-name {
+	font-family: 'poppins';
+	color: #39BF4E;
+	font-size: 17px;
+}
+.Account-type,
+.Account-num {
+	font-family: 'poppin';
+	letter-spacing: 1px;
+}
+.add-more-account h5{
+	margin-bottom: 6px;
+}
 .current-card-info {
 	text-align: left;
 	color: rgba(0, 0, 0, 0.5);
 }
+
 .current-cd {
 	color: rgba(0, 0, 0, 0.7);
 	margin-bottom: 40px;
-	margin-left: auto;
+
 	margin-right: auto;
 }
 .current-cd p{
-	margin-left: auto;
 	margin-right: auto;
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.5);
@@ -3578,6 +3630,7 @@ tle p {
 	border: 1px solid #D2E4F9;
 	border-radius: 8px;
 	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	margin-bottom: 20px;
 }
 .card-info-details {
 		margin-top: 20px;
@@ -3612,6 +3665,39 @@ tle p {
 	color: #000;
 	font-family: 'kodchas';
 	font-weight: 100;
+}
+/*---paypal-----*/
+.paypal-session {
+	width: 100%;
+}
+.paypal-session p{
+	width: 95%;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'poppins';
+	color: rgba(0, 0, 0, 0.5);
+}
+.paypal-session h5 {
+	font-family: 'kod';
+}
+.paypal-pic {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	margin-bottom: 40px;
+}
+.paypal-pic:hover {
+	background-color: rgba(244, 194, 17, 0.71);
+}
+.paypal-pic img{
+	height: 15px;
+	border-radius: 4px;
+	border: none;
+
+	
 }
 /*----dropdown session---*/
 .dropdown {
@@ -3754,6 +3840,11 @@ tle p {
 	margin-right: auto;
 	margin-right: auto;
 
+}
+.paypal-tabs {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .settings-tabs {
 		width: 90%;
