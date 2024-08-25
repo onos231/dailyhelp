@@ -2620,6 +2620,7 @@ float: left;
 /* =message for chat session===== */
 .prof-names {
 	color: #39BF4E;
+	font-family: 'kod';
 }
 .prof-occupation {
 		padding-top: 6px;
@@ -2629,6 +2630,8 @@ float: left;
 
 .response-msg {
 	width: 100%;
+	font-family: 'poppins';
+	font-size: 13px;
 
 	margin-left: 0;
 }
@@ -2692,7 +2695,8 @@ float: left;
 	color: #000;
 	font-size: 15px;
 	font-weight: 300;
-	margin-top: 6px;
+	margin-top:2px;
+	font-family: 'poppins'
 
 }
 .date-of-msg {
@@ -2708,8 +2712,8 @@ float: left;
 	margin-left: auto;
 
 	margin-bottom: 6px;
-	color: #fff;
-	background-color: #DF665E;
+	color: #DF665E;
+	background-color: #EFF6FE;
 	padding: 4px 8px;
 	border-radius: 50%;
 }
@@ -4389,7 +4393,7 @@ textarea {
 }
 .read-messages h3 {
 	line-height: 25px;
-	color: green;
+	color: #39BF4E;
 	font-family: 'kod';
 }
 .wrap-message {
