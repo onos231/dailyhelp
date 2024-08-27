@@ -4598,6 +4598,7 @@ textarea {
 	background-color: #fff;
 }
 .footer {
+	position: absolute;
     padding: 2px 0;
 	color: #000;
 }
