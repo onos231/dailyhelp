@@ -102,60 +102,70 @@
 			  
 			<div class="add-advert-reg-info">
 				<label>Business Name</label>
-    <input type="text" placeholder="Business name" name="Account name" required>
+   <div class="form-group">
+              
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
 	  </div>
 		<div class="add-dropdown-reg-info">
 				<label>State</label>
-    <div class="dropdown">
-        <button class="dropdown-toggle" onclick="toggleDropdownMenu()">Select State <span class="arrow">&#9662;</span></button>
-        <ul class="dropdown-menu">
-            <li onclick="selectState('Abia')">Abia</li>
-            <li onclick="selectState('Adamawa')">Adamawa</li>
-            <li onclick="selectState('Akwa Ibom')">Akwa Ibom</li>
-            <li onclick="selectState('Anambra')">Anambra</li>
-            <li onclick="selectState('Bauchi')">Bauchi</li>
-            <li onclick="selectState('Bayelsa')">Bayelsa</li>
-            <li onclick="selectState('Benue')">Benue</li>
-            <li onclick="selectState('Borno')">Borno</li>
-            <li onclick="selectState('Cross River')">Cross River</li>
-            <li onclick="selectState('Delta')">Delta</li>
-            <li onclick="selectState('Ebonyi')">Ebonyi</li>
-            <li onclick="selectState('Edo')">Edo</li>
-            <li onclick="selectState('Ekiti')">Ekiti</li>
-            <li onclick="selectState('Enugu')">Enugu</li>
-            <li onclick="selectState('Gombe')">Gombe</li>
-            <li onclick="selectState('Imo')">Imo</li>
-            <li onclick="selectState('Jigawa')">Jigawa</li>
-            <li onclick="selectState('Kaduna')">Kaduna</li>
-            <li onclick="selectState('Kano')">Kano</li>
-            <li onclick="selectState('Katsina')">Katsina</li>
-            <li onclick="selectState('Kebbi')">Kebbi</li>
-            <li onclick="selectState('Kogi')">Kogi</li>
-            <li onclick="selectState('Kwara')">Kwara</li>
-            <li onclick="selectState('Lagos')">Lagos</li>
-            <li onclick="selectState('Nasarawa')">Nasarawa</li>
-            <li onclick="selectState('Niger')">Niger</li>
-            <li onclick="selectState('Ogun')">Ogun</li>
-            <li onclick="selectState('Ondo')">Ondo</li>
-            <li onclick="selectState('Osun')">Osun</li>
-            <li onclick="selectState('Oyo')">Oyo</li>
-            <li onclick="selectState('Plateau')">Plateau</li>
-            <li onclick="selectState('Rivers')">Rivers</li>
-            <li onclick="selectState('Sokoto')">Sokoto</li>
-            <li onclick="selectState('Taraba')">Taraba</li>
-            <li onclick="selectState('Yobe')">Yobe</li>
-            <li onclick="selectState('Zamfara')">Zamfara</li>
-            <li onclick="selectState('FCT')">FCT</li>
-        </ul>
-    </div>
+    <!-- State -->
+            <div class="form-group">
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="FCT">FCT</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                </select>
+            </div>
 			</div>
 			<div class="add-advert-reg-info">
 				<label>Phone Number</label>
-    <input type="text" placeholder="+234" name="Account name" required>
+    <div class="form-group">
+              
+                <input type="tel" id="phone" name="phone" placeholder="Phone no. +234" required>
+            </div>
 	  </div>
 			<div class="add-advert-reg-info">
 				<label>Business Address</label>
-    <input type="text" placeholder="Enter address" name="Account name" required>
+    <div class="form-group">
+              
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
 	  </div>
 			
 			

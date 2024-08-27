@@ -128,7 +128,7 @@
 .search-page {
     display: none;
     position: fixed;
-    top: 20;
+    top: 40;
     left: 0;
     width: 100%;
     height: 100%;
@@ -180,7 +180,6 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: 100%;
     background-color: #f4f4f4;
     border-top: 1px solid #ccc;
     padding: 10px;
@@ -427,14 +426,92 @@
 			</div>
 		 <!-- Full Page Search Interface -->
     <div id="searchPage" class="search-page">
+		<!-----Filter session---->
+		<div class="mobile-filter">
+		<div id="dropdown-content" class="dropdown-content">
+			
+			<p>Reset All</p>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Position</div>
+				 <div id="sub1" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Cleaner</label>
+                    <label><input type="checkbox"> Driver</label>
+                    <label><input type="checkbox"> Plumber</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Gardener</label>
+					<label><input type="checkbox"> Caregiver</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
+				 <div id="sub2" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Hourly</label>
+                    <label><input type="checkbox"> Part Time</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> All Day</label>
+					<label><input type="checkbox"> Full Time</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
+				 <div id="sub3" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> English</label>
+                    <label><input type="checkbox"> Hausa</label>
+					<label><input type="checkbox"> Others</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Igbo</label>
+					<label><input type="checkbox"> Yoruba</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			<!-- Add more sub-filters as needed -->
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
+            </div>
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
+            </div>
+			
+            <div class="filter-area">
+        
+			<div class="apply-btn" style="display: none;">
+			<a href="helpers-search-result.html">Apply</a>
+			</div>
+				
+				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">
+			<a href="helpers-search-result.html" style="color: rgba(0, 0, 0, 0.3)">Apply</a>
+			</div>
+			</div>
+			</div>
+			</div>
+		
+		
+		
         <div class="search-header">
             <input type="text" id="fullSearchInput" placeholder="Search..." oninput="showSuggestions()">
         </div>
         <div id="suggestions" class="suggestions"></div>
         <div id="results" class="results"></div>
         <div id="filterBar" class="filter-bar">
-			<div class="blue-f-btnn">
+			<div class="blue-f-btn">
 			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
+			
+			
             <!--<div class="filter-icon">&#x1F50D;</div>-->
             <select>
                 <option value="">Sort by</option>
@@ -517,7 +594,7 @@ Chat</div></div></div>
 		
 		
 		
-		</div>
+	
 
 	<!-- Footer Section -->
     <footer class="footer">
@@ -574,7 +651,6 @@ Chat</div></div></div>
             <p>&copy; 2024 Dailyhelp<sup>&reg;</sup>. All rights reserved.</p>
         </div>
     </footer>
-	
 
 <script src="js/script.js"></script>
 	
@@ -615,3 +691,4 @@ function showResults(query) {
 
 	</script>
 </body>
+</html>
