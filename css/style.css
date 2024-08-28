@@ -2065,7 +2065,7 @@ input[type="date"] {
 }
 
 .closed-btn:hover {
-    background-color: rgba(244, 194, 17, 0.71);
+    background-color: #EFF6FE;
 }
 
 /*----Helpers session---*/
@@ -4440,10 +4440,10 @@ textarea {
 	width: 85%;
 	padding: 10px;
 	background-color: #fff;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .sent-messages p {
 	width: 95%;
