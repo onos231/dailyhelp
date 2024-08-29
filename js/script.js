@@ -220,6 +220,70 @@ document.getElementById('search-icon').addEventListener('click', function() {
     searchBar.style.display = 'flex';
 });
 
+// search bar result
+
+// Open the full search page
+function openSearchPage() {
+    document.getElementById('searchPage').style.display = 'block';
+}
+
+// Show suggestions based on user input
+function showSuggestions() {
+    var suggestions = document.getElementById('suggestions');
+    var input = document.getElementById('fullSearchInput').value.toLowerCase();
+    var deleteBtn = document.getElementById('deleteBtn');
+
+    // Mock data for suggestions
+    var existingData = ['Web Development', 'Design', 'Marketing', 'SEO', 'Graphic Design'];
+
+    suggestions.innerHTML = '';
+    deleteBtn.style.display = input ? 'inline-block' : 'none';
+
+    if (input) {
+        existingData.forEach(function(item) {
+            if (item.toLowerCase().includes(input)) {
+                var suggestion = document.createElement('div');
+                suggestion.textContent = item;
+                suggestion.onclick = function() {
+                    selectSuggestion(item);
+                };
+                suggestions.appendChild(suggestion);
+            }
+        });
+    }
+}
+
+// Select a suggestion and show results
+function selectSuggestion(item) {
+    var input = document.getElementById('fullSearchInput');
+    var suggestions = document.getElementById('suggestions');
+    var results = document.getElementById('results');
+    var filterBar = document.getElementById('filterBar');
+
+    input.value = item;
+    suggestions.style.display = 'none';
+    results.innerHTML = '<h3>Results for "' + item + '"</h3><p>Here are your search results...</p>';
+
+    // Show the filter bar
+    filterBar.style.display = 'flex';
+}
+
+// Clear the search input
+function clearSearch() {
+    var input = document.getElementById('fullSearchInput');
+    var suggestions = document.getElementById('suggestions');
+    var deleteBtn = document.getElementById('deleteBtn');
+    var results = document.getElementById('results');
+    var filterBar = document.getElementById('filterBar');
+
+    input.value = '';
+    suggestions.style.display = 'block';
+    deleteBtn.style.display = 'none';
+    results.innerHTML = '';
+    filterBar.style.display = 'none';
+    showSuggestions();
+}
+
 // payment options
 
 	function openContent(event, contentId) {

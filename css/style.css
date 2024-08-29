@@ -540,8 +540,13 @@ form {
     margin-bottom: 5px;
     font-weight: bold;
 }
-input {
+.form-group input {
+	padding: 10px;
+    border: transparent;
+    border-radius: 5px;
     box-sizing: border-box;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	box-sizing: border-box;
 	width: 100%;
     max-width: 100%;
     height: 44px; /* A common height that works well on both iOS and Android */
@@ -550,14 +555,6 @@ input {
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
-.form-group input {
-	padding: 10px;
-    font-size: 16px;
-    border: transparent;
-    border-radius: 5px;
-    box-sizing: border-box;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 } 
 .form-group select {
     padding: 10px;
@@ -950,6 +947,8 @@ input[type="date"] {
 	color: #000;
 	float: right;
 	margin-top: 8px;
+	z-index: 1;
+	position: ab
 }
 .index-menu {
 	position: fixed;
@@ -1770,6 +1769,135 @@ input[type="date"] {
     cursor: pointer;
     color: #555;
 }
+
+/*---Sear result session----*/
+.search-container {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    padding: 1px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+	height: 44px;
+}
+
+.search-page {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.search-header {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 12px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+	z-index: -1;
+}
+
+.search-header input[type="text"] {
+    width: 80%;
+	height: 44px;
+    padding: 1px 12px;
+	margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+	z-index: -1;
+	position: absolute;
+}
+
+#deleteBtn {
+	width: 10%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    display: none;
+	margin-right: 40px;
+	float: right;
+	margin-top: 14px;
+	padding: 10px;
+}
+
+.suggestions {
+	width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+	margin-top: 100px;
+	position: fixed;
+}
+
+.suggestions div {
+	width: 80%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background-color: #f4f4f4;
+}
+
+.results {
+	width: 95%;
+    padding: 20px;
+    background-color: #fff;
+	position: fixed;
+	margin-top: 80px;
+}
+
+.filter-bar {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideIn 0.5s forwards;
+}
+
+.filter-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.filter-bar select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+	width: 120px;
+}
+
+/* Animation for filter bar */
+@keyframes slideIn {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
 /*----find helper session---*/
 .other-dashboard-body {
 		width: 100%;
@@ -2485,7 +2613,7 @@ input[type="date"] {
     display: none;
     position: absolute;
     background-color: #fff;
-    width:100%;
+    width: 100%;
 	height: auto;
 	padding-bottom: 20px;
     z-index: 1;
@@ -2501,7 +2629,7 @@ input[type="date"] {
 
 .dropdown-content.show {
     display: block;
-	margin-top: 140px;
+	top: 280px;
 	
 }
 .sub-filter {
@@ -2881,6 +3009,26 @@ float: left;
 	margin-left: 10px;
 	margin-top: 6px;
 	}
+.horizontal-field {
+	width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 4px;
+	margin-top: 20px;
+}
+
+.pic-with-name {
+    display: flex;
+    align-items: center;
+}
+.pic-with-name img{
+    width: 10px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
 .other-icons-n-txt {
 	width: 75%;
 	text-align: left;
@@ -2917,6 +3065,9 @@ float: left;
 .status {
 	margin-left: auto;
 	font-family: 'poppins'
+}
+.online-n-status {
+	margin-top: 4px;
 }
 .status-arrow img{
 	width: 10px;
@@ -5549,6 +5700,7 @@ textarea {
 	padding: 2px;
 	margin-top: 40px;
 }
+
 .profile-tabs-list {
 	width: 100%;
 	height: auto;
