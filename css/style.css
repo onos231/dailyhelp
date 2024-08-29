@@ -1866,6 +1866,7 @@ input[type="date"] {
 }
 
 .filter-bar {
+	position: fixed;
     display: none;
     position: absolute;
     bottom: 80px;
@@ -1877,6 +1878,7 @@ input[type="date"] {
     align-items: center;
     justify-content: space-between;
     animation: slideIn 0.5s forwards;
+	z-index: 2;
 }
 
 .filter-icon {
@@ -1947,7 +1949,7 @@ input[type="date"] {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	top: 120px;
+	top: 0;
 }
 .search-result-txt img {
 		display: none;
@@ -2629,7 +2631,7 @@ input[type="date"] {
 
 .dropdown-content.show {
     display: block;
-	top: 280px;
+	top: 140px;
 	
 }
 .sub-filter {
