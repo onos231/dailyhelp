@@ -220,6 +220,8 @@ document.getElementById('search-icon').addEventListener('click', function() {
     searchBar.style.display = 'flex';
 });
 
+
+
 // search bar result
 
 // Open the full search page
@@ -267,6 +269,8 @@ function selectSuggestion(item) {
     // Show the filter bar
     filterBar.style.display = 'flex';
 }
+// Focus on search input when the page loads
+    searchInput.focus();
 
 // Clear the search input
 function clearSearch() {

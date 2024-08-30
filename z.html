@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Interface</title>
+    <title>Search Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,97 +12,103 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.search-container {
-    padding: 10px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.search-container input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: white;
 }
 
 .search-page {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 1000;
-    overflow-y: auto;
+    height: 100vh;
 }
 
-.search-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ccc;
-}
-
-.search-header input[type="text"] {
-    width: 85%;
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-}
-
-#deleteBtn {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-.suggestions {
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-.suggestions div {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-}
-
-.suggestions div:hover {
-    background-color: #f4f4f4;
-}
-
-.results {
-    padding: 20px;
-    background-color: #fff;
-}
-
-.filter-bar {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ccc;
-    padding: 10px;
+.search-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    animation: slideIn 0.5s forwards;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.back-arrow,
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#clear-search {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none; /* Initially hidden */
+}
+
+.suggestions {
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+}
+
+.suggestions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+#filter-bar {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .filter-icon {
@@ -110,113 +116,100 @@
     cursor: pointer;
 }
 
-.filter-bar select {
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-/* Animation for filter bar */
-@keyframes slideIn {
-    from {transform: translateX(-100%);}
-    to {transform: translateX(0);}
+.search-results {
+    margin-top: 60px;
+    padding: 20px;
 }
 
 	</style>
-    <!-- Initial Search Form -->
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search..." onclick="openSearchPage()">
-    </div>
-	
-    <!-- Full Page Search Interface -->
-    <div id="searchPage" class="search-page">
-    <div class="search-header">
-  <input type="text" id="fullSearchInput" placeholder="Search..." oninput="showSuggestions()" autofocus>
-            <button id="deleteBtn" onclick="clearSearch()">&#x2716;</button>
+    <div class="search-page">
+        <div class="search-container">
+            <span class="back-arrow">←</span>
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Search..." autofocus>
+                <button id="clear-search">X</button>
+            </div>
+            <span class="hamburger-menu">☰</span>
         </div>
-        <div id="suggestions" class="suggestions"></div>
-        <div id="results" class="results"></div>
-        <div id="filterBar" class="filter-bar">
-            <div class="filter-icon">&#x1F50D;</div>
-            <select>
-                <option value="">Sort by</option>
-                <option value="recent">Most Recent</option>
-                <option value="popular">Most Popular</option>
+
+        <div id="suggestions-container" class="suggestions">
+            <ul id="suggestions-list"></ul>
+        </div>
+
+        <div id="search-results" class="search-results">
+            <!-- Search results will appear here -->
+        </div>
+
+        <div id="filter-bar" class="filter-bar">
+            <span class="filter-icon">🔍</span>
+            <select id="dropdown-1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
             </select>
-            <select>
-                <option value="">Category</option>
-                <option value="web">Web Development</option>
-                <option value="design">Design</option>
-                <option value="marketing">Marketing</option>
+            <select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
             </select>
         </div>
     </div>
 
     <script src="script.js"></script>
+	
 	<script>
-	// Open the full search page
-function openSearchPage() {
-    document.getElementById('searchPage').style.display = 'block';
-}
+	document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-input');
+    const suggestionsContainer = document.getElementById('suggestions-container');
+    const suggestionsList = document.getElementById('suggestions-list');
+    const filterBar = document.getElementById('filter-bar');
+    const searchResults = document.getElementById('search-results');
+    const clearSearchBtn = document.getElementById('clear-search');
 
-// Show suggestions based on user input
-function showSuggestions() {
-    var suggestions = document.getElementById('suggestions');
-    var input = document.getElementById('fullSearchInput').value.toLowerCase();
-    var deleteBtn = document.getElementById('deleteBtn');
+    // Mock suggestions (Replace with actual data)
+    const suggestions = ["Developer", "Designer", "Project Manager", "Product Owner", "Data Scientist"];
 
-    // Mock data for suggestions
-    var existingData = ['Web Development', 'Design', 'Marketing', 'SEO', 'Graphic Design'];
+    searchInput.addEventListener('input', function () {
+        const query = searchInput.value.toLowerCase();
+        suggestionsList.innerHTML = '';
+        if (query) {
+            const filteredSuggestions = suggestions.filter(item => item.toLowerCase().includes(query));
+            filteredSuggestions.forEach(suggestion => {
+                const li = document.createElement('li');
+                li.textContent = suggestion;
+                li.addEventListener('click', function () {
+                    searchInput.value = suggestion;
+                    suggestionsContainer.style.display = 'none';
+                    displaySearchResults(suggestion);
+                });
+                suggestionsList.appendChild(li);
+            });
+            suggestionsContainer.style.display = 'block';
+            clearSearchBtn.style.display = 'block'; // Show clear button when typing
+        } else {
+            suggestionsContainer.style.display = 'none';
+            clearSearchBtn.style.display = 'none'; // Hide clear button if no text
+        }
+    });
 
-    suggestions.innerHTML = '';
-    deleteBtn.style.display = input ? 'inline-block' : 'none';
+    clearSearchBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+        filterBar.style.display = 'none';
+        searchInput.focus();
+        suggestionsContainer.style.display = 'block';
+        clearSearchBtn.style.display = 'none'; // Hide clear button when cleared
+    });
 
-    if (input) {
-        existingData.forEach(function(item) {
-            if (item.toLowerCase().includes(input)) {
-                var suggestion = document.createElement('div');
-                suggestion.textContent = item;
-                suggestion.onclick = function() {
-                    selectSuggestion(item);
-                };
-                suggestions.appendChild(suggestion);
-            }
-        });
+    function displaySearchResults(query) {
+        searchResults.innerHTML = `<h2>Search Results for "${query}"</h2><p>Results...</p>`;
+        filterBar.style.display = 'flex';
     }
-}
 
-// Select a suggestion and show results
-function selectSuggestion(item) {
-    var input = document.getElementById('fullSearchInput');
-    var suggestions = document.getElementById('suggestions');
-    var results = document.getElementById('results');
-    var filterBar = document.getElementById('filterBar');
-
-    input.value = item;
-    suggestions.style.display = 'none';
-    results.innerHTML = '<h3>Results for "' + item + '"</h3><p>Here are your search results...</p>';
-
-    // Show the filter bar
-    filterBar.style.display = 'flex';
-}
-
-// Clear the search input
-function clearSearch() {
-    var input = document.getElementById('fullSearchInput');
-    var suggestions = document.getElementById('suggestions');
-    var deleteBtn = document.getElementById('deleteBtn');
-    var results = document.getElementById('results');
-    var filterBar = document.getElementById('filterBar');
-
-    input.value = '';
-    suggestions.style.display = 'block';
-    deleteBtn.style.display = 'none';
-    results.innerHTML = '';
-    filterBar.style.display = 'none';
-    showSuggestions();
-}
+    // Focus on search input when the page loads
+    searchInput.focus();
+});
 
 	</script>
 </body>

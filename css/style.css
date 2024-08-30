@@ -219,6 +219,43 @@ html, body {
 	
 }
 /*-------Login session ----*/
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 0); /* 80px margin on each side */
+    max-width: 400px; /* Set a max-width for better responsiveness */
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.tab-button-2, 
+.tab-button-1 {
+    width: 160px;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: background-color 0.3s ease;
+	font-family: 'kod';
+} 
+.tab-button-1 {
+    border-radius: 0 20px 20px 0;
+	border: 1px solid #D2E4F9;
+	color: rgba(0, 0, 0, 0.7);
+	background-color: #fff;
+}
+.tab-button-2 {
+	border-radius: 20px 0 0 20px;
+	background-color: #E1ECF9;
+	/*background-color: #E45959;*/
+	border: 1px solid #EFF6FE;
+	color: rgba(0, 0, 0, 0.7);
+}
+.tab-button:hover {
+    background-color: #E1ECF9;
+}
 .dailyhelp-pic {
 	display: none;
 }
@@ -427,7 +464,7 @@ span.psw {
 	color: #3997BF;
 }
 .social-icon-area {
-		width: 80%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -452,8 +489,13 @@ span.psw {
 	margin-left: auto;
 	margin-right: auto;
 }
+.social-background {
+	width: 100%;
+	background-color: #EFF6FE;
+	
+}
 .all-social-btn {
-	width: 60%;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -1726,13 +1768,20 @@ input[type="date"] {
 	object-fit: contain;
 	background-color: #E45959;
 }
+.search-icon {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #EFF6FE;
+    border-right: 1px solid #ccc;
+}
 /*-----Search session----*/
-.search-container {
+/*.search-container {
 	width: 92%;
     align-items: center;
     position: relative;
 	display: inline-block;
 }
+
 .search-icon {
     font-size: 17px;
     cursor: pointer;
@@ -1771,7 +1820,7 @@ input[type="date"] {
 }
 
 /*---Sear result session----*/
-.search-container {
+/*.search-container {
     padding: 10px;
     text-align: center;
     background-color: #fff;
@@ -1784,7 +1833,7 @@ input[type="date"] {
     border: 1px solid #ccc;
     border-radius: 8px;
 	height: 44px;
-}
+}*/
 
 .search-page {
     display: none;
@@ -1837,7 +1886,7 @@ input[type="date"] {
 	padding: 10px;
 }
 
-.suggestions {
+/*.suggestions {
 	width: 100%;
     padding: 20px;
     background-color: #fff;
@@ -1855,7 +1904,7 @@ input[type="date"] {
 
 .suggestions div:hover {
     background-color: #f4f4f4;
-}
+}*/
 
 .results {
 	width: 95%;
@@ -1865,7 +1914,7 @@ input[type="date"] {
 	margin-top: 80px;
 }
 
-.filter-bar {
+/*.filter-bar {
 	position: fixed;
     display: none;
     position: absolute;
@@ -1893,7 +1942,7 @@ input[type="date"] {
     border-radius: 5px;
     margin-left: 10px;
 	width: 120px;
-}
+}*/
 
 /* Animation for filter bar */
 @keyframes slideIn {
@@ -4025,6 +4074,9 @@ tle p {
 	margin-right: auto;
 
 }
+.login-settings-area {
+	
+}
 .settings-area {
 	width: 100%;
 	margin-top: 40px;
@@ -4032,7 +4084,6 @@ tle p {
 	font-family: 'kodch';
 	margin-right: auto;
 	margin-right: auto;
-
 }
 .paypal-tabs {
 	width: 90%;
@@ -4896,18 +4947,6 @@ textarea {
     border-top: 1px solid #ddd;
     padding-top: 10px;
 }
-@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
-    input {
-        /* Android-specific adjustments */
-        height: 44px;
-    }
-}
-@media screen and (min-device-width: 375px) and (max-device-width: 812px) {
-    input {
-        /* iOS-specific adjustments */
-        height: 48px;
-    }
-}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.sub-mobile {
 		display: none;
@@ -5469,7 +5508,7 @@ textarea {
 	}
 	
 	.social-icon-area {
-		width: 80%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -6407,7 +6446,7 @@ textarea {
 	background-color: #fff;
 }
 	.social-icon-area {
-		width: 80%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}

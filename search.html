@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <title>DailyHelp</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
-  <link rel="stylesheet" href="css/style.css">
- 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <style>
@@ -17,124 +13,173 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
+.main-search-page {
+    width: 100%;
+    height: 100vh;
+}
 
+.search-container {
+    display: flex;
+	width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.search-container img {
+		width: 25px;
+	}
+
+.back-arrow,
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #EFF6FE;
+    border-right: 1px solid #ccc;
+}
+	.search-icon img {
+		width: 20px;
+	}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#clear-search {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+	padding: 0;
+	width: 30px;
+	border: 1px solid gold;
+    display: none; /* Initially hidden */
+}
+
+.suggestions {
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+}
+
+.suggestions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+#filter-bar {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	position: absolute;
+	z-index: 100;
+}
+	.filterbtn {
+	width: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+	.filter-bar select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+	width: 100px;
+}
+#dropdown-1,
+	#dropdown-2,
+	#dropdown-3 {
+		margin-left: 0;
+	}
+.filter-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-results {
+    margin-top: 60px;
+    padding: 20px;
+}
+	.closed-btn a {
+   color: #F4C211;
 	
-</style>
-	
-	<header>
-	   <div class="main-web-nav">
-		   <div class="main">
-		   <div class="main-heading">
-			 <div class="sub-heads">
-				 <a href="dashboard.html">
-		
-	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DHS
-				
-				 </a>
-		
-				 <a href="about-us.html">
-			
-	  <img src="img/index/about.png" alt="Project 2" />About Us
-			
-				 </a>
-		
-				 <a href="settings.html">
-				
-	  <img src="img/index/settings.png" alt="Project 2" />Settings
-			
-				 </a>
-	
-				 <a href="manage-payments.html">
-			
-	  <img src="img/index/payments.png" alt="Project 2" />Payments
-				 </a>
-		
-				 <a href="FAQ.html">
-	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
-				 </a>
-	
-				 <a href="contact-us.html">
-	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
-				 </a>
-		</div>
-		</div>
-	
-		   </div>
-		    <div class="logo-part">
-		<div class="app-logo">
-			<a href="test.html">	
-	  <img src="img/logo/logo.png" alt="Project 2" />
-				</a></div>
-			   		   <div class="login-signup">
-		<button class="home-login">
-			<a href="login.html">Login</a>
-				</button>
-		
-		<button class="home-signup">			
-			<a href="create-resume-1.html">Signup</a>
-				</button>
-				   </div>
-				   </div>
-		 <div class="sub">
-		   <div class="web-dashboard">
-				
-	
-				<div class="dashboard-space">
-					<a href="dashboard.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/dashboard.png" alt="Project 2" /><h5>Dashboard </h5>
-						</div></a>
-					
-			<div class="dashboard-space">
-				<a href="personal-info.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/post.png" alt="Project 2" /><h5>Post Job</h5>
-						</div></a>
-				</div>
-			<div class="dashboard-space">
-				
-					<div class="dashboard-pic" id="searchInput" onclick="openSearchPage()" >
-	  <img src="img/index/find.png" alt="Project 2" /><h5>Find Helper </h5>
-						</div>
-				</div>
-			<div class="dashboard-space">
-				<a href="helpers-search-result.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/find-help-black.png.png" alt="Project 2" /><h5>Find Helper </h5>
-						</div></a>
-				</div>
-		   </div>  
-		   
-		   
-		   
-	</div>
-	   
-		   </div></div>
-	   
-	   <div class="nav-index-mob">
-		 <div class="profile-pic">
-	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-		   <div class="logo">
-            <div class="home-logo-pic">
-	   <a href="search.html"><img src="img/logo/logo.png" alt="Project 2" class="logo" /></a>
-		 </div></div>
-		     <div class="notification-container" id="notification-container">
-			<a href="chat-messages.html"><div class="notify-box">
-		<div class="notify-msg">
-			<img src="img/index/msg.png">
-			<div class="notify-num">4</div>
-			</div></div></a></div>
-		  <div class="msg-alert">
-			
-        <div class="hamburger" id="hamburger">
+}
+.left-closed-btn img{
+    width: 25px;
+}
+	.footer {
+		z-index: 50;
+	}
+	</style>
+	<div class="main-search-page">
+	<div class="search-container"><a href="index.html">
+            <img src="img/into/b-arrow-gold.png" alt="Project 2" /></a>
+            <div class="search-bar">
+                <span class="search-icon"><img src="img/find-helper/search.png" alt="Project 2" /></span>
+                <input type="text" id="search-input" placeholder="Search..." autofocus>
+                <button id="clear-search">&times;</button>
+            </div>
+            <span class="hamburger-menu"><div class="hamburgner" id="hamburger">
             &#9776;
-        </div></div>
-    </div>
-
-    <nav id="menu" class="menu">
+        </div></span>
+        </div>
+	
+	<nav id="menu" class="menu">
 		<div class="close-btn" id="close-btn">&times;</div>
 		<div class="hamburger-logo-pic" style="display: none;">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
@@ -207,18 +252,37 @@
 			</ul>
 		</div>
     </nav>
-	   
-	  
-		   
-	 
-	  </header>
-    <!-- Initial Search Form -->
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Driver, Capenter..." onclick="openSearchPage()">
-    </div>
+    <div class="main-search-page">
+        
 
-    <!-- Full Page Search Interface -->
-    <div id="searchPage" class="search-page">
+        <div id="suggestions-container" class="suggestions">
+            <ul id="suggestions-list"></ul>
+        </div>
+
+        <div id="search-results" class="search-results">
+            <!-- Search results will appear here -->
+        </div>
+
+        <div id="filter-bar" class="filter-bar">
+            <div class="blue-f-btn">
+			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
+            <select id="dropdown-1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+			<select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+		
+        </div>
 		<!-----Filter session---->
 		<div class="mobile-filter">
 		<div id="dropdown-content" class="dropdown-content">
@@ -292,72 +356,115 @@
 			</div>
 			</div>
 			</div>
-		
-		
-		
-        <div class="search-header">
-  <input type="text" id="fullSearchInput" placeholder="Search..." oninput="showSuggestions()" autofocus>
-            <button id="deleteBtn" onclick="clearSearch()">&#x2716;</button>
-        </div>
-        <div id="suggestions" class="suggestions"></div>
-        <div id="results" class="results"></div>
-        <div id="filterBar" class="filter-bar">
-            <div class="blue-f-btn">
-			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
-			
-			
-            <!--<div class="filter-icon">&#x1F50D;</div>-->
-            <select>
-                <option value="">Sort by</option>
-                <option value="recent">Most Recent</option>
-                <option value="popular">Most Viewed</option>
-            </select>
-            <select>
-                <option value="">Category</option>
-                <option value="web">Home cleaning</option>
-                <option value="design">Industral cleaning</option>
-                <option value="marketing">Marketing</option>
-            </select>
-			<select>
-                <option value="">Category</option>
-                <option value="web">Web Development</option>
-                <option value="design">Design</option>
-                <option value="marketing">Marketing</option>
-            </select>
-			<select>
-                <option value="">Category</option>
-                <option value="web">Web Development</option>
-                <option value="design">Design</option>
-                <option value="marketing">Marketing</option>
-            </select>
-	
-        </div>
     </div>
-		
-		
-		
-		
-		
-		
+	</div>
+	
+	<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Icons -->
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+				</div>
+			<!-- Give Us Feedback -->
+            <div class="feedback-section">
+               <a href="ads.html"><button class="footer-ads-btn">Give us feedback<img src="img/into/f-arrow-gold.png"></button></a>
+            </div>
+                <div class="footer-icons">
+				<div class="grid-container">
+					
+  <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
+			</div></div>
+ <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
+			</div></div>
+					<div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
+			</div></div>
+	
+  
+					</div>  
+					</div>
+            </div>
 
-		
-		
-		
-	
+            
 
+           
 
+			
+			
+            <!-- Privacy Policy -->
+            <div class="footer-section">
+                <h4>Privacy Policy</h4>
+				<div class="footer-policy">
+                <a href="#">Privacy Policy</a>&#32;<a href="#">Terms &#38; Condition</a>&#32;<a href="contact-us.html">Contact</a>
+            </div>
+				<div class="footer-policy">
+                <a href="about-us.html">About Dailyhelp</a>&#32;<a href="report.html">Report</a>&#32;<a href="FAQ.html">FAQs</a>
+            </div>
+            </div>
+   
 
-<script src="js/script.js"></script>
-	
-	
-
-	
-	
-	
-	
- 
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dailyhelp<sup>&reg;</sup>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 	<script>
-	
+	document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-input');
+    const suggestionsContainer = document.getElementById('suggestions-container');
+    const suggestionsList = document.getElementById('suggestions-list');
+    const filterBar = document.getElementById('filter-bar');
+    const searchResults = document.getElementById('search-results');
+    const clearSearchBtn = document.getElementById('clear-search');
+
+    // Mock suggestions (Replace with actual data)
+    const suggestions = ["Developer", "Designer", "Project Manager", "Product Owner", "Data Scientist"];
+
+    searchInput.addEventListener('input', function () {
+        const query = searchInput.value.toLowerCase();
+        suggestionsList.innerHTML = '';
+        if (query) {
+            const filteredSuggestions = suggestions.filter(item => item.toLowerCase().includes(query));
+            filteredSuggestions.forEach(suggestion => {
+                const li = document.createElement('li');
+                li.textContent = suggestion;
+                li.addEventListener('click', function () {
+                    searchInput.value = suggestion;
+                    suggestionsContainer.style.display = 'none';
+                    displaySearchResults(suggestion);
+                });
+                suggestionsList.appendChild(li);
+            });
+            suggestionsContainer.style.display = 'block';
+            clearSearchBtn.style.display = 'block'; // Show clear button when typing
+        } else {
+            suggestionsContainer.style.display = 'none';
+            clearSearchBtn.style.display = 'none'; // Hide clear button if no text
+        }
+    });
+
+    clearSearchBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        clearSearchBtn.style.display = 'none'; // Hide clear button when cleared
+        suggestionsContainer.style.display = 'none';
+        searchInput.focus();
+    });
+
+    function displaySearchResults(query) {
+        searchResults.innerHTML = `<h2>Search Results for "${query}"</h2><p>Results...</p>`;
+        filterBar.style.display = 'flex';
+    }
+
+    // Focus on search input when the page loads
+    searchInput.focus();
+});
 
 	</script>
 </body>
