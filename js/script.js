@@ -323,3 +323,38 @@ document.getElementById('toggle-switch').addEventListener('change', function() {
         statusText.textContent = 'Off';
     }
 });
+
+// Feedback session
+
+document.addEventListener('DOMContentLoaded', function() {
+    const stars = document.querySelectorAll('.star');
+    let selectedRating = 0;
+
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            // Remove selection from all stars
+            stars.forEach(s => s.classList.remove('selected'));
+
+            // Add selection up to the clicked star
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add('selected');
+            }
+
+            // Store the selected rating
+            selectedRating = star.getAttribute('data-value');
+            console.log('Selected rating:', selectedRating);
+        });
+
+        star.addEventListener('mouseover', () => {
+            // Highlight stars on hover
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add('hovered');
+            }
+        });
+
+        star.addEventListener('mouseout', () => {
+            // Remove hover effect
+            stars.forEach(s => s.classList.remove('hovered'));
+        });
+    });
+});

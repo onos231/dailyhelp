@@ -9,14 +9,99 @@
 </head>
 <body>
 <style>
+.no-result-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.no-result-container h1 {
+		font-family: 'kod';
+	}
+	.no-result-container p {
+		font-family: 'poppins';
+		font-size: 15px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		color: rgba(0, 0, 0, 0.5);
+		text-align: left;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
 
+.no-result-icon img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.suggest-option {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.suggest-option li {
+    color: #444;
+    font-size: 15px;
+    margin: 5px 0;
+	font-family: 'poppins';
+}
+
+.search-again .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F4C211;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.search-again .btn:hover {
+    background-color: rgba(244, 194, 17, 0.71);
+}
+
+.browse-categories h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: 'kod';
+}
+
+.browse-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.browse-categories ul li {
+    margin: 5px 0;
+}
+
+.browse-categories ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.browse-categories ul li a:hover {
+    text-decoration: underline;
+}
 
 	</style>
 	<div class="main-search-page">
 	<div class="search-container"><a href="index.html">
             <img src="img/into/b-arrow-gold.png" alt="Project 2" /></a>
             <div class="search-bar">
-                <a href="no-result-found.html"><span class="search-icon"><img src="img/find-helper/search.png" alt="Project 2" /></span></a>
+                <span class="search-icon"><img src="img/find-helper/search.png" alt="Project 2" /></span>
                 <input type="text" id="search-input" placeholder="Search..." autofocus>
                 <button id="clear-search">&times;</button>
             </div>
@@ -98,6 +183,8 @@
 			</ul>
 		</div>
     </nav>
+		
+		
     <div class="main-search-page">
         
 
@@ -109,99 +196,44 @@
             <!-- Search results will appear here -->
         </div>
 
-        <div id="filter-bar" class="filter-bar">
-            <div class="blue-f-btn">
-			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
-            <select id="dropdown-1">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select>
-            <select id="dropdown-2">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select>
-			<select id="dropdown-2">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select>
-		
+ <div class="no-result-container">
+        <div class="no-result-icon">
+            <img src="/img/find-helper/no-result.jpg" alt="No Results Icon">
         </div>
-		<!-----Filter session---->
-		<div class="mobile-filter">
-		<div id="dropdown-content" class="dropdown-content">
+        <h1>No Results Found</h1>
+        <p>We couldn’t find any skilled workers matching your search criteria.</p>
+        <ul class="suggest-option">
+            <li>Try different keywords or search terms</li>
+            <li>Check for any spelling mistakes</li>
+            <li>Explore the available categories below</li>
+        </ul>
+
+        <div class="search-again">
+            <a href="index.html" class="btn">Search Again</a>
+        </div>
+
+        <div class="browse-categories">
+            <h2>Popular Search</h2>
+            <div class="recent-search">
+			<div class="recent-result"><a href="z-testing.html"><span class="search-result-icon" id="search-icon">&#128269; Cleaners</span></a></div>
+		<div class="recent-result"><a href="z.html"><span class="search-result-icon" id="search-icon">&#128269; Electrician</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; CareGiver</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Plumber</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Gardener</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Shoe Maker</span></a></div>
+	
+		
+	
+			<div class="recent-result">
+				<a href="helpers-search-result.html">&#128269; Makeup Artist</a>
+				</div>
 			
-			<p>Reset All</p>
-            <div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Profession</div>
-				 <div id="sub1" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> Cleaner</label>
-                    <label><input type="checkbox"> Driver</label>
-                    <label><input type="checkbox"> Plumber</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> Gardener</label>
-					<label><input type="checkbox"> Caregiver</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-            <div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
-				 <div id="sub2" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> Hourly</label>
-                    <label><input type="checkbox"> Part Time</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> All Day</label>
-					<label><input type="checkbox"> Full Time</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-			
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
-				 <div id="sub3" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> English</label>
-                    <label><input type="checkbox"> Hausa</label>
-					<label><input type="checkbox"> Others</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> Igbo</label>
-					<label><input type="checkbox"> Yoruba</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-			<!-- Add more sub-filters as needed -->
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
-            </div>
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
-            </div>
-			
-            <div class="filter-area">
-        
-			<div class="apply-btn" style="display: none;">
-			<a href="helpers-search-result.html">Apply</a>
-			</div>
-				
-				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">
-			<a href="helpers-search-result.html" style="color: rgba(0, 0, 0, 0.3)">Apply</a>
-			</div>
-			</div>
-			</div>
-			</div>
+			<div class="recent-result">
+			<a href="helpers-search-result.html">&#128269; View All</a></div>
+		</div>
+        </div>
+    </div>
+	
     </div>
 	</div>
 	

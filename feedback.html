@@ -16,13 +16,10 @@
 </head>
 	
 <body>
-	<style>
-		
-	</style>
+
 	
     <!--login Section-->
 	
-	<div class="web-home">
 		
 
    <header>
@@ -215,86 +212,59 @@
 	  </header>
 		
 		
-		
-		
-		<div class="sub-mobile">
-		<div class="web-dashboard">
-				
-	
-				<div class="dashboard-space">
-					<a href="dashboard.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/dashboard.png" alt="Project 2" /><h5>Dashboard </h5>
-						</div></a>
-					
-			<div class="dashboard-space">
-				<a href="personal-info.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/post.png" alt="Project 2" /><h5>Post Job</h5>
-						</div></a>
-				</div>
-			
-			<div class="dashboard-space">
-				<a href="search.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/find.png" alt="Project 2" /><h5>Find Helper </h5>
-						</div></a>
-				</div>
-		   </div>  
-		   
-		   
-		   
-	</div>
-			</div>
-		 
-		<div class="workers-container">
-			
-		<div class="workers-caption">
-			<h3>Hi Maro&#44;</h3>
-			<p>We have the right skilled workers for you</p></div>
-			<div class="workers-pic"><img src="img/into/worker3.jpg"></div>
-		</div>
-		
-		
-		<div class="recent-search">
-		<p>Your last three results</p>
-			<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Cleaners</span></a></div>
-			<div class="recent-result">
-				<a href="helpers-search-result.html">&#128269; Electrician</a>
-				</div>
-			<div class="recent-result">
-				<a href="helpers-search-result.html">&#128269; Painter</a>
-				</div>
-			<div class="recent-result">
-			<a href="helpers-search-result.html">&#128269; View All</a></div>
-		</div>
-		<div class="work-steps-tab">
-			<h1>How it works</h1>
-			<div class="create-work-steps">
-			<div class="work-steps"><div><img src="img/process/find.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title">Find  Helper</div></div></div>
-				<div class="work-resume-line"><div><img src="img/process/line.png" alt="Project 2" /></div></div>
-				<div class="work-steps"><div><img src="img/process/match.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title"> Match</div></div></div>
-				<div class="work-resume-line"><div><img src="img/process/line.png" alt="Project 2" /></div></div>
-			<div class="work-steps"><div><img src="img/process/call.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title">Call & 
-Chat</div></div></div>
-			<div class="work-resume-line"><div><img src="img/process/line.png" alt="Project 2" /></div></div>
-			<div class="work-steps"><div><img src="img/process/get-help.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title">Get Help</div></div></div>
-				</div>
-	</div>
-		<div class="ads-text">
-			<p>Would you like to showcase your <span class="skill-text">handwork</span> or <span class="skill-text">skills</span><span>?</span></p>
-			<a href="ads.html"><button class="ads-btn">Place your ads here<img src="img/into/f-arrow-gold.png"></button></a>
-		</div>
-		
-		
-		
-		</div>
+    <div class="feedback-container">
+        <h5>Rate Our Skilled Job Site</h5>
 
-	<!-- Footer Section -->
+        <!-- Star Rating Section -->
+        <div class="rating-section">
+            <label>Your Rating:</label>
+            <div class="stars" id="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+
+        <!-- Review Criteria -->
+        <div class="review-criteria">
+            <h4>What did you like or dislike?</h4>
+            <div class="criteria-box">
+                <label><input type="checkbox"> User Interface</label>
+            </div>
+            <div class="criteria-box">
+                <label><input type="checkbox"> Job Listings</label>
+            </div>
+            <div class="criteria-box">
+                <label><input type="checkbox"> Application Process</label>
+            </div>
+            <div class="criteria-box">
+                <label><input type="checkbox"> Customer Support</label>
+            </div>
+            <div class="criteria-box">
+                <label><input type="checkbox"> Other</label>
+            </div>
+        </div>
+
+        <!-- Contact and Review Section -->
+        <div class="contact-review-section">
+            <h4>Leave Your Details (Optional)</h4>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+                <label for="review">Write a Review:</label>
+                <textarea id="review" name="review" rows="4" placeholder="Your review..."></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+<!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Social Icons -->
@@ -349,7 +319,7 @@ Chat</div></div></div>
             <p>&copy; 2024 Dailyhelp<sup>&reg;</sup>. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 	
-
-<script src="js/script.js"></script>
 </body>
+</html>
