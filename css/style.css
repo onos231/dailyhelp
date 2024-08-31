@@ -222,8 +222,8 @@ html, body {
 .tab-container {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 0); /* 80px margin on each side */
-    max-width: 400px; /* Set a max-width for better responsiveness */
+    width: calc(100% - 0px); /* 80px margin on each side */
+    max-width: 100%; /* Set a max-width for better responsiveness */
 	margin-bottom: 40px;
 	margin-left: auto;
 	margin-right: auto;
@@ -492,6 +492,8 @@ span.psw {
 .social-background {
 	width: 100%;
 	background-color: #EFF6FE;
+	margin-left: auto;
+	margin-right: auto;
 	
 }
 .all-social-btn {
@@ -4076,6 +4078,16 @@ tle p {
 }
 .login-settings-area {
 	
+}
+.login-settings-tabs {
+	width: 80%;
+	/*background-color: #EFF6FE;*/
+	background-color: #F7FBFF;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 .settings-area {
 	width: 100%;

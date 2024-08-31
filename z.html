@@ -142,7 +142,7 @@
         </div>
 
         <div id="filter-bar" class="filter-bar">
-            <span class="filter-icon">🔍</span>
+            <span class="filter-icon">⚙️</span>
             <select id="dropdown-1">
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
@@ -157,7 +157,6 @@
     </div>
 
     <script src="script.js"></script>
-	
 	<script>
 	document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('search-input');
@@ -195,11 +194,11 @@
 
     clearSearchBtn.addEventListener('click', function () {
         searchInput.value = '';
+        clearSearchBtn.style.display = 'none'; // Hide clear button when cleared
         searchResults.innerHTML = '';
         filterBar.style.display = 'none';
         searchInput.focus();
-        suggestionsContainer.style.display = 'block';
-        clearSearchBtn.style.display = 'none'; // Hide clear button when cleared
+        suggestionsContainer.style.display = 'none';
     });
 
     function displaySearchResults(query) {
