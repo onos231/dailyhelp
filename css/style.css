@@ -48,6 +48,8 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: helvetica;
+	 min-height: 100vh;
+    overflow-y: auto;
 }
 
 /*-- Intro pages*/
@@ -799,15 +801,15 @@ input[type="date"] {
 			margin-top: 20px;
 		}
 .workers-container {
-	width: 90%;
-	display: inline-block;
+	width: 100%;
+	display: flex;
 	margin-top: 20px;
 	margin-bottom: 40px;
-	margin-top: 20px;
 }
 .workers-container h3 {
 	font-family: 'Poppins';
 	font-weight: 300;
+	font-size: 28px;
 }
 .workers-caption p {
 	width: 80%;
@@ -1243,7 +1245,7 @@ input[type="date"] {
 }
 .recent-result {
 	border: 1px solid #F4C211;
-	padding: 6px 10px;
+	padding: 6px 15px;
 	border-radius: 16px;
 	float: left;
 	margin-right: 8px;
@@ -1251,8 +1253,13 @@ input[type="date"] {
 	font-size: 15px;
 
 }
+.recent-result img{
+	float: left;
+	margin-right: 8px;
+	font-size: 15px;
+}
 
-.recent-result a {
+.recent-result a{
 	color: rgba(0, 0, 0, 0.7);
 
 }
@@ -1777,6 +1784,9 @@ input[type="date"] {
     font-size: 15px;
     background-color: #EFF6FE;
     border-right: 1px solid #ccc;
+}
+.search-result-icon img{
+	width: 20px;
 }
 /*-----Search session----*/
 .main-search-page {
@@ -3759,7 +3769,6 @@ float: left;
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
 }
 
 .sub-plan-txt {
@@ -3946,6 +3955,9 @@ tle p {
 	width: 95%;
 }
 /*----Manage payments session---*/
+.desktop-payment-session {
+	display: none;
+}
 .bank-area {
 	width: 95%;
 	display: block;
@@ -3955,6 +3967,7 @@ tle p {
 	border-radius: 8px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background-color: #F7FBFF;
 }
 .bank-name {
 	width: 95%;
@@ -4061,6 +4074,7 @@ tle p {
 	font-weight: 100;
 }
 /*---paypal-----*/
+
 .paypal-session {
 	width: 100%;
 }
@@ -4220,7 +4234,6 @@ tle p {
 /*----settings session---*/
 .add-card-area {
 	width: 100%;
-
 	font-family: 'kodch';
 	margin-right: auto;
 	margin-right: auto;
@@ -4240,6 +4253,7 @@ tle p {
 	margin-bottom: 20px;
 }
 .settings-area {
+		flex: none;
 	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 80px;
@@ -4252,8 +4266,8 @@ tle p {
 	margin-left: auto;
 	margin-right: auto;
 }
+.notify-settings-tabs,
 .settings-tabs {
-		width: 90%;
 	/*background-color: #EFF6FE;*/
 	background-color: #F7FBFF;
 	border-radius: 4px;
@@ -4273,7 +4287,6 @@ tle p {
 	/*background-color: #EFF6FE;*/
 	font-family: 'kod';
 	font-size: 20px;
-	
 	border-radius: 4px;
 	margin-left: auto;
 	margin-right: auto;
@@ -4281,7 +4294,7 @@ tle p {
 	margin-bottom: 20px;
 }
 .find-me p {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
@@ -4289,8 +4302,13 @@ tle p {
 	font-size: 15px;
 }
 .find-me {
+	width: 100%;
 	margin-bottom: 20px;
 
+}
+.other-icons-n-txt {
+	width: 80%;
+	margin-left: auto;
 }
 .settings-tabs-2 {
 	border-radius: 4px;
@@ -4339,7 +4357,7 @@ tle p {
 
 }
 .notify-txt {
-	width: 80%;
+	width: 75%;
 	text-align: left;
 	margin-bottom: 10px;
 	color: #000;
@@ -4621,7 +4639,6 @@ input[type="number" i] {
 .work-steps-tab {
 	width: 100%;
 	position: relative;
-	display: inline-block;
 }
 .work-steps-tab h1 {
 	
@@ -5127,7 +5144,7 @@ textarea {
 
 .rating-section {
     margin-bottom: 20px;
-	color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.5);
 	
 }
 
@@ -5148,7 +5165,8 @@ textarea {
 }
 .review-criteria h4{
    text-align: left;
-	margin-left: 0
+	margin-left: 0;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -5163,6 +5181,7 @@ textarea {
 	width: auto;
    text-align: left;
 	margin-bottom: 0;
+	color: rgba(0, 0, 0, 0.5);
 }
 .contact-review-section label {
     display: block;
@@ -5178,7 +5197,78 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+/*----No result found session---*/
+.no-result-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.no-result-container h1 {
+		font-family: 'kod';
+	}
+	.no-result-container p {
+		font-family: 'poppins';
+		font-size: 15px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		color: rgba(0, 0, 0, 0.5);
+		text-align: left;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
 
+.no-result-icon img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.suggest-option {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.suggest-option li {
+    color: #444;
+    font-size: 15px;
+    margin: 5px 0;
+	font-family: 'poppins';
+}
+.browse-categories h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+	margin-top: 20px;
+	font-family: 'kod';
+}
+
+.browse-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.browse-categories ul li {
+    margin: 5px 0;
+}
+
+.browse-categories ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.browse-categories ul li a:hover {
+    text-decoration: underline;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.sub-mobile {
 		display: none;
@@ -5458,7 +5548,7 @@ textarea {
 	height: 100%;
 	/*background-color: #D2E4F9;*/
 	position: absolute;
-	margin-top: 40px;
+	margin-bottom: 120px;
 }
 .mobile-contents {
 	width: 640px;
@@ -6114,6 +6204,8 @@ textarea {
 	 .footer-container {
         flex-direction: column;
         align-items: center;
+		 display: inline-block;
+
     }
     
     .footer-section {
@@ -6122,9 +6214,153 @@ textarea {
     }
 }
 @media only screen and (min-width: 992px) {
+	/*---index session----*/
+	.desktop-intro {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	.workers-container {
+		width: 95%;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #EFF6FE;
+		border-radius: 20px;
+		box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.05);
+	
+}
+	.welcome-recent-search {
+		width: 50%;
+		margin: 60px 40px;
+		display: inline-block;
+	}
+	.workers-pic {
+		width: 40%;
+		
+}
+	.workers-pic img {
+		width: 60%;
+
+		margin-right: 40px;
+}
+	.recent-search {
+		width: 90%;
+		display: inline-block;
+	}
+	.recent-search p {
+		font-size: 28px;
+	}
+	.all-recent-result {
+		width: 40%;
+		padding: 20px 10px;;
+		}
 	.search-helper-nav {
 		display: none;
 	}
+	.workers-caption{
+		float: right;
+		width: 40%;
+		margin-left: auto;
+	}
+	.workers-caption h3{
+		margin-top: 120px;
+	}
+	.workers-caption p {
+		font-size: 15px;
+	}
+	.work-steps-tab h1 {
+	width: 80%;
+	margin-left: auto;
+		margin-right: auto;
+}
+	.work-steps-tab {
+	width: 80%;
+	margin-right: auto;
+		margin-bottom: 40px;
+}
+	.create-work-steps {
+	display: flex;
+	width: 90%;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+.work-steps {
+		width: 100%;
+	padding: 2px;
+	}
+	.work-steps img {
+	display: block;
+	width: 40%;
+	height: 100%;
+	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: azure;
+	padding: 20px;
+	border-radius: 10px;
+}
+	.ads-text {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 80px;
+	}
+	.ads-text p {
+		width: 40%;
+		font-size: 48px;
+		margin-right: auto;
+	}
+	
+/*-----Welcome page session---*/
+	.nav-mob-signin {
+		display: none;
+	}
+	
+	.home-caption-n-txt h5 {
+		font-size: 40px;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.dailyhelp-guide {
+		display: flex;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	.guide-content-2,
+	.guide-content-3,
+	.guide-content {
+		display: flex;
+		width: 25%;
+		padding: 20px;
+		display: block;
+	}
+	.guide-content-3 img,
+.guide-content-2 img,
+.dailyhelp-guide img{
+	width: 100%;
+	height:50%;
+	margin-right: 10px;
+	padding: 6px;
+
+}
+.dailyhelp-guide h3{
+	width: 100%;
+	margin-top: 26px;
+	margin-bottom: 4px;
+	font-family: 'kod';
+}
+	
+	
+	
+	
+	
+	
 			.main-web-nav {
 			width: 100%;
 			display: flex;
@@ -6225,6 +6461,11 @@ textarea {
 			object-fit: contain;
 		}
 	/*----settings session---*/
+	.desktop-settings {
+		width: 100%;
+	display: flex;
+	padding: 20px;
+}
 .settings-pattern {
 	width: 50%;
 	margin-left: auto;
@@ -6242,7 +6483,7 @@ textarea {
     position: relative;
     max-width: 100%;
 	margin-left: 20px;
-	margin-top: 40px;
+
 	
 }
 
@@ -6287,12 +6528,11 @@ textarea {
 			margin-right: auto;
 		}
 		.home-caption-n-txt h1 {
-			width: 100%;
+			width: 400px;
 			text-align: center;
-			color: #fff;
 			display: inline-block;
-			margin-top: 160px;
-			font-size: 30px;
+			margin-top: 100px;
+			font-size: 40px;
 		}
 		.home-login {
 			width: 60px;
@@ -6630,7 +6870,8 @@ textarea {
 		height: 100%;
 	}
 .create-resume {
-	display: flex;
+	width: 80%;
+	margin-left: auto;
 }
 .dailyhelp-pic {
 	display: block;
@@ -6721,6 +6962,43 @@ textarea {
 	margin-top: 80px;
 }
 	/*----payment option session---*/
+	.other-session {
+		display: none;
+	}
+
+	.desktop-payment-session {
+	display: block;
+		display: flex;
+		width: 100%;
+		margin-top: 80px;
+		margin-bottom: 80px;
+}
+	.paypal-n-bank {
+		width: 50%;
+	}
+	.bank-area {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+	.desktop-payment-session p{
+	width: 60%;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'poppins';
+	color: rgba(0, 0, 0, 0.5);
+}
+	.bill-address {
+		width: 60%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.cd-info {
+		width: 60%;
+	}
 	.caption-area {
 		margin-top: 0;
 			margin-bottom: 20px;
@@ -6730,12 +7008,21 @@ textarea {
 		display: none;
 	}
 	.desktop-body {
-	display: block;
+		width: 100%;
+		display: block;
 }
 	.desktop-double-sides {
 			display: flex;
 			width: 100%;
 		}
+	.desktop-add-bank {
+	background-color: #F7FBFF;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
 		.cd-diff-option {
 			width: 40%;
 			margin-left: auto;
@@ -6789,13 +7076,14 @@ textarea {
 
 .background-image {
     position: absolute;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-image: url('/img/payment-option/pay5.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
 	opacity: 0.2;
+	object-fit: contain;
 }
 	/*----find helpers session---*/
 	.blue-f-btn {
@@ -7006,7 +7294,34 @@ textarea {
 	.sub-recommend {
 		width: 100px;
 	}
-	
+	/*---setting session-----*/
+	.settings-tabs {
+		width: 40%;
+	}
+	.find-me p{
+		width: 50%;
+		margin-left: 10px;
+		color: rgba(0, 0, 0, 0.5);
+	}
+	.find-me {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.other-icons-n-txt {
+		width: 90%;
+		margin-left: 10px;
+	}
+	.notify-settings-tabs{
+		width: 90%;
+	}
+	.notify-settings-tabs h5{
+		font-size: 20px;
+		font-family: 'kod';
+	}
+	.notify-txt {
+		width: 90%;
+	}
 	/*----profile session---*/
 
 	.profile-tabs {
@@ -7231,3 +7546,33 @@ outline: none;
 	color: rgba(0, 0, 0, 0.3);
 	margin-top: 13px;
 }
+/*----footer session----*/
+	.footer-partition {
+		display: flex;
+		width: 100%;
+	}
+.footer {
+	width: 100%;
+	background-color: #D2E4F9;
+	margin-top: 40px;
+}
+	.footer-container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-section {
+	flex: none;
+	margin-right: auto;
+}
+	.feedback-section {
+		width: 50%;
+		margin-top: 30px;
+	}
+	.feedback-section a{
+		background-color: #D2E4F9;
+	}
+	.footer-bottom {
+		color: rgba(0, 0, 0, 0.5);
+	}

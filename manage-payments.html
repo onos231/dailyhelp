@@ -237,7 +237,16 @@
 							<button class="paypal-pic"><img src="img/paypal/PayPal-tab.png" alt="Project 2" /></button>
 						
 						</div>
-					
+					<div class="bank-area">
+				<div class="bank-title"><h5>Zenith Bank</h5>
+				<a href="add-bank-info.html"><div class="bank-edit"><img src="img/profile/edit.png" alt="Project 2" /></div></a></div>
+			<div class="my-bank-info">
+			<div class="Account-name"><h5>Maro Amadaku</h5></div>
+			
+			<div class="Account-num"><h5>1234567890</h5></div>
+			<div class="Account-type"><h5>Savings</h5></div>
+			</div>
+		</div>
 						<div class="paypal-session">
 						<h5>Credit card</h5>
 							
@@ -264,7 +273,15 @@
 						</div>
 						</div>
 			</div>
-		
+		<div class="desktop-payment-session">
+			<div class="paypal-n-bank">
+			<div class="paypal-session">
+						
+					<h5></h5>
+						
+							<button class="paypal-pic"><img src="img/paypal/PayPal-tab.png" alt="Project 2" /></button>
+						
+						</div>
 		<div class="bank-area">
 				<div class="bank-title"><h5>Zenith Bank</h5>
 				<a href="add-bank-info.html"><div class="bank-edit"><img src="img/profile/edit.png" alt="Project 2" /></div></a></div>
@@ -275,11 +292,36 @@
 			<div class="Account-type"><h5>Savings</h5></div>
 			</div>
 		</div>
-	
-	<div class="paypal-session">	
-		<div class="add-more-account">
-					<h5>Add Account</h5>
+	</div>
+			<div>			
+		<h5></h5>	
+				<div class="bill-address">
+				<div class="bill-title"><h5>Billing Address</h5>
+				<a href="edit-billing-address.html"><div class="bill-edit"><img src="img/profile/edit.png" alt="Project 2" /></div></a></div>
+				<p>No 42 Ali Street off Goodline  Avenue, Benin. Edo State</p></div>
+				
+		<p>You can add other cards to your account just incase you encounter problem with your selected option </p>
+					<div class="cd-info"><div class="card-info-details"><a href="edit-credit-card.html">
+			<div class="grid-container">
+				<div class="grid-item"><div>
+				<input type="checkbox" id="myCheck" onclick="myFunction()"></div></div>
+				<div class="grid-item">
+				<div class="current-card-info">
+					<div>Visa</div>
+					<div>John</div>
+					<div>Expires 04&#47;2026</div>
+					</div>
+				</div>
+				<div class="grid-item"><div class="cc-num">&#42;&#42;&#42;&#42;&#42;4455</div><div class="cc-edit-pic"><img src="img/profile/edit.png" alt="Project 2" /></div></div>
+				</div></a></div>
+						</div>
 		</div>
+						</div>
+	
+		<div class="add-more-account">
+					<h5></h5>
+		</div>
+			<div class="other-session">	
 		<a href="add-bank-info.html"> <div class="helper-tab">
 		 <div class="help-pic">
 	   <img src="img/payment-option/bank-logos/transfer.png" alt="Project 2" /></div>
@@ -313,8 +355,7 @@
 				
 			   
 		   </div>
-		</div>
-			</div>
+	
 
 		
 		<div class="desktop-body">
@@ -326,7 +367,7 @@
 		
 		   <div class="cd-diff-option">
 				<p>Add more account</p>
-			   <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content1')">
+			    <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content1')">
 		 <div class="help-pic">
 	   <img src="img/payment-option/bank-logos/transfer.png" alt="Project 2" /></div>
 			  
@@ -337,8 +378,7 @@
 		 <div class="forward-pic">
 	 <img src="img/find-helper/forward-arrow.png" alt="Project 2" />
 		 </div>
-			   </div>
-				
+			</div>
 			   <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content2')">
 		  <div class="help-pic">
 	   <img src="img/payment-option/bank-logos/credit.png" alt="Project 2" /></div>
@@ -353,20 +393,7 @@
 				   </div>
 				
 			  
-			   <div class="helper-tab" class="tab-link" onclick="openContent(event, 'content3')">
-		  <div class="help-pic">
-			  <img src="img/payment-option/bank-logos/paystack.png" alt="Project 2" /></div>
-			  
-		  <div class="add-helper-tab-title">
-	  <h5>Paystack Account</h5>
-		 </div>
-
-		 <div class="forward-pic">
-	   <img src="img/find-helper/forward-arrow.png" alt="Project 2" />
-		 </div>
 			   
-				  
-				</div>
 		   </div>
 			
 			
@@ -377,24 +404,40 @@
 			<div class="result-option-body">
 		<div class="payment-option-body">
 
+				
+					
+					<div class="desktop-add-bank">
 		 <div class="current-cd">
-					<p>Use existing credit card</p>
+					<h5>Enter your new bank details</h5>
 					
 					<div class="add-acc-details">
-						 <div class="reg-info">
-							 <input type="text" placeholder="Name on account" name="fname" required></div>
-						 <div class="reg-info">
-							 <input type="text" placeholder="Bank swift code" name="lname" required></div>
-	  <div class="reg-info">
-		  <input type="text" placeholder="Account number" name="psw" required></div>
-						 <div class="reg-info">
-							 <input type="text" placeholder="Re-enter account number" name="psw" required></div>
+						 <div class="form-group">
+               
+                <input type="text" id="name" name="name" placeholder="Name on account" required>
+            </div>
+						<div class="form-group">
+               
+                <input type="text" id="swift" name="swift" placeholder="Bank swift code" required>
+            </div>
+						<div class="form-group">
+               
+                <input type="text" id="accNumber" name="Account" placeholder="Account number" required>
+            </div>
+						<div class="form-group">
+               
+                <input type="text" id="acc" name="accNumber" placeholder="Re-enter account number" required>
+            </div>
+						 
 	  
 	  </div>
 					
 		
 		</div>
-			<div class="">
+	</div>
+					
+		
+		
+			
 			<div class="encrypt-txt">
 				<p>By adding this bank account, you agree to the Terms and Conditions</p>
 		<div class="reg-btn">
@@ -402,7 +445,7 @@
 		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add Bank Account</button></div>
 		</div>
 			</div>
-			</div>
+		
 				
 			</div>
 			
@@ -410,98 +453,140 @@
 		</div>
             </div>
 				 
-            <div id="content2" class="tab-content">
+				 <div id="content2" class="tab-content">
                 <div class="body-pattern">
 	
-			
 			<div class="result-option-body">
 		<div class="payment-option-body">
-			<div class="add-cd-´card">
-				
-   	<div class="add-cd-info">
-		<div class="container">
+
+	
+					<div class="add-card-area">
+					<div class="desktop-add-bank">
+
+					<h5>Enter your new bank details</h5>
+					
+				<h5>Billing address</h5>
+			<div class="form-group">
+               
+                <input type="text" id="cardholder" name="cardholder" placeholder="Address" required>
+            </div>
+			<div class="form-group">
+              
+                <input type="text" id="cardholder" name="cardholder" placeholder="City" required>
+            </div>
+			<!-- State -->
+            <div class="form-group">
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="FCT">FCT</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                </select>
+            </div>
+			<div class="form-group">
+             
+                <input type="text" id="cardholder" name="cardholder" placeholder="Post code" required>
+            </div>	
+					
+						</div>
+						<div>
+				<div class="add-card-area">
+	<div class="desktop-add-bank">
 		
-		<div class="reg-info">
-    <input type="text" placeholder="Name on a count" name="Account name" required>
-	  </div>
-					<div class="reg-info">
-    <input type="text" id="ccnum" placeholder="1234 5678 9023 2244" name="Credit card number" required>
-	  </div>
-		<div class="expire-n-security">
-			<div>
-			<input type="text" placeholder="dd/mm/yy" name="Expiry date" class="sex-reg-info" required>
-			</div>
-			<div>
-				<input type="text" placeholder="cvc" name="Security no." class="dob-reg-info" required>
-			</div>
-			</div>
-			
-		</div>
-		
-		
-		</div>
-				<div class="">
+			<h5>Card Details</h5>
+            <div class="form-group">
+               
+                <input type="text" id="cardholder" name="cardholder" placeholder="Cardholder Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiry">Expiration Date</label>
+                <input type="month" id="expiry" name="expiry" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+</div>
+            <div class="">
 			<div class="encrypt-txt">
 				<p>
 				By continuing, you agree to Dailyhelp<b class="t-c">Terms of Use</b> and <b class="t-c">Privacy Policy</b>
 				</p>
 		<div class="reg-btn">
-			<button type="submit" style="display: none;">Save Credit Card</button>
-		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Save Credit Card</button></div></div>
+			<button type="submit" style="display: none;">Add your Card</button>
+		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add your Card</button></div></div>
 			</div>
-		</div>
-		</div>
-		</div>
+      
 		
-			
-			
-		</div>
-            </div>
-            <div id="content3" class="tab-content">
-                <div class="body-pattern">
-	
-			<div class="result-option-body">
-		<div class="payment-option-body">
-			
-		 <div class="current-cd">
-					<p>Use existing credit card</p>
-					
-					<div class="add-acc-details">
-						 <div class="reg-info">
-							 <input type="text" placeholder="Name on account" name="fname" required></div>
-						 <div class="reg-info">
-							 <input type="text" placeholder="Bank swift code" name="lname" required></div>
-	  <div class="reg-info">
-		  <input type="text" placeholder="Account number" name="psw" required></div>
-						 <div class="reg-info">
-							 <input type="text" placeholder="Re-enter account number" name="psw" required></div>
-	  
-	  </div>
-					
 		
-		</div>
-			<div class="">
-			<div class="encrypt-txt">
-				<p>By adding this bank account, you agree to the Terms and Conditions</p>
-		<div class="reg-btn">
-			<button type="submit" style="display: none;">Add Bank Account</button>
-		<button type="submit" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">Add Paystack Account</button></div>
-		</div>
-			</div>
-			</div>
+		
+		
 				
+		</div>	
+		
+
+					
+		
+	
+			
+			</div>
+						</div>
+	</div>
 			</div>
 			
 			
 		</div>
             </div>
+				 
+            
+            
             
             <div class="background-image"></div>
         </div>
 			</div>   
 					
 		</div>
-		</div>
+		
 		
 			
 	<!-- Footer Section -->
