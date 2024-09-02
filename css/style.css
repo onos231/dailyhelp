@@ -574,7 +574,14 @@ form {
 	margin-right: auto;
 	
 }
-
+.contact-form-group{
+	display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 100%;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
 .form-group {
     display: flex;
     flex-direction: column;
@@ -583,11 +590,12 @@ form {
 	border-radius: 8px;
 	margin-bottom: 20px;
 }
-
+.contact-form-group label,
 .form-group label {
     margin-bottom: 5px;
     font-weight: bold;
 }
+.contact-form-group input,
 .form-group input {
 	padding: 10px;
     border: transparent;
@@ -604,6 +612,7 @@ form {
     -moz-appearance: none;
     appearance: none;
 } 
+.contact-form-group select,
 .form-group select {
     padding: 10px;
     font-size: 16px;
@@ -906,6 +915,7 @@ input[type="date"] {
     padding: 5px 20px;
     background-color: azure;
     color: white;
+	margin-bottom: 40px;
 }
 
 .logo h1 {
@@ -996,7 +1006,6 @@ input[type="date"] {
 	float: right;
 	margin-top: 8px;
 	z-index: 1;
-	position: ab
 }
 .index-menu {
 	position: fixed;
@@ -3176,6 +3185,9 @@ float: left;
         }
 
 /*----profile session---*/
+.profile-head {
+	margin-bottom: 20px;
+}
 .profile-area {
 	width: 90%;
 	margin-left: auto;
@@ -4265,6 +4277,15 @@ tle p {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.contact-tabs {
+	/*background-color: #EFF6FE;*/
+	background-color: #F7FBFF;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 .notify-settings-tabs,
 .settings-tabs {
@@ -6181,9 +6202,10 @@ textarea {
 	width: 50%;
 }
 	.contact-body {
+		display: flex;
 		width: 80%;
 	}
-
+	
 	.sub-txt-title p {
 	font-size: 13px;
 	font-family: 'poppins';
@@ -7513,7 +7535,7 @@ textarea {
 	input[type=text], input[type=password] {
   width: 100%;
   padding: 10px 10px;
-  margin: 10px 0;
+
   margin-right: auto;
   border: none;
   display: block;
@@ -7553,7 +7575,7 @@ outline: none;
 	}
 .footer {
 	width: 100%;
-	background-color: #D2E4F9;
+	background-color: #EFF6FE;
 	margin-top: 40px;
 }
 	.footer-container {
@@ -7570,9 +7592,36 @@ outline: none;
 		width: 50%;
 		margin-top: 30px;
 	}
-	.feedback-section a{
-		background-color: #D2E4F9;
-	}
 	.footer-bottom {
 		color: rgba(0, 0, 0, 0.5);
+	}
+	/*----contact us session----*/
+	.contact-tabs {
+	width: 60%;
+	/*background-color: #EFF6FE;*/
+	background-color: #F7FBFF;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+	.desktop-contact {
+		display: flex;
+    	gap: 50px; /* Adds space between the input fields */
+	}
+	.split-contact {
+		width: 100%;
+	}
+	.form-group {
+		width: 100%;
+	}
+	.contact-send-request {
+		width: 30%;
+	}
+	.icons-n-txt p{
+		width: 200px;
+	}
+	.contact-address {
+		width: 100%;
 	}
