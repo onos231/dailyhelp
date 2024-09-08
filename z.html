@@ -1,181 +1,199 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+<!--Head Section-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>DailyHelp</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </head>
+	
 <body>
 	<style>
-	body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+html, body {
+  height: 100%;
 }
+</style>
+	
+    <!--login Section-->
+	<div class="log-space">
+		
+		<div class="login-log-space">
+		<div class="dailyhelp-pic">
+		<img src="img/login/2.png" alt="Project 2" />
+		</div>
+	<div class="login-project">
+		
+		<div class="web-log">
+			<p class="Login"><a href="login.html">Login</a></p>
+		<div class="logo-pics">
+			<img src="img/logo/logo.png" alt="Project 2" />
+			</div>
+		<div class="signup-space">
+			<div>
+			<h4>Signup As</h4>
+			</div>
+		
 
-.feedback-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-}
+				  
+			
+			
+			
 
-h1, h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
+<div class="body-pattern">
+	
+			
+	
+			<div class="create-resume">
+		<div class="container">
+	<div class="login-options">
+			<a href="helper-create-account-1.html"><div class="helper-btn">Helper</div></a>
+				<a href="client.html"><div class="client-btn">Client</div></a></div>
+		<div class="create-acc-pic">
+		<input type="file" id="fileInput" accept="image/*" capture="camera" style="display:none;"></div>
+		
+		
+		<div class="login-area">
+		   
+	<div class="settings-tabs">
+		   
+	
+			<div class="regn-heading">
+				<h5>Other Information &#42;</h5>
+			</div>
+	
+			
+		<!-- Form Container -->
+    <div class="form-container">
+        <form action="#" method="POST">
 
-.rating-section {
-    margin-bottom: 20px;
-}
+            
 
-.stars {
-    font-size: 24px;
-    color: #ccc;
-    cursor: pointer;
-}
-
-.stars .star.selected,
-.stars .star:hover,
-.stars .star:hover ~ .star {
-    color: #ffcc00;
-}
-
-.review-criteria {
-    margin-bottom: 20px;
-}
-
-.criteria-box {
-    margin-bottom: 10px;
-}
-
-.criteria-box label {
-    font-size: 16px;
-}
-
-.contact-review-section label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-.contact-review-section input,
-.contact-review-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-	</style>
-    <div class="feedback-container">
-        <h1>Rate Our Skilled Job Site</h1>
-
-        <!-- Star Rating Section -->
-        <div class="rating-section">
-            <label>Your Rating:</label>
-            <div class="stars" id="star-rating">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
+            <!-- Sex -->
+            <div class="form-group">
+            
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
             </div>
-        </div>
 
-        <!-- Review Criteria -->
-        <div class="review-criteria">
-            <h2>What did you like or dislike?</h2>
-            <div class="criteria-box">
-                <label><input type="checkbox"> User Interface</label>
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <div class="dob-container">
+                    <input type="date" id="dob" name="dob" required>
+                  <!--<img src="img/edit-profile/calendar.png" alt="Project 2" />-->
+                </div>
             </div>
-            <div class="criteria-box">
-                <label><input type="checkbox"> Job Listings</label>
-            </div>
-            <div class="criteria-box">
-                <label><input type="checkbox"> Application Process</label>
-            </div>
-            <div class="criteria-box">
-                <label><input type="checkbox"> Customer Support</label>
-            </div>
-            <div class="criteria-box">
-                <label><input type="checkbox"> Other</label>
-            </div>
-        </div>
 
-        <!-- Contact and Review Section -->
-        <div class="contact-review-section">
-            <h2>Leave Your Details (Optional)</h2>
-            <form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email">
+            <!-- Phone Number -->
+            <div class="form-group">
+              
+                <input type="tel" id="phone" name="phone" placeholder="Phone no. +234" required>
+            </div>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+            <!-- State -->
+            <div class="form-group">
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="FCT">FCT</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                </select>
+            </div>
 
-                <label for="review">Write a Review:</label>
-                <textarea id="review" name="review" rows="4" placeholder="Your review..."></textarea>
-
-                <button type="submit">Submit Feedback</button>
-            </form>
-        </div>
+            <!-- Submit Button -->
+            <div class="form-group submit-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </div>
+				
+					
+				
+						
+		
+			
+		
+		
+			</div>
+			</div>
+			<div class="post-steps">
+				
+			
+				<div class="grid-container">
+  <div class="grid-item"> 
+	  <div class="post-arrow-btn-left">
+			<a href="create-account-1.html"><img src="img/into/b-arrow-gold.png" alt="Project 2" />Back</a>
+			</div></div>
+  <div class="grid-item">
+	  <div class="middle-btn">
+			
+						</div></div>
+  <div class="grid-item">
+	  <div class="middle-btn">
+			
+						</div></div>
+					</div>  
+</div>	
+			
+					</div>  
+</div>
+				
+			</div>
+			
+			</div>
+				</div>
+	
+			
+			
+				
+				</div>
+			
+	</div>
+	</div>
 
-    <script src="script.js"></script>
-	<script>
-	// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    const stars = document.querySelectorAll('.star');
 
-    stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-            // Remove selection from all stars
-            stars.forEach(s => s.classList.remove('selected'));
-
-            // Add selection up to the clicked star
-            for (let i = 0; i <= index; i++) {
-                stars[i].classList.add('selected');
-            }
-        });
-
-        star.addEventListener('mouseover', () => {
-            // Highlight stars on hover
-            for (let i = 0; i <= index; i++) {
-                stars[i].classList.add('hovered');
-            }
-        });
-
-        star.addEventListener('mouseout', () => {
-            // Remove hover effect
-            stars.forEach(s => s.classList.remove('hovered'));
-        });
-    });
-});
-
-	</script>
 </body>
-</html>

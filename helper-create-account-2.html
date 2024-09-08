@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  
+  <script src="js/script.js"></script>
 </head>
 	
 <body>
@@ -22,8 +22,6 @@ html, body {
 }
 </style>
 	
-    <!--login Section-->
-	<div class="log-space">
 		
 		<div class="login-log-space">
 		<div class="dailyhelp-pic">
@@ -31,36 +29,34 @@ html, body {
 		</div>
 	<div class="login-project">
 		
-		<div class="web-log">
+			
+	
+	
+		<!--<div class="create-acc-pic">
+		<input type="file" id="fileInput" accept="image/*" capture="camera" style="display:none;"></div>-->
+		
+
+	<div class="signup-settings-area">
 			<p class="Login"><a href="helper-login.html">Login</a></p>
 		<div class="logo-pics">
 			<img src="img/logo/logo.png" alt="Project 2" />
 			</div>
-		<div class="signup-space">
+
 			<div>
 			<h4>Signup As</h4>
 			</div>
-			
-			
 		
-			
-			<div class="login-helper-options">
-			<a href=""><div class="helper-log-btn">Helper</div></a>
-				<a href="create-account-1.html"><div class="client-log-btn">Client</div></a></div>
-	  
-			<div class="create-acc-pic">
-		<input type="file" id="fileInput" accept="image/*" capture="camera" style="display:none;"></div>
-				
-	  <div class="login-area">
-	<div class="settings-tabs">
+		 <div class="tab-container">
+        <button class="helper-tab-button-1">Helper</button>
+        <button class="helper-tab-button-2" onclick="document.location='login.html'">Client</button>
+    </div>
+		
+		<div class="login-settings-tabs">
 			<div class="regn-heading">
-				<h5>Other Information &#42;</h5>
+				<h5>Personal Information &#42;</h5>
 			</div>
 	
-			
 		
-				
-					
 					<!-- Form Container -->
     <div class="form-container">
         <form action="#" method="POST">
@@ -76,29 +72,19 @@ html, body {
                     <option value="female">Female</option>
                 </select>
             </div>
-			<!-- Date of Birth Tab -->
-    <div class="form-group">
+
+            <!-- Date of Birth -->
+            <div class="form-group">
                 <div class="dob-container">
                     <input type="date" id="dob" name="dob" required>
                   <!--<img src="img/edit-profile/calendar.png" alt="Project 2" />-->
                 </div>
             </div>
-	
-    
-
-
-            <!-- Date of Birth -->
-            <!--<div class="form-group">
-                <div class="dob-container">
-                    <input type="date" id="dob" name="dob" required>
-                  <img src="img/edit-profile/calendar.png" alt="Project 2" />
-                </div>
-            </div>-->
 
             <!-- Phone Number -->
             <div class="form-group">
               
-                <input type="tel" id="phone" name="phone" placeholder="Phone Number +234" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone no. +234" required>
             </div>
 
             <!-- State -->
@@ -144,26 +130,28 @@ html, body {
                     <option value="Zamfara">Zamfara</option>
                 </select>
             </div>
-
+<div class="terms-condition">
+				<p>
+				By proceeding, you accept our <b class="t-c">Terms of Use</b> and <b class="t-c">Privacy Policy</b>
+				</p>
+				</div>
             <!-- Submit Button -->
             <div class="form-group submit-group">
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="document.location='index.html'">Signup</button>
             </div>
         </form>
     </div>
-    
 		
 		
 			</div>
-			</div>
-	  
-					<div class="post-steps">
+		
+			<div class="post-steps">
 				
 			
 				<div class="grid-container">
   <div class="grid-item"> 
 	  <div class="post-arrow-btn-left">
-			<a href="helper-create-account-1.html"><img src="img/into/b-arrow-gold.png" alt="Project 2" />Back</a>
+			<a href="create-account-1.html"><img src="img/into/b-arrow-gold.png" alt="Project 2" />Back</a>
 			</div></div>
   <div class="grid-item">
 	  <div class="middle-btn">
@@ -174,26 +162,21 @@ html, body {
 			
 						</div></div>
 					</div>  
-</div>		
-							</div>
-			
-			
+</div>	
 				
-				
-
-				</div>
-				
-				</div>
-				 
-			
 	</div>
+			
+	
+		
+	
+			
+
+			</div>
+			
 			
 		</div>
 		
+		
+
 	
-	<script src="js/script.js"></script>
-	
-	<script>
-	
-	</script>
 </body>

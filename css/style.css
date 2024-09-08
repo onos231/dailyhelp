@@ -198,7 +198,7 @@ html, body {
 	margin-top: 2px;
 }
 .post-arrow-btn-left {
-	width: 60%;
+	width: 50%;
 	margin-top: 40px;
 	color: #F4C211;
 }
@@ -226,7 +226,7 @@ html, body {
     justify-content: space-between;
     width: calc(100% - 0px); /* 80px margin on each side */
     max-width: 100%; /* Set a max-width for better responsiveness */
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #EFF6FE
@@ -236,26 +236,48 @@ html, body {
 .tab-button-1 {
     width: 160px;
     padding: 10px;
+	margin: 0;
     border: none;
     font-size: 15px;
     cursor: pointer;
-    border-radius: 0 20px 20px 0;
     transition: background-color 0.3s ease;
 	font-family: 'kod';
 
 } 
 .tab-button-1 {
     border-radius: 0 20px 20px 0;
-	border: 1px solid #D2E4F9;
 	color: rgba(0, 0, 0, 0.7);
 	background-color: #fff;
+	border: 1px solid #E1ECF9;
 }
 .tab-button-2 {
 	border-radius: 20px 0 0 20px;
 	background-color: #E1ECF9;
 	/*background-color: #E45959;*/
-	border: 1px solid #EFF6FE;
 	color: rgba(0, 0, 0, 0.7);
+}
+.helper-tab-button-1,
+.helper-tab-button-2 {
+	width: 160px;
+    padding: 10px;
+	margin: 0;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-family: 'kod';
+}
+.helper-tab-button-1 {
+    border-radius: 0 20px 20px 0;
+	background-color: #E1ECF9;
+	/*background-color: #E45959;*/
+	color: rgba(0, 0, 0, 0.7);
+}
+.helper-tab-button-2 {
+	border-radius: 20px 0 0 20px;
+	color: rgba(0, 0, 0, 0.7);
+	background-color: #fff;
+	border: 1px solid #E1ECF9;
 }
 .tab-button:hover {
     background-color: #E1ECF9;
@@ -360,7 +382,7 @@ a:link {
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 40px;
+	margin-top: 40px;
 }
 .helper-login-info {
 	width: 100%;
@@ -424,7 +446,7 @@ outline: none;
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 0px;
-	font-size: 15px;
+	font-size: 13px;
 	color: rgba(0, 0, 0, 0.3);
 }
 .t-c {
@@ -501,7 +523,7 @@ span.psw {
 	
 }
 .all-social-btn {
-	width: 50%;
+	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -519,9 +541,10 @@ span.psw {
 	width: 100%;
 }
 	.social-btn {
-		width: 60%;
+		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
+		line-height: 2px;
 	}
 .social-btn img {
 	width: 100%;
@@ -529,9 +552,12 @@ span.psw {
 /*----create account session---*/
 .Login {
 	float: right;
+	margin-right: 20px;
+	font-size: 15px;
 }
 .Login a {
 	float: right;
+	color: #3997BF;
 }
 .acc-details {
 	margin-bottom: 40px;
@@ -1694,6 +1720,18 @@ input[type="date"] {
 	font-family: 'Poppins';
 	
 }
+.feedback-btn {
+	width: 90%;
+	border-radius: 12px;
+	padding: 30px 14px;
+	text-align: left;
+	margin-left: 20px;
+	font-size: 22px;
+	border: 1px solid #F4C211;
+	text-align: center;
+
+}
+.feedback-btn,
 .ads-btn {
 	width: 90%;
 	border-radius: 12px;
@@ -1701,11 +1739,12 @@ input[type="date"] {
 	text-align: left;
 	margin-left: 20px;
 	font-size: 22px;
-	background-color: #fff;
+	background-color: transparent;
 	border: 1px solid #F4C211;
 	text-align: center;
 	color: #000;
 }
+.feedback-btn img,
 .ads-btn img {
 	width: 20px;
 	margin-left: 14px;
@@ -4251,9 +4290,7 @@ tle p {
 	margin-right: auto;
 
 }
-.login-settings-area {
-	
-}
+
 .login-settings-tabs {
 	width: 80%;
 	/*background-color: #EFF6FE;*/
@@ -4297,6 +4334,14 @@ tle p {
 	padding: 20px;
 	margin-bottom: 20px;
 }
+.professional-heading {
+	/*background-color: #EFF6FE;*/
+	background-color: #F7FBFF;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px 20px;
+}
 .send-settings-tabs {
 	width: 90%;
 	margin-left: auto;
@@ -4305,7 +4350,7 @@ tle p {
 }
 .profession-settings-tabs h5 {
 	width: 90%;
-	/*background-color: #EFF6FE;*/
+	background-color: #F7FBFF;
 	font-family: 'kod';
 	font-size: 20px;
 	border-radius: 4px;
@@ -4490,9 +4535,9 @@ input:checked + .slider:before {
 	margin-right: auto;
 }
 .work-steps {
-		width: 100%;
+	width: 100%;
 	padding: 2px;
-	}
+}
 	.work-steps img {
 	display: block;
 	width: 60%;
@@ -5071,10 +5116,9 @@ textarea {
 	margin-right: auto;
 }
 .feedback-section a {
-	text-align: center;
+	width: 40px;
 	margin-top: 40px;
 	color: #ddd;
-	border-radius: 8px;
 	
 }
 .footer-section h4 {
@@ -5827,11 +5871,7 @@ textarea {
 	width: 100%;
 		margin-top: 40px;
 }
-	.login-project {
-		width: 100%;
-		background-color: #fff;
-
-	}
+	
 	.web-log {
 		width: 50%;
 
@@ -6300,7 +6340,7 @@ textarea {
 	.work-steps-tab {
 	width: 80%;
 	margin-right: auto;
-		margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 	.create-work-steps {
 	display: flex;
@@ -6311,13 +6351,12 @@ textarea {
 	margin-bottom: 40px;
 }
 .work-steps {
-		width: 100%;
-	padding: 2px;
-	}
+	width: 40%;
+}
 	.work-steps img {
 	display: block;
 	width: 40%;
-	height: 100%;
+	height: 80px;
 	object-fit: contain;
 	margin-left: auto;
 	margin-right: auto;
@@ -6882,8 +6921,22 @@ textarea {
 	background-color: #fff;
 }
 	/*----web login session---*/
+	.login-settings-area {
+	margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+}
+	.signup-settings-area {
+		width: 60%;
+		margin-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
+}
+	.all-social-btn {
+	width: 60%;
+}
+	
 	.log-space {
-		
 	background-color: #D2E4F9;
 	}
 	.login-log-space {
@@ -6909,6 +6962,7 @@ textarea {
 	.login-project {
 		width: 50%;
 		background-color: #fff;
+		margin-top: 0;
 	}
 	.login-options {
 	width: 55%;
@@ -6969,7 +7023,7 @@ textarea {
 	margin-right: auto;
 }
 	.social-btn {
-		width: 80%;
+		width: 40%;
 	}
 .social-btn img {
 	width: 100%;
@@ -7241,6 +7295,7 @@ textarea {
 .add-cd-info {
 	margin-top: 0;
 }
+	
 	/*----chat room session---*/
 
 .chat-n-title {
@@ -7317,8 +7372,47 @@ textarea {
 		width: 100px;
 	}
 	/*---setting session-----*/
+	.steps-tab {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+}
 	.settings-tabs {
-		width: 40%;
+		width: 80%;
+	}
+	.form-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.settings-tabs h5 {
+		margin-bottom: 20px
+	}
+	.post-steps {
+		width: 80%;
+	}
+	.about-you-exp p {
+		width: 350px;
+		margin-left: 0;
+	}
+	.exp-report-tab {
+		width: 350px;
+		margin-left: 0;
+	}
+	.post-arrow-btn-left {
+	width: 48%;
+}
+	.language-tab {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.profession-settings-tabs h5 {
+		width: 80%;
+	}
+	
+	.new-post {
+		width: 350px;
 	}
 	.find-me p{
 		width: 50%;
@@ -7569,21 +7663,26 @@ outline: none;
 	margin-top: 13px;
 }
 /*----footer session----*/
-	.footer-partition {
-		display: flex;
-		width: 100%;
-	}
 .footer {
 	width: 100%;
 	background-color: #EFF6FE;
 	margin-top: 40px;
 }
 	.footer-container {
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
+	.footer-partition {
+		width: 50%;
+	}
+.footer-partition-2 {
+	width: 50%;
 
+	margin-left: auto;
+	margin-right: auto;
+	
+	}
 .footer-section {
 	flex: none;
 	margin-right: auto;
@@ -7592,8 +7691,13 @@ outline: none;
 		width: 50%;
 		margin-top: 30px;
 	}
+	.feedback-btn {
+		padding: 20px 14px;
+	}
 	.footer-bottom {
+		width: 100%;
 		color: rgba(0, 0, 0, 0.5);
+		display: inline-block;
 	}
 	/*----contact us session----*/
 	.contact-tabs {
