@@ -5083,7 +5083,6 @@ textarea {
 	background-color: #fff;
 }
 .footer {
-	position: absolute;
     padding: 2px 0;
 	color: #000;
 }
@@ -6267,8 +6266,7 @@ textarea {
 	}
 /*----footer session---*/
 	.footer {
-		position: absolute;
-		bottom: 0;
+
 }
 .feedback-section {
 	margin-top: 40px;
