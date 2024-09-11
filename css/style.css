@@ -941,7 +941,7 @@ input[type="date"] {
     padding: 5px 20px;
     background-color: azure;
     color: white;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .logo h1 {
@@ -1876,10 +1876,11 @@ input[type="date"] {
 }
 
 .search-icon {
-    padding: 10px;
+    padding: 8px;
     font-size: 15px;
     background-color: #EFF6FE;
     border-right: 1px solid #ccc;
+	display: inline-block;
 }
 	.search-icon img {
 		width: 20px;
@@ -1982,9 +1983,11 @@ input[type="date"] {
 .left-closed-btn img{
     width: 25px;
 }
-	.footer {
+.footer {
 		z-index: 50;
-	}
+        position: relative; /* Allow footer to flow normally */
+    }
+
 /*.search-container {
 	width: 92%;
     align-items: center;
@@ -2443,7 +2446,6 @@ input[type="date"] {
    	left: 10px;
     font-size: 30px;
     color: #000;
-    background-color: #fff;
     padding: 10px;
     border-radius: 8%;
     cursor: pointer;
@@ -5608,9 +5610,9 @@ textarea {
 	margin-right: 6px;
 	margin-top: 10px;
 }
-.body-pattern {
+	.body-pattern {
 	display: flex;
-	width: 100%;
+	width: 350px;
 	height: 100%;
 	/*background-color: #D2E4F9;*/
 	position: absolute;
@@ -6265,12 +6267,15 @@ textarea {
 		margin-right: auto;
 	}
 /*----footer session---*/
-	.footer {
+.footer {
+		z-index: 50;
+        position: relative; /* Allow footer to flow normally */
+    }
 
-}
 .feedback-section {
 	margin-top: 40px;
 }
+
 	
 }
 @media only screen and (min-width: 992px) {
@@ -7378,9 +7383,7 @@ textarea {
 		margin-right: auto;
 		margin-top: 40px;
 }
-	.settings-tabs {
-		width: 350px;
-	}
+
 	.form-container {
 		margin-left: auto;
 		margin-right: auto;
