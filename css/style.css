@@ -61,14 +61,16 @@ html, body {
 	margin-right: auto;
 }
 .intro-bottom-area {
-		width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	}
 .about-steps {
-	width: 90%;
-	position: absolute;
+	width: 80%;
 	bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	
 	}
 .about-steps p {
 	width: 100%;
@@ -114,7 +116,7 @@ html, body {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 47%;
+	margin-top: 57%;
 
 	
 	
@@ -198,7 +200,7 @@ html, body {
 	margin-top: 2px;
 }
 .post-arrow-btn-left {
-	width: 50%;
+	width: 70%;
 	margin-top: 40px;
 	color: #F4C211;
 }
@@ -221,6 +223,7 @@ html, body {
 	
 }
 /*-------Login session ----*/
+
 .tab-container {
     display: flex;
     justify-content: space-between;
@@ -282,7 +285,8 @@ html, body {
 .tab-button:hover {
     background-color: #E1ECF9;
 }
-.dailyhelp-pic {
+.dailyhelp-pic,
+.dailyhelp-intro-pic {
 	display: none;
 }
 .logo-pics {
@@ -373,10 +377,7 @@ a:link {
 	background-color: #D2E4F9;
 }
 /*---web login page--*/
-.log-space {
-	width: 100%;
-	height: 100%;
-}
+
 .login-project{
 	width: 100%;
 	height: 100%;
@@ -401,11 +402,6 @@ a:link {
 	color: rgba(0, 0, 0, 0.3);
 }
 .login-info {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.web-log {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -535,7 +531,11 @@ span.psw {
 	margin-top: 10px;
 }
 .footer-social-btn {
-	width: 60%;
+	width: 50%;
+	height: 70%;
+	padding: 2px 4px;;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 4px;
 }
 .footer-social-btn img {
 	width: 100%;
@@ -1369,7 +1369,7 @@ input[type="date"] {
 			text-align: center;
 		}
 		.headline {
-			width: 90%;
+			width: 70%;
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
@@ -1381,15 +1381,16 @@ input[type="date"] {
 			color: #294F89;
 			display: inline-block;
 			margin-top: 20px;
-			font-size: 17px;
-			font-family: 'poppins';		}
+			font-size: 13px;
+			font-family: 'poppins';		
+}
 		.home-caption-n-txt h5 {
 			width: 85%;
 			font-family: 'poppin';	
 			color: #294F89;
 			display: inline-block;
 			margin-top: 4px;
-			font-size: 15px;
+			font-size: 13px;
 	margin-left: auto;
 	margin-right: auto;
 		}
@@ -1732,7 +1733,7 @@ input[type="date"] {
 	background-color: transparent;
 	border: 1px solid #F4C211;
 	text-align: center;
-	color: #000;
+	color: #fff;
 }
 .feedback-white-btn img,
 .feedback-btn img,
@@ -2215,11 +2216,10 @@ input[type="date"] {
 	}
 .helper-tab {
 	display: flex;
-
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid #F4C211;
-	padding: 2px;
+	background-color: #F4C211;
+	padding: 3px 12px;
 	border-radius: 8px;
 	object-fit: cover;
 	margin-bottom: 10px;
@@ -2242,7 +2242,7 @@ input[type="date"] {
 
 }
 .help-pic {
-	width: 22%;
+	width: 12%;
 	margin-top: 14px;
 	margin-right: 15px;
 	margin-left: 6px;
@@ -2251,7 +2251,7 @@ input[type="date"] {
 	width: 100%;
 	float: left;
 	background-color: #fff;
-	border-radius: 8px;
+	border-radius: 4px;
 	margin-right: 20px;
 
 }
@@ -2260,7 +2260,7 @@ input[type="date"] {
 }
 .forward-pic img {
 	width: 10px;
-	margin-top: 30px;
+	margin-top: 20px;
 	float: right;
 	margin-right: 10px;
 }
@@ -2481,7 +2481,9 @@ input[type="date"] {
 	margin-bottom: 20px;
 	height: 70px;
 }
-
+.add-caption {
+	color: #fff;
+}
 .captions {
 	margin-top: 40px;
 }
@@ -3605,7 +3607,7 @@ float: left;
 }
 /*----Payment option session---*/
 .mobile-body {
-
+		margin-bottom: 80px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -4105,10 +4107,9 @@ tle p {
 }
 .add-helper-tab-title h5{
 	width: 90%;
-	font-size: 22px;
-	line-height: 60px;
+	font-size: 17px;
+	line-height: 40px;
 	color: rgba(0, 0, 0, 0.7);
-	margin-top: 10px;
 	font-weight: 400;
 }
 .cc-num {
@@ -4710,6 +4711,7 @@ input[type="number" i] {
 }
 .steps-tab {
 	position: relative;
+	top: 20px;
 }
 .edu-exp {
 	width: 90%;
@@ -5071,12 +5073,12 @@ textarea {
 }
 
 /*----footer session---*/
-.footer-area {
-	background-color: #fff;
-}
+
 .footer {
     padding: 2px 0;
 	color: #000;
+	/*background-color: #EFF6FE;*/
+	background-color: #08597C;
 }
 
 .footer-container {
@@ -5085,7 +5087,7 @@ textarea {
     justify-content: space-around;
     max-width: 1200px;
     margin: 20px auto;
-	border-top: 1px solid #F1F1F1;
+	border-top: 1px solid rgba(57, 151, 191, 0.3);
 	margin-top: 80px;
 }
 
@@ -5112,6 +5114,9 @@ textarea {
 	width: 40px;
 	margin-top: 40px;
 	color: #ddd;
+}
+.feedback-btn {
+	color: #fff;
 	
 }
 .footer-section h4 {
@@ -5129,7 +5134,6 @@ textarea {
 	margin-right: auto;
 	font-size: 22px;
 	background-color: #fff;
-
 	text-align: center;
 	color: #000;
 }
@@ -5155,10 +5159,7 @@ textarea {
     font-size: 14px;
     line-height: 1.5;
 	text-align: center;
-	color: #294F89;
-}
-.footer-section a {
-	color: #3997BF
+	color: #fff;
 }
 .footer-section a:hover {
     color: #ddd;
@@ -5189,7 +5190,6 @@ textarea {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
 
 }
@@ -5261,7 +5261,6 @@ textarea {
     background-color: #ffffff;
     padding: 0;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
 	margin-left: auto;
@@ -5329,6 +5328,9 @@ textarea {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.sub-mobile {
+		display: none;
+	}
+	.nav-mob-signin {
 		display: none;
 	}
 	/*---payment option-----*/
@@ -5456,10 +5458,6 @@ textarea {
 		width: 95%;
 		background-color: #F7FBFF;
 	}
-	.settings-tabs {
-		width: 450px;
-		margin-left: 20px;
-	}
 			/*---Desktop Slides-----*/
 	
 		.sub {
@@ -5512,9 +5510,30 @@ textarea {
 			.home-caption-n-txt h1 {
 				margin-top: 40px;
 			}
-			.slideshow-container {
-			margin-left: 20%;
+
+	/*---slide container----*/
+	.slideshow-container {
+    position: relative;
+    max-width: 100%;
+	margin-top: 40px;
+		float: left;
 }
+.slideshow-container img {
+    position: relative;
+    max-width: 80%;
+	margin-left: 20px;
+}
+
+	.headline {
+		width: 100%;
+		margin-top: 50px;
+	}
+	.home-caption-n-txt h1 {
+		font-size: 30px;
+	}
+	.home-caption-n-txt h5 {
+		font-size: 28px;
+	}
 /*----End------------*/
 	
 	.pic-content-mob h2 {
@@ -5828,7 +5847,7 @@ textarea {
 		width: 20%;
 	}
 .empty-btn {
-	background-color: #D2E4F9;
+	/*background-color: #D2E4F9;*/
 }
 	.web-intro-page {
 		width: 60%;
@@ -5863,44 +5882,68 @@ textarea {
 	background-color: #fff;
 }
 	/*----web login session---*/
-.
-.log-space {
-	background-color: #D2E4F9;
-	height: 100%;
-	height: 100%;
-	}
-	
-.dailyhelp-pic {
-	display: none;
-	width: 20%;
+.login-log-space {
+		width: 60%;
+
 	margin-left: auto;
 	margin-right: auto;
-
-	
+	}
+.log-space {
+	/*background-color: #D2E4F9;*/
+	height: 100%;
+	}
+	.logo-pics {
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
+	.dailyhelp-intro-pic {
+	display: none;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.dailyhelp-intro-pic img {
+	width: 100%;
+	margin-top: 40px;
+}
+.dailyhelp-pic {
+	display: none;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .dailyhelp-pic img{
 	width: 100%;
 		margin-top: 40px;
 }
-	
-	.web-log {
-		width: 50%;
-
+	.login-project {
+		margin-top: 40%;
 	}
+
 	.intro-pics {
-		width: 100%;
+		width: 60%;
+		margin-top: 40px;
 		
 	}
 	.intro-pics img {
 		width: 100%;
+		margin-top: 0;
 		
 	}
-	.about-steps {
+	.about-steps p{
 		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+	.about-steps {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	.small-circle {
+	margin-top: 32%;
+}
 	.social-icon-area {
 		width: 100%;
 		margin-left: auto;
@@ -5931,7 +5974,7 @@ textarea {
 	margin-right: auto;
 }
 .social-btn {
-		width: 80%;
+		width: 50%;
 	}
 .social-btn img {
 	width: 100%;
@@ -6283,8 +6326,21 @@ textarea {
 .feedback-section {
 	margin-top: 40px;
 }
+/*--bitcoin session---*/
+	.payment-container {
+		width: 60%;
+	}
+	.btc-area {
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	/*-----Feedback session-----*/
+.feedback-container {
+    margin-left: 40px;
 
-	
+}	
 }
 @media only screen and (min-width: 992px) {
 	/*---index session----*/
@@ -6529,7 +6585,7 @@ textarea {
 		}
 		.dashboard-space {
 			display: flex;
-			width: 60%;
+			width: 70%;
 			margin-left: auto;
 			margin-right: auto;
 			object-fit: contain;
@@ -6547,6 +6603,7 @@ textarea {
 }
 
 	/*---Desktop Slides-----*/
+	
 	.slideshow-container {
     position: relative;
     max-width: 100%;
@@ -6557,14 +6614,12 @@ textarea {
     position: relative;
     max-width: 100%;
 	margin-left: 20px;
-
-	
 }
 
 .mySlides {
     display: none;
     position: relative;
-	width: 500px;
+	width: 400px;
 }
 
 .fade {
@@ -6597,12 +6652,11 @@ textarea {
 			text-align: center;
 		}
 		.headline {
-			width: 60%;
+			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 		}
 		.home-caption-n-txt h1 {
-			width: 400px;
 			text-align: center;
 			display: inline-block;
 			margin-top: 100px;
@@ -6878,7 +6932,7 @@ textarea {
 		width: 20%;
 	}
 .empty-btn {
-	background-color: #D2E4F9;
+	/*background-color: #D2E4F9;*/
 }
 	.web-intro-page {
 		width: 60%;
@@ -6908,11 +6962,11 @@ textarea {
 	height: 100%;
 }
 	.intro-bottom-area {
-		width: 50%;
+		width: 70%;
 		bottom: 0;
 	}
 	.about-steps {
-		width: 25%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 60px;
@@ -6924,7 +6978,6 @@ textarea {
 	}
 	
 	.small-circle-1 {
-
 	background-color: #636060;
 }
 .small-circle-2 {
@@ -6935,6 +6988,7 @@ textarea {
 }
 	/*----web login session---*/
 	.login-settings-area {
+		width: 70%;
 	margin-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
@@ -6950,7 +7004,8 @@ textarea {
 }
 	
 	.log-space {
-	background-color: #D2E4F9;
+	/*background-color: #D2E4F9;*/
+		height: 100%;
 	}
 	.login-log-space {
 		display: flex;
@@ -6961,19 +7016,30 @@ textarea {
 	width: 80%;
 	margin-left: auto;
 }
+	.dailyhelp-intro-pic {
+		display: block;
+		width: 50%;
+		
+	}
+	.dailyhelp-intro-pic img{
+	width: 100%;
+	margin-left: auto;
+		margin-right: auto;
+	object-fit: contain;
+}
 .dailyhelp-pic {
 	display: block;
 	width: 50%;
-	height: 80%;
-	margin: auto;
+	margin-top: 40px;
+	
 }
 .dailyhelp-pic img{
 	width: 100%;
-	height: 100%;
 	object-fit: contain;
 }
 	.login-project {
 		width: 50%;
+		height: auto;
 		background-color: #fff;
 		margin-top: 0;
 	}
@@ -6985,15 +7051,14 @@ textarea {
 	.logo-pics {
 		width: 8%;
 		margin-left: auto;
-
 	}
+	.web-log {
+		height: 100%;
+	}
+	
 	.logo-pics img{
 		width: 100%;
 		margin-left: auto;
-	}
-	.web-log {
-		width: 100%;
-		height: 80%;
 	}
 	
 	.signup-space {
@@ -7035,6 +7100,9 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 }
+	.footer-social-btn {
+	width: 40%;
+}
 	.social-btn {
 		width: 40%;
 	}
@@ -7069,6 +7137,36 @@ textarea {
 		margin-left: auto;
 		margin-right: auto;
 		float: none;
+	}
+	.help-pic {
+		width: 6%;
+	}
+	.help-pic img {
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	border-radius: 4px;
+	margin-right: 20px;
+}
+	.current-cd {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.current-cd p {
+		width: 60%;
+		padding: 10px 10px;
+	}
+	.pay-details {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.helper-tab {
+		width: 100%;
+	}
+	.add-helper-tab-title h5 {
+		line-height: 60px;
 	}
 	.desktop-payment-session p{
 	width: 60%;
@@ -7110,7 +7208,7 @@ textarea {
 	margin-bottom: 20px;
 }
 		.cd-diff-option {
-			width: 40%;
+			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 0;
@@ -7400,7 +7498,6 @@ textarea {
 		background-color: #F7FBFF;
 	}
 	.settings-tabs {
-		width: 450px;
 		margin-left: 20px;
 	}
 	.settings-tabs h5 {
@@ -7417,7 +7514,7 @@ textarea {
 		margin-left: 0;
 	}
 	.post-arrow-btn-left {
-	width: 48%;
+	width: 58%;
 }
 	.language-tab {
 		width: 80%;
@@ -7686,7 +7783,6 @@ outline: none;
 /*----footer session----*/
 .footer {
 	width: 100%;
-	background-color: #EFF6FE;
 	margin-top: 40px;
 
 }
@@ -7718,7 +7814,7 @@ outline: none;
 	}
 	.footer-bottom {
 		width: 100%;
-		color: rgba(0, 0, 0, 0.5);
+		color: #6FB4D2;
 		display: inline-block;
 	}
 	/*----contact us session----*/
@@ -7751,3 +7847,18 @@ outline: none;
 	.contact-address {
 		width: 100%;
 	}
+	/*--bitcoin session---*/
+	.payment-container {
+		width: 60%;
+	}
+	.btc-area {
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	/*-----Feedback session-----*/
+.feedback-container {
+    margin-left: 40px;
+
+}
