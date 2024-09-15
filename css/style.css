@@ -489,7 +489,6 @@ span.psw {
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-
 	}
 .continue-text {
 	width: 40%;
@@ -498,12 +497,12 @@ span.psw {
 	margin-top: 20px;
 
 }
-	.continue-text p{
+.continue-text p{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-		font-family: 'Roboto';
-		color: rgba(0, 0, 0, 0.3);
+	font-family: 'Roboto';
+	color: rgba(0, 0, 0, 0.3);
 }
 .social-group {
 	display: flex;
@@ -516,7 +515,6 @@ span.psw {
 	background-color: #EFF6FE;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 .all-social-btn {
 	width: 60%;
@@ -531,20 +529,18 @@ span.psw {
 	margin-top: 10px;
 }
 .footer-social-btn {
-	width: 50%;
-	height: 70%;
-	padding: 2px 4px;;
-	background-color: rgba(255, 255, 255, 0.7);
-	border-radius: 4px;
+	height: 100%;
 }
 .footer-social-btn img {
-	width: 100%;
+	width: 50%;
+	padding: 4px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 4px;
 }
 	.social-btn {
 		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
-		line-height: 2px;
 	}
 .social-btn img {
 	width: 100%;
@@ -1721,6 +1717,10 @@ input[type="date"] {
 	font-family: 'Poppins';
 	
 }
+.feedback-white-btn {
+	color: rgba(255, 255, 255, 0.7);
+}
+
 .feedback-white-btn,
 .feedback-btn,
 .ads-btn {
@@ -5113,17 +5113,16 @@ textarea {
 .feedback-section a {
 	width: 40px;
 	margin-top: 40px;
-	color: #ddd;
 }
 .feedback-btn {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.7);
 	
 }
 .footer-section h4 {
     font-size: 18px;
     margin-bottom: 10px;
 	margin-top: 0;
-	color: #E45959;
+	color: rgba(255, 255, 255, 0.7);
 	font-family: 'kod';
 }
 .footer-ads-btn {
@@ -6327,9 +6326,11 @@ textarea {
 	}
 /*----footer session---*/
 .footer {
-		z-index: 50;
-        position: relative; /* Allow footer to flow normally */
-    }
+	width: 100%;
+	margin-top: 40px;
+	position: relative;
+	bottom: 0;
+}
 
 .feedback-section {
 	margin-top: 40px;
@@ -7795,7 +7796,8 @@ outline: none;
 .footer {
 	width: 100%;
 	margin-top: 40px;
-
+	position: relative;
+	bottom: 0;
 }
 	.footer-container {
 	width: 100%;
@@ -7807,7 +7809,6 @@ outline: none;
 	}
 .footer-partition-2 {
 	width: 50%;
-
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -7816,6 +7817,12 @@ outline: none;
 	flex: none;
 	margin-right: auto;
 }
+	.footer-icons {
+		width: 30%;
+	}
+	.footer-social-btn {
+		width: 100%;
+	}
 	.feedback-section {
 		width: 50%;
 		margin-top: 30px;
