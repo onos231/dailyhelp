@@ -2242,8 +2242,8 @@ input[type="date"] {
 
 }
 .help-pic {
-	width: 12%;
-	margin-top: 14px;
+	width: 15%;
+	margin-top: 4px;
 	margin-right: 15px;
 	margin-left: 6px;
 }
@@ -2259,8 +2259,8 @@ input[type="date"] {
 	width: 10%;
 }
 .forward-pic img {
-	width: 10px;
-	margin-top: 20px;
+	width: 6px;
+	margin-top: 15px;
 	float: right;
 	margin-right: 10px;
 }
@@ -5124,6 +5124,7 @@ textarea {
     margin-bottom: 10px;
 	margin-top: 0;
 	color: #E45959;
+	font-family: 'kod';
 }
 .footer-ads-btn {
 	width: 100%;
@@ -5784,6 +5785,13 @@ textarea {
 	float: left;
 	font-size: 15px;
 }
+/*--subscription plan---*/
+	.help-pic {
+		width: 10%;
+	}
+	.forward-pic img {
+		margin-top: 15px;
+	}
 	/*----advert session---*/
 	.feedback-white-btn {
 		color: #fff;
@@ -7139,7 +7147,7 @@ textarea {
 		float: none;
 	}
 	.help-pic {
-		width: 6%;
+		width: 8%;
 	}
 	.help-pic img {
 	width: 100%;
@@ -7148,6 +7156,9 @@ textarea {
 	border-radius: 4px;
 	margin-right: 20px;
 }
+	.forward-pic img {
+		margin-top: 25px;
+	}
 	.current-cd {
 		display: flex;
 		margin-left: auto;
