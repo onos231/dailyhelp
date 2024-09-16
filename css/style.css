@@ -1733,7 +1733,6 @@ input[type="date"] {
 	background-color: transparent;
 	border: 1px solid #F4C211;
 	text-align: center;
-	color: #fff;
 }
 .feedback-white-btn img,
 .feedback-btn img,
@@ -1819,12 +1818,12 @@ input[type="date"] {
 	object-fit: contain;
 	background-color: #E45959;
 }
-.search-icon {
+/*.search-icon {
     padding: 10px;
     font-size: 15px;
     background-color: #EFF6FE;
     border-right: 1px solid #ccc;
-}
+}*/
 .search-result-icon img{
 	width: 20px;
 }
@@ -1866,6 +1865,15 @@ input[type="date"] {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.top-search-icon {
+	padding: 8px;
+    font-size: 15px;
+	
+}
+.top-search-icon img {
+	margin-top: 34px;
+		width: 18px;
+	}
 
 .search-icon {
     padding: 8px;
@@ -1976,7 +1984,6 @@ input[type="date"] {
     width: 25px;
 }
 .footer {
-		z-index: 50;
         position: relative; /* Allow footer to flow normally */
     }
 
