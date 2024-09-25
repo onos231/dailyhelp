@@ -200,7 +200,7 @@ html, body {
 	margin-top: 2px;
 }
 .post-arrow-btn-left {
-	width: 70%;
+	width: 50%;
 	margin-top: 40px;
 	color: #F4C211;
 }
@@ -2993,6 +2993,7 @@ float: left;
 }
 .diff-languages {
 	display: flex;
+	margin-bottom: 10px;
 }
 .language-tab {
 	max-width: 90%;
@@ -4301,6 +4302,10 @@ tle p {
 	margin-right: auto;
 	padding: 20px;
 	margin-bottom: 20px;
+}
+.login-settings-tabs h5 {
+	font-size: 20px;
+	font-family: 'kod';
 }
 .settings-area {
 		flex: none;

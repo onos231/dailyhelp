@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  
 </head>
 	
 <body>
@@ -21,35 +21,41 @@ html, body {
   height: 100%;
 }
 </style>
+	<!--<div class="helper-login-info">
+				<div class="num-verify-text">
+				<p>Your number will be verified to know it’s you</p></div>
+     </div>-->
 	
     <!--login Section-->
-	
 
 		<div class="login-log-space">
 		<div class="dailyhelp-pic">
 		<img src="img/login/2.png" alt="Project 2" />
 		</div>
-			
-			
 	<div class="login-project">
 
 			<!--<div class="login-options">
 			<a href="helper-login.html"><div class="helper-btn">Helper</div></a>
 				<a href=""><div class="client-btn">Client</div></a></div>-->
 	  
-
+	  <form>
 	  <div class="login-settings-area">
-		  <p class="Login"><a href="helper-create-account-1.html">Signup</a></p>
+		  <p class="Login"><a href="helper-login.html">Login</a></p>
 		  <div class="logo-pics">
-			<a href="intro-1.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
+			<img src="img/logo/logo.png" alt="Project 2" />
 			</div>
 		  <div class="login-title">
 			<h4>Login As</h4>
 			</div>
 		  <div class="tab-container">
         <button class="helper-tab-button-1">Helper</button>
-   <button class="helper-tab-button-2" onclick="document.location='login.html'">Client</button>
+        <button class="helper-tab-button-2" onclick="document.location='login.html'">Client</button>
     </div>
+		  
+		  <div class="helper-login-info">
+				<div class="num-verify-text">
+				<p>Your number will be verified to know it’s you</p></div>
+     </div>
 	<div class="login-settings-tabs">
 						
 	  <!-- Form Container -->
@@ -57,15 +63,13 @@ html, body {
         <form action="#" method="POST">
 
 
-            <!-- Email -->
-            <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="Mobile number or email" required>
-            </div>
+           
+            
 
-            <!-- Password -->
+            <!-- Phone Number -->
             <div class="form-group">
               
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone no. +234" required>
             </div>
 
             
@@ -123,12 +127,11 @@ html, body {
 			
 				</div>
 		  
-		
+				</form>
 			
 
 	</div>
 		</div>
 
-	
+	<script src="js/script.js"></script>
 </body>
-	
