@@ -1,199 +1,321 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--Head Section-->
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <title>DailyHelp</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-	
 <body>
-	<style>
-html, body {
-  height: 100%;
-}
-</style>
+<style>
+
+
+	</style>
+	<div class="main-search-page">
+	<div class="search-container"><a href="index.html">
+            <img src="img/into/b-arrow-gold.png" alt="Project 2" /></a>
+            <div class="search-bar">
+                <a href="no-result-found.html"><span class="search-icon"><img src="img/find-helper/search.png" alt="Project 2" /></span></a>
+                <input type="text" id="search-input" placeholder="Search..." autofocus>
+                <button id="clear-search">&times;</button>
+            </div>
+            <span class="hamburger-menu"><div class="hamburgner" id="hamburger">
+            &#9776;
+        </div></span>
+        </div>
 	
-    <!--login Section-->
-	<div class="log-space">
-		
-		<div class="login-log-space">
-		<div class="dailyhelp-pic">
-		<img src="img/login/2.png" alt="Project 2" />
+	<nav id="menu" class="menu">
+		<div class="close-btn" id="close-btn">&times;</div>
+		<div class="hamburger-logo-pic" style="display: none;">
+	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
 		</div>
-	<div class="login-project">
 		
-		<div class="web-log">
-			<p class="Login"><a href="login.html">Login</a></p>
-		<div class="logo-pics">
-			<img src="img/logo/logo.png" alt="Project 2" />
-			</div>
-		<div class="signup-space">
-			<div>
-			<h4>Signup As</h4>
-			</div>
-		
-
-				  
-			
-			
-			
-
-<div class="body-pattern">
-	
-			
-	
-			<div class="create-resume">
-		<div class="container">
-	<div class="login-options">
-			<a href="helper-create-account-1.html"><div class="helper-btn">Helper</div></a>
-				<a href="client.html"><div class="client-btn">Client</div></a></div>
-		<div class="create-acc-pic">
-		<input type="file" id="fileInput" accept="image/*" capture="camera" style="display:none;"></div>
-		
-		
-		<div class="login-area">
-		   
-	<div class="settings-tabs">
-		   
-	
-			<div class="regn-heading">
-				<h5>Other Information &#42;</h5>
-			</div>
-	
-			
-		<!-- Form Container -->
-    <div class="form-container">
-        <form action="#" method="POST">
-
-            
-
-            <!-- Sex -->
-            <div class="form-group">
-            
-                <select id="sex" name="sex" required>
-                    <option value="" disabled selected>Sex</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-
-            <!-- Date of Birth -->
-            <div class="form-group">
-                <div class="dob-container">
-                    <input type="date" id="dob" name="dob" required>
-                  <!--<img src="img/edit-profile/calendar.png" alt="Project 2" />-->
-                </div>
-            </div>
-
-            <!-- Phone Number -->
-            <div class="form-group">
-              
-                <input type="tel" id="phone" name="phone" placeholder="Phone no. +234" required>
-            </div>
-
-            <!-- State -->
-            <div class="form-group">
-                <select id="state" name="state" required>
-                    <option value="" disabled selected>Select State</option>
-                    <option value="Abia">Abia</option>
-                    <option value="Adamawa">Adamawa</option>
-                    <option value="Akwa Ibom">Akwa Ibom</option>
-                    <option value="Anambra">Anambra</option>
-                    <option value="Bauchi">Bauchi</option>
-                    <option value="Bayelsa">Bayelsa</option>
-                    <option value="Benue">Benue</option>
-                    <option value="Borno">Borno</option>
-                    <option value="Cross River">Cross River</option>
-                    <option value="Delta">Delta</option>
-                    <option value="Ebonyi">Ebonyi</option>
-                    <option value="Edo">Edo</option>
-                    <option value="Ekiti">Ekiti</option>
-                    <option value="Enugu">Enugu</option>
-                    <option value="FCT">FCT</option>
-                    <option value="Gombe">Gombe</option>
-                    <option value="Imo">Imo</option>
-                    <option value="Jigawa">Jigawa</option>
-                    <option value="Kaduna">Kaduna</option>
-                    <option value="Kano">Kano</option>
-                    <option value="Katsina">Katsina</option>
-                    <option value="Kebbi">Kebbi</option>
-                    <option value="Kogi">Kogi</option>
-                    <option value="Kwara">Kwara</option>
-                    <option value="Lagos">Lagos</option>
-                    <option value="Nasarawa">Nasarawa</option>
-                    <option value="Niger">Niger</option>
-                    <option value="Ogun">Ogun</option>
-                    <option value="Ondo">Ondo</option>
-                    <option value="Osun">Osun</option>
-                    <option value="Oyo">Oyo</option>
-                    <option value="Plateau">Plateau</option>
-                    <option value="Rivers">Rivers</option>
-                    <option value="Sokoto">Sokoto</option>
-                    <option value="Taraba">Taraba</option>
-                    <option value="Yobe">Yobe</option>
-                    <option value="Zamfara">Zamfara</option>
-                </select>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="form-group submit-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+		<div class="hamburger-caption-list">
+        <ul>
+			<li><div class="mob-sub-heads">
+				 <a href="index.html">
+	  <img src="img/hamburger-icons/Home.png" alt="Project 2" />Home
 				
+				</a></div></li>
+			<li><div class="mob-sub-heads">
+				 <a href="ads.html">
+	  <img src="img/hamburger-icons/adverts.png" alt="Project 2" />Adverts
+				
+				</a></div></li>
+            <li><div class="mob-sub-heads">
+				 <a href="dashboard.html">
+	  <img src="img/hamburger-icons/dh-services.png" alt="Project 2" />DH Services
+				
+				</a></div></li>
+			<li><div class="mob-sub-heads">
+				 <a href="about-us.html">
+	  <img src="img/hamburger-icons/about-us.png" alt="Project 2" />About Us
+				
+				</a></div></li>
+			<li><div class="mob-sub-heads">
+				 <a href="settings.html">
+	  <img src="img/hamburger-icons/settings.png" alt="Project 2" />Settings
+				
+				</a></div></li>
+			<li><div class="mob-sub-heads">
+				 <a href="FAQ.html">
+	  <img src="img/hamburger-icons/faq.png" alt="Project 2" />FAQs
+				
+				</a></div></li>
+			<li><div class="mob-sub-heads">
+				 <a href="contact-us.html">
+	  <img src="img/hamburger-icons/contact-us.png" alt="Project 2" />Contact Us
+				
+				</a></div></li>
+        </ul>
+		<p>Membership</p>
+		<ul class="mini-menu">
+			<li><a href="manage-payments.html"><div class="sub-heads">
+				 Manage Payments
+				
+				</div></a></li>
+			<li><a href="subscription-plan.html"><div class="sub-heads">
+				 Subscription Plans
+				
+			</div></a></li>
+        </ul>
+		
+		
+		<ul><li>
+				<div class="logout-tabs">
+					<a href="welcome.html">
+		<div class="helper-prof-2">
+				<div class="prof-pic-log-out">
+					<div>
+	  <img src="img/profile/logout.png" alt="Project 2" /></div><div class="log-prof-title">Log out</div>
+				</div>
+		</div>
 					
-				
-						
+		</a>
+		</div>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    <div class="main-search-page">
+        
+
+        <div id="suggestions-container" class="suggestions">
+            <ul id="suggestions-list"></ul>
+        </div>
+
+        <div id="search-results" class="search-results">
+            <!-- Search results will appear here -->
+        </div>
+
+        <div id="filter-bar" class="filter-bar">
+            <div class="blue-f-btn">
+			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
+            <select id="dropdown-1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+			<select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
 		
+        </div>
+		<!-----Filter session---->
+		<div class="mobile-filter">
+		<div id="dropdown-content" class="dropdown-content">
 			
-		
-		
-			</div>
-			</div>
-			<div class="post-steps">
+			<p>Reset All</p>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Profession</div>
+				 <div id="sub1" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Cleaner</label>
+                    <label><input type="checkbox"> Driver</label>
+                    <label><input type="checkbox"> Plumber</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Gardener</label>
+					<label><input type="checkbox"> Caregiver</label>
+					 </div>
+						</div>
+              
 				
-			
-				<div class="grid-container">
-  <div class="grid-item"> 
-	  <div class="post-arrow-btn-left">
-			<a href="create-account-1.html"><img src="img/into/b-arrow-gold.png" alt="Project 2" />Back</a>
-			</div></div>
-  <div class="grid-item">
-	  <div class="middle-btn">
-			
-						</div></div>
-  <div class="grid-item">
-	  <div class="middle-btn">
-			
-						</div></div>
-					</div>  
-</div>	
-			
-					</div>  
-</div>
+            </div>
+            <div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
+				 <div id="sub2" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> Hourly</label>
+                    <label><input type="checkbox"> Part Time</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> All Day</label>
+					<label><input type="checkbox"> Full Time</label>
+					 </div>
+						</div>
+              
 				
-			</div>
+            </div>
 			
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
+				 <div id="sub3" class="sub-options">
+					 <div class="sub-options-left">
+                    <label><input type="checkbox"> English</label>
+                    <label><input type="checkbox"> Hausa</label>
+					<label><input type="checkbox"> Others</label>
+					 </div>
+				<div class="sub-options-right">
+					<label><input type="checkbox"> Igbo</label>
+					<label><input type="checkbox"> Yoruba</label>
+					 </div>
+						</div>
+              
+				
+            </div>
+			<!-- Add more sub-filters as needed -->
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
+            </div>
+			<div class="sub-filter">
+                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
+            </div>
+			
+            <div class="filter-area">
+        
+			<div class="apply-btn" style="display: none;">
+			<a href="helpers-search-result.html">Apply</a>
 			</div>
-				</div>
+				
+				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1); color: rgba(0, 0, 0, 0.3);">
+			<a href="helpers-search-result.html" style="color: rgba(0, 0, 0, 0.3)">Apply</a>
+			</div>
+			</div>
+			</div>
+			</div>
+    </div>
+	</div>
 	
-			
-			
-				
-				</div>
-			
-	</div>
-	</div>
+	<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Icons -->
+			<div class="footer-partition">
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <div class="footer-icons">
+				<div class="grid-container">
+					
+  <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
+			</div></div>
+ <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
+			</div></div>
+					<div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
+			</div></div>
+	
+  
+					</div>  
+					</div>
+            </div>
 
+            <!-- Give Us Feedback -->
+            <div class="feedback-section">
+               <a href="ads.html"><button class="feedback-white-btn">Give us feedback<img src="img/into/f-arrow-gold.png"></button></a>
+            </div>
+			</div>
+            <!-- Contact Details -->
+			<div class="footer-partition-2">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+               <p>Email: support@dailyhelp.com</p>
+                <p>Phone: +23470 1234 5678</p>
+                <p>Address: 4 ali Street, Benin City, Nigeria</p>
+            </div>
 
+			
+			
+            <!-- Privacy Policy -->
+            <div class="footer-section">
+                <h4>Privacy Policy</h4>
+                <a href="#">Read our Privacy Policy</a>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourSiteName<sup>&reg;</sup>. All rights reserved.</p>
+        </div>
+		</div>
+    </footer>
+    <script src="js/script.js"></script>
+	
+	
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-input');
+    const suggestionsContainer = document.getElementById('suggestions-container');
+    const suggestionsList = document.getElementById('suggestions-list');
+    const filterBar = document.getElementById('filter-bar');
+    const searchResults = document.getElementById('search-results');
+    const clearSearchBtn = document.getElementById('clear-search');
+
+    // Mock suggestions (Replace with actual data)
+    const suggestions = ["Developer", "Designer", "Project Manager", "Product Owner", "Data Scientist"];
+
+    searchInput.addEventListener('input', function () {
+        const query = searchInput.value.toLowerCase();
+        suggestionsList.innerHTML = '';
+        if (query) {
+            const filteredSuggestions = suggestions.filter(item => item.toLowerCase().includes(query));
+            filteredSuggestions.forEach(suggestion => {
+                const li = document.createElement('li');
+                li.textContent = suggestion;
+                li.addEventListener('click', function () {
+                    searchInput.value = suggestion;
+                    suggestionsContainer.style.display = 'none';
+                    displaySearchResults(suggestion);
+                });
+                suggestionsList.appendChild(li);
+            });
+            suggestionsContainer.style.display = 'block';
+            clearSearchBtn.style.display = 'block'; // Show clear button when typing
+        } else {
+            suggestionsContainer.style.display = 'none';
+            clearSearchBtn.style.display = 'none'; // Hide clear button if no text
+        }
+    });
+
+    clearSearchBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        clearSearchBtn.style.display = 'none'; // Hide clear button when cleared
+        suggestionsContainer.style.display = 'none';
+        searchInput.focus();
+    });
+
+    function displaySearchResults(query) {
+        searchResults.innerHTML = `<h2>Search Results for "${query}"</h2><p>Results...</p>`;
+        filterBar.style.display = 'flex';
+    }
+
+    // Focus on search input when the page loads
+    searchInput.focus();
+});
+
+	</script>
 </body>
+</html>

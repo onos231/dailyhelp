@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page with Filter and Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .search-bar input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-result {
+      flex-grow: 1;
+      padding: 20px;
+      display: none;
+    }
+
+    .search-result.active {
+      display: block;
+    }
+
+    .filter-bar {
+      display: none;
+      padding: 15px;
+      background-color: #ddd;
+      text-align: center;
+      position: fixed;
+      bottom: 50px;
+      width: 100%;
+      left: 0;
+    }
+
+    .filter-bar.active {
+      display: block;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Type to search...">
+      <button onclick="performSearch()">Search</button>
+    </div>
+
+    <!-- Search Results -->
+    <div class="search-result" id="search-result">
+      <!-- This is where the search result content will be displayed -->
+      <h3>Search Results:</h3>
+      <p id="result-text">No results yet...</p>
+    </div>
+
+    <!-- Filter Bar (Initially Hidden) -->
+    <div class="filter-bar" id="filter-bar">
+      <span>Filter Options</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Skilled Job Platform. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function performSearch() {
+      const searchInput = document.getElementById('search-input').value;
+      const searchResult = document.getElementById('search-result');
+      const filterBar = document.getElementById('filter-bar');
+      const resultText = document.getElementById('result-text');
+
+      if (searchInput.trim()) {
+        // Display the search result
+        searchResult.classList.add('active');
+        resultText.textContent = `Results for "${searchInput}"`;
+
+        // Show the filter bar
+        filterBar.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

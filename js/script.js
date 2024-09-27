@@ -209,84 +209,86 @@ function toggleFAQ(button) {
 
 // Search bar session
 
-document.getElementById('search-icon').addEventListener('click', function() {
-    var searchBar = document.getElementById('search-bar');
-    var searchIcon = document.getElementById('search-icon');
-    
-    // Hide the initial search icon
-    searchIcon.style.display = 'none';
-    
-    // Display the search bar
-    searchBar.style.display = 'flex';
-});
+//document.getElementById('search-icon').addEventListener('click', function() {
+//    var searchBar = document.getElementById('search-bar');
+//    var searchIcon = document.getElementById('search-icon');
+//    
+//    // Hide the initial search icon
+//    searchIcon.style.display = 'none';
+//    
+//    // Display the search bar
+//    searchBar.style.display = 'flex';
+//});
 
 
 
 // search bar result
 
 // Open the full search page
-function openSearchPage() {
-    document.getElementById('searchPage').style.display = 'block';
-}
+//function openSearchPage() {
+   // document.getElementById('searchPage').style.display = 'block';
+//}
 
 // Show suggestions based on user input
-function showSuggestions() {
-    var suggestions = document.getElementById('suggestions');
-    var input = document.getElementById('fullSearchInput').value.toLowerCase();
-    var deleteBtn = document.getElementById('deleteBtn');
+//function showSuggestions() {
+//    var suggestions = document.getElementById('suggestions');
+//    var input = document.getElementById('fullSearchInput').value.toLowerCase();
+//    var deleteBtn = document.getElementById('deleteBtn');
 
     // Mock data for suggestions
-    var existingData = ['Web Development', 'Design', 'Marketing', 'SEO', 'Graphic Design'];
-
-    suggestions.innerHTML = '';
-    deleteBtn.style.display = input ? 'inline-block' : 'none';
-
-    if (input) {
-        existingData.forEach(function(item) {
-            if (item.toLowerCase().includes(input)) {
-                var suggestion = document.createElement('div');
-                suggestion.textContent = item;
-                suggestion.onclick = function() {
-                    selectSuggestion(item);
-                };
-                suggestions.appendChild(suggestion);
-            }
-        });
-    }
-}
-
-// Select a suggestion and show results
-function selectSuggestion(item) {
-    var input = document.getElementById('fullSearchInput');
-    var suggestions = document.getElementById('suggestions');
-    var results = document.getElementById('results');
-    var filterBar = document.getElementById('filterBar');
-
-    input.value = item;
-    suggestions.style.display = 'none';
-    results.innerHTML = '<h3>Results for "' + item + '"</h3><p>Here are your search results...</p>';
+//    var existingData = ['Web Development', 'Design', 'Marketing', 'SEO', 'Graphic Design'];
+//
+//    suggestions.innerHTML = '';
+//    deleteBtn.style.display = input ? 'inline-block' : 'none';
+//
+//    if (input) {
+//        existingData.forEach(function(item) {
+//            if (item.toLowerCase().includes(input)) {
+//                var suggestion = document.createElement('div');
+//                suggestion.textContent = item;
+//                suggestion.onclick = function() {
+//                    selectSuggestion(item);
+//                };
+//                suggestions.appendChild(suggestion);
+//            }
+//        });
+//    }
+//}
+//
+//// Select a suggestion and show results
+//function selectSuggestion(item) {
+//    var input = document.getElementById('fullSearchInput');
+//    var suggestions = document.getElementById('suggestions');
+//    var results = document.getElementById('results');
+//    var filterBar = document.getElementById('filterBar');
+//
+//    input.value = item;
+//    suggestions.style.display = 'none';
+//    results.innerHTML = '<h3>Results for "' + item + '"</h3><p>Here are your search results...</p>';
 
     // Show the filter bar
-    filterBar.style.display = 'flex';
-}
+//    filterBar.style.display = 'flex';
+//}
 // Focus on search input when the page loads
-    searchInput.focus();
+//    searchInput.focus();
 
 // Clear the search input
-function clearSearch() {
-    var input = document.getElementById('fullSearchInput');
-    var suggestions = document.getElementById('suggestions');
-    var deleteBtn = document.getElementById('deleteBtn');
-    var results = document.getElementById('results');
-    var filterBar = document.getElementById('filterBar');
+//function clearSearch() {
+//    var input = document.getElementById('fullSearchInput');
+//    var suggestions = document.getElementById('suggestions');
+//    var deleteBtn = document.getElementById('deleteBtn');
+//    var results = document.getElementById('results');
+//    var filterBar = document.getElementById('filterBar');
+//
+//    input.value = '';
+//    suggestions.style.display = 'block';
+//    deleteBtn.style.display = 'none';
+//    results.innerHTML = '';
+//    filterBar.style.display = 'none';
+//    showSuggestions();
+//}
 
-    input.value = '';
-    suggestions.style.display = 'block';
-    deleteBtn.style.display = 'none';
-    results.innerHTML = '';
-    filterBar.style.display = 'none';
-    showSuggestions();
-}
+
 
 // payment options
 
