@@ -1252,7 +1252,7 @@ input[type="date"] {
 .dashboard-pic {
 			display: flex;
 			color: rgba(0, 0, 0, 0.3);
-		font-size: 13px;
+		font-size: 15px;
 	}
 		.dashboard-pic img{
 			width: 5%;
