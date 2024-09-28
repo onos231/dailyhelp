@@ -1250,6 +1250,7 @@ input[type="date"] {
 			width: 100%;
 		}
 .dashboard-pic {
+	width: 100%;
 			display: flex;
 			color: rgba(0, 0, 0, 0.5);
 		font-size: 15px;
