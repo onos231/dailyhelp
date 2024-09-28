@@ -243,9 +243,9 @@ You</div></div></div>
 	<div class="settings-tabs">
 		   
 	
-			<div class="regn-heading">
+	
 				<h5>Personal Information &#42;</h5>
-			</div>
+			
 	
 			
 		<div class="new-post">
@@ -256,21 +256,24 @@ You</div></div></div>
 
             <!-- Full Name -->
             <div class="form-group">
-               
-                <input type="text" id="fullName" name="fullName" placeholder="Full Names" required>
+				<label for="name" class="label-title">Full names
+               <span class="mandatory">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Blessing Okafor" required>
             </div>
 
             <!-- Email -->
             <div class="form-group">
-              
-                <input type="email" id="email" name="email" placeholder="Email" required>
+              <label for="name" class="label-title">Email
+               <span class="mandatory">*</span></label>
+                <input type="email" id="email" name="email" placeholder="blessing.okafor@email.com" required>
             </div>
 
            <!-- Sex -->
             <div class="form-group">
-            
+            <label for="name" class="label-title">Gender
+               <span class="mandatory">*</span></label>
                 <select id="sex" name="sex" required>
-                    <option value="" disabled selected>Sex</option>
+                    <option value="" disabled selected>Female</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
@@ -280,8 +283,9 @@ You</div></div></div>
 
             <!-- Phone Number -->
             <div class="form-group">
-              
-                <input type="tel" id="phone" name="phone" placeholder="Phone No. +234" required>
+              <label for="name" class="label-title">Phone number
+               <span class="mandatory">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+23470 1234 5678" required>
             </div>
 
         </form>

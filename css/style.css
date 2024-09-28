@@ -823,9 +823,11 @@ input[type="date"] {
 /*-----index session----*/
 .sub-mobile {
 			width: 85%;
-			padding: 14px;
+			padding: 10px;
 			border-radius: 20px;
-			background-color: #E45959;
+			/*background-color: #E45959;*/
+			border: 1px solid #ccc;
+			color: #000;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 10px;
@@ -1251,11 +1253,39 @@ input[type="date"] {
 			display: flex;
 			color: #fff;
 		}
+.dashboard-pic {
+		width: 50%;
+			display: flex;
+			color: rgba(0, 0, 0, 0.5);
+		font-size: 17px;
+	}
 		.dashboard-pic img{
-			width: 15%;
+			width: 13%;
 			margin-right: 4px;
 			object-fit: contain;
 		}
+.post-dashboard-pic{
+	padding: 6px;
+}
+.post-dashboard-pic img {
+		width: 15px;
+		color: rgba(0, 0, 0, 0.5);
+		font-size: 17px;
+	margin-left: 6px;
+	margin-right: 4px;
+	float: left;
+}
+.post-space {
+	width: 25%;
+	background-color: #E45959;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 15px;
+	float: right;
+	margin-right: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
 		.dashboard-space {
 			display: flex;
 			width: 95%;
@@ -3498,6 +3528,9 @@ float: left;
 	margin-left: 10px;
 	margin-top: 6px;
 	}
+.profile-posted-jobs {
+	margin-top: 40px;
+}
 .horizontal-field {
 	width: 93%;
     display: flex;
@@ -3506,12 +3539,21 @@ float: left;
     padding: 10px 10px;
     background-color: #fff;
     border-radius: 4px;
-	margin-top: 20px;
-}
 
+}
+.online-with-status img {
+	width: 8px;
+}
+.posted-tabs {
+	background-color: #fff;
+	padding: 4px;
+}
 .pic-with-name {
     display: flex;
     align-items: center;
+	font-family: 'poppin';
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.9);
 }
 .pic-with-name img{
     width: 10px;
@@ -4739,8 +4781,19 @@ input:checked + .slider:before {
 }
 
 /*----Create resume session---*/
+.label-title {
+	font-size: 13px;
+	font-family: 'poppin';
+	color: rgba(0, 0, 0, 0.5);
+	margin-top: 12px;
+	margin-bottom: 4px;
+	font-weight: 100;
+}
+.mandatory {
+	color: #E45959;
+}
 .about-you-exp p{
-	font-family: 'Poppins';
+	font-family: 'Poppin';
 	font-size: 13px;
 	padding: 6px 4px;
 	color: rgba(0, 0, 0, 0.7);
@@ -5310,7 +5363,6 @@ textarea {
     padding: 2px 0;
 	color: #000;
 	/*background-color: #EFF6FE;*/
-	background-color: #08597C;
 }
 
 .footer-container {
