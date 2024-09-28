@@ -1,341 +1,118 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--Head Section-->
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <title>DailyHelp</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
-  <link rel="stylesheet" href="css/style.css">
- 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Field with Add/Edit and Suggestions</title>
+  <style>
+    
+  </style>
 </head>
-	
 <body>
-	<style>
-		
-	</style>
-	
-    <!--login Section-->
-	
-	<div class="web-home">
-		
 
-   <header>
-	   <div class="main-web-nav">
-		   <div class="main">
-		   <div class="main-heading">
-			 <div class="sub-heads">
-				 <a href="dashboard.html">
-		
-	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DHS
-				
-				 </a>
-		
-				 <a href="about-us.html">
-			
-	  <img src="img/index/about.png" alt="Project 2" />About Us
-			
-				 </a>
-		
-				 <a href="settings.html">
-				
-	  <img src="img/index/settings.png" alt="Project 2" />Settings
-			
-				 </a>
-	
-				 <a href="manage-payments.html">
-			
-	  <img src="img/index/payments.png" alt="Project 2" />Payments
-				 </a>
-		
-				 <a href="FAQ.html">
-	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
-				 </a>
-	
-				 <a href="contact-us.html">
-	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
-				 </a>
-		</div>
-		</div>
-	
-		   </div>
-		    <div class="logo-part">
-		<div class="app-logo">
-			<a href="test.html">	
-	  <img src="img/logo/logo.png" alt="Project 2" />
-				</a></div>
-			   		   <div class="login-signup">
-		<button class="home-login">
-			<a href="login.html">Login</a>
-				</button>
-		
-		<button class="home-signup">			
-			<a href="create-resume-1.html">Signup</a>
-				</button>
-				   </div>
-				   </div>
-		 <div class="sub">
-		   <div class="web-dashboard">
-				
-	
-				<div class="dashboard-space">
-				
-					
-		
-			<div class="dashboard-space">
-				
-					<div class="dashboard-pic" id="searchInput" onclick="openSearchPage()" >
-	  <img src="img/index/find.png" alt="Project 2" /><h5>Find Helper </h5>
-						</div>
-				</div>
-			
-		   </div>  
-		   
-		   
-		   
-	</div>
-	   
-		   </div></div>
-	   
-	   <div class="nav-index-mob">
-		 <div class="profile-pic">
-	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-		   <div class="logo">
-            <div class="home-logo-pic">
-	   <a href="search.html"><img src="img/logo/logo.png" alt="Project 2" class="logo" /></a>
-		 </div></div>
-		     <div class="notification-container" id="notification-container">
-			<a href="inbox.html"><div class="notify-box">
-		<div class="notify-msg">
-			<img src="img/index/msg.png">
-			<div class="notify-num">4</div>
-			</div></div></a></div>
-		  <div class="msg-alert">
-			
-        <div class="hamburger" id="hamburger">
-            &#9776;
-        </div></div>
-    </div>
-
-    <nav id="menu" class="menu">
-		<div class="close-btn" id="close-btn">&times;</div>
-		<div class="hamburger-logo-pic" style="display: none;">
-	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
-		</div>
-		
-		<div class="hamburger-caption-list">
-        <ul>
-			<li><div class="mob-sub-heads">
-				 <a href="index.html">
-	  <img src="img/hamburger-icons/Home.png" alt="Project 2" />Home
-				
-				</a></div></li>
-			<li><div class="mob-sub-heads">
-				 <a href="ads.html">
-	  <img src="img/hamburger-icons/adverts.png" alt="Project 2" />Adverts
-				
-				</a></div></li>
-            <li><div class="mob-sub-heads">
-				 <a href="dashboard.html">
-	  <img src="img/hamburger-icons/dh-services.png" alt="Project 2" />DH Services
-				
-				</a></div></li>
-			<li><div class="mob-sub-heads">
-				 <a href="about-us.html">
-	  <img src="img/hamburger-icons/about-us.png" alt="Project 2" />About Us
-				
-				</a></div></li>
-			<li><div class="mob-sub-heads">
-				 <a href="settings.html">
-	  <img src="img/hamburger-icons/settings.png" alt="Project 2" />Settings
-				
-				</a></div></li>
-			<li><div class="mob-sub-heads">
-				 <a href="FAQ.html">
-	  <img src="img/hamburger-icons/faq.png" alt="Project 2" />FAQs
-				
-				</a></div></li>
-			<li><div class="mob-sub-heads">
-				 <a href="contact-us.html">
-	  <img src="img/hamburger-icons/contact-us.png" alt="Project 2" />Contact Us
-				
-				</a></div></li>
-        </ul>
-		<p>Membership</p>
-		<ul class="mini-menu">
-			<li><a href="manage-payments.html"><div class="sub-heads">
-				 Manage Payments
-				
-				</div></a></li>
-			<li><a href="subscription-plan.html"><div class="sub-heads">
-				 Subscription Plans
-				
-			</div></a></li>
-        </ul>
-		
-		
-		<ul><li>
-				<div class="logout-tabs">
-					<a href="welcome.html">
-		<div class="helper-prof-2">
-				<div class="prof-pic-log-out">
-					<div>
-	  <img src="img/profile/logout.png" alt="Project 2" /></div><div class="log-prof-title">Log out</div>
-				</div>
-		</div>
-					
-		</a>
-		</div>
-				</li>
-			</ul>
-		</div>
-    </nav>
-	   
+  <div class="modal-container">
 	  
-		   
-	 
-	  </header>
-		
-		
-		
-		<div class="">
-		<a href="search.html"><div class="sub-mobile">
-		<div class="web-dashboard">
-				<div class="dashboard-space">
+	  <label for="name" class="label-title">Language
+               <span class="mandatory">*</span></label>
+    <input type="text" id="displayField" class="text-field" placeholder="Click Add to enter text" readonly>
+    <button id="iconButton" class="icon-button"><img src="img/ads/add-ads.png" alt="Project 2" /></button>
+  </div>
 
-			<div class="dashboard-space">
-				
-					<div class="dashboard-pic">
-	  <img src="img/index/search.png" alt="Project 2" />Find Helper
-						</div>
-				</div>
-		   </div>    
-	</div>
-			
-			</div></a>
-		<a href="personal-info.html"><div class="post-space">
-				
-					<div class="post-dashboard-pic">
-	  <img src="img/index/post.png" alt="Project 2" /><h5>Post Job</h5>
-						</div>
-			</div></a>
-		</div>
-		
-		
-		 <div class="desktop-intro">
-		<div class="workers-container">
-			
-		<div class="workers-caption">
-			<h3>Hi Maro&#44;</h3>
-			<p>We have the right skilled workers for you</p></div>
-			<div class="workers-pic"><img src="img/into/worker3.png"></div>
-		</div>
-		
-		
-		<div class="recent-search">
-		<p>Your last three results</p>
-			<div class="all-recent-result">
-			<div class="recent-result">
-				<a href="search.html"><span class="search-result-icon" id="search-icon"><img src="img/index/search.png"></span>Cleaner</a>
-				</div>
-			<div class="recent-result">
-				<a href="search.html"><span class="search-result-icon" id="search-icon"><img src="img/index/search.png"></span>Electrician</a>
-				</div>
-			<div class="recent-result"><a href="search.html"><span class="search-result-icon" id="search-icon"><img src="img/index/search.png"> painter</span></a></div>
-			<div class="recent-result"><a href="search.html"><span class="search-result-icon" id="search-icon"><img src="img/index/search.png"> View All</span></a></div>
-				</div>
-		</div>
-		</div>
-		
-		<div class="work-steps-tab">
-			<h1>How it works</h1>
-			<div class="create-work-steps">
-			<div class="work-steps"><div><img src="img/process/find.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title">Find  Helper</div></div></div>
-				<div class="work-resume-line"><div><img src="img/process/line.png" alt="Project 2" /></div></div>
-				<div class="work-steps"><div><img src="img/process/match.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title"> Match</div></div></div>
-				<div class="work-resume-line"><div><img src="img/process/line.png" alt="Project 2" /></div></div>
-			<div class="work-steps"><div><img src="img/process/call.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title">Call & 
-Chat</div></div></div>
-			<div class="work-resume-line"><div><img src="img/process/line.png" alt="Project 2" /></div></div>
-			<div class="work-steps"><div><img src="img/process/get-help.png" alt="Project 2" /></div><div>
-			<div class="work-resume-title">Get Help</div></div></div>
-				</div>
-	</div>
-		<div class="ads-text">
-			<p>Would you like to showcase your <span class="skill-text">handwork</span> or <span class="skill-text">skills</span><span>?</span></p>
-			<a href="ads.html"><button class="ads-btn">Place your ads here<img src="img/into/f-arrow-gold.png"></button></a>
-		</div>
-		
-		
-		
-		</div>
+  <!-- Modal for adding/editing text -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Change language</h4>
+        <button class="close-btn" id="closeBtn">&times;</button>
+      </div>
+      <input type="text" id="modalInput" placeholder="Type text..." autocomplete="off">
+      <ul class="suggestions" id="suggestionsList"></ul>
+      <div class="modal-buttons">
+        <button class="save-btn" id="saveBtn">Save</button>
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
 
-	<!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Social Icons -->
-			<div class="footer-partition">
-            <div class="footer-section">
-                <h4>Connect with Us</h4>
-                <div class="footer-icons">
-				<div class="grid-container">
-					
-  <div class="grid-item"> 
-	  <div class="footer-social-btn">
-			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
-			</div></div>
- <div class="grid-item"> 
-	  <div class="footer-social-btn">
-			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
-			</div></div>
-					<div class="grid-item"> 
-	  <div class="footer-social-btn">
-			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
-			</div></div>
-	
-  
-					</div>  
-					</div>
-            </div>
+  <script>
+    const displayField = document.getElementById('displayField');
+    const iconButton = document.getElementById('iconButton');
+    const modal = document.getElementById('modal');
+    const modalInput = document.getElementById('modalInput');
+    const closeBtn = document.getElementById('closeBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const suggestionsList = document.getElementById('suggestionsList');
 
-            <!-- Give Us Feedback -->
-            <div class="feedback-section">
-               <a href="feedback.html"><button class="feedback-btn">Give us feedback<img src="img/into/f-arrow-gold.png"></button></a>
-            </div>
-			</div>
-            <!-- Contact Details -->
-			<div class="footer-partition-2">
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-               <p>Email: support@dailyhelp.com</p>
-                <p>Phone: +23470 1234 5678</p>
-                <p>Address: 4 ali Street, Benin City, Nigeria</p>
-            </div>
+    const suggestions = ['Developer', 'Designer', 'Data Scientist', 'Product Manager', 'Software Engineer'];
 
-			
-			
-            <!-- Privacy Policy -->
-            <div class="footer-section">
-                <h4>Privacy Policy</h4>
-                <a href="#">Read our Privacy Policy</a>
-            </div>
-        </div>
+    let isEditing = false;
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 YourSiteName<sup>&reg;</sup>. All rights reserved.</p>
-        </div>
-		</div>
-    </footer>
-	
+    // Open modal
+    function openModal() {
+      modal.style.display = 'flex';
+      modalInput.value = displayField.value; // Fill modal input with current field value
+      showSuggestions('');
+      modalInput.focus();
+    }
 
-<script src="js/script.js"></script>
+    // Close modal
+    function closeModal() {
+      modal.style.display = 'none';
+      modalInput.value = '';
+      suggestionsList.style.display = 'none';
+    }
+
+    // Show suggestions when typing
+    function showSuggestions(input) {
+      const filteredSuggestions = suggestions.filter(suggestion => 
+        suggestion.toLowerCase().includes(input.toLowerCase())
+      );
+      
+      suggestionsList.innerHTML = '';
+      filteredSuggestions.forEach(suggestion => {
+        const li = document.createElement('li');
+        li.textContent = suggestion;
+        li.addEventListener('click', () => {
+          modalInput.value = suggestion;
+          suggestionsList.style.display = 'none'; // Hide suggestions after selection
+        });
+        suggestionsList.appendChild(li);
+      });
+
+      suggestionsList.style.display = filteredSuggestions.length ? 'block' : 'none';
+    }
+
+    // Add/Edit button click event
+    iconButton.addEventListener('click', openModal);
+
+    // Close button click event
+    closeBtn.addEventListener('click', closeModal);
+
+    // Save button click event
+    saveBtn.addEventListener('click', () => {
+      displayField.value = modalInput.value;
+      closeModal();
+      iconButton.textContent = '✏️'; // Change to edit icon after saving
+      isEditing = true;
+    });
+
+    // Cancel button click event
+    cancelBtn.addEventListener('click', closeModal);
+
+    // Show suggestions while typing
+    modalInput.addEventListener('input', () => {
+      showSuggestions(modalInput.value);
+    });
+
+    // Clicking outside the modal closes it
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
+
 </body>
+</html>

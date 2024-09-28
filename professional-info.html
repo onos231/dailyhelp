@@ -261,8 +261,30 @@ You</div></div></div>
 			</div>
 	
 		</div>
-		
-	<div class="language-tab">
+		<div class="modal-container">
+	  
+	  <label for="name" class="label-title">Main Skill
+               <span class="mandatory">*</span></label>
+    <input type="text" id="displayField" class="text-field" placeholder="Click Add to enter text" readonly>
+    <button id="iconButton" class="icon-button"><img src="img/ads/add-ads.png" alt="Project 2" /></button>
+  </div>
+
+  <!-- Modal for adding/editing text -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Change language</h4>
+        <button class="close-btn" id="closeBtn">&times;</button>
+      </div>
+      <input type="text" id="modalInput" placeholder="Type text..." autocomplete="off">
+      <ul class="suggestions" id="suggestionsList"></ul>
+      <div class="modal-buttons">
+        <button class="save-btn" id="saveBtn">Save</button>
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+	<!--<div class="language-tab">
 			 <label for="name" class="label-title">Main Skills
                <span class="mandatory">*</span></label>
 			<div class="main-skills-tab">
@@ -278,7 +300,7 @@ You</div></div></div>
 			</div>
 			</div>
 	
-		</div>
+		</div>-->
 			
 			<div class="language-tab">
 			 <label for="name" class="label-title">Other Skills
@@ -418,4 +440,82 @@ You</div></div></div>
     </footer>
 	
 	<script src="js/script.js"></script>
+	<script>
+    const displayField = document.getElementById('displayField');
+    const iconButton = document.getElementById('iconButton');
+    const modal = document.getElementById('modal');
+    const modalInput = document.getElementById('modalInput');
+    const closeBtn = document.getElementById('closeBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const suggestionsList = document.getElementById('suggestionsList');
+
+    const suggestions = ['Developer', 'Designer', 'Data Scientist', 'Product Manager', 'Software Engineer'];
+
+    let isEditing = false;
+
+    // Open modal
+    function openModal() {
+      modal.style.display = 'flex';
+      modalInput.value = displayField.value; // Fill modal input with current field value
+      showSuggestions('');
+      modalInput.focus();
+    }
+
+    // Close modal
+    function closeModal() {
+      modal.style.display = 'none';
+      modalInput.value = '';
+      suggestionsList.style.display = 'none';
+    }
+
+    // Show suggestions when typing
+    function showSuggestions(input) {
+      const filteredSuggestions = suggestions.filter(suggestion => 
+        suggestion.toLowerCase().includes(input.toLowerCase())
+      );
+      
+      suggestionsList.innerHTML = '';
+      filteredSuggestions.forEach(suggestion => {
+        const li = document.createElement('li');
+        li.textContent = suggestion;
+        li.addEventListener('click', () => {
+          modalInput.value = suggestion;
+          suggestionsList.style.display = 'none'; // Hide suggestions after selection
+        });
+        suggestionsList.appendChild(li);
+      });
+
+      suggestionsList.style.display = filteredSuggestions.length ? 'block' : 'none';
+    }
+
+    // Add/Edit button click event
+    iconButton.addEventListener('click', openModal);
+
+    // Close button click event
+    closeBtn.addEventListener('click', closeModal);
+
+    // Save button click event
+    saveBtn.addEventListener('click', () => {
+      displayField.value = modalInput.value;
+      closeModal();
+      iconButton.textContent = '✏️'; // Change to edit icon after saving
+      isEditing = true;
+    });
+
+    // Cancel button click event
+    cancelBtn.addEventListener('click', closeModal);
+
+    // Show suggestions while typing
+    modalInput.addEventListener('input', () => {
+      showSuggestions(modalInput.value);
+    });
+
+    // Clicking outside the modal closes it
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
 </body>
