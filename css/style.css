@@ -1249,18 +1249,13 @@ input[type="date"] {
 		.app-profile img{
 			width: 100%;
 		}
-		.dashboard-pic {
-			display: flex;
-			color: #fff;
-		}
 .dashboard-pic {
-		width: 50%;
 			display: flex;
-			color: rgba(0, 0, 0, 0.5);
-		font-size: 17px;
+			color: rgba(0, 0, 0, 0.3);
+		font-size: 13px;
 	}
 		.dashboard-pic img{
-			width: 13%;
+			width: 5%;
 			margin-right: 4px;
 			object-fit: contain;
 		}
