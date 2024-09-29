@@ -229,7 +229,7 @@ html, body {
     justify-content: space-between;
     width: calc(100% - 0px); /* 80px margin on each side */
     max-width: 100%; /* Set a max-width for better responsiveness */
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #EFF6FE
@@ -303,7 +303,7 @@ html, body {
 		margin-left: auto;
 		margin-right: auto;
 }
-h4 {
+/*h4 {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -312,7 +312,7 @@ h4 {
 	text-align: center;
 	color: rgba(0, 0, 0, 0.3);
 	font-family: 'Kodchasan';
-}
+}*/
 .login-options {
 	display: flex;
 	width: 45%;
@@ -623,7 +623,8 @@ form {
     border: transparent;
     border-radius: 5px;
     box-sizing: border-box;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	/*box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);*/
+	border: 1px solid #ccc;
 	box-sizing: border-box;
 	width: 100%;
     max-width: 100%;
@@ -637,11 +638,13 @@ form {
 .contact-form-group select,
 .form-group select {
     padding: 10px;
-    font-size: 16px;
+    font-size: 15px;
     border: transparent;
     border-radius: 5px;
     box-sizing: border-box;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+	border: 1px solid #ccc;
+	/*box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);*/
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .dob-container {
@@ -675,11 +678,10 @@ form {
 
 .submit-group button {
     padding: 10px 20px;
-    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 
@@ -3240,6 +3242,7 @@ float: left;
 .diff-languages {
 	display: flex;
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .language-tab {
 	max-width: 90%;
@@ -3247,6 +3250,7 @@ float: left;
 	font-size: 20px;
 	margin-left: 10px;
 	margin-bottom: 20px;
+	margin-top: 10px;
 }
 .language-tab p {
 	margin: 6px 0 4px;
@@ -3525,36 +3529,51 @@ float: left;
 	margin-top: 6px;
 	}
 .profile-posted-jobs {
-	margin-top: 40px;
+	margin-top: 20px;
+}
+.profile-posted-jobs h5 {
+	margin-left: 15px;
 }
 .horizontal-field {
 	width: 93%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 4px 10px;
     background-color: #fff;
     border-radius: 4px;
 
 }
 .online-with-status img {
-	width: 8px;
+	width: 6px;
 }
 .posted-tabs {
 	background-color: #fff;
 	padding: 4px;
 }
+.complete-profile,
+.salary-pic-with-name,
 .pic-with-name {
     display: flex;
     align-items: center;
 	font-family: 'poppin';
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.9);
+
 }
+.salary-pic-with-name,
+.pic-with-name {
+	margin-bottom: 4px;
+}
+.complete-profile img,
+.salary-pic-with-name img,
 .pic-with-name img{
     width: 10px;
 	margin-right: 4px;
 	margin-left: 4px;
+}
+.salary-pic-with-name {
+	margin-left: 5px;
 }
 .other-icons-n-txt {
 	width: 75%;
@@ -5041,6 +5060,7 @@ textarea {
 
 .main-skills-tab {
 	flex: none;
+	margin-top: 6px;
 }
 .skills-tab {
 	display: flex;
@@ -5051,7 +5071,7 @@ textarea {
 
 .skill {
 	padding: 4px 12px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #F7FBFF;
 	margin-right: 10px;
 	border-radius: 4px;
 	color: rgba(0, 0, 0, 0.5);
@@ -5061,6 +5081,11 @@ textarea {
 
 .personal-info-skills {
 	position: relative;
+}
+.profession-settings-tabs p{
+	margin-bottom: 40px;
+	width: 90%;
+	margin-left: 10px;
 }
 .personal-info-btn {
 	position: absolute;
@@ -5086,7 +5111,7 @@ textarea {
 }
 /*----Modal session----*/
 .text-field {
-      width: 300px;
+      width: 90%;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -5097,10 +5122,10 @@ textarea {
     }
 
     .icon-button {
-		width: 60px;
+		width: 40px;
 		height: 50px;
       position: absolute;
-      top: -10px;
+      top: -12px;
       right: 15px;
       cursor: pointer;
       background: none;
@@ -5109,7 +5134,7 @@ textarea {
       color: #007bff;
     }
 .icon-button img{
-      width: 20px;
+      width: 15px;
     }
     .icon-button:focus {
       outline: none;
@@ -5159,7 +5184,26 @@ textarea {
       align-items: center;
       margin-bottom: 15px;
     }
-
+.modal-header h4{
+    width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.3);
+	font-family: 'Kodchasan';
+    }
+h4{
+    width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.3);
+	font-family: 'Kodchasan';
+    }
     .close-btn {
 		width: 40px;
       background: none;
@@ -5173,7 +5217,7 @@ textarea {
       background-color: white;
       border: 1px solid #ccc;
       position: absolute;
-      width: 300px;
+      width: 320px;
       top: 150px;
       max-height: 100px;
       overflow-y: auto;

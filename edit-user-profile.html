@@ -241,10 +241,7 @@
 			
 			<div class="profile-area">
 		
-			<div class="num-n-edit-pic">
-				<div class="cancel-num"><a href="user-profile.html"></a></div>
-			<div class="cancel-edit-pic"><a href="user-profile.html">Save</a></div>
-			</div>	
+			
 		<div class="avatar-container">
 		<img src="img/profile/avatar-pic.png" alt="Project 2" class="avatar" id="avatar"/>
     </div>
@@ -265,57 +262,100 @@
 
             <!-- Full Name -->
             <div class="form-group">
-               
-                <input type="text" id="fullName" name="fullName" placeholder="Maor Amadaku" required>
+               <label for="name" class="label-title">Full Names
+               <span class="mandatory">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Blessing Okafor" required>
             </div>
 
             <!-- Email -->
             <div class="form-group">
-              
-                <input type="email" id="email" name="email" placeholder="maro.amadaku@gmail.com" required>
+              <label for="name" class="label-title">Email
+               <span class="mandatory">*</span></label>
+                <input type="email" id="email" name="email" placeholder="blessing.okafor@email.com" required>
             </div>
-				<!-- Sex -->
+			<!-- Date of Birth -->
             <div class="form-group">
-            
+				<label for="name" class="label-title">Date of birth
+               <span class="mandatory">*</span></label>
+                <div class="dob-container">
+                    <input type="date" id="dob" name="dob" required>
+                  <!--<img src="img/edit-profile/calendar.png" alt="Project 2" />-->
+                </div>
+            </div>
+				<!-- Gender -->
+            <div class="form-group">
+            <label for="name" class="label-title">Gender
+               <span class="mandatory">*</span></label>
                 <select id="sex" name="sex" required>
-                    <option value="" disabled selected>Male</option>
+                    <option value="" disabled selected>Select</option>
+					<option value="female">Male</option>
                     <option value="female">Female</option>
                 </select>
             </div>
-            <!-- Phone Number -->
+			<!-- Religion -->
             <div class="form-group">
-              
-                <input type="tel" id="phone" name="phone" placeholder="Phone Number +234" required>
+            <label for="name" class="label-title">Religion
+               <span class="mandatory">*</span></label>
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Select religion</option>
+					<option value="female">Christian</option>
+                    <option value="female">Muslim</option>
+					<option value="female">Other</option>
+                </select>
             </div>
-<!-- Profession -->
-            <div class="form-group">
-                <select id="state" name="profession" required>
-					<option value="cleaner">Cleaner</option>                    
-                    <option value="driver">Driver</option>
-                    <option value="caregiver">Caregiver</option>
-                    <option value="gardener">Gardener</option>
-                    <option value="elect">Electrician</option>
-                    <option value="plumber">Plumber</option>
-                    
+			<!-- marital ststus -->
+			<div class="form-group">
+            <label for="name" class="label-title">Marital Status
+               <span class="mandatory">*</span></label>
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="female">Single</option>
+					 <option value="female">Married</option>
                 </select>
             </div>
 			
-			<!-- Experience -->
+            <!-- Phone Number -->
             <div class="form-group">
-                <select id="experience" name="experience" required>
-                    <option value="twoToFive">2 - 5 Years</option>
-					<option value="noExp">No Experience</option>
-                    <option value="zeroToOne">0 - 1 Year</option>
-                    <option value="fiveToTen">5 - 10 Years</option>
-                    <option value="tenAbove">10 Years and above</option>
-                    
-                </select>
+              <label for="name" class="label-title">Phone number
+               <span class="mandatory">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+23470 1234 5678" required>
             </div>
+<!-- Profession -->
+            <div class="modal-container">
+	  
+	  <label for="name" class="label-title">Main Skill or ability
+               <span class="mandatory">*</span></label>
+    <input type="text" id="displayField" class="text-field" placeholder="Click Add to enter profession or skill" readonly>
+    <button id="iconButton" class="icon-button"><img src="img/ads/add-ads.png" alt="Project 2" /></button>
+  </div>
+
+  <!-- Modal for adding/editing text -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Change language</h4>
+        <button class="close-btn" id="closeBtn">&times;</button>
+      </div>
+      <input type="text" id="modalInput" placeholder="Type text..." autocomplete="off">
+      <ul class="suggestions" id="suggestionsList"></ul>
+      <div class="modal-buttons">
+        <button class="save-btn" id="saveBtn">Save</button>
+        <button class="cancel-btn" id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+			
+			
 
         </form>
+			
     </div>
 
 		</div>
+					<!-- Submit Button -->
+            <div class="form-group submit-group">
+                <button type="submit" onclick="document.location='index.html'">Save</button>
+            </div>
 				</div>
 			</div>
 			</div>
