@@ -261,7 +261,7 @@ You</div></div></div>
   <div class="modal" id="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h4>Change language</h4>
+        <h4>Add your profession</h4>
         <button class="close-btn" id="closeBtn">&times;</button>
       </div>
       <input type="text" id="modalInput" placeholder="Type text..." autocomplete="off">
@@ -279,9 +279,11 @@ You</div></div></div>
                <span class="mandatory">*</span></label>
 			<div class="main-skills-tab">
 			<div class="skills-tab">
-			<div class="skill">Full Time</div>
-				<div class="skill">Part Time</div>
-				<div class="skill">Temporary</div>
+			<div class="button-container">
+    <button class="btn" id="btn1">Full Time</button>
+    <button class="btn" id="btn2">Part Time</button>
+    <button class="btn" id="btn3">Temporary</button>
+  </div>
 			</div>
 				
 			</div>
@@ -292,16 +294,18 @@ You</div></div></div>
 			 <label for="name" class="label-title">Language
                <span class="mandatory">*</span></label>
 			<div class="diff-languages">
-			<div class="skill">English</div>
-				<div class="skill">Igbo</div>
-				<div class="skill">Hausa</div>
-				<div class="skill">Yoruba</div>
+			<div class="button-container">
+    <button class="btn" id="btn1">English</button>
+    <button class="btn" id="btn2">Igbo</button>
+    <button class="btn" id="btn3">Yoruba</button>
+  </div>
 			</div>
-		<div class="diff-languages">
-				<div class="skill">Other</div>
-			</div>
+		<div class="button-container">
+    <button class="btn" id="btn3">Hausa</button>
+  </div>
 	
 		</div>
+		
 			<div class="language-tab">	
 			
 				<label for="name" class="label-title">Salary Offer
@@ -504,6 +508,16 @@ You</div></div></div>
       if (event.target === modal) {
         closeModal();
       }
+    });
+  </script>
+	
+	<script>
+    const buttons = document.querySelectorAll('.btn');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('selected');
+      });
     });
   </script>
 </body>

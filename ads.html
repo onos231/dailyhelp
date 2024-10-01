@@ -1,137 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--Head Section-->
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
-  <title>DailyHelp</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-	
 <body>
-	<style>
-		body{
+<style>
+	body{
 			background-color: #000;
 		}
-	</style>
-	
-    <!--login Section-->
-	
-	<div class="ads-project">
-		
-<header>
-	   <div class="main-web-nav">
-		   <div class="main">
-		   <div class="main-heading">
-			 <div class="sub-heads">
-				 <a href="dashboard.html">
-		
-	  <img src="img/index/dailyhelp-services.png" alt="Project 2" />DHS
-				
-				 </a>
-		
-				 <a href="about-us.html">
-			
-	  <img src="img/index/about.png" alt="Project 2" />About Us
-			
-				 </a>
-		
-				 <a href="settings.html">
-				
-	  <img src="img/index/settings.png" alt="Project 2" />Settings
-			
-				 </a>
-	
-				 <a href="manage-payments.html">
-			
-	  <img src="img/index/payments.png" alt="Project 2" />Payments
-				 </a>
-		
-				 <a href="FAQ.html">
-	  <img src="img/index/FAQ.png" alt="Project 2" />FAQs
-				 </a>
-	
-				 <a href="contact-us.html">
-	  <img src="img/index/contact.png" alt="Project 2" />Contact Us
-				 </a>
-		</div>
-		</div>
-	
-		   </div>
-		    <div class="logo-part">
-		<div class="app-logo">
-			<a href="test.html">	
-	  <img src="img/logo/logo.png" alt="Project 2" />
-				</a></div>
-			   		   <div class="login-signup">
-		<button class="home-login">
-			<a href="login.html">Login</a>
-				</button>
-		
-		<button class="home-signup">			
-			<a href="create-resume-1.html">Signup</a>
-				</button>
-				   </div>
-				   </div>
-		 <div class="sub">
-		   <div class="web-dashboard">
-				
-	
-				<div class="dashboard-space">
-					<a href="dashboard.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/dashboard.png" alt="Project 2" /><h5>Dashboard </h5>
-						</div></a>
-					
-			<div class="dashboard-space">
-				<a href="personal-info.html">
-					<div class="dashboard-pic">
-	  <img src="img/index/post.png" alt="Project 2" /><h5>Post Job</h5>
-						</div></a>
-				</div>
-			<div class="dashboard-space">
-				
-					<div class="dashboard-pic" id="searchInput" onclick="openSearchPage()" >
-	  <img src="img/index/find.png" alt="Project 2" /><h5>Find Helper </h5>
-						</div>
-				</div>
-			
-		   </div>  
-		   
-		   
-		   
-	</div>
-	   
-		   </div></div>
-	   
-	   <div class="nav-index-mob">
-		 <div class="profile-pic">
-	   <a href="user-profile.html"><img src="img/index/profile.png" alt="Project 2" /></a></div>
-		   <div class="logo">
-            <div class="home-logo-pic">
-	   <a href="search.html"><img src="img/logo/logo.png" alt="Project 2" class="logo" /></a>
-		 </div></div>
-		     <div class="notification-container" id="notification-container">
-			<a href="inbox.html"><div class="notify-box">
-		<div class="notify-msg">
-			<img src="img/index/msg.png">
-			<div class="notify-num">4</div>
-			</div></div></a></div>
-		  <div class="msg-alert">
-			
-        <div class="hamburger" id="hamburger">
-            &#9776;
-        </div></div>
+</style>
+	<div class="search-area">
+	<div class="search-container">
+    <span class="back-arrow"><a href="index.html">
+            <img src="img/into/b-arrow-gold.png" alt="Project 2" /></a></span>
+    <div class="search-bar" style="flex-grow: 1; position: relative;">
+        <a href="no-result-found.html"><span class="search-icon"><img src="img/index/search.png" alt="Project 2" /></span></a>
+        <input type="text" id="search" placeholder="Search..." autocomplete="off">
+        <span class="delete-icon" id="delete-icon">&times;</span>
     </div>
-
-    <nav id="menu" class="menu">
+    <span class="hamburger-menu"><div class="hamburgner" id="hamburger">
+            &#9776;
+        </div></span>
+</div>
+<nav id="menu" class="menu">
 		<div class="close-btn" id="close-btn">&times;</div>
 		<div class="hamburger-logo-pic" style="display: none;">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
@@ -175,14 +70,14 @@
 				
 				</a></div></li>
         </ul>
-		<p>Membership</p>
+		<p>Manage Payments</p>
 		<ul class="mini-menu">
-			<li><a href="manage-payments.html"><div class="sub-heads">
-				 Manage Payments
+	   	<li><a href="subscription.html"><div class="sub-heads">
+				 Payment Options
 				
 				</div></a></li>
 			<li><a href="subscription-plan.html"><div class="sub-heads">
-				 Subscription Plans
+				 Subscription
 				
 			</div></a></li>
         </ul>
@@ -204,170 +99,158 @@
 			</ul>
 		</div>
     </nav>
-	   
-	  
-		   
-	 
-	  </header>
- 
-		<!-----Filter session---->
-		<div class="mobile-filter">
-		<div id="dropdown-content" class="dropdown-content">
-			
-			<p>Reset All</p>
-            <div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Clothing &#38; Fashion</div>
-				 <div id="sub1" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> Used</label>
-                    <label><input type="checkbox"> New</label>
-                    <label><input type="checkbox"> Cosmetics</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> Accessories</label>
-					<label><input type="checkbox"> Sport</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-            <div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Food &#40;Hospitality industry&#41;</div>
-				 <div id="sub2" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> Catering</label>
-                    <label><input type="checkbox"> Resturant</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> All Day</label>
-					<label><input type="checkbox"> Full Time</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-			
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Personasl Care Services</div>
-				 <div id="sub3" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> English</label>
-                    <label><input type="checkbox"> Hausa</label>
-					<label><input type="checkbox"> Others</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> Igbo</label>
-					<label><input type="checkbox"> Yoruba</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-			<!-- Add more sub-filters as needed -->
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
-            </div>
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
-            </div>
-			
-            <div class="filter-area">
-        
-			<div class="apply-btn" style="display: none;">
-			<a href="helpers-search-result.html">Apply</a>
-			</div>
-				
-				<div class="apply-btn" style="background-color: rgba(244, 194, 17, 0.1);">
-			<a href="helpers-search-result.html" style="color: rgba(0, 0, 0, 0.3)">Apply</a>
-			</div>
-			</div>
-			</div>
-			</div>
-		
-		
-		<!-----Search result session---->
-		
-		
-   	
-		
-		<div class="body-pattern">
-			
+<!-- Suggestions -->
+<div class="suggestions-container" id="suggestions"></div>
+
+<!-- Result Container -->
+<div class="result-container" id="result-container">
+    <!-- Search results will populate here -->
+</div>
+
+<!-- Filter Bar -->
+			<div class="footer-area">
+<div class="filter-bar-menu" id="filter-bar-menu">
+    <div class="blue-filter-btn">
+			 <img src="img/find-helper/filter-blue.png" alt="Project 2" class="filterbtn" onclick="toggleDropdown()" /></div>
 	
+            <select id="dropdown-1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+			<select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+</div>
+		
+		</div>
+	</div>
+	<!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Icons -->
+			<div class="footer-partition">
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <div class="footer-icons">
+				<div class="grid-container">
+					
+  <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
+			</div></div>
+ <div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
+			</div></div>
+					<div class="grid-item"> 
+	  <div class="footer-social-btn">
+			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
+			</div></div>
+	
+  
+					</div>  
+					</div>
+            </div>
+
+            <!-- Give Us Feedback -->
+            <div class="feedback-section">
+               <a href="ads.html"><button class="feedback-white-btn">Give us feedback<img src="img/into/f-arrow-gold.png"></button></a>
+            </div>
+			</div>
+            <!-- Contact Details -->
+			<div class="footer-partition-2">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+               <p>Email: support@dailyhelp.com</p>
+                <p>Phone: +23470 1234 5678</p>
+                <p>Address: 4 ali Street, Benin City, Nigeria</p>
+            </div>
+
 			
-		<div class="result-option-body">
-		   
-			 <div class="search-result-txt"> 
-				 
-	   
-		 <p>Search results for Adverts
-			   </p>
-				 
-				  </div>
-			<!-----web Filter session---->
-		<div class="web-filter">
-		<div id="dropdown-content" class="dropdown-content">
 			
-			<p>Reset All</p>
-            <div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilter('sub1')">Job Position</div>
-				 <div id="sub1" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> Cleaner</label>
-                    <label><input type="checkbox"> Driver</label>
-                    <label><input type="checkbox"> Plumber</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> Gardener</label>
-					<label><input type="checkbox"> Caregiver</label>
-					 </div>
-						</div>
-              
-				
+            <!-- Privacy Policy -->
+            <div class="footer-section">
+                <h4>Privacy Policy</h4>
+                <a href="#">Read our Privacy Policy</a>
             </div>
-            <div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterTwo('sub2')">Job Type</div>
-				 <div id="sub2" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> Hourly</label>
-                    <label><input type="checkbox"> Part Time</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> All Day</label>
-					<label><input type="checkbox"> Full Time</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-			
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterThree('sub3')">Language</div>
-				 <div id="sub3" class="sub-options">
-					 <div class="sub-options-left">
-                    <label><input type="checkbox"> English</label>
-                    <label><input type="checkbox"> Hausa</label>
-					<label><input type="checkbox"> Others</label>
-					 </div>
-				<div class="sub-options-right">
-					<label><input type="checkbox"> Igbo</label>
-					<label><input type="checkbox"> Yoruba</label>
-					 </div>
-						</div>
-              
-				
-            </div>
-			<!-- Add more sub-filters as needed -->
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggbleSubFilterOnline('sub2')">Last Active</div>
-            </div>
-			<div class="sub-filter">
-                <div class="sub-filter-title" onclick="toggleSubFilterOnline('sub2')">Online</div>
-            </div>
-			
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourSiteName<sup>&reg;</sup>. All rights reserved.</p>
+        </div>
+		</div>
+    </footer>
+		
+	
+    <script src="js/script.js"></script>
+	
+	<script>
+    const searchInput = document.getElementById('search');
+    const suggestions = document.getElementById('suggestions');
+    const resultContainer = document.getElementById('result-container');
+    const deleteIcon = document.getElementById('delete-icon');
+    const filterBar = document.getElementById('filter-bar-menu');
+
+    // Mock data for search suggestions
+    const data = ['Plumber', 'Electrician', 'Carpenter'];
+
+    // Mock data for search results
+    const resultData = {
+        'Plumber': {
             
-			</div>
-			</div>
-		<div class="ads-result-tabs">
+        },
+        'Electrician': {
+            
+        },
+        'Carpenter': {
+            
+        }
+    };
+
+    // Function to show suggestions as user types
+    searchInput.addEventListener('input', function () {
+        const searchValue = searchInput.value.toLowerCase();
+        suggestions.innerHTML = '';
+        if (searchValue) {
+            deleteIcon.style.display = 'inline';
+            const filteredSuggestions = data.filter(item => item.toLowerCase().includes(searchValue));
+            if (filteredSuggestions.length > 0) {
+                suggestions.style.display = 'block';
+                filteredSuggestions.forEach(suggestion => {
+                    const div = document.createElement('div');
+                    div.textContent = suggestion;
+                    div.addEventListener('click', function () {
+                        searchInput.value = suggestion;
+                        showSearchResult(suggestion);
+                        suggestions.style.display = 'none';
+                    });
+                    suggestions.appendChild(div);
+                });
+            } else {
+                suggestions.style.display = 'none';
+            }
+        } else {
+            deleteIcon.style.display = 'none';
+        }
+    });
+
+    // Show search result and filter bar
+    function showSearchResult(searchTerm) {
+        resultContainer.innerHTML = '';
+        if (resultData[searchTerm]) {
+            const result = resultData[searchTerm];
+            const resultHTML = `
+                <div class="ads-result-tabs">
 		  
 			  <div class="search-result-pics">
 			 <img src="img/ads/beauty-salon.jpg" alt="Project 2" /> 
@@ -466,76 +349,20 @@
 		</div>
 			</div>
 		</div>
-				
-				
-			
-		   </div>
-			
-			
-			
-		</div>
-		 
-				</div><a href="add-adverts.html">
-<button id="addButton" onclick="openNewPage()">
-        <img src="img/ads/add-ads.png" alt="Add">
-    </button></a>
-	
-	<!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Social Icons -->
-			<div class="footer-partition">
-            <div class="footer-section">
-                <h4>Connect with Us</h4>
-                <div class="footer-icons">
-				<div class="grid-container">
-					
-  <div class="grid-item"> 
-	  <div class="footer-social-btn">
-			<a href="index.html"><img src="img/social-media/facebook.png" alt="Project 2" /></a>
-			</div></div>
- <div class="grid-item"> 
-	  <div class="footer-social-btn">
-			<a href="index.html"><img src="img/social-media/google.png" alt="Project 2" /></a>
-			</div></div>
-					<div class="grid-item"> 
-	  <div class="footer-social-btn">
-			<a href="index.html"><img src="img/social-media/linkedin.png" alt="Project 2" /></a>
-			</div></div>
-	
-  
-					</div>  
-					</div>
-            </div>
+            `;
+            resultContainer.innerHTML = resultHTML;
+            filterBar.style.display = 'flex';
+        }
+    }
 
-            <!-- Give Us Feedback -->
-            <div class="feedback-section">
-               <a href="ads.html"><button class="feedback-btn">Give us feedback<img src="img/into/f-arrow-gold.png"></button></a>
-            </div>
-			</div>
-            <!-- Contact Details -->
-			<div class="footer-partition-2">
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-               <p>Email: support@dailyhelp.com</p>
-                <p>Phone: +23470 1234 5678</p>
-                <p>Address: 4 ali Street, Benin City, Nigeria</p>
-            </div>
-
-			
-			
-            <!-- Privacy Policy -->
-            <div class="footer-section">
-                <h4>Privacy Policy</h4>
-                <a href="#">Read our Privacy Policy</a>
-            </div>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 YourSiteName<sup>&reg;</sup>. All rights reserved.</p>
-        </div>
-		</div>
-    </footer>
+    // Clear search input
+    deleteIcon.addEventListener('click', function () {
+        searchInput.value = '';
+        deleteIcon.style.display = 'none';
+        suggestions.style.display = 'none';
+    });
+</script>
 	
+
 </body>
+</html>
