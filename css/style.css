@@ -64,7 +64,7 @@ html, body {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 150px;
+	margin-top: 100px;
 	}
 .about-steps {
 	width: 80%;
@@ -581,6 +581,7 @@ span.psw {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 80px;
 }
 /*----General forms session---*/
 
@@ -2877,7 +2878,7 @@ input[type="date"] {
 	font-family: 'Roboto';
 }
 .result-tabs {
-	width: 90%;
+
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -2889,7 +2890,6 @@ input[type="date"] {
 	position: relative;
 }
 .ads-result-tabs {
-	width: 90%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -3069,7 +3069,7 @@ input[type="date"] {
 	width: 80%;
 }
 .prof-pic img {
-	width: 15px;
+	width: 12px;
 	margin-right: 6px;
 	margin-left: 10px;
 	margin-top: 10px;
@@ -4646,6 +4646,10 @@ tle p {
 	margin-right: auto;
 	padding: 20px;
 	margin-bottom: 20px;
+}
+.notify-settings-tabs{
+	font-size: 22px;
+	font-family: 'kod';
 }
 .professional-heading {
 	/*background-color: #EFF6FE;*/

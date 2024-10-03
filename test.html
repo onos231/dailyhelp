@@ -3,213 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Page with Filter and Footer</title>
+  <title>Search Page with Suggestions and Filter</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-      justify-content: space-between;
+      height: 100vh;
     }
 
+    /* Search container */
     .search-container {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       padding: 10px;
-      background-color: #f5f5f5;
-      position: sticky;
-      top: 0;
+      background-color: #f2f2f2;
+      border-bottom: 1px solid #ccc;
     }
 
     .search-container input {
-      width: 80%;
+      flex-grow: 1;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 20px;
       outline: none;
-      padding-left: 40px;
-      font-size: 16px;
     }
 
     .search-container .search-icon {
-      position: relative;
-      left: 20px;
-    }
-
-    .back-arrow, .hamburger-menu {
-      cursor: pointer;
-      font-size: 18px;
-    }
-
-    .suggestions-box {
-      position: absolute;
-      top: 60px;
-      left: 20px;
-      right: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      display: none;
-      z-index: 999;
-    }
-
-    .suggestion-item {
-      padding: 10px;
-      border-bottom: 1px solid #eee;
-      cursor: pointer;
-    }
-
-    .suggestion-item:hover {
-      background-color: #f0f0f0;
-    }
-
-    .search-result {
-      padding: 20px;
-      display: none;
-    }
-
-    .result-item {
-      margin-bottom: 20px;
-    }
-
-    .result-item img {
-      max-width: 100px;
       margin-right: 10px;
-      vertical-align: middle;
     }
 
+    .search-container .back-arrow,
+    .search-container .menu-icon {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    /* Suggestions box */
+    .suggestions {
+      max-height: 200px;
+      overflow-y: auto;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: absolute;
+      width: 90%;
+      display: none;
+      z-index: 1;
+    }
+
+    .suggestions div {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .suggestions div:hover {
+      background-color: #f2f2f2;
+    }
+
+    /* Content container */
+    .content-container {
+      flex-grow: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content-container h2 {
+      margin-top: 20px;
+    }
+
+    .content-container p {
+      margin-top: 10px;
+    }
+
+    /* Filter bar */
     .filter-bar {
       display: none;
-      background-color: #ddd;
       padding: 10px;
-      position: fixed;
-      bottom: 50px;
-      width: 100%;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ccc;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
+    .filter-bar .filter-icon {
+      margin-left: 10px;
     }
 
-    .delete-btn {
-      position: absolute;
-      right: 35px;
-      cursor: pointer;
-      font-size: 16px;
-      color: red;
+    /* Footer */
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Search Container -->
+  <!-- Search bar -->
   <div class="search-container">
-    <span class="back-arrow">⬅</span>
-    <div style="position: relative; width: 80%;">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="search-input" placeholder="Type to search...">
-      <span class="delete-btn" id="delete-btn" style="display:none;">✖</span>
-      <div class="suggestions-box" id="suggestions-box"></div>
-    </div>
-    <span class="hamburger-menu">☰</span>
+    <span class="back-arrow">←</span>
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Search here...">
+    <span class="menu-icon">☰</span>
   </div>
 
-  <!-- Search Result -->
-  <div class="search-result" id="search-result">
-    <!-- Content will be added dynamically -->
+  <!-- Suggestions box -->
+  <div class="suggestions" id="suggestionsBox"></div>
+
+  <!-- Content container -->
+  <div class="content-container" id="contentContainer">
+    <h2>Welcome to the Skilled Workers Platform</h2>
+    <p>Search for skilled workers and explore the results here.</p>
   </div>
 
-  <!-- Filter Bar -->
-  <div class="filter-bar" id="filter-bar">
-    <span>🔍 Filter</span>
-    <div>
+  <!-- Filter bar -->
+  <div class="filter-bar" id="filterBar">
+    <div class="filter-icon">⚙️ Filter</div>
+    <div class="dropdown-menus">
       <select>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
+        <option value="all">All</option>
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
       </select>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="footer">
-    &copy; 2024 Skilled Job Platform. All Rights Reserved.
-  </div>
+  <footer>
+    &copy; 2024 Skilled Workers Platform
+  </footer>
 
   <script>
-    const searchInput = document.getElementById('search-input');
-    const suggestionsBox = document.getElementById('suggestions-box');
-    const searchResult = document.getElementById('search-result');
-    const filterBar = document.getElementById('filter-bar');
-    const deleteBtn = document.getElementById('delete-btn');
-    
-    const suggestions = ['Plumber', 'Electrician', 'Carpenter', 'Mechanic', 'Painter', 'Welder'];
-    
-    searchInput.addEventListener('input', function () {
-      const query = searchInput.value.toLowerCase();
-      if (query) {
-        let matches = suggestions.filter(suggestion => suggestion.toLowerCase().includes(query));
-        showSuggestions(matches);
-        deleteBtn.style.display = 'inline';
+    const searchInput = document.getElementById('searchInput');
+    const suggestionsBox = document.getElementById('suggestionsBox');
+    const contentContainer = document.getElementById('contentContainer');
+    const filterBar = document.getElementById('filterBar');
+
+    const suggestions = ['Plumber', 'Electrician', 'Carpenter', 'Mechanic', 'Painter'];
+
+    // Display suggestions as user types
+    searchInput.addEventListener('input', () => {
+      const input = searchInput.value.toLowerCase();
+      suggestionsBox.innerHTML = '';
+      if (input) {
+        const filteredSuggestions = suggestions.filter(suggestion =>
+          suggestion.toLowerCase().includes(input)
+        );
+
+        if (filteredSuggestions.length > 0) {
+          suggestionsBox.style.display = 'block';
+          filteredSuggestions.forEach(suggestion => {
+            const suggestionDiv = document.createElement('div');
+            suggestionDiv.textContent = suggestion;
+            suggestionDiv.addEventListener('click', () => {
+              handleSuggestionClick(suggestion);
+            });
+            suggestionsBox.appendChild(suggestionDiv);
+          });
+        } else {
+          suggestionsBox.style.display = 'none';
+        }
       } else {
         suggestionsBox.style.display = 'none';
-        deleteBtn.style.display = 'none';
       }
     });
 
-    function showSuggestions(matches) {
-      suggestionsBox.innerHTML = '';
-      if (matches.length > 0) {
-        matches.forEach(match => {
-          let div = document.createElement('div');
-          div.className = 'suggestion-item';
-          div.textContent = match;
-          div.addEventListener('click', function () {
-            searchInput.value = match;
-            suggestionsBox.style.display = 'none';
-            displaySearchResult(match);
-          });
-          suggestionsBox.appendChild(div);
-        });
-        suggestionsBox.style.display = 'block';
-      } else {
-        suggestionsBox.style.display = 'none';
-      }
-    }
+    // Handle suggestion click
+    function handleSuggestionClick(suggestion) {
+      // Set the search input to the clicked suggestion
+      searchInput.value = suggestion;
 
-    function displaySearchResult(searchQuery) {
-      searchResult.innerHTML = `
-        <div class="result-item">
-          <img src="https://via.placeholder.com/100" alt="Sample Image">
-          <div>
-            <h3>${searchQuery}</h3>
-            <p>This is a skilled job search result for ${searchQuery}. More details can go here...</p>
-          </div>
-        </div>
+      // Hide the suggestions box
+      suggestionsBox.style.display = 'none';
+
+      // Display the search result content
+      contentContainer.innerHTML = `
+        <img src="https://via.placeholder.com/400" alt="${suggestion}">
+        <h2>${suggestion}</h2>
+        <p>Here is some information about ${suggestion} and the services they provide.</p>
       `;
-      searchResult.style.display = 'block';
+
+      // Show the filter bar
       filterBar.style.display = 'flex';
     }
-
-    // Delete button functionality
-    deleteBtn.addEventListener('click', function () {
-      searchInput.value = '';
-      suggestionsBox.style.display = 'none';
-      deleteBtn.style.display = 'none';
-    });
   </script>
 
 </body>
