@@ -1246,7 +1246,7 @@ input[type="date"] {
 			width: 50%;
 			padding: 14px;
 			border-radius: 20px;
-			background-color: #E45959;
+			background-color: #fff;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 10px;
@@ -1292,7 +1292,10 @@ input[type="date"] {
 			object-fit: contain;
 		}
 .post-dashboard-pic{
+	width: 100%;
 	padding: 6px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .post-dashboard-pic img {
 		width: 15px;
@@ -1311,7 +1314,8 @@ input[type="date"] {
 	float: right;
 	margin-right: 20px;
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	margin-top: 20px;
 }
 		.dashboard-space {
 			display: flex;
@@ -3320,7 +3324,8 @@ float: left;
 	width: 100%;
 }
 .report-txt p{
-	float: right;
+	width: 40%;
+	margin-left: auto;
 	color: #E45959;
 	margin-top: 40px;
 }
@@ -5818,6 +5823,9 @@ h4{
     text-decoration: underline;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.ads-text {
+		margin-bottom: 80px;
+	}
 	.sub-mobile {
 		display: none;
 	}
@@ -5925,11 +5933,9 @@ h4{
 		}
 		.dashboard-pic {
 			display: flex;
-			color: #fff;
 		}
 		.dashboard-pic img{
 			width: 10%;
-			margin-right: 4px;
 			object-fit: contain;
 		}
 		.dashboard-space {
@@ -5949,11 +5955,30 @@ h4{
 		width: 95%;
 		background-color: #F7FBFF;
 	}
+	.settings-tabs {
+		width: 60%;
+		margin-left: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.other-icons-n-txt {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.find-me p {
+		text-align: center;
+	}
+	.notify-txt {
+		width: 85%;
+	}
 			/*---Desktop Slides-----*/
 	
 		.sub {
 			width: 50%;
-			padding: 14px;
+
 			border-radius: 20px;
 			background-color: #E45959;
 			margin-left: auto;
@@ -6935,6 +6960,7 @@ h4{
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 80px;
+		margin-bottom: 80px;
 	}
 	.ads-text p {
 		width: 40%;
@@ -6996,7 +7022,6 @@ h4{
 	display: inline-block;
 	background-color: azure;
 }
-	.sub-mobile,
 	.nav-index-mob,
 			.nav-mob {
 				display: none;
@@ -7033,17 +7058,18 @@ h4{
 			float: right;
 			margin-right: 40px;
 		}
+	.sub-mobile,
 	.mob-sub-heads {
 		display: none;
 	}
 		.sub {
 			width: 50%;
 			padding: 14px;
-			border-radius: 20px;
-			background-color: #E45959;
+			border-radius: 30px;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 10px;
+			color: #000;
 		}
 		.sub-heads {
 			width: 90%;
@@ -7075,20 +7101,34 @@ h4{
 		}
 		.dashboard-pic {
 			display: flex;
-			color: #fff;
+			font-size: 17px;
 		}
 		.dashboard-pic img{
-			width: 10%;
-			margin-right: 4px;
+			width: 4%;
+			margin-right: 10px;
 			object-fit: contain;
 		}
-		.dashboard-space {
-			display: flex;
-			width: 70%;
-			margin-left: auto;
-			margin-right: auto;
-			object-fit: contain;
-		}
+	.post-dashboard-pic{
+	width: 70%;
+	padding: 6px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post-dashboard-pic img {
+	margin-right: 4px;
+}
+	.post-space {
+	width: 10%;
+	background-color: #E45959;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 15px;
+	float: right;
+	margin-right: 20px;
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
 	/*----settings session---*/
 	.desktop-settings {
 		width: 100%;
@@ -8000,6 +8040,7 @@ h4{
 		background-color: #F7FBFF;
 	}
 	.settings-tabs {
+		width: 40%;
 		margin-left: 20px;
 	}
 	.settings-tabs h5 {
