@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<style>
 
-	<div class="main-search-page">
-	<div class="search-container"><a href="index.html">
-            <img src="img/into/b-arrow-gold.png" alt="Project 2" /></a>
-            <div class="search-bar">
-                <span class="search-icon"><img src="img/find-helper/search.png" alt="Project 2" /></span>
-                <input type="text" id="search-input" placeholder="Search..." autofocus>
-                <button id="clear-search">&times;</button>
-            </div>
-            <span class="hamburger-menu"><div class="hamburgner" id="hamburger">
+	</style>
+	<div class="search-area">
+	<div class="search-container">
+    <span class="back-arrow"><a href="index.html">
+            <img src="img/into/b-arrow-gold.png" alt="Project 2" /></a></span>
+    <div class="search-bar" style="flex-grow: 1; position: relative;">
+        <a href="no-result-found.html"><span class="search-icon"><img src="img/find-helper/search.png" alt="Project 2" /></span></a>
+        <input type="text" id="search" placeholder="Search..." autocomplete="off">
+        <span class="delete-icon" id="delete-icon">&times;</span>
+    </div>
+    <span class="hamburger-menu"><div class="hamburgner" id="hamburger">
             &#9776;
         </div></span>
-        </div>
-	
-	<nav id="menu" class="menu">
+</div>
+<nav id="menu" class="menu">
 		<div class="close-btn" id="close-btn">&times;</div>
 		<div class="hamburger-logo-pic" style="display: none;">
 	   <a href="intro-2.html"><img src="img/logo/logo.png" alt="Project 2" /></a>
@@ -66,14 +68,14 @@
 				
 				</a></div></li>
         </ul>
-		<p>Membership</p>
+		<p>Manage Payments</p>
 		<ul class="mini-menu">
-			<li><a href="manage-payments.html"><div class="sub-heads">
-				 Manage Payments
+	   	<li><a href="subscription.html"><div class="sub-heads">
+				 Payment Options
 				
 				</div></a></li>
 			<li><a href="subscription-plan.html"><div class="sub-heads">
-				 Subscription Plans
+				 Subscription
 				
 			</div></a></li>
         </ul>
@@ -95,20 +97,13 @@
 			</ul>
 		</div>
     </nav>
-		
-		
-    <div class="main-search-page">
-        
+<!-- Suggestions -->
+<div class="suggestions-container" id="suggestions"></div>
 
-        <div id="suggestions-container" class="suggestions">
-            <ul id="suggestions-list"></ul>
-        </div>
-
-        <div id="search-results" class="search-results">
-            <!-- Search results will appear here -->
-        </div>
-
- <div class="no-result-container">
+<!-- Result Container -->
+<div class="result-container" id="result-container">
+    <!-- Search results will populate here -->
+   <div class="no-result-container">
         <div class="no-result-icon">
         <img src="img/find-helper/no-result.png" alt="No Results Icon">
         </div>
@@ -143,11 +138,35 @@
 		</div>
         </div>
     </div>
-	
-    </div>
-	</div>
+
+</div>
+
+<!-- Filter Bar -->
+			<div class="footer-area">
+<div class="filter-bar-menu" id="filter-bar-menu">
+    <div class="blue-filter-btn">
+			 <img src="img/find-helper/filter-blue.png" alt="Project 2" onclick="toggleDropdown()" /></div>
+            <select id="dropdown-1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+			<select id="dropdown-2">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+</div>
+		
+		</div>
 	
 	<!-- Footer Section -->
+
     <footer class="footer">
         <div class="footer-container">
             <!-- Social Icons -->
@@ -204,60 +223,116 @@
         </div>
 		</div>
     </footer>
+		
+	
     <script src="js/script.js"></script>
 	
-	
 	<script>
-	document.addEventListener('DOMContentLoaded', function () {
-    const searchInput = document.getElementById('search-input');
-    const suggestionsContainer = document.getElementById('suggestions-container');
-    const suggestionsList = document.getElementById('suggestions-list');
-    const filterBar = document.getElementById('filter-bar');
-    const searchResults = document.getElementById('search-results');
-    const clearSearchBtn = document.getElementById('clear-search');
+    const searchInput = document.getElementById('search');
+    const suggestions = document.getElementById('suggestions');
+    const resultContainer = document.getElementById('result-container');
+    const deleteIcon = document.getElementById('delete-icon');
+    const filterBar = document.getElementById('filter-bar-menu');
 
-    // Mock suggestions (Replace with actual data)
-    const suggestions = ["Developer", "Designer", "Project Manager", "Product Owner", "Data Scientist"];
+    // Mock data for search suggestions
+    const data = ['Plumber', 'Electrician', 'Carpenter'];
 
+    // Mock data for search results
+    const resultData = {
+        'Plumber': {
+            
+        },
+        'Electrician': {
+            
+        },
+        'Carpenter': {
+            
+        }
+    };
+
+    // Function to show suggestions as user types
     searchInput.addEventListener('input', function () {
-        const query = searchInput.value.toLowerCase();
-        suggestionsList.innerHTML = '';
-        if (query) {
-            const filteredSuggestions = suggestions.filter(item => item.toLowerCase().includes(query));
-            filteredSuggestions.forEach(suggestion => {
-                const li = document.createElement('li');
-                li.textContent = suggestion;
-                li.addEventListener('click', function () {
-                    searchInput.value = suggestion;
-                    suggestionsContainer.style.display = 'none';
-                    displaySearchResults(suggestion);
+        const searchValue = searchInput.value.toLowerCase();
+        suggestions.innerHTML = '';
+        if (searchValue) {
+            deleteIcon.style.display = 'inline';
+            const filteredSuggestions = data.filter(item => item.toLowerCase().includes(searchValue));
+            if (filteredSuggestions.length > 0) {
+                suggestions.style.display = 'block';
+                filteredSuggestions.forEach(suggestion => {
+                    const div = document.createElement('div');
+                    div.textContent = suggestion;
+                    div.addEventListener('click', function () {
+                        searchInput.value = suggestion;
+                        showSearchResult(suggestion);
+                        suggestions.style.display = 'none';
+                    });
+                    suggestions.appendChild(div);
                 });
-                suggestionsList.appendChild(li);
-            });
-            suggestionsContainer.style.display = 'block';
-            clearSearchBtn.style.display = 'block'; // Show clear button when typing
+            } else {
+                suggestions.style.display = 'none';
+            }
         } else {
-            suggestionsContainer.style.display = 'none';
-            clearSearchBtn.style.display = 'none'; // Hide clear button if no text
+            deleteIcon.style.display = 'none';
         }
     });
 
-    clearSearchBtn.addEventListener('click', function () {
-        searchInput.value = '';
-        clearSearchBtn.style.display = 'none'; // Hide clear button when cleared
-        suggestionsContainer.style.display = 'none';
-        searchInput.focus();
-    });
+    // Show search result and filter bar
+    function showSearchResult(searchTerm) {
+        resultContainer.innerHTML = '';
+        if (resultData[searchTerm]) {
+            const result = resultData[searchTerm];
+            const resultHTML = `
+                <div class="no-result-container">
+        <div class="no-result-icon">
+        <img src="img/find-helper/no-result.png" alt="No Results Icon">
+        </div>
+        <h1>No Results Found</h1>
+        <p>We couldn’t find any skilled workers matching your search criteria.</p>
+        <ul class="suggest-option">
+            <li>Try different keywords or search terms</li>
+            <li>Check for any spelling mistakes</li>
+            <li>Explore the available categories below</li>
+        </ul>
 
-    function displaySearchResults(query) {
-        searchResults.innerHTML = `<h2>Search Results for "${query}"</h2><p>Results...</p>`;
-        filterBar.style.display = 'flex';
+        
+
+        <div class="browse-categories">
+            <h2>Popular Search</h2>
+            <div class="recent-search">
+			<div class="recent-result"><a href="z-testing.html"><span class="search-result-icon" id="search-icon">&#128269; Cleaners</span></a></div>
+		<div class="recent-result"><a href="z.html"><span class="search-result-icon" id="search-icon">&#128269; Electrician</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; CareGiver</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Plumber</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Gardener</span></a></div>
+		<div class="recent-result"><a href="helpers-search-result.html"><span class="search-result-icon" id="search-icon">&#128269; Shoe Maker</span></a></div>
+	
+		
+	
+			<div class="recent-result">
+				<a href="helpers-search-result.html">&#128269; Makeup Artist</a>
+				</div>
+			
+			<div class="recent-result">
+			<a href="helpers-search-result.html">&#128269; View All</a></div>
+		</div>
+        </div>
+    </div>
+            `;
+            resultContainer.innerHTML = resultHTML;
+            filterBar.style.display = 'flex';
+        }
     }
 
-    // Focus on search input when the page loads
-    searchInput.focus();
-});
+    // Clear search input
+    deleteIcon.addEventListener('click', function () {
+        searchInput.value = '';
+        deleteIcon.style.display = 'none';
+        suggestions.style.display = 'none';
+    });
+</script>
+	
 
-	</script>
 </body>
 </html>
+

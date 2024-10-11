@@ -1898,7 +1898,7 @@ input[type="date"] {
 			margin-left: 22px;
        }
 #search {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: none;
 	border-radius: 0 4px 4px 0px;
@@ -2023,7 +2023,7 @@ input[type="date"] {
     align-items: center;
     flex-grow: 1;
     margin: 0 10px;
-    border-radius: 8px;
+    border-radius: 30px;
 	border: 1px solid #ccc;
 	background-color: #fff;
 }
@@ -4346,9 +4346,10 @@ tle p {
 
 .bank-title h5 {
 	float: left;
-	line-height:20px;
+	line-height: 2px;
 	font-size: 17px;
 	font-family: 'kod';
+	color: #39BF4E;
 	
 }
 
@@ -4365,7 +4366,6 @@ tle p {
 }
 .Account-name {
 	font-family: 'poppins';
-	color: #39BF4E;
 	font-size: 17px;
 }
 .Account-type,
