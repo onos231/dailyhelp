@@ -4624,7 +4624,7 @@ input:checked + .slider:before {
 .reg-heading {
 	margin-top: 20px;
 	padding: 8px 10px;
-	background-color: background-color: #F7FBFF;;
+	background-color: #F7FBFF;
 	color: #534B3F;
 	border-radius: 4px;
 	
