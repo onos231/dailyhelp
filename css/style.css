@@ -476,12 +476,16 @@ button:hover {
 .checkbox {
 	color: red;
 }
-
+label.rembember-details {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+}
 span.psw {
   float: right;
   padding-top: 1px;
-  margin-right: 20px;
-  color: rgba(0, 0, 0, 0.7);
+  margin-right: 2px;
+  color: rgba(0, 0, 0, 0.3);
+	font-size: 15px;
 }
 .psw a {
 	color: #3997BF;
@@ -521,7 +525,7 @@ span.psw {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .footer-icons  {
 	width: 40%;
@@ -5495,6 +5499,7 @@ h4{
     text-decoration: underline;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	
 	.ads-text {
 		margin-bottom: 80px;
 	}
@@ -6075,6 +6080,8 @@ h4{
 	background-color: #fff;
 }
 	/*----web login session---*/
+	
+	
 .login-log-space {
 		width: 60%;
 
@@ -6085,10 +6092,10 @@ h4{
 	/*background-color: #D2E4F9;*/
 	height: 100%;
 	}
-	.logo-pics {
+	/*.logo-pics {
 		margin-top: 0;
 		margin-bottom: 80px;
-	}
+	}*/
 	.dailyhelp-intro-pic {
 	display: none;
 	width: 30%;
@@ -6538,6 +6545,24 @@ h4{
 }
 @media only screen and (min-width: 992px) {
 	/*---index session----*/
+	.Login {
+	display: none;
+}
+	.create-account-btn {
+		display: flex;
+		float: right;
+		color: #ccc;
+		font-size: 15px;
+	}
+	.account-btn a{
+		margin-left: 4px;
+		color: #3997BF;
+		font-size: 15px;
+		font-family: 'Kodchasan';
+	}
+	.tab-container {
+		margin-bottom: 20px;
+	}
 	.desktop-intro {
 		width: 90%;
 		margin-left: auto;
@@ -7207,12 +7232,12 @@ h4{
 	/*----web login session---*/
 	.login-settings-area {
 		width: 70%;
-	margin-top: 40px;
+		margin-top: 80px;
 		margin-left: auto;
 		margin-right: auto;
 }
 	.signup-settings-area {
-		width: 60%;
+		width: 70%;
 		margin-top: 60px;
 		margin-left: auto;
 		margin-right: auto;
@@ -7267,8 +7292,7 @@ h4{
 	margin-right: auto;
 }
 	.logo-pics {
-		width: 8%;
-		margin-left: auto;
+		display: none;
 	}
 	.web-log {
 		height: 100%;
@@ -7737,6 +7761,7 @@ h4{
 	}
 	.post-arrow-btn-left {
 	width: 58%;
+		margin-top: 0;
 }
 	.language-tab {
 		width: 80%;
@@ -8063,6 +8088,9 @@ outline: none;
 	}
 	.form-group {
 		width: 100%;
+	}
+	.submit-group {
+		margin-bottom: 0;
 	}
 	.contact-send-request {
 		width: 30%;
