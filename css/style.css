@@ -304,6 +304,25 @@ html, body {
 		margin-left: auto;
 		margin-right: auto;
 }
+.create-account-btn {
+		display: flex;
+		color: #ccc;
+		font-size: 15px;
+	}
+.create-account-btn p{
+		text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+.create-account-btn a{
+		color: #3997BF;
+	margin-left: 4px;
+	}
+	.account-btn a{
+		color: #3997BF;
+		font-size: 15px;
+		font-family: 'Kod';
+	}
 /*h4 {
 	width: 60%;
 	margin-left: auto;
@@ -552,6 +571,7 @@ span.psw {
 }
 /*----create account session---*/
 .Login {
+	display: none;
 	float: right;
 	margin-right: 20px;
 	font-size: 15px;
@@ -6548,18 +6568,6 @@ h4{
 	.Login {
 	display: none;
 }
-	.create-account-btn {
-		display: flex;
-		float: right;
-		color: #ccc;
-		font-size: 15px;
-	}
-	.account-btn a{
-		margin-left: 4px;
-		color: #3997BF;
-		font-size: 15px;
-		font-family: 'Kodchasan';
-	}
 	.tab-container {
 		margin-bottom: 20px;
 	}
@@ -8088,6 +8096,7 @@ outline: none;
 	}
 	.form-group {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 	.submit-group {
 		margin-bottom: 0;
